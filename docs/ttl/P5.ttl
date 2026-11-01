@@ -1,0 +1,156 @@
+# P5: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.24.1; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P5.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "URL pattern of an identifier property; $1 stands for the identifier."@en,
+        "URL-Muster einer Identifikator-Eigenschaft; $1 steht für den Identifikator."@de ;
+    dcterms:identifier "P5" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P5 ;
+    dcterms:title "URL-Muster"@de,
+        "formatter URL"@en ;
+    schema:about ohs:P5 ;
+    dcat:distribution ohsdist:P5-html,
+        ohsdist:P5-json,
+        ohsdist:P5-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P5.html> .
+
+ohsdist:P5-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P5, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P5.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P5-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P5, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1892"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P5.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P5-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P5, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P5.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:P5
+    a wikibase:Property ;
+    schema:description "URL pattern of an identifier property; $1 stands for the identifier."@en,
+        "URL-Muster einer Identifikator-Eigenschaft; $1 steht für den Identifikator."@de ;
+    schema:name "URL-Muster"@de,
+        "formatter URL"@en ;
+    wikibase:claim ohsp:P5 ;
+    wikibase:directClaim ohst:P5 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P5 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P5 ;
+    wikibase:qualifierValue ohspqv:P5 ;
+    wikibase:reference ohspr:P5 ;
+    wikibase:referenceValue ohsprv:P5 ;
+    wikibase:statementProperty ohsps:P5 ;
+    wikibase:statementValue ohspsv:P5 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "URL-Muster"@de,
+        "formatter URL"@en ;
+    skos:prefLabel "URL-Muster"@de,
+        "formatter URL"@en ;
+    ohsp:P2 ohss:P5-0B9AB20B-F952-5FA1-AD11-7807F348604B ;
+    ohsp:P4 ohss:P5-C2BF4765-F99B-55B8-A84E-327DD23A8FCD ;
+    ohsp:P9 ohss:P5-130648A0-38D8-593D-86A6-99D01964B07D ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P1630" ;
+    ohst:P9 ohs:Q2 .
+
+ohss:P5-0B9AB20B-F952-5FA1-AD11-7807F348604B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P5-130648A0-38D8-593D-86A6-99D01964B07D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q2 .
+
+ohss:P5-C2BF4765-F99B-55B8-A84E-327DD23A8FCD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P1630" .
+
+ohsp:P5
+    a owl:ObjectProperty .
+
+ohst:P5
+    a owl:DatatypeProperty .
+
+ohspq:P5
+    a owl:DatatypeProperty .
+
+ohspqv:P5
+    a owl:ObjectProperty .
+
+ohspr:P5
+    a owl:DatatypeProperty .
+
+ohsprv:P5
+    a owl:ObjectProperty .
+
+ohsps:P5
+    a owl:DatatypeProperty .
+
+ohspsv:P5
+    a owl:ObjectProperty .
+
+ohsno:P5
+    a owl:Class ;
+    owl:complementOf _:652fb540e6b088b61bfcf9c8b4b31594 .
+
+_:652fb540e6b088b61bfcf9c8b4b31594
+    a owl:Restriction ;
+    owl:onProperty ohst:P5 ;
+    owl:someValuesFrom owl:Thing .

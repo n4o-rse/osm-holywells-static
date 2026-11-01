@@ -1,0 +1,148 @@
+# P111: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.24.1; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P111.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Geometrie des Elements als WKT (Länge Breite, WGS 84), ein Statement je Änderung; Qualifier: OSM-Version und OSM-Zeitstempel."@de,
+        "Geometry of the element as WKT (longitude latitude, WGS 84), one statement per change; qualifiers: OSM version and OSM timestamp."@en ;
+    dcterms:identifier "P111" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P111 ;
+    dcterms:title "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    schema:about ohs:P111 ;
+    dcat:distribution ohsdist:P111-html,
+        ohsdist:P111-json,
+        ohsdist:P111-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P111.html> .
+
+ohsdist:P111-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P111, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P111.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P111-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P111, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1653"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P111.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P111-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P111, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P111.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:P111
+    a wikibase:Property ;
+    schema:description "Geometrie des Elements als WKT (Länge Breite, WGS 84), ein Statement je Änderung; Qualifier: OSM-Version und OSM-Zeitstempel."@de,
+        "Geometry of the element as WKT (longitude latitude, WGS 84), one statement per change; qualifiers: OSM version and OSM timestamp."@en ;
+    schema:name "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    wikibase:claim ohsp:P111 ;
+    wikibase:directClaim ohst:P111 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P111 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P111 ;
+    wikibase:qualifierValue ohspqv:P111 ;
+    wikibase:reference ohspr:P111 ;
+    wikibase:referenceValue ohsprv:P111 ;
+    wikibase:statementProperty ohsps:P111 ;
+    wikibase:statementValue ohspsv:P111 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    skos:prefLabel "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    ohsp:P2 ohss:P111-6CEA4FA8-BC34-5FA6-8E96-09F8B6511F6C ;
+    ohsp:P9 ohss:P111-1D3004E1-4DF2-5533-8909-739172E33E56 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q100 .
+
+ohss:P111-1D3004E1-4DF2-5533-8909-739172E33E56
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P111-6CEA4FA8-BC34-5FA6-8E96-09F8B6511F6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohsp:P111
+    a owl:ObjectProperty .
+
+ohst:P111
+    a owl:DatatypeProperty .
+
+ohspq:P111
+    a owl:DatatypeProperty .
+
+ohspqv:P111
+    a owl:ObjectProperty .
+
+ohspr:P111
+    a owl:DatatypeProperty .
+
+ohsprv:P111
+    a owl:ObjectProperty .
+
+ohsps:P111
+    a owl:DatatypeProperty .
+
+ohspsv:P111
+    a owl:ObjectProperty .
+
+ohsno:P111
+    a owl:Class ;
+    owl:complementOf _:6a16217e9f33e049a5ae19169825b919 .
+
+_:6a16217e9f33e049a5ae19169825b919
+    a owl:Restriction ;
+    owl:onProperty ohst:P111 ;
+    owl:someValuesFrom owl:Thing .

@@ -1,0 +1,148 @@
+# P107: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.24.1; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P107.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Die Version des OSM-Elements, ab der es die Auswahl dieser Seite (die Tag-Bedingungen der Abfrage) erfüllt, als URL dieser Version."@de,
+        "The version of the OSM element from which it meets the selection of this site (the tag conditions of the query), as the URL of that version."@en ;
+    dcterms:identifier "P107" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P107 ;
+    dcterms:title "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    schema:about ohs:P107 ;
+    dcat:distribution ohsdist:P107-html,
+        ohsdist:P107-json,
+        ohsdist:P107-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P107.html> .
+
+ohsdist:P107-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P107, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P107.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P107-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P107, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1670"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P107.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P107-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P107, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P107.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:P107
+    a wikibase:Property ;
+    schema:description "Die Version des OSM-Elements, ab der es die Auswahl dieser Seite (die Tag-Bedingungen der Abfrage) erfüllt, als URL dieser Version."@de,
+        "The version of the OSM element from which it meets the selection of this site (the tag conditions of the query), as the URL of that version."@en ;
+    schema:name "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    wikibase:claim ohsp:P107 ;
+    wikibase:directClaim ohst:P107 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P107 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier ohspq:P107 ;
+    wikibase:qualifierValue ohspqv:P107 ;
+    wikibase:reference ohspr:P107 ;
+    wikibase:referenceValue ohsprv:P107 ;
+    wikibase:statementProperty ohsps:P107 ;
+    wikibase:statementValue ohspsv:P107 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    skos:prefLabel "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    ohsp:P2 ohss:P107-E9267077-350E-5303-A947-15B607322E48 ;
+    ohsp:P9 ohss:P107-663D8C62-009C-5659-8129-C453D4203E49 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q100 .
+
+ohss:P107-663D8C62-009C-5659-8129-C453D4203E49
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P107-E9267077-350E-5303-A947-15B607322E48
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohsp:P107
+    a owl:ObjectProperty .
+
+ohst:P107
+    a owl:ObjectProperty .
+
+ohspq:P107
+    a owl:ObjectProperty .
+
+ohspqv:P107
+    a owl:ObjectProperty .
+
+ohspr:P107
+    a owl:ObjectProperty .
+
+ohsprv:P107
+    a owl:ObjectProperty .
+
+ohsps:P107
+    a owl:ObjectProperty .
+
+ohspsv:P107
+    a owl:ObjectProperty .
+
+ohsno:P107
+    a owl:Class ;
+    owl:complementOf _:6b3af85a69f881068fad8d0698f47c1e .
+
+_:6b3af85a69f881068fad8d0698f47c1e
+    a owl:Restriction ;
+    owl:onProperty ohst:P107 ;
+    owl:someValuesFrom owl:Thing .

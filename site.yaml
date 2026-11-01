@@ -1,0 +1,25 @@
+# Site metadata (schema: PRIMER.md of wikibase-static, A4).
+title: OSM holy wells (static Wikibase)
+description: A static, read-only Wikibase of the OpenStreetMap holy wells (place_of_worship=holy_well) in Ireland and Northern Ireland. One item per OSM element, its version history as statements, anchored in CIDOC CRM.
+# Where docs/ is published; the RDF export needs it for the download URLs of its DCAT distributions.
+pages_url: https://n4o-rse.github.io/osm-holywells-static/
+# Base of the entity URIs in the RDF export. The numbers of this site are its own, so it does not borrow another address.
+# A w3id prefix is open (PRIMER.md, A6).
+rdf_base: https://n4o-rse.github.io/osm-holywells-static
+# The prefix names of the export: ohs:, ohst:, ohsp:, ... and not wd:, wdt:, p:, ..., which are those of Wikidata.
+# A proposal (PRIMER.md, A4 "URIs"); change it before the first publication if another name is wanted.
+rdf_prefix: ohs
+edit_url: https://github.com/n4o-rse/osm-holywells-static/edit/main/data/csv
+languages:
+  default: en
+  second: de
+# The kernel keeps the formatter URL of external-id properties in P5 (Wikidata uses P1630).
+formatter_property: P5
+# The data are OpenStreetMap data, not CC0 (the default of the package): the licence and the attribution travel with them.
+license:
+  name: ODbL 1.0, © OpenStreetMap contributors
+  url: https://opendatacommons.org/licenses/odbl/1-0/
+# The logo: a pen drawing of a holy well with a stone cross; it is copied into docs/assets/logo/.
+logo: assets/logo.png
+# No colour of its own (`colour`): the pages use the BeaverBridge palette, light and dark mode (wikibase-static 0.24.0).
+wkt_property: P111          # geometry history (WKT): the page draws the last shape, the RDF export gets GeoSPARQL

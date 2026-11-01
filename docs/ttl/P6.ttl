@@ -1,0 +1,148 @@
+# P6: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.24.1; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P6.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Web page that documents a statement."@en,
+        "Webseite, die eine Aussage belegt."@de ;
+    dcterms:identifier "P6" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P6 ;
+    dcterms:title "Beleg-URL"@de,
+        "reference URL"@en ;
+    schema:about ohs:P6 ;
+    dcat:distribution ohsdist:P6-html,
+        ohsdist:P6-json,
+        ohsdist:P6-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P6.html> .
+
+ohsdist:P6-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P6, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P6.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P6-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P6, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1328"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P6.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P6-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P6, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P6.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:P6
+    a wikibase:Property ;
+    schema:description "Web page that documents a statement."@en,
+        "Webseite, die eine Aussage belegt."@de ;
+    schema:name "Beleg-URL"@de,
+        "reference URL"@en ;
+    wikibase:claim ohsp:P6 ;
+    wikibase:directClaim ohst:P6 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P6 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier ohspq:P6 ;
+    wikibase:qualifierValue ohspqv:P6 ;
+    wikibase:reference ohspr:P6 ;
+    wikibase:referenceValue ohsprv:P6 ;
+    wikibase:statementProperty ohsps:P6 ;
+    wikibase:statementValue ohspsv:P6 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Beleg-URL"@de,
+        "reference URL"@en ;
+    skos:prefLabel "Beleg-URL"@de,
+        "reference URL"@en ;
+    ohsp:P2 ohss:P6-3C20F21B-0636-56BE-8379-8BC3A3754B3A ;
+    ohsp:P4 ohss:P6-DF4BA3D1-DAF4-53A6-BC3B-401BD6A7521B ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P854" .
+
+ohss:P6-3C20F21B-0636-56BE-8379-8BC3A3754B3A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P6-DF4BA3D1-DAF4-53A6-BC3B-401BD6A7521B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P854" .
+
+ohsp:P6
+    a owl:ObjectProperty .
+
+ohst:P6
+    a owl:ObjectProperty .
+
+ohspq:P6
+    a owl:ObjectProperty .
+
+ohspqv:P6
+    a owl:ObjectProperty .
+
+ohspr:P6
+    a owl:ObjectProperty .
+
+ohsprv:P6
+    a owl:ObjectProperty .
+
+ohsps:P6
+    a owl:ObjectProperty .
+
+ohspsv:P6
+    a owl:ObjectProperty .
+
+ohsno:P6
+    a owl:Class ;
+    owl:complementOf _:97baaafa5b5509af7ac81df347d36be5 .
+
+_:97baaafa5b5509af7ac81df347d36be5
+    a owl:Restriction ;
+    owl:onProperty ohst:P6 ;
+    owl:someValuesFrom owl:Thing .

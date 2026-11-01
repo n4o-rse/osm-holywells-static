@@ -1,0 +1,148 @@
+# P101: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.24.1; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P101.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version."@de,
+        "One version of the OSM element, as the URL of that version; one statement per version."@en ;
+    dcterms:identifier "P101" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P101 ;
+    dcterms:title "OSM version"@en,
+        "OSM-Version"@de ;
+    schema:about ohs:P101 ;
+    dcat:distribution ohsdist:P101-html,
+        ohsdist:P101-json,
+        ohsdist:P101-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P101.html> .
+
+ohsdist:P101-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P101, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P101.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P101-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P101, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1548"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P101.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P101-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P101, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P101.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:P101
+    a wikibase:Property ;
+    schema:description "Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version."@de,
+        "One version of the OSM element, as the URL of that version; one statement per version."@en ;
+    schema:name "OSM version"@en,
+        "OSM-Version"@de ;
+    wikibase:claim ohsp:P101 ;
+    wikibase:directClaim ohst:P101 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P101 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier ohspq:P101 ;
+    wikibase:qualifierValue ohspqv:P101 ;
+    wikibase:reference ohspr:P101 ;
+    wikibase:referenceValue ohsprv:P101 ;
+    wikibase:statementProperty ohsps:P101 ;
+    wikibase:statementValue ohspsv:P101 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "OSM version"@en,
+        "OSM-Version"@de ;
+    skos:prefLabel "OSM version"@en,
+        "OSM-Version"@de ;
+    ohsp:P2 ohss:P101-71864FD3-EB13-5D18-A24F-09AA2B16DC5B ;
+    ohsp:P9 ohss:P101-9CDC5013-20C7-5658-9E46-B095770C178F ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q100 .
+
+ohss:P101-9CDC5013-20C7-5658-9E46-B095770C178F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P101-71864FD3-EB13-5D18-A24F-09AA2B16DC5B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohsp:P101
+    a owl:ObjectProperty .
+
+ohst:P101
+    a owl:ObjectProperty .
+
+ohspq:P101
+    a owl:ObjectProperty .
+
+ohspqv:P101
+    a owl:ObjectProperty .
+
+ohspr:P101
+    a owl:ObjectProperty .
+
+ohsprv:P101
+    a owl:ObjectProperty .
+
+ohsps:P101
+    a owl:ObjectProperty .
+
+ohspsv:P101
+    a owl:ObjectProperty .
+
+ohsno:P101
+    a owl:Class ;
+    owl:complementOf _:1b2fba38e6a138da2da93953d31056c4 .
+
+_:1b2fba38e6a138da2da93953d31056c4
+    a owl:Restriction ;
+    owl:onProperty ohst:P101 ;
+    owl:someValuesFrom owl:Thing .

@@ -1,0 +1,170 @@
+# P2: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.24.1; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P2.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Diese Entität gehört zur Wertklasse."@de,
+        "This entity is a member of the value class."@en ;
+    dcterms:identifier "P2" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P2 ;
+    dcterms:title "instance of"@en,
+        "ist eine Instanz von"@de ;
+    schema:about ohs:P2 ;
+    dcat:distribution ohsdist:P2-html,
+        ohsdist:P2-json,
+        ohsdist:P2-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P2.html> .
+
+ohsdist:P2-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P2, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P2.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P2-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P2, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2329"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P2.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P2-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P2, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P2.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:P2
+    a wikibase:Property ;
+    schema:description "Diese Entität gehört zur Wertklasse."@de,
+        "This entity is a member of the value class."@en ;
+    schema:name "instance of"@en,
+        "ist eine Instanz von"@de ;
+    wikibase:claim ohsp:P2 ;
+    wikibase:directClaim ohst:P2 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P2 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier ohspq:P2 ;
+    wikibase:qualifierValue ohspqv:P2 ;
+    wikibase:reference ohspr:P2 ;
+    wikibase:referenceValue ohsprv:P2 ;
+    wikibase:statementProperty ohsps:P2 ;
+    wikibase:statementValue ohspsv:P2 ;
+    wikibase:statements "4"^^xsd:integer ;
+    rdfs:label "instance of"@en,
+        "ist eine Instanz von"@de ;
+    skos:prefLabel "instance of"@en,
+        "ist eine Instanz von"@de ;
+    ohsp:P2 ohss:P2-37EFF9F6-5CD4-581A-982B-F87FB002A2EA ;
+    ohsp:P4 ohss:P2-22F7CA32-B566-5542-87E4-64CA675195C7 ;
+    ohsp:P9 ohss:P2-2A59E3AC-B228-5575-903D-E4329F3F8822 ;
+    ohsp:P10 ohss:P2-7EBADB34-F83B-5D80-B6BA-34EA5125622E ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P31" ;
+    ohst:P9 ohs:Q3 ;
+    ohst:P10 ohs:Q1 .
+
+ohss:P2-2A59E3AC-B228-5575-903D-E4329F3F8822
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q3 .
+
+ohss:P2-7EBADB34-F83B-5D80-B6BA-34EA5125622E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P10 ohs:Q1 .
+
+ohss:P2-22F7CA32-B566-5542-87E4-64CA675195C7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P31" .
+
+ohss:P2-37EFF9F6-5CD4-581A-982B-F87FB002A2EA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohsp:P2
+    a owl:ObjectProperty .
+
+ohst:P2
+    a owl:ObjectProperty .
+
+ohspq:P2
+    a owl:ObjectProperty .
+
+ohspqv:P2
+    a owl:ObjectProperty .
+
+ohspr:P2
+    a owl:ObjectProperty .
+
+ohsprv:P2
+    a owl:ObjectProperty .
+
+ohsps:P2
+    a owl:ObjectProperty .
+
+ohspsv:P2
+    a owl:ObjectProperty .
+
+ohsno:P2
+    a owl:Class ;
+    owl:complementOf _:1bab1d06d363df272e2241898c6cddd7 .
+
+_:1bab1d06d363df272e2241898c6cddd7
+    a owl:Restriction ;
+    owl:onProperty ohst:P2 ;
+    owl:someValuesFrom owl:Thing .
+
+# RDFS bridge of the kernel (wikibase-static): the direct properties P1 to P3 and the classes Q1 to Q3 tied to RDFS and OWL.
+# Not part of the Wikibase data model; written only when the kernel is part of the site.
+
+ohst:P2
+    rdfs:subPropertyOf rdf:type .

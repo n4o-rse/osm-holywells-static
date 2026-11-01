@@ -1,0 +1,140 @@
+# P109: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.24.1; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P109.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Name der Auswahl (Export-Typ, holywells), auf die sich ein Statement „in der Auswahl seit“ bezieht (Qualifier)."@de,
+        "Name of the selection (export type, holywells) a statement \"in selection since\" refers to (qualifier)."@en ;
+    dcterms:identifier "P109" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P109 ;
+    dcterms:title "Auswahl"@de,
+        "selection"@en ;
+    schema:about ohs:P109 ;
+    dcat:distribution ohsdist:P109-html,
+        ohsdist:P109-json,
+        ohsdist:P109-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P109.html> .
+
+ohsdist:P109-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P109, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P109.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P109-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P109, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1108"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P109.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P109-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P109, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P109.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:P109
+    a wikibase:Property ;
+    schema:description "Name der Auswahl (Export-Typ, holywells), auf die sich ein Statement „in der Auswahl seit“ bezieht (Qualifier)."@de,
+        "Name of the selection (export type, holywells) a statement \"in selection since\" refers to (qualifier)."@en ;
+    schema:name "Auswahl"@de,
+        "selection"@en ;
+    wikibase:claim ohsp:P109 ;
+    wikibase:directClaim ohst:P109 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P109 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P109 ;
+    wikibase:qualifierValue ohspqv:P109 ;
+    wikibase:reference ohspr:P109 ;
+    wikibase:referenceValue ohsprv:P109 ;
+    wikibase:statementProperty ohsps:P109 ;
+    wikibase:statementValue ohspsv:P109 ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Auswahl"@de,
+        "selection"@en ;
+    skos:prefLabel "Auswahl"@de,
+        "selection"@en ;
+    ohsp:P2 ohss:P109-EB5851B1-7FE4-53C4-8231-BA3AA42818E3 ;
+    ohst:P2 ohs:Q2 .
+
+ohss:P109-EB5851B1-7FE4-53C4-8231-BA3AA42818E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohsp:P109
+    a owl:ObjectProperty .
+
+ohst:P109
+    a owl:DatatypeProperty .
+
+ohspq:P109
+    a owl:DatatypeProperty .
+
+ohspqv:P109
+    a owl:ObjectProperty .
+
+ohspr:P109
+    a owl:DatatypeProperty .
+
+ohsprv:P109
+    a owl:ObjectProperty .
+
+ohsps:P109
+    a owl:DatatypeProperty .
+
+ohspsv:P109
+    a owl:ObjectProperty .
+
+ohsno:P109
+    a owl:Class ;
+    owl:complementOf _:593874c87e4a367857a43cf6ce599d00 .
+
+_:593874c87e4a367857a43cf6ce599d00
+    a owl:Restriction ;
+    owl:onProperty ohst:P109 ;
+    owl:someValuesFrom owl:Thing .

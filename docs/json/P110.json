@@ -1,0 +1,84 @@
+{
+  "aliases": {},
+  "claims": {
+    "P2": [
+      {
+        "id": "P110$FA7A796C-F53D-54AF-8BFC-D90F1E1605C0",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q2",
+              "numeric-id": 2
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P4": [
+      {
+        "id": "P110$A282B8D2-F080-50D5-9C45-6612531AAAAB",
+        "mainsnak": {
+          "datatype": "external-id",
+          "datavalue": {
+            "type": "string",
+            "value": "P625"
+          },
+          "property": "P4",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P9": [
+      {
+        "id": "P110$814F699F-1938-5493-9285-238676AA48A5",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P9",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "datatype": "globe-coordinate",
+  "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Aktuelle Position des Elements; bei einem Way oder einer Relation der Mittelpunkt seiner Geometrie."
+    },
+    "en": {
+      "language": "en",
+      "value": "Current position of the element; for a way or relation the centre of its geometry."
+    }
+  },
+  "id": "P110",
+  "labels": {
+    "de": {
+      "language": "de",
+      "value": "Koordinate"
+    },
+    "en": {
+      "language": "en",
+      "value": "coordinate location"
+    }
+  },
+  "type": "property"
+}

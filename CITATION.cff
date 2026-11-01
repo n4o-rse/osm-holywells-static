@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite them using the metadata below, and credit OpenStreetMap as described in the README."
+title: "osm-holywells-static: A static Wikibase of OpenStreetMap holy wells with version history, anchored in CIDOC CRM"
+abstract: >-
+  A static, read-only Wikibase on GitHub Pages for the OpenStreetMap holy wells of Ireland and Northern Ireland. Each OSM element is one item, its version history is kept as statements, its geometry as WKT, and every item is anchored on a CIDOC CRM class. Built with wikibase-static.
+type: software
+authors:
+  - family-names: Thiery
+    given-names: Florian
+    # orcid: "https://orcid.org/..."  # TODO: insert ORCID
+license: MIT
+version: "0.1.0"
+repository-code: "https://github.com/n4o-rse/osm-holywells-static"
+# date-released: ""  # TODO: set when the first release is tagged
+# doi: ""            # TODO: add Zenodo DOI once minted
+keywords:
+  - OpenStreetMap
+  - holy wells
+  - Wikibase
+  - Linked Data
+  - CIDOC CRM
+  - static site
+  - GitHub Pages

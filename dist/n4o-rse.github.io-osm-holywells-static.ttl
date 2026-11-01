@@ -1,0 +1,3239 @@
+# RDF export of OSM holy wells (static Wikibase), Wikibase data model; base URI https://n4o-rse.github.io/osm-holywells-static
+# Generated with wikibase-static 0.24.1; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmdig: <http://www.cidoc-crm.org/extensions/crmdig/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ohscat:export
+    a dcat:Dataset ;
+    dcterms:isPartOf <https://n4o-rse.github.io/osm-holywells-static/catalog> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Complete RDF export"@en ;
+    dcat:distribution ohsdist:export .
+
+ohscat:items
+    a dcat:Catalog ;
+    dcterms:isPartOf <https://n4o-rse.github.io/osm-holywells-static/catalog> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Items of OSM holy wells (static Wikibase)"@en ;
+    dcat:dataset <https://n4o-rse.github.io/osm-holywells-static/ttl/Q1.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/Q2.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/Q3.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/Q100.ttl#dataset> .
+
+ohscat:properties
+    a dcat:Catalog ;
+    dcterms:isPartOf <https://n4o-rse.github.io/osm-holywells-static/catalog> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Properties of OSM holy wells (static Wikibase)"@en ;
+    dcat:dataset <https://n4o-rse.github.io/osm-holywells-static/ttl/P1.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P2.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P3.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P4.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P5.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P6.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P7.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P8.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P9.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P10.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P100.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P101.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P102.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P103.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P104.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P105.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P106.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P107.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P108.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P109.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P110.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P111.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P112.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-holywells-static/ttl/P113.ttl#dataset> .
+
+ohscat:wikibase-ontology
+    a dcat:Dataset ;
+    dcterms:isPartOf <https://n4o-rse.github.io/osm-holywells-static/catalog> ;
+    dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:source <http://wikiba.se/ontology> ;
+    dcterms:title "The Wikibase system ontology"@en ;
+    dcat:distribution ohsdist:wikibase-ontology .
+
+<https://n4o-rse.github.io/osm-holywells-static/catalog>
+    a dcat:Catalog ;
+    dcterms:conformsTo <http://wikiba.se/ontology> ;
+    dcterms:description "A static, read-only Wikibase of the OpenStreetMap holy wells (place_of_worship=holy_well) in Ireland and Northern Ireland. One item per OSM element, its version history as statements, anchored in CIDOC CRM." ;
+    dcterms:hasPart ohscat:items,
+        ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "OSM holy wells (static Wikibase)" ;
+    dcat:dataset ohscat:export,
+        ohscat:wikibase-ontology ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P1.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Diese Klasse ist eine speziellere Form der Wertklasse."@de,
+        "This class is a more specific form of the value class."@en ;
+    dcterms:identifier "P1" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P1 ;
+    dcterms:title "Unterklasse von"@de,
+        "subclass of"@en ;
+    schema:about ohs:P1 ;
+    dcat:distribution ohsdist:P1-html,
+        ohsdist:P1-json,
+        ohsdist:P1-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P1.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P2.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Diese Entität gehört zur Wertklasse."@de,
+        "This entity is a member of the value class."@en ;
+    dcterms:identifier "P2" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P2 ;
+    dcterms:title "instance of"@en,
+        "ist eine Instanz von"@de ;
+    schema:about ohs:P2 ;
+    dcat:distribution ohsdist:P2-html,
+        ohsdist:P2-json,
+        ohsdist:P2-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P2.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P3.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Diese Eigenschaft ist eine speziellere Form der Wert-Eigenschaft."@de,
+        "This property is a more specific form of the value property."@en ;
+    dcterms:identifier "P3" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P3 ;
+    dcterms:title "Untereigenschaft von"@de,
+        "subproperty of"@en ;
+    schema:about ohs:P3 ;
+    dcat:distribution ohsdist:P3-html,
+        ohsdist:P3-json,
+        ohsdist:P3-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P3.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P4.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Das Wikidata-Item oder die Wikidata-Property, die dieser Entität entspricht (zum Beispiel Q7397 oder P275)."@de,
+        "The Wikidata item or property that corresponds to this entity (for example Q7397 or P275)."@en ;
+    dcterms:identifier "P4" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P4 ;
+    dcterms:title "Wikidata equivalent"@en,
+        "Wikidata-Entsprechung"@de ;
+    schema:about ohs:P4 ;
+    dcat:distribution ohsdist:P4-html,
+        ohsdist:P4-json,
+        ohsdist:P4-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P4.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P5.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "URL pattern of an identifier property; $1 stands for the identifier."@en,
+        "URL-Muster einer Identifikator-Eigenschaft; $1 steht für den Identifikator."@de ;
+    dcterms:identifier "P5" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P5 ;
+    dcterms:title "URL-Muster"@de,
+        "formatter URL"@en ;
+    schema:about ohs:P5 ;
+    dcat:distribution ohsdist:P5-html,
+        ohsdist:P5-json,
+        ohsdist:P5-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P5.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P6.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Web page that documents a statement."@en,
+        "Webseite, die eine Aussage belegt."@de ;
+    dcterms:identifier "P6" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P6 ;
+    dcterms:title "Beleg-URL"@de,
+        "reference URL"@en ;
+    schema:about ohs:P6 ;
+    dcat:distribution ohsdist:P6-html,
+        ohsdist:P6-json,
+        ohsdist:P6-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P6.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P7.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Date on which the source of a statement was read."@en,
+        "Datum, an dem die Quelle einer Aussage gelesen wurde."@de ;
+    dcterms:identifier "P7" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P7 ;
+    dcterms:title "abgerufen am"@de,
+        "retrieved"@en ;
+    schema:about ohs:P7 ;
+    dcat:distribution ohsdist:P7-html,
+        ohsdist:P7-json,
+        ohsdist:P7-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P7.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P8.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Item that names the source of a statement."@en,
+        "Item, das die Quelle einer Aussage nennt."@de ;
+    dcterms:identifier "P8" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P8 ;
+    dcterms:title "angegeben in"@de,
+        "stated in"@en ;
+    schema:about ohs:P8 ;
+    dcat:distribution ohsdist:P8-html,
+        ohsdist:P8-json,
+        ohsdist:P8-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P8.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P9.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Class the subject of a property's statements should belong to."@en,
+        "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."@de ;
+    dcterms:identifier "P9" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P9 ;
+    dcterms:title "Definitionsbereich"@de,
+        "domain"@en ;
+    schema:about ohs:P9 ;
+    dcat:distribution ohsdist:P9-html,
+        ohsdist:P9-json,
+        ohsdist:P9-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P9.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P10.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Class the values of a property should belong to."@en,
+        "Klasse, zu der die Werte einer Eigenschaft gehören sollen."@de ;
+    dcterms:identifier "P10" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P10 ;
+    dcterms:title "Wertebereich"@de,
+        "range"@en ;
+    schema:about ohs:P10 ;
+    dcat:distribution ohsdist:P10-html,
+        ohsdist:P10-json,
+        ohsdist:P10-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P10.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P100.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Das OpenStreetMap-Element (Node, Way oder Relation), das dieses Item beschreibt; die URL nennt Typ und ID."@de,
+        "The OpenStreetMap element (node, way or relation) this item describes; the URL names its type and ID."@en ;
+    dcterms:identifier "P100" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P100 ;
+    dcterms:title "OSM element"@en,
+        "OSM-Element"@de ;
+    schema:about ohs:P100 ;
+    dcat:distribution ohsdist:P100-html,
+        ohsdist:P100-json,
+        ohsdist:P100-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P100.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P101.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version."@de,
+        "One version of the OSM element, as the URL of that version; one statement per version."@en ;
+    dcterms:identifier "P101" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P101 ;
+    dcterms:title "OSM version"@en,
+        "OSM-Version"@de ;
+    schema:about ohs:P101 ;
+    dcat:distribution ohsdist:P101-html,
+        ohsdist:P101-json,
+        ohsdist:P101-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P101.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P102.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Number of an OSM version (qualifier)."@en,
+        "Nummer einer OSM-Version (Qualifier)."@de ;
+    dcterms:identifier "P102" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P102 ;
+    dcterms:title "OSM version number"@en,
+        "OSM-Versionsnummer"@de ;
+    schema:about ohs:P102 ;
+    dcat:distribution ohsdist:P102-html,
+        ohsdist:P102-json,
+        ohsdist:P102-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P102.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P103.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Time at which an OSM version was saved, ISO 8601 in UTC to the second, as text (qualifier); the package has no time-of-day value yet."@en,
+        "Zeitpunkt, an dem eine OSM-Version gespeichert wurde, ISO 8601 in UTC, sekundengenau, als Text (Qualifier); das Paket kennt noch keinen Zeitwert mit Uhrzeit."@de ;
+    dcterms:identifier "P103" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P103 ;
+    dcterms:title "OSM timestamp"@en,
+        "OSM-Zeitstempel"@de ;
+    schema:about ohs:P103 ;
+    dcat:distribution ohsdist:P103-html,
+        ohsdist:P103-json,
+        ohsdist:P103-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P103.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P104.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Das OSM-Changeset, in dem eine Version entstand (Qualifier); der Link führt zu seiner Seite bei OpenStreetMap."@de,
+        "The OSM changeset in which a version was made (qualifier); the link leads to its page at OpenStreetMap."@en ;
+    dcterms:identifier "P104" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P104 ;
+    dcterms:title "OSM changeset"@en,
+        "OSM-Changeset"@de ;
+    schema:about ohs:P104 ;
+    dcat:distribution ohsdist:P104-html,
+        ohsdist:P104-json,
+        ohsdist:P104-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P104.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P105.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Name des OSM-Benutzers, der eine Version angelegt hat (Qualifier), so wie er beim Lesen der Daten lautete."@de,
+        "Name of the OSM user who made a version (qualifier), as it was when the data were read."@en ;
+    dcterms:identifier "P105" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P105 ;
+    dcterms:title "OSM user name"@en,
+        "OSM-Benutzername"@de ;
+    schema:about ohs:P105 ;
+    dcat:distribution ohsdist:P105-html,
+        ohsdist:P105-json,
+        ohsdist:P105-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P105.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P106.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Numeric ID (uid) of the OSM user who made a version (qualifier); stays the same when the user name changes."@en,
+        "Numerische ID (uid) des OSM-Benutzers, der eine Version angelegt hat (Qualifier); bleibt gleich, wenn sich der Name ändert."@de ;
+    dcterms:identifier "P106" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P106 ;
+    dcterms:title "OSM user ID"@en,
+        "OSM-Benutzer-ID"@de ;
+    schema:about ohs:P106 ;
+    dcat:distribution ohsdist:P106-html,
+        ohsdist:P106-json,
+        ohsdist:P106-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P106.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P107.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Die Version des OSM-Elements, ab der es die Auswahl dieser Seite (die Tag-Bedingungen der Abfrage) erfüllt, als URL dieser Version."@de,
+        "The version of the OSM element from which it meets the selection of this site (the tag conditions of the query), as the URL of that version."@en ;
+    dcterms:identifier "P107" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P107 ;
+    dcterms:title "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    schema:about ohs:P107 ;
+    dcat:distribution ohsdist:P107-html,
+        ohsdist:P107-json,
+        ohsdist:P107-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P107.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P108.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Die letzte Version des OSM-Elements, die die Auswahl noch erfüllt, als URL dieser Version (Qualifier von „in der Auswahl seit“); fehlt, solange sie erfüllt ist."@de,
+        "The last version of the OSM element that still meets the selection, as the URL of that version (qualifier of \"in selection since\"); absent while it still does."@en ;
+    dcterms:identifier "P108" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P108 ;
+    dcterms:title "in der Auswahl bis"@de,
+        "in selection until"@en ;
+    schema:about ohs:P108 ;
+    dcat:distribution ohsdist:P108-html,
+        ohsdist:P108-json,
+        ohsdist:P108-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P108.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P109.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Name der Auswahl (Export-Typ, holywells), auf die sich ein Statement „in der Auswahl seit“ bezieht (Qualifier)."@de,
+        "Name of the selection (export type, holywells) a statement \"in selection since\" refers to (qualifier)."@en ;
+    dcterms:identifier "P109" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P109 ;
+    dcterms:title "Auswahl"@de,
+        "selection"@en ;
+    schema:about ohs:P109 ;
+    dcat:distribution ohsdist:P109-html,
+        ohsdist:P109-json,
+        ohsdist:P109-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P109.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P110.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Aktuelle Position des Elements; bei einem Way oder einer Relation der Mittelpunkt seiner Geometrie."@de,
+        "Current position of the element; for a way or relation the centre of its geometry."@en ;
+    dcterms:identifier "P110" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P110 ;
+    dcterms:title "Koordinate"@de,
+        "coordinate location"@en ;
+    schema:about ohs:P110 ;
+    dcat:distribution ohsdist:P110-html,
+        ohsdist:P110-json,
+        ohsdist:P110-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P110.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P111.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Geometrie des Elements als WKT (Länge Breite, WGS 84), ein Statement je Änderung; Qualifier: OSM-Version und OSM-Zeitstempel."@de,
+        "Geometry of the element as WKT (longitude latitude, WGS 84), one statement per change; qualifiers: OSM version and OSM timestamp."@en ;
+    dcterms:identifier "P111" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P111 ;
+    dcterms:title "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    schema:about ohs:P111 ;
+    dcat:distribution ohsdist:P111-html,
+        ohsdist:P111-json,
+        ohsdist:P111-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P111.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P112.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Bild des Elements auf Wikimedia Commons (aus dem OSM-Tag wikimedia_commons)."@de,
+        "Image of the element on Wikimedia Commons (from the OSM tag wikimedia_commons)."@en ;
+    dcterms:identifier "P112" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P112 ;
+    dcterms:title "Bild"@de,
+        "image"@en ;
+    schema:about ohs:P112 ;
+    dcat:distribution ohsdist:P112-html,
+        ohsdist:P112-json,
+        ohsdist:P112-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P112.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/P113.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "A tag of the current version of the OSM element, written key=value."@en,
+        "Ein Tag der aktuellen Version des OSM-Elements, geschrieben als key=value."@de ;
+    dcterms:identifier "P113" ;
+    dcterms:isPartOf ohscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:P113 ;
+    dcterms:title "OSM tag"@en,
+        "OSM-Tag"@de ;
+    schema:about ohs:P113 ;
+    dcat:distribution ohsdist:P113-html,
+        ohsdist:P113-json,
+        ohsdist:P113-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/P113.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q1.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "A set of things of the same kind; the type of every class."@en,
+        "Eine Menge gleichartiger Dinge; der Typ jeder Klasse."@de ;
+    dcterms:identifier "Q1" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q1 ;
+    dcterms:title "Class"@en,
+        "Klasse"@de ;
+    schema:about ohs:Q1 ;
+    dcat:distribution ohsdist:Q1-html,
+        ohsdist:Q1-json,
+        ohsdist:Q1-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q1.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q2.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "A relation or attribute that links an entity to a value; the type of every property."@en,
+        "Eine Beziehung oder ein Merkmal, das eine Entität mit einem Wert verbindet; der Typ jeder Eigenschaft."@de ;
+    dcterms:identifier "Q2" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q2 ;
+    dcterms:title "Eigenschaft"@de,
+        "Property"@en ;
+    schema:about ohs:Q2 ;
+    dcat:distribution ohsdist:Q2-html,
+        ohsdist:Q2-json,
+        ohsdist:Q2-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q2.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q3.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Die Wurzel des Klassenbaums: alles hier Beschriebene ist eine Instanz davon."@de,
+        "The root of the class tree: everything described here is an instance of it."@en ;
+    dcterms:identifier "Q3" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q3 ;
+    dcterms:title "Instance"@en,
+        "Instanz"@de ;
+    schema:about ohs:Q3 ;
+    dcat:distribution ohsdist:Q3-html,
+        ohsdist:Q3-json,
+        ohsdist:Q3-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q3.html> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q100.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "A spring or well of religious or folk-religious significance that is mapped as one element in OpenStreetMap (place_of_worship=holy_well)."@en,
+        "Eine Quelle oder ein Brunnen von religiöser oder volksfrommer Bedeutung, die in OpenStreetMap als ein Element kartiert ist (place_of_worship=holy_well)."@de ;
+    dcterms:identifier "Q100" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q100 ;
+    dcterms:title "Heilige Quelle"@de,
+        "Holy well"@en ;
+    schema:about ohs:Q100 ;
+    dcat:distribution ohsdist:Q100-html,
+        ohsdist:Q100-json,
+        ohsdist:Q100-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q100.html> .
+
+ohsdist:P1-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P1, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P1.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P1-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P1, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2352"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P1.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P1-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P1, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P1.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P2-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P2, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P2.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P2-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P2, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2329"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P2.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P2-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P2, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P2.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P3-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P3, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P3.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P3-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P3, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2382"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P3.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P3-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P3, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P3.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P4-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P4, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P4.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P4-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P4, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1507"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P4.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P4-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P4, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P4.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P5-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P5, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P5.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P5-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P5, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1892"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P5.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P5-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P5, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P5.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P6-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P6, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P6.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P6-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P6, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1328"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P6.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P6-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P6, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P6.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P7-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P7, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P7.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P7-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P7, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1360"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P7.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P7-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P7, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P7.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P8-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P8, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P8.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P8-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P8, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1350"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P8.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P8-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P8, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P8.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P9-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P9, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P9.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P9-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P9, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2006"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P9.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P9-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P9, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P9.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P10-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P10, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P10.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P10-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P10, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1976"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P10.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P10-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P10, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P10.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P100-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P100, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P100.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P100-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P100, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1590"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P100.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P100-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P100, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P100.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P101-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P101, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P101.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P101-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P101, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1548"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P101.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P101-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P101, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P101.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P102-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P102, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P102.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P102-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P102, as archived from the Wikibase API"@en ;
+    dcat:byteSize "985"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P102.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P102-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P102, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P102.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P103-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P103, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P103.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P103-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P103, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1191"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P103.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P103-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P103, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P103.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P104-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P104, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P104.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P104-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P104, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1523"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P104.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P104-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P104, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P104.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P105-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P105, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P105.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P105-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P105, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1095"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P105.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P105-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P105, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P105.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P106-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P106, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P106.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P106-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P106, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1135"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P106.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P106-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P106, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P106.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P107-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P107, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P107.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P107-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P107, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1670"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P107.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P107-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P107, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P107.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P108-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P108, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P108.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P108-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P108, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1233"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P108.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P108-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P108, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P108.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P109-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P109, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P109.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P109-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P109, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1108"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P109.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P109-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P109, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P109.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P110-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P110, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P110.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P110-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P110, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1956"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P110.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P110-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P110, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P110.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P111-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P111, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P111.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P111-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P111, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1653"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P111.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P111-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P111, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P111.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P112-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P112, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P112.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P112-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P112, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1905"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P112.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P112-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P112, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P112.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:P113-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P113, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/P113.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:P113-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P113, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1519"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/P113.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:P113-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P113, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:P113.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:Q1-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q1, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q1.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q1-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q1, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1467"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q1.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q1-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q1, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q1.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:Q2-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q2, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q2.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q2-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q2, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1551"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q2.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q2-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q2, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q2.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:Q3-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q3, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q3.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q3-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q3, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1026"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q3.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q3-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q3, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q3.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:Q100-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q100, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q100.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q100-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q100, as archived from the Wikibase API"@en ;
+    dcat:byteSize "1664"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q100.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q100-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q100, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q100.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:export
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Complete RDF export"@en ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/downloads/n4o-rse.github.io-osm-holywells-static.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohsdist:wikibase-ontology
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "The Wikibase system ontology"@en ;
+    dcat:byteSize "11336"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/downloads/wikibase-ontology.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q1
+    a wikibase:Item ;
+    schema:description "A set of things of the same kind; the type of every class."@en,
+        "Eine Menge gleichartiger Dinge; der Typ jeder Klasse."@de ;
+    schema:name "Class"@en,
+        "Klasse"@de ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Class"@en,
+        "Klasse"@de ;
+    skos:prefLabel "Class"@en,
+        "Klasse"@de ;
+    ohsp:P1 ohss:Q1-CF9741BD-D637-5B3B-9FA9-19338518A331 ;
+    ohsp:P2 ohss:Q1-9ACB35EA-3925-5F5E-809E-54E5BF980A0D ;
+    ohst:P1 ohs:Q3 ;
+    ohst:P2 ohs:Q1 .
+
+ohs:Q2
+    a wikibase:Item ;
+    schema:description "A relation or attribute that links an entity to a value; the type of every property."@en,
+        "Eine Beziehung oder ein Merkmal, das eine Entität mit einem Wert verbindet; der Typ jeder Eigenschaft."@de ;
+    schema:name "Eigenschaft"@de,
+        "Property"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Eigenschaft"@de,
+        "Property"@en ;
+    skos:prefLabel "Eigenschaft"@de,
+        "Property"@en ;
+    ohsp:P1 ohss:Q2-38B00B04-7AE0-5305-ABC8-5D9C93DAB27F ;
+    ohsp:P2 ohss:Q2-659ACDB9-D84C-57B8-886A-D7F834392574 ;
+    ohst:P1 ohs:Q3 ;
+    ohst:P2 ohs:Q1 .
+
+ohs:Q3
+    a wikibase:Item ;
+    schema:description "Die Wurzel des Klassenbaums: alles hier Beschriebene ist eine Instanz davon."@de,
+        "The root of the class tree: everything described here is an instance of it."@en ;
+    schema:name "Instance"@en,
+        "Instanz"@de ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Instance"@en,
+        "Instanz"@de ;
+    skos:prefLabel "Instance"@en,
+        "Instanz"@de ;
+    ohsp:P2 ohss:Q3-E4F5BF9E-72C5-5790-9C06-8A10895F836D ;
+    ohst:P2 ohs:Q1 .
+
+ohs:Q100
+    a wikibase:Item ;
+    schema:description "A spring or well of religious or folk-religious significance that is mapped as one element in OpenStreetMap (place_of_worship=holy_well)."@en,
+        "Eine Quelle oder ein Brunnen von religiöser oder volksfrommer Bedeutung, die in OpenStreetMap als ein Element kartiert ist (place_of_worship=holy_well)."@de ;
+    schema:name "Heilige Quelle"@de,
+        "Holy well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Heilige Quelle"@de,
+        "Holy well"@en ;
+    skos:prefLabel "Heilige Quelle"@de,
+        "Holy well"@en ;
+    ohsp:P1 ohss:Q100-10CDBD61-45C5-55DD-B59D-88C09A34EC35 ;
+    ohsp:P2 ohss:Q100-F155147F-4537-51F3-A333-E1CCF86F4CD1 ;
+    ohst:P1 ohs:Q3 ;
+    ohst:P2 ohs:Q1 .
+
+ohs:P1
+    a wikibase:Property ;
+    schema:description "Diese Klasse ist eine speziellere Form der Wertklasse."@de,
+        "This class is a more specific form of the value class."@en ;
+    schema:name "Unterklasse von"@de,
+        "subclass of"@en ;
+    wikibase:claim ohsp:P1 ;
+    wikibase:directClaim ohst:P1 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P1 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier ohspq:P1 ;
+    wikibase:qualifierValue ohspqv:P1 ;
+    wikibase:reference ohspr:P1 ;
+    wikibase:referenceValue ohsprv:P1 ;
+    wikibase:statementProperty ohsps:P1 ;
+    wikibase:statementValue ohspsv:P1 ;
+    wikibase:statements "4"^^xsd:integer ;
+    rdfs:label "Unterklasse von"@de,
+        "subclass of"@en ;
+    skos:prefLabel "Unterklasse von"@de,
+        "subclass of"@en ;
+    ohsp:P2 ohss:P1-500A0FE6-2FAB-5683-9C2F-F042DEDEF63B ;
+    ohsp:P4 ohss:P1-29FBE991-E2CE-5588-B826-64C4F2D04BA8 ;
+    ohsp:P9 ohss:P1-BC31CB18-B260-507D-AB14-1437D8F4C5D2 ;
+    ohsp:P10 ohss:P1-084F6C46-FDC7-59BA-A28D-5F3A2C4EC5A5 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P279" ;
+    ohst:P9 ohs:Q1 ;
+    ohst:P10 ohs:Q1 .
+
+ohs:P2
+    a wikibase:Property ;
+    schema:description "Diese Entität gehört zur Wertklasse."@de,
+        "This entity is a member of the value class."@en ;
+    schema:name "instance of"@en,
+        "ist eine Instanz von"@de ;
+    wikibase:claim ohsp:P2 ;
+    wikibase:directClaim ohst:P2 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P2 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier ohspq:P2 ;
+    wikibase:qualifierValue ohspqv:P2 ;
+    wikibase:reference ohspr:P2 ;
+    wikibase:referenceValue ohsprv:P2 ;
+    wikibase:statementProperty ohsps:P2 ;
+    wikibase:statementValue ohspsv:P2 ;
+    wikibase:statements "4"^^xsd:integer ;
+    rdfs:label "instance of"@en,
+        "ist eine Instanz von"@de ;
+    skos:prefLabel "instance of"@en,
+        "ist eine Instanz von"@de ;
+    ohsp:P2 ohss:P2-37EFF9F6-5CD4-581A-982B-F87FB002A2EA ;
+    ohsp:P4 ohss:P2-22F7CA32-B566-5542-87E4-64CA675195C7 ;
+    ohsp:P9 ohss:P2-2A59E3AC-B228-5575-903D-E4329F3F8822 ;
+    ohsp:P10 ohss:P2-7EBADB34-F83B-5D80-B6BA-34EA5125622E ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P31" ;
+    ohst:P9 ohs:Q3 ;
+    ohst:P10 ohs:Q1 .
+
+ohs:P3
+    a wikibase:Property ;
+    schema:description "Diese Eigenschaft ist eine speziellere Form der Wert-Eigenschaft."@de,
+        "This property is a more specific form of the value property."@en ;
+    schema:name "Untereigenschaft von"@de,
+        "subproperty of"@en ;
+    wikibase:claim ohsp:P3 ;
+    wikibase:directClaim ohst:P3 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P3 ;
+    wikibase:propertyType wikibase:WikibaseProperty ;
+    wikibase:qualifier ohspq:P3 ;
+    wikibase:qualifierValue ohspqv:P3 ;
+    wikibase:reference ohspr:P3 ;
+    wikibase:referenceValue ohsprv:P3 ;
+    wikibase:statementProperty ohsps:P3 ;
+    wikibase:statementValue ohspsv:P3 ;
+    wikibase:statements "4"^^xsd:integer ;
+    rdfs:label "Untereigenschaft von"@de,
+        "subproperty of"@en ;
+    skos:prefLabel "Untereigenschaft von"@de,
+        "subproperty of"@en ;
+    ohsp:P2 ohss:P3-5A6138E4-484C-5C51-8C29-C6A557C6A3D7 ;
+    ohsp:P4 ohss:P3-949CEE44-14A7-5DF1-9795-9B6B81325FCB ;
+    ohsp:P9 ohss:P3-889E44D1-E86B-526C-A5D5-55A22F6B73B6 ;
+    ohsp:P10 ohss:P3-4E5583BF-13C9-5114-B952-B18FB12B49E0 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P1647" ;
+    ohst:P9 ohs:Q2 ;
+    ohst:P10 ohs:Q2 .
+
+ohs:P4
+    a wikibase:Property ;
+    schema:description "Das Wikidata-Item oder die Wikidata-Property, die dieser Entität entspricht (zum Beispiel Q7397 oder P275)."@de,
+        "The Wikidata item or property that corresponds to this entity (for example Q7397 or P275)."@en ;
+    schema:name "Wikidata equivalent"@en,
+        "Wikidata-Entsprechung"@de ;
+    wikibase:claim ohsp:P4 ;
+    wikibase:directClaim ohst:P4 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P4 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier ohspq:P4 ;
+    wikibase:qualifierValue ohspqv:P4 ;
+    wikibase:reference ohspr:P4 ;
+    wikibase:referenceValue ohsprv:P4 ;
+    wikibase:statementProperty ohsps:P4 ;
+    wikibase:statementValue ohspsv:P4 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Wikidata equivalent"@en,
+        "Wikidata-Entsprechung"@de ;
+    skos:prefLabel "Wikidata equivalent"@en,
+        "Wikidata-Entsprechung"@de ;
+    ohsp:P2 ohss:P4-F93919BD-8A3D-51C7-8D85-DA5BE9C1B324 ;
+    ohsp:P5 ohss:P4-F6EE7DF8-7D04-56CB-A940-F28338F242E4 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P5 "https://www.wikidata.org/entity/$1" .
+
+ohs:P5
+    a wikibase:Property ;
+    schema:description "URL pattern of an identifier property; $1 stands for the identifier."@en,
+        "URL-Muster einer Identifikator-Eigenschaft; $1 steht für den Identifikator."@de ;
+    schema:name "URL-Muster"@de,
+        "formatter URL"@en ;
+    wikibase:claim ohsp:P5 ;
+    wikibase:directClaim ohst:P5 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P5 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P5 ;
+    wikibase:qualifierValue ohspqv:P5 ;
+    wikibase:reference ohspr:P5 ;
+    wikibase:referenceValue ohsprv:P5 ;
+    wikibase:statementProperty ohsps:P5 ;
+    wikibase:statementValue ohspsv:P5 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "URL-Muster"@de,
+        "formatter URL"@en ;
+    skos:prefLabel "URL-Muster"@de,
+        "formatter URL"@en ;
+    ohsp:P2 ohss:P5-0B9AB20B-F952-5FA1-AD11-7807F348604B ;
+    ohsp:P4 ohss:P5-C2BF4765-F99B-55B8-A84E-327DD23A8FCD ;
+    ohsp:P9 ohss:P5-130648A0-38D8-593D-86A6-99D01964B07D ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P1630" ;
+    ohst:P9 ohs:Q2 .
+
+ohs:P6
+    a wikibase:Property ;
+    schema:description "Web page that documents a statement."@en,
+        "Webseite, die eine Aussage belegt."@de ;
+    schema:name "Beleg-URL"@de,
+        "reference URL"@en ;
+    wikibase:claim ohsp:P6 ;
+    wikibase:directClaim ohst:P6 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P6 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier ohspq:P6 ;
+    wikibase:qualifierValue ohspqv:P6 ;
+    wikibase:reference ohspr:P6 ;
+    wikibase:referenceValue ohsprv:P6 ;
+    wikibase:statementProperty ohsps:P6 ;
+    wikibase:statementValue ohspsv:P6 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Beleg-URL"@de,
+        "reference URL"@en ;
+    skos:prefLabel "Beleg-URL"@de,
+        "reference URL"@en ;
+    ohsp:P2 ohss:P6-3C20F21B-0636-56BE-8379-8BC3A3754B3A ;
+    ohsp:P4 ohss:P6-DF4BA3D1-DAF4-53A6-BC3B-401BD6A7521B ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P854" .
+
+ohs:P7
+    a wikibase:Property ;
+    schema:description "Date on which the source of a statement was read."@en,
+        "Datum, an dem die Quelle einer Aussage gelesen wurde."@de ;
+    schema:name "abgerufen am"@de,
+        "retrieved"@en ;
+    wikibase:claim ohsp:P7 ;
+    wikibase:directClaim ohst:P7 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P7 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier ohspq:P7 ;
+    wikibase:qualifierValue ohspqv:P7 ;
+    wikibase:reference ohspr:P7 ;
+    wikibase:referenceValue ohsprv:P7 ;
+    wikibase:statementProperty ohsps:P7 ;
+    wikibase:statementValue ohspsv:P7 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "abgerufen am"@de,
+        "retrieved"@en ;
+    skos:prefLabel "abgerufen am"@de,
+        "retrieved"@en ;
+    ohsp:P2 ohss:P7-7EE0023B-0F36-51BA-934F-1E9EF4F88AB3 ;
+    ohsp:P4 ohss:P7-A330197E-B18D-55D7-ADC3-B39B26DC44A6 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P813" .
+
+ohs:P8
+    a wikibase:Property ;
+    schema:description "Item that names the source of a statement."@en,
+        "Item, das die Quelle einer Aussage nennt."@de ;
+    schema:name "angegeben in"@de,
+        "stated in"@en ;
+    wikibase:claim ohsp:P8 ;
+    wikibase:directClaim ohst:P8 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P8 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier ohspq:P8 ;
+    wikibase:qualifierValue ohspqv:P8 ;
+    wikibase:reference ohspr:P8 ;
+    wikibase:referenceValue ohsprv:P8 ;
+    wikibase:statementProperty ohsps:P8 ;
+    wikibase:statementValue ohspsv:P8 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "angegeben in"@de,
+        "stated in"@en ;
+    skos:prefLabel "angegeben in"@de,
+        "stated in"@en ;
+    ohsp:P2 ohss:P8-DF9BA190-66AF-5156-BBDE-1B375877C198 ;
+    ohsp:P4 ohss:P8-EB63020E-7195-5120-AE26-94CCE51420FA ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P248" .
+
+ohs:P9
+    a wikibase:Property ;
+    schema:description "Class the subject of a property's statements should belong to."@en,
+        "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."@de ;
+    schema:name "Definitionsbereich"@de,
+        "domain"@en ;
+    wikibase:claim ohsp:P9 ;
+    wikibase:directClaim ohst:P9 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P9 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier ohspq:P9 ;
+    wikibase:qualifierValue ohspqv:P9 ;
+    wikibase:reference ohspr:P9 ;
+    wikibase:referenceValue ohsprv:P9 ;
+    wikibase:statementProperty ohsps:P9 ;
+    wikibase:statementValue ohspsv:P9 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Definitionsbereich"@de,
+        "domain"@en ;
+    skos:prefLabel "Definitionsbereich"@de,
+        "domain"@en ;
+    ohsp:P2 ohss:P9-34DB929C-2EA5-5480-A0B6-B4161F6FB2E4 ;
+    ohsp:P9 ohss:P9-008F1E36-EA34-51F1-BEE0-819AC0139C48 ;
+    ohsp:P10 ohss:P9-D88CD03F-C43C-563B-8004-9809D908B44C ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q2 ;
+    ohst:P10 ohs:Q1 .
+
+ohs:P10
+    a wikibase:Property ;
+    schema:description "Class the values of a property should belong to."@en,
+        "Klasse, zu der die Werte einer Eigenschaft gehören sollen."@de ;
+    schema:name "Wertebereich"@de,
+        "range"@en ;
+    wikibase:claim ohsp:P10 ;
+    wikibase:directClaim ohst:P10 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P10 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier ohspq:P10 ;
+    wikibase:qualifierValue ohspqv:P10 ;
+    wikibase:reference ohspr:P10 ;
+    wikibase:referenceValue ohsprv:P10 ;
+    wikibase:statementProperty ohsps:P10 ;
+    wikibase:statementValue ohspsv:P10 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Wertebereich"@de,
+        "range"@en ;
+    skos:prefLabel "Wertebereich"@de,
+        "range"@en ;
+    ohsp:P2 ohss:P10-2A574857-AF1E-5D3C-AE03-D46045BEFADC ;
+    ohsp:P9 ohss:P10-35C5149D-E9B6-586E-A086-0C48E7C2E9B3 ;
+    ohsp:P10 ohss:P10-EE31B503-1B48-524C-8953-0D5C9285BA37 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q2 ;
+    ohst:P10 ohs:Q1 .
+
+ohs:P100
+    a wikibase:Property ;
+    schema:description "Das OpenStreetMap-Element (Node, Way oder Relation), das dieses Item beschreibt; die URL nennt Typ und ID."@de,
+        "The OpenStreetMap element (node, way or relation) this item describes; the URL names its type and ID."@en ;
+    schema:name "OSM element"@en,
+        "OSM-Element"@de ;
+    wikibase:claim ohsp:P100 ;
+    wikibase:directClaim ohst:P100 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P100 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier ohspq:P100 ;
+    wikibase:qualifierValue ohspqv:P100 ;
+    wikibase:reference ohspr:P100 ;
+    wikibase:referenceValue ohsprv:P100 ;
+    wikibase:statementProperty ohsps:P100 ;
+    wikibase:statementValue ohspsv:P100 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "OSM element"@en,
+        "OSM-Element"@de ;
+    skos:prefLabel "OSM element"@en,
+        "OSM-Element"@de ;
+    ohsp:P2 ohss:P100-63E5F187-3A78-5437-B81F-2F9C9AD74469 ;
+    ohsp:P9 ohss:P100-243EBCEC-01B6-527C-9FCD-B5D2A7900C3A ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q100 .
+
+ohs:P101
+    a wikibase:Property ;
+    schema:description "Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version."@de,
+        "One version of the OSM element, as the URL of that version; one statement per version."@en ;
+    schema:name "OSM version"@en,
+        "OSM-Version"@de ;
+    wikibase:claim ohsp:P101 ;
+    wikibase:directClaim ohst:P101 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P101 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier ohspq:P101 ;
+    wikibase:qualifierValue ohspqv:P101 ;
+    wikibase:reference ohspr:P101 ;
+    wikibase:referenceValue ohsprv:P101 ;
+    wikibase:statementProperty ohsps:P101 ;
+    wikibase:statementValue ohspsv:P101 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "OSM version"@en,
+        "OSM-Version"@de ;
+    skos:prefLabel "OSM version"@en,
+        "OSM-Version"@de ;
+    ohsp:P2 ohss:P101-71864FD3-EB13-5D18-A24F-09AA2B16DC5B ;
+    ohsp:P9 ohss:P101-9CDC5013-20C7-5658-9E46-B095770C178F ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q100 .
+
+ohs:P102
+    a wikibase:Property ;
+    schema:description "Number of an OSM version (qualifier)."@en,
+        "Nummer einer OSM-Version (Qualifier)."@de ;
+    schema:name "OSM version number"@en,
+        "OSM-Versionsnummer"@de ;
+    wikibase:claim ohsp:P102 ;
+    wikibase:directClaim ohst:P102 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P102 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier ohspq:P102 ;
+    wikibase:qualifierValue ohspqv:P102 ;
+    wikibase:reference ohspr:P102 ;
+    wikibase:referenceValue ohsprv:P102 ;
+    wikibase:statementProperty ohsps:P102 ;
+    wikibase:statementValue ohspsv:P102 ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "OSM version number"@en,
+        "OSM-Versionsnummer"@de ;
+    skos:prefLabel "OSM version number"@en,
+        "OSM-Versionsnummer"@de ;
+    ohsp:P2 ohss:P102-B1AEEB7E-2A32-57CE-AF1E-BDCED96B2C79 ;
+    ohst:P2 ohs:Q2 .
+
+ohs:P103
+    a wikibase:Property ;
+    schema:description "Time at which an OSM version was saved, ISO 8601 in UTC to the second, as text (qualifier); the package has no time-of-day value yet."@en,
+        "Zeitpunkt, an dem eine OSM-Version gespeichert wurde, ISO 8601 in UTC, sekundengenau, als Text (Qualifier); das Paket kennt noch keinen Zeitwert mit Uhrzeit."@de ;
+    schema:name "OSM timestamp"@en,
+        "OSM-Zeitstempel"@de ;
+    wikibase:claim ohsp:P103 ;
+    wikibase:directClaim ohst:P103 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P103 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P103 ;
+    wikibase:qualifierValue ohspqv:P103 ;
+    wikibase:reference ohspr:P103 ;
+    wikibase:referenceValue ohsprv:P103 ;
+    wikibase:statementProperty ohsps:P103 ;
+    wikibase:statementValue ohspsv:P103 ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "OSM timestamp"@en,
+        "OSM-Zeitstempel"@de ;
+    skos:prefLabel "OSM timestamp"@en,
+        "OSM-Zeitstempel"@de ;
+    ohsp:P2 ohss:P103-37BCC465-5966-584B-AEAF-3AD2317783AB ;
+    ohst:P2 ohs:Q2 .
+
+ohs:P104
+    a wikibase:Property ;
+    schema:description "Das OSM-Changeset, in dem eine Version entstand (Qualifier); der Link führt zu seiner Seite bei OpenStreetMap."@de,
+        "The OSM changeset in which a version was made (qualifier); the link leads to its page at OpenStreetMap."@en ;
+    schema:name "OSM changeset"@en,
+        "OSM-Changeset"@de ;
+    wikibase:claim ohsp:P104 ;
+    wikibase:directClaim ohst:P104 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P104 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier ohspq:P104 ;
+    wikibase:qualifierValue ohspqv:P104 ;
+    wikibase:reference ohspr:P104 ;
+    wikibase:referenceValue ohsprv:P104 ;
+    wikibase:statementProperty ohsps:P104 ;
+    wikibase:statementValue ohspsv:P104 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "OSM changeset"@en,
+        "OSM-Changeset"@de ;
+    skos:prefLabel "OSM changeset"@en,
+        "OSM-Changeset"@de ;
+    ohsp:P2 ohss:P104-B15D88C7-254D-5063-8A2B-8E0D4B57B7CB ;
+    ohsp:P5 ohss:P104-EDCB3019-B44E-502B-8501-DB4B3CE64B14 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P5 "https://www.openstreetmap.org/changeset/$1" .
+
+ohs:P105
+    a wikibase:Property ;
+    schema:description "Name des OSM-Benutzers, der eine Version angelegt hat (Qualifier), so wie er beim Lesen der Daten lautete."@de,
+        "Name of the OSM user who made a version (qualifier), as it was when the data were read."@en ;
+    schema:name "OSM user name"@en,
+        "OSM-Benutzername"@de ;
+    wikibase:claim ohsp:P105 ;
+    wikibase:directClaim ohst:P105 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P105 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P105 ;
+    wikibase:qualifierValue ohspqv:P105 ;
+    wikibase:reference ohspr:P105 ;
+    wikibase:referenceValue ohsprv:P105 ;
+    wikibase:statementProperty ohsps:P105 ;
+    wikibase:statementValue ohspsv:P105 ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "OSM user name"@en,
+        "OSM-Benutzername"@de ;
+    skos:prefLabel "OSM user name"@en,
+        "OSM-Benutzername"@de ;
+    ohsp:P2 ohss:P105-312F0E99-EB6A-5B48-9E86-06E23A354731 ;
+    ohst:P2 ohs:Q2 .
+
+ohs:P106
+    a wikibase:Property ;
+    schema:description "Numeric ID (uid) of the OSM user who made a version (qualifier); stays the same when the user name changes."@en,
+        "Numerische ID (uid) des OSM-Benutzers, der eine Version angelegt hat (Qualifier); bleibt gleich, wenn sich der Name ändert."@de ;
+    schema:name "OSM user ID"@en,
+        "OSM-Benutzer-ID"@de ;
+    wikibase:claim ohsp:P106 ;
+    wikibase:directClaim ohst:P106 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P106 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier ohspq:P106 ;
+    wikibase:qualifierValue ohspqv:P106 ;
+    wikibase:reference ohspr:P106 ;
+    wikibase:referenceValue ohsprv:P106 ;
+    wikibase:statementProperty ohsps:P106 ;
+    wikibase:statementValue ohspsv:P106 ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "OSM user ID"@en,
+        "OSM-Benutzer-ID"@de ;
+    skos:prefLabel "OSM user ID"@en,
+        "OSM-Benutzer-ID"@de ;
+    ohsp:P2 ohss:P106-A5A3C9E7-4596-57A4-BF63-C51A3FEB6241 ;
+    ohst:P2 ohs:Q2 .
+
+ohs:P107
+    a wikibase:Property ;
+    schema:description "Die Version des OSM-Elements, ab der es die Auswahl dieser Seite (die Tag-Bedingungen der Abfrage) erfüllt, als URL dieser Version."@de,
+        "The version of the OSM element from which it meets the selection of this site (the tag conditions of the query), as the URL of that version."@en ;
+    schema:name "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    wikibase:claim ohsp:P107 ;
+    wikibase:directClaim ohst:P107 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P107 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier ohspq:P107 ;
+    wikibase:qualifierValue ohspqv:P107 ;
+    wikibase:reference ohspr:P107 ;
+    wikibase:referenceValue ohsprv:P107 ;
+    wikibase:statementProperty ohsps:P107 ;
+    wikibase:statementValue ohspsv:P107 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    skos:prefLabel "in der Auswahl seit"@de,
+        "in selection since"@en ;
+    ohsp:P2 ohss:P107-E9267077-350E-5303-A947-15B607322E48 ;
+    ohsp:P9 ohss:P107-663D8C62-009C-5659-8129-C453D4203E49 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q100 .
+
+ohs:P108
+    a wikibase:Property ;
+    schema:description "Die letzte Version des OSM-Elements, die die Auswahl noch erfüllt, als URL dieser Version (Qualifier von „in der Auswahl seit“); fehlt, solange sie erfüllt ist."@de,
+        "The last version of the OSM element that still meets the selection, as the URL of that version (qualifier of \"in selection since\"); absent while it still does."@en ;
+    schema:name "in der Auswahl bis"@de,
+        "in selection until"@en ;
+    wikibase:claim ohsp:P108 ;
+    wikibase:directClaim ohst:P108 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P108 ;
+    wikibase:propertyType wikibase:Url ;
+    wikibase:qualifier ohspq:P108 ;
+    wikibase:qualifierValue ohspqv:P108 ;
+    wikibase:reference ohspr:P108 ;
+    wikibase:referenceValue ohsprv:P108 ;
+    wikibase:statementProperty ohsps:P108 ;
+    wikibase:statementValue ohspsv:P108 ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "in der Auswahl bis"@de,
+        "in selection until"@en ;
+    skos:prefLabel "in der Auswahl bis"@de,
+        "in selection until"@en ;
+    ohsp:P2 ohss:P108-CEB56953-624B-550E-A8F5-941BF8EB1259 ;
+    ohst:P2 ohs:Q2 .
+
+ohs:P109
+    a wikibase:Property ;
+    schema:description "Name der Auswahl (Export-Typ, holywells), auf die sich ein Statement „in der Auswahl seit“ bezieht (Qualifier)."@de,
+        "Name of the selection (export type, holywells) a statement \"in selection since\" refers to (qualifier)."@en ;
+    schema:name "Auswahl"@de,
+        "selection"@en ;
+    wikibase:claim ohsp:P109 ;
+    wikibase:directClaim ohst:P109 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P109 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P109 ;
+    wikibase:qualifierValue ohspqv:P109 ;
+    wikibase:reference ohspr:P109 ;
+    wikibase:referenceValue ohsprv:P109 ;
+    wikibase:statementProperty ohsps:P109 ;
+    wikibase:statementValue ohspsv:P109 ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "Auswahl"@de,
+        "selection"@en ;
+    skos:prefLabel "Auswahl"@de,
+        "selection"@en ;
+    ohsp:P2 ohss:P109-EB5851B1-7FE4-53C4-8231-BA3AA42818E3 ;
+    ohst:P2 ohs:Q2 .
+
+ohs:P110
+    a wikibase:Property ;
+    schema:description "Aktuelle Position des Elements; bei einem Way oder einer Relation der Mittelpunkt seiner Geometrie."@de,
+        "Current position of the element; for a way or relation the centre of its geometry."@en ;
+    schema:name "Koordinate"@de,
+        "coordinate location"@en ;
+    wikibase:claim ohsp:P110 ;
+    wikibase:directClaim ohst:P110 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P110 ;
+    wikibase:propertyType wikibase:GlobeCoordinate ;
+    wikibase:qualifier ohspq:P110 ;
+    wikibase:qualifierValue ohspqv:P110 ;
+    wikibase:reference ohspr:P110 ;
+    wikibase:referenceValue ohsprv:P110 ;
+    wikibase:statementProperty ohsps:P110 ;
+    wikibase:statementValue ohspsv:P110 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Koordinate"@de,
+        "coordinate location"@en ;
+    skos:prefLabel "Koordinate"@de,
+        "coordinate location"@en ;
+    ohsp:P2 ohss:P110-FA7A796C-F53D-54AF-8BFC-D90F1E1605C0 ;
+    ohsp:P4 ohss:P110-A282B8D2-F080-50D5-9C45-6612531AAAAB ;
+    ohsp:P9 ohss:P110-814F699F-1938-5493-9285-238676AA48A5 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P625" ;
+    ohst:P9 ohs:Q100 .
+
+ohs:P111
+    a wikibase:Property ;
+    schema:description "Geometrie des Elements als WKT (Länge Breite, WGS 84), ein Statement je Änderung; Qualifier: OSM-Version und OSM-Zeitstempel."@de,
+        "Geometry of the element as WKT (longitude latitude, WGS 84), one statement per change; qualifiers: OSM version and OSM timestamp."@en ;
+    schema:name "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    wikibase:claim ohsp:P111 ;
+    wikibase:directClaim ohst:P111 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P111 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P111 ;
+    wikibase:qualifierValue ohspqv:P111 ;
+    wikibase:reference ohspr:P111 ;
+    wikibase:referenceValue ohsprv:P111 ;
+    wikibase:statementProperty ohsps:P111 ;
+    wikibase:statementValue ohspsv:P111 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    skos:prefLabel "Geometrie-Verlauf"@de,
+        "geometry history"@en ;
+    ohsp:P2 ohss:P111-6CEA4FA8-BC34-5FA6-8E96-09F8B6511F6C ;
+    ohsp:P9 ohss:P111-1D3004E1-4DF2-5533-8909-739172E33E56 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q100 .
+
+ohs:P112
+    a wikibase:Property ;
+    schema:description "Bild des Elements auf Wikimedia Commons (aus dem OSM-Tag wikimedia_commons)."@de,
+        "Image of the element on Wikimedia Commons (from the OSM tag wikimedia_commons)."@en ;
+    schema:name "Bild"@de,
+        "image"@en ;
+    wikibase:claim ohsp:P112 ;
+    wikibase:directClaim ohst:P112 ;
+    wikibase:identifiers "1"^^xsd:integer ;
+    wikibase:novalue ohsno:P112 ;
+    wikibase:propertyType wikibase:CommonsMedia ;
+    wikibase:qualifier ohspq:P112 ;
+    wikibase:qualifierValue ohspqv:P112 ;
+    wikibase:reference ohspr:P112 ;
+    wikibase:referenceValue ohsprv:P112 ;
+    wikibase:statementProperty ohsps:P112 ;
+    wikibase:statementValue ohspsv:P112 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Bild"@de,
+        "image"@en ;
+    skos:prefLabel "Bild"@de,
+        "image"@en ;
+    ohsp:P2 ohss:P112-F20A9C4B-2AC9-5DCA-825E-7278EFD51911 ;
+    ohsp:P4 ohss:P112-92CE1D32-319D-55D7-938F-BF6F4B833C86 ;
+    ohsp:P9 ohss:P112-B4CD3B6B-BA02-5A20-A679-49AEB48A1FF3 ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P4 "P18" ;
+    ohst:P9 ohs:Q100 .
+
+ohs:P113
+    a wikibase:Property ;
+    schema:description "A tag of the current version of the OSM element, written key=value."@en,
+        "Ein Tag der aktuellen Version des OSM-Elements, geschrieben als key=value."@de ;
+    schema:name "OSM tag"@en,
+        "OSM-Tag"@de ;
+    wikibase:claim ohsp:P113 ;
+    wikibase:directClaim ohst:P113 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue ohsno:P113 ;
+    wikibase:propertyType wikibase:String ;
+    wikibase:qualifier ohspq:P113 ;
+    wikibase:qualifierValue ohspqv:P113 ;
+    wikibase:reference ohspr:P113 ;
+    wikibase:referenceValue ohsprv:P113 ;
+    wikibase:statementProperty ohsps:P113 ;
+    wikibase:statementValue ohspsv:P113 ;
+    wikibase:statements "2"^^xsd:integer ;
+    rdfs:label "OSM tag"@en,
+        "OSM-Tag"@de ;
+    skos:prefLabel "OSM tag"@en,
+        "OSM-Tag"@de ;
+    ohsp:P2 ohss:P113-1DD054C7-B057-5A14-B928-5AC51E80B3FD ;
+    ohsp:P9 ohss:P113-A12BE904-8921-50CB-B73E-EE328464647A ;
+    ohst:P2 ohs:Q2 ;
+    ohst:P9 ohs:Q100 .
+
+ohss:P1-29FBE991-E2CE-5588-B826-64C4F2D04BA8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P279" .
+
+ohss:P1-084F6C46-FDC7-59BA-A28D-5F3A2C4EC5A5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P10 ohs:Q1 .
+
+ohss:P1-500A0FE6-2FAB-5683-9C2F-F042DEDEF63B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P1-BC31CB18-B260-507D-AB14-1437D8F4C5D2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q1 .
+
+ohss:P2-2A59E3AC-B228-5575-903D-E4329F3F8822
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q3 .
+
+ohss:P2-7EBADB34-F83B-5D80-B6BA-34EA5125622E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P10 ohs:Q1 .
+
+ohss:P2-22F7CA32-B566-5542-87E4-64CA675195C7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P31" .
+
+ohss:P2-37EFF9F6-5CD4-581A-982B-F87FB002A2EA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P3-4E5583BF-13C9-5114-B952-B18FB12B49E0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P10 ohs:Q2 .
+
+ohss:P3-5A6138E4-484C-5C51-8C29-C6A557C6A3D7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P3-889E44D1-E86B-526C-A5D5-55A22F6B73B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q2 .
+
+ohss:P3-949CEE44-14A7-5DF1-9795-9B6B81325FCB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P1647" .
+
+ohss:P4-F6EE7DF8-7D04-56CB-A940-F28338F242E4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P5 "https://www.wikidata.org/entity/$1" .
+
+ohss:P4-F93919BD-8A3D-51C7-8D85-DA5BE9C1B324
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P5-0B9AB20B-F952-5FA1-AD11-7807F348604B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P5-130648A0-38D8-593D-86A6-99D01964B07D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q2 .
+
+ohss:P5-C2BF4765-F99B-55B8-A84E-327DD23A8FCD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P1630" .
+
+ohss:P6-3C20F21B-0636-56BE-8379-8BC3A3754B3A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P6-DF4BA3D1-DAF4-53A6-BC3B-401BD6A7521B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P854" .
+
+ohss:P7-7EE0023B-0F36-51BA-934F-1E9EF4F88AB3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P7-A330197E-B18D-55D7-ADC3-B39B26DC44A6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P813" .
+
+ohss:P8-DF9BA190-66AF-5156-BBDE-1B375877C198
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P8-EB63020E-7195-5120-AE26-94CCE51420FA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P248" .
+
+ohss:P9-008F1E36-EA34-51F1-BEE0-819AC0139C48
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q2 .
+
+ohss:P9-34DB929C-2EA5-5480-A0B6-B4161F6FB2E4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P9-D88CD03F-C43C-563B-8004-9809D908B44C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P10 ohs:Q1 .
+
+ohss:P10-2A574857-AF1E-5D3C-AE03-D46045BEFADC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P10-35C5149D-E9B6-586E-A086-0C48E7C2E9B3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q2 .
+
+ohss:P10-EE31B503-1B48-524C-8953-0D5C9285BA37
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P10 ohs:Q1 .
+
+ohss:P100-63E5F187-3A78-5437-B81F-2F9C9AD74469
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P100-243EBCEC-01B6-527C-9FCD-B5D2A7900C3A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P101-9CDC5013-20C7-5658-9E46-B095770C178F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P101-71864FD3-EB13-5D18-A24F-09AA2B16DC5B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P102-B1AEEB7E-2A32-57CE-AF1E-BDCED96B2C79
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P103-37BCC465-5966-584B-AEAF-3AD2317783AB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P104-B15D88C7-254D-5063-8A2B-8E0D4B57B7CB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P104-EDCB3019-B44E-502B-8501-DB4B3CE64B14
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P5 "https://www.openstreetmap.org/changeset/$1" .
+
+ohss:P105-312F0E99-EB6A-5B48-9E86-06E23A354731
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P106-A5A3C9E7-4596-57A4-BF63-C51A3FEB6241
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P107-663D8C62-009C-5659-8129-C453D4203E49
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P107-E9267077-350E-5303-A947-15B607322E48
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P108-CEB56953-624B-550E-A8F5-941BF8EB1259
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P109-EB5851B1-7FE4-53C4-8231-BA3AA42818E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P110-814F699F-1938-5493-9285-238676AA48A5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P110-A282B8D2-F080-50D5-9C45-6612531AAAAB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P625" .
+
+ohss:P110-FA7A796C-F53D-54AF-8BFC-D90F1E1605C0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P111-1D3004E1-4DF2-5533-8909-739172E33E56
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P111-6CEA4FA8-BC34-5FA6-8E96-09F8B6511F6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P112-92CE1D32-319D-55D7-938F-BF6F4B833C86
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P4 "P18" .
+
+ohss:P112-B4CD3B6B-BA02-5A20-A679-49AEB48A1FF3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:P112-F20A9C4B-2AC9-5DCA-825E-7278EFD51911
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P113-1DD054C7-B057-5A14-B928-5AC51E80B3FD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q2 .
+
+ohss:P113-A12BE904-8921-50CB-B73E-EE328464647A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P9 ohs:Q100 .
+
+ohss:Q1-9ACB35EA-3925-5F5E-809E-54E5BF980A0D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q1 .
+
+ohss:Q1-CF9741BD-D637-5B3B-9FA9-19338518A331
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P1 ohs:Q3 .
+
+ohss:Q2-38B00B04-7AE0-5305-ABC8-5D9C93DAB27F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P1 ohs:Q3 .
+
+ohss:Q2-659ACDB9-D84C-57B8-886A-D7F834392574
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q1 .
+
+ohss:Q3-E4F5BF9E-72C5-5790-9C06-8A10895F836D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q1 .
+
+ohss:Q100-10CDBD61-45C5-55DD-B59D-88C09A34EC35
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P1 ohs:Q3 .
+
+ohss:Q100-F155147F-4537-51F3-A333-E1CCF86F4CD1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q1 .
+
+ohsp:P1
+    a owl:ObjectProperty .
+
+ohsp:P2
+    a owl:ObjectProperty .
+
+ohsp:P3
+    a owl:ObjectProperty .
+
+ohsp:P4
+    a owl:ObjectProperty .
+
+ohsp:P5
+    a owl:ObjectProperty .
+
+ohsp:P6
+    a owl:ObjectProperty .
+
+ohsp:P7
+    a owl:ObjectProperty .
+
+ohsp:P8
+    a owl:ObjectProperty .
+
+ohsp:P9
+    a owl:ObjectProperty .
+
+ohsp:P10
+    a owl:ObjectProperty .
+
+ohsp:P100
+    a owl:ObjectProperty .
+
+ohsp:P101
+    a owl:ObjectProperty .
+
+ohsp:P102
+    a owl:ObjectProperty .
+
+ohsp:P103
+    a owl:ObjectProperty .
+
+ohsp:P104
+    a owl:ObjectProperty .
+
+ohsp:P105
+    a owl:ObjectProperty .
+
+ohsp:P106
+    a owl:ObjectProperty .
+
+ohsp:P107
+    a owl:ObjectProperty .
+
+ohsp:P108
+    a owl:ObjectProperty .
+
+ohsp:P109
+    a owl:ObjectProperty .
+
+ohsp:P110
+    a owl:ObjectProperty .
+
+ohsp:P111
+    a owl:ObjectProperty .
+
+ohsp:P112
+    a owl:ObjectProperty .
+
+ohsp:P113
+    a owl:ObjectProperty .
+
+ohst:P1
+    a owl:ObjectProperty .
+
+ohst:P2
+    a owl:ObjectProperty .
+
+ohst:P3
+    a owl:ObjectProperty .
+
+ohst:P4
+    a owl:DatatypeProperty .
+
+ohst:P5
+    a owl:DatatypeProperty .
+
+ohst:P6
+    a owl:ObjectProperty .
+
+ohst:P7
+    a owl:DatatypeProperty .
+
+ohst:P8
+    a owl:ObjectProperty .
+
+ohst:P9
+    a owl:ObjectProperty .
+
+ohst:P10
+    a owl:ObjectProperty .
+
+ohst:P100
+    a owl:ObjectProperty .
+
+ohst:P101
+    a owl:ObjectProperty .
+
+ohst:P102
+    a owl:DatatypeProperty .
+
+ohst:P103
+    a owl:DatatypeProperty .
+
+ohst:P104
+    a owl:DatatypeProperty .
+
+ohst:P105
+    a owl:DatatypeProperty .
+
+ohst:P106
+    a owl:DatatypeProperty .
+
+ohst:P107
+    a owl:ObjectProperty .
+
+ohst:P108
+    a owl:ObjectProperty .
+
+ohst:P109
+    a owl:DatatypeProperty .
+
+ohst:P110
+    a owl:DatatypeProperty .
+
+ohst:P111
+    a owl:DatatypeProperty .
+
+ohst:P112
+    a owl:ObjectProperty .
+
+ohst:P113
+    a owl:DatatypeProperty .
+
+ohspq:P1
+    a owl:ObjectProperty .
+
+ohspq:P2
+    a owl:ObjectProperty .
+
+ohspq:P3
+    a owl:ObjectProperty .
+
+ohspq:P4
+    a owl:DatatypeProperty .
+
+ohspq:P5
+    a owl:DatatypeProperty .
+
+ohspq:P6
+    a owl:ObjectProperty .
+
+ohspq:P7
+    a owl:DatatypeProperty .
+
+ohspq:P8
+    a owl:ObjectProperty .
+
+ohspq:P9
+    a owl:ObjectProperty .
+
+ohspq:P10
+    a owl:ObjectProperty .
+
+ohspq:P100
+    a owl:ObjectProperty .
+
+ohspq:P101
+    a owl:ObjectProperty .
+
+ohspq:P102
+    a owl:DatatypeProperty .
+
+ohspq:P103
+    a owl:DatatypeProperty .
+
+ohspq:P104
+    a owl:DatatypeProperty .
+
+ohspq:P105
+    a owl:DatatypeProperty .
+
+ohspq:P106
+    a owl:DatatypeProperty .
+
+ohspq:P107
+    a owl:ObjectProperty .
+
+ohspq:P108
+    a owl:ObjectProperty .
+
+ohspq:P109
+    a owl:DatatypeProperty .
+
+ohspq:P110
+    a owl:DatatypeProperty .
+
+ohspq:P111
+    a owl:DatatypeProperty .
+
+ohspq:P112
+    a owl:ObjectProperty .
+
+ohspq:P113
+    a owl:DatatypeProperty .
+
+ohspqv:P1
+    a owl:ObjectProperty .
+
+ohspqv:P2
+    a owl:ObjectProperty .
+
+ohspqv:P3
+    a owl:ObjectProperty .
+
+ohspqv:P4
+    a owl:ObjectProperty .
+
+ohspqv:P5
+    a owl:ObjectProperty .
+
+ohspqv:P6
+    a owl:ObjectProperty .
+
+ohspqv:P7
+    a owl:ObjectProperty .
+
+ohspqv:P8
+    a owl:ObjectProperty .
+
+ohspqv:P9
+    a owl:ObjectProperty .
+
+ohspqv:P10
+    a owl:ObjectProperty .
+
+ohspqv:P100
+    a owl:ObjectProperty .
+
+ohspqv:P101
+    a owl:ObjectProperty .
+
+ohspqv:P102
+    a owl:ObjectProperty .
+
+ohspqv:P103
+    a owl:ObjectProperty .
+
+ohspqv:P104
+    a owl:ObjectProperty .
+
+ohspqv:P105
+    a owl:ObjectProperty .
+
+ohspqv:P106
+    a owl:ObjectProperty .
+
+ohspqv:P107
+    a owl:ObjectProperty .
+
+ohspqv:P108
+    a owl:ObjectProperty .
+
+ohspqv:P109
+    a owl:ObjectProperty .
+
+ohspqv:P110
+    a owl:ObjectProperty .
+
+ohspqv:P111
+    a owl:ObjectProperty .
+
+ohspqv:P112
+    a owl:ObjectProperty .
+
+ohspqv:P113
+    a owl:ObjectProperty .
+
+ohspr:P1
+    a owl:ObjectProperty .
+
+ohspr:P2
+    a owl:ObjectProperty .
+
+ohspr:P3
+    a owl:ObjectProperty .
+
+ohspr:P4
+    a owl:DatatypeProperty .
+
+ohspr:P5
+    a owl:DatatypeProperty .
+
+ohspr:P6
+    a owl:ObjectProperty .
+
+ohspr:P7
+    a owl:DatatypeProperty .
+
+ohspr:P8
+    a owl:ObjectProperty .
+
+ohspr:P9
+    a owl:ObjectProperty .
+
+ohspr:P10
+    a owl:ObjectProperty .
+
+ohspr:P100
+    a owl:ObjectProperty .
+
+ohspr:P101
+    a owl:ObjectProperty .
+
+ohspr:P102
+    a owl:DatatypeProperty .
+
+ohspr:P103
+    a owl:DatatypeProperty .
+
+ohspr:P104
+    a owl:DatatypeProperty .
+
+ohspr:P105
+    a owl:DatatypeProperty .
+
+ohspr:P106
+    a owl:DatatypeProperty .
+
+ohspr:P107
+    a owl:ObjectProperty .
+
+ohspr:P108
+    a owl:ObjectProperty .
+
+ohspr:P109
+    a owl:DatatypeProperty .
+
+ohspr:P110
+    a owl:DatatypeProperty .
+
+ohspr:P111
+    a owl:DatatypeProperty .
+
+ohspr:P112
+    a owl:ObjectProperty .
+
+ohspr:P113
+    a owl:DatatypeProperty .
+
+ohsprv:P1
+    a owl:ObjectProperty .
+
+ohsprv:P2
+    a owl:ObjectProperty .
+
+ohsprv:P3
+    a owl:ObjectProperty .
+
+ohsprv:P4
+    a owl:ObjectProperty .
+
+ohsprv:P5
+    a owl:ObjectProperty .
+
+ohsprv:P6
+    a owl:ObjectProperty .
+
+ohsprv:P7
+    a owl:ObjectProperty .
+
+ohsprv:P8
+    a owl:ObjectProperty .
+
+ohsprv:P9
+    a owl:ObjectProperty .
+
+ohsprv:P10
+    a owl:ObjectProperty .
+
+ohsprv:P100
+    a owl:ObjectProperty .
+
+ohsprv:P101
+    a owl:ObjectProperty .
+
+ohsprv:P102
+    a owl:ObjectProperty .
+
+ohsprv:P103
+    a owl:ObjectProperty .
+
+ohsprv:P104
+    a owl:ObjectProperty .
+
+ohsprv:P105
+    a owl:ObjectProperty .
+
+ohsprv:P106
+    a owl:ObjectProperty .
+
+ohsprv:P107
+    a owl:ObjectProperty .
+
+ohsprv:P108
+    a owl:ObjectProperty .
+
+ohsprv:P109
+    a owl:ObjectProperty .
+
+ohsprv:P110
+    a owl:ObjectProperty .
+
+ohsprv:P111
+    a owl:ObjectProperty .
+
+ohsprv:P112
+    a owl:ObjectProperty .
+
+ohsprv:P113
+    a owl:ObjectProperty .
+
+ohsps:P1
+    a owl:ObjectProperty .
+
+ohsps:P2
+    a owl:ObjectProperty .
+
+ohsps:P3
+    a owl:ObjectProperty .
+
+ohsps:P4
+    a owl:DatatypeProperty .
+
+ohsps:P5
+    a owl:DatatypeProperty .
+
+ohsps:P6
+    a owl:ObjectProperty .
+
+ohsps:P7
+    a owl:DatatypeProperty .
+
+ohsps:P8
+    a owl:ObjectProperty .
+
+ohsps:P9
+    a owl:ObjectProperty .
+
+ohsps:P10
+    a owl:ObjectProperty .
+
+ohsps:P100
+    a owl:ObjectProperty .
+
+ohsps:P101
+    a owl:ObjectProperty .
+
+ohsps:P102
+    a owl:DatatypeProperty .
+
+ohsps:P103
+    a owl:DatatypeProperty .
+
+ohsps:P104
+    a owl:DatatypeProperty .
+
+ohsps:P105
+    a owl:DatatypeProperty .
+
+ohsps:P106
+    a owl:DatatypeProperty .
+
+ohsps:P107
+    a owl:ObjectProperty .
+
+ohsps:P108
+    a owl:ObjectProperty .
+
+ohsps:P109
+    a owl:DatatypeProperty .
+
+ohsps:P110
+    a owl:DatatypeProperty .
+
+ohsps:P111
+    a owl:DatatypeProperty .
+
+ohsps:P112
+    a owl:ObjectProperty .
+
+ohsps:P113
+    a owl:DatatypeProperty .
+
+ohspsv:P1
+    a owl:ObjectProperty .
+
+ohspsv:P2
+    a owl:ObjectProperty .
+
+ohspsv:P3
+    a owl:ObjectProperty .
+
+ohspsv:P4
+    a owl:ObjectProperty .
+
+ohspsv:P5
+    a owl:ObjectProperty .
+
+ohspsv:P6
+    a owl:ObjectProperty .
+
+ohspsv:P7
+    a owl:ObjectProperty .
+
+ohspsv:P8
+    a owl:ObjectProperty .
+
+ohspsv:P9
+    a owl:ObjectProperty .
+
+ohspsv:P10
+    a owl:ObjectProperty .
+
+ohspsv:P100
+    a owl:ObjectProperty .
+
+ohspsv:P101
+    a owl:ObjectProperty .
+
+ohspsv:P102
+    a owl:ObjectProperty .
+
+ohspsv:P103
+    a owl:ObjectProperty .
+
+ohspsv:P104
+    a owl:ObjectProperty .
+
+ohspsv:P105
+    a owl:ObjectProperty .
+
+ohspsv:P106
+    a owl:ObjectProperty .
+
+ohspsv:P107
+    a owl:ObjectProperty .
+
+ohspsv:P108
+    a owl:ObjectProperty .
+
+ohspsv:P109
+    a owl:ObjectProperty .
+
+ohspsv:P110
+    a owl:ObjectProperty .
+
+ohspsv:P111
+    a owl:ObjectProperty .
+
+ohspsv:P112
+    a owl:ObjectProperty .
+
+ohspsv:P113
+    a owl:ObjectProperty .
+
+ohsno:P1
+    a owl:Class ;
+    owl:complementOf _:78a0cd887b0c33dc704d4b85a03ca233 .
+
+ohsno:P2
+    a owl:Class ;
+    owl:complementOf _:1bab1d06d363df272e2241898c6cddd7 .
+
+ohsno:P3
+    a owl:Class ;
+    owl:complementOf _:5ee4689a307e78a7afcef3ec2542cd00 .
+
+ohsno:P4
+    a owl:Class ;
+    owl:complementOf _:92e0504b684a1aeafb21aedaace91359 .
+
+ohsno:P5
+    a owl:Class ;
+    owl:complementOf _:652fb540e6b088b61bfcf9c8b4b31594 .
+
+ohsno:P6
+    a owl:Class ;
+    owl:complementOf _:97baaafa5b5509af7ac81df347d36be5 .
+
+ohsno:P7
+    a owl:Class ;
+    owl:complementOf _:5c2ff611dbaa300a9d9e8d0eafd5f648 .
+
+ohsno:P8
+    a owl:Class ;
+    owl:complementOf _:a633a01adaf2dc370eb5182af0cf0a19 .
+
+ohsno:P9
+    a owl:Class ;
+    owl:complementOf _:ac6edeec42c4ba850cf33dd213171f81 .
+
+ohsno:P10
+    a owl:Class ;
+    owl:complementOf _:fbbec31d5bf16a6c7d7b554a39b1f107 .
+
+ohsno:P100
+    a owl:Class ;
+    owl:complementOf _:4d9cf54cc8852a3ea922ce33197fe19d .
+
+ohsno:P101
+    a owl:Class ;
+    owl:complementOf _:1b2fba38e6a138da2da93953d31056c4 .
+
+ohsno:P102
+    a owl:Class ;
+    owl:complementOf _:8547c5ea738a15a0ab5f567ec3608e04 .
+
+ohsno:P103
+    a owl:Class ;
+    owl:complementOf _:2e0499be947ee6daedeef20ea889d1ee .
+
+ohsno:P104
+    a owl:Class ;
+    owl:complementOf _:ba931c848e12d966c11e6bd628fd0277 .
+
+ohsno:P105
+    a owl:Class ;
+    owl:complementOf _:57db7b5881ca47c088305ad305788123 .
+
+ohsno:P106
+    a owl:Class ;
+    owl:complementOf _:a6fc4f8906ab026509e1dfdb5a8da680 .
+
+ohsno:P107
+    a owl:Class ;
+    owl:complementOf _:6b3af85a69f881068fad8d0698f47c1e .
+
+ohsno:P108
+    a owl:Class ;
+    owl:complementOf _:fc8834d308b699c987c94de6829250af .
+
+ohsno:P109
+    a owl:Class ;
+    owl:complementOf _:593874c87e4a367857a43cf6ce599d00 .
+
+ohsno:P110
+    a owl:Class ;
+    owl:complementOf _:d6573a0cced32f982a46595ed941733c .
+
+ohsno:P111
+    a owl:Class ;
+    owl:complementOf _:6a16217e9f33e049a5ae19169825b919 .
+
+ohsno:P112
+    a owl:Class ;
+    owl:complementOf _:3ef2258b8f2df143cebcaf36b8aba142 .
+
+ohsno:P113
+    a owl:Class ;
+    owl:complementOf _:c53e77f382fe7e50553008a965c288b6 .
+
+_:1b2fba38e6a138da2da93953d31056c4
+    a owl:Restriction ;
+    owl:onProperty ohst:P101 ;
+    owl:someValuesFrom owl:Thing .
+
+_:1bab1d06d363df272e2241898c6cddd7
+    a owl:Restriction ;
+    owl:onProperty ohst:P2 ;
+    owl:someValuesFrom owl:Thing .
+
+_:2e0499be947ee6daedeef20ea889d1ee
+    a owl:Restriction ;
+    owl:onProperty ohst:P103 ;
+    owl:someValuesFrom owl:Thing .
+
+_:3ef2258b8f2df143cebcaf36b8aba142
+    a owl:Restriction ;
+    owl:onProperty ohst:P112 ;
+    owl:someValuesFrom owl:Thing .
+
+_:4d9cf54cc8852a3ea922ce33197fe19d
+    a owl:Restriction ;
+    owl:onProperty ohst:P100 ;
+    owl:someValuesFrom owl:Thing .
+
+_:5c2ff611dbaa300a9d9e8d0eafd5f648
+    a owl:Restriction ;
+    owl:onProperty ohst:P7 ;
+    owl:someValuesFrom owl:Thing .
+
+_:5ee4689a307e78a7afcef3ec2542cd00
+    a owl:Restriction ;
+    owl:onProperty ohst:P3 ;
+    owl:someValuesFrom owl:Thing .
+
+_:6a16217e9f33e049a5ae19169825b919
+    a owl:Restriction ;
+    owl:onProperty ohst:P111 ;
+    owl:someValuesFrom owl:Thing .
+
+_:6b3af85a69f881068fad8d0698f47c1e
+    a owl:Restriction ;
+    owl:onProperty ohst:P107 ;
+    owl:someValuesFrom owl:Thing .
+
+_:57db7b5881ca47c088305ad305788123
+    a owl:Restriction ;
+    owl:onProperty ohst:P105 ;
+    owl:someValuesFrom owl:Thing .
+
+_:78a0cd887b0c33dc704d4b85a03ca233
+    a owl:Restriction ;
+    owl:onProperty ohst:P1 ;
+    owl:someValuesFrom owl:Thing .
+
+_:92e0504b684a1aeafb21aedaace91359
+    a owl:Restriction ;
+    owl:onProperty ohst:P4 ;
+    owl:someValuesFrom owl:Thing .
+
+_:97baaafa5b5509af7ac81df347d36be5
+    a owl:Restriction ;
+    owl:onProperty ohst:P6 ;
+    owl:someValuesFrom owl:Thing .
+
+_:652fb540e6b088b61bfcf9c8b4b31594
+    a owl:Restriction ;
+    owl:onProperty ohst:P5 ;
+    owl:someValuesFrom owl:Thing .
+
+_:8547c5ea738a15a0ab5f567ec3608e04
+    a owl:Restriction ;
+    owl:onProperty ohst:P102 ;
+    owl:someValuesFrom owl:Thing .
+
+_:593874c87e4a367857a43cf6ce599d00
+    a owl:Restriction ;
+    owl:onProperty ohst:P109 ;
+    owl:someValuesFrom owl:Thing .
+
+_:a6fc4f8906ab026509e1dfdb5a8da680
+    a owl:Restriction ;
+    owl:onProperty ohst:P106 ;
+    owl:someValuesFrom owl:Thing .
+
+_:a633a01adaf2dc370eb5182af0cf0a19
+    a owl:Restriction ;
+    owl:onProperty ohst:P8 ;
+    owl:someValuesFrom owl:Thing .
+
+_:ac6edeec42c4ba850cf33dd213171f81
+    a owl:Restriction ;
+    owl:onProperty ohst:P9 ;
+    owl:someValuesFrom owl:Thing .
+
+_:ba931c848e12d966c11e6bd628fd0277
+    a owl:Restriction ;
+    owl:onProperty ohst:P104 ;
+    owl:someValuesFrom owl:Thing .
+
+_:c53e77f382fe7e50553008a965c288b6
+    a owl:Restriction ;
+    owl:onProperty ohst:P113 ;
+    owl:someValuesFrom owl:Thing .
+
+_:d6573a0cced32f982a46595ed941733c
+    a owl:Restriction ;
+    owl:onProperty ohst:P110 ;
+    owl:someValuesFrom owl:Thing .
+
+_:fbbec31d5bf16a6c7d7b554a39b1f107
+    a owl:Restriction ;
+    owl:onProperty ohst:P10 ;
+    owl:someValuesFrom owl:Thing .
+
+_:fc8834d308b699c987c94de6829250af
+    a owl:Restriction ;
+    owl:onProperty ohst:P108 ;
+    owl:someValuesFrom owl:Thing .
+
+# RDFS bridge of the kernel (wikibase-static): the direct properties P1 to P3 and the classes Q1 to Q3 tied to RDFS and OWL.
+# Not part of the Wikibase data model; written only when the kernel is part of the site.
+
+ohs:Q1
+    owl:equivalentClass rdfs:Class .
+
+ohs:Q2
+    owl:equivalentClass rdf:Property .
+
+ohs:Q3
+    owl:equivalentClass owl:Thing .
+
+ohst:P1
+    rdfs:subPropertyOf rdfs:subClassOf .
+
+ohst:P2
+    rdfs:subPropertyOf rdf:type .
+
+ohst:P3
+    rdfs:subPropertyOf rdfs:subPropertyOf .
+
+# CIDOC CRM anchoring (wikibase-static): the classes of this site tied to classes of the CIDOC CRM and its extensions (data/crm.csv) and the DCAT classes of this file (data/dcat-crm.csv),
+# with the superclasses of an extension class up to its first class of the CIDOC CRM, and subclass of / instance of spelled out as rdfs:subClassOf / rdf:type. Not part of the Wikibase data model.
+
+ohs:Q100
+    rdfs:subClassOf crm:E26 .
+
+crmdig:D1_Digital_Object
+    rdfs:subClassOf crm:E73_Information_Object .
+
+dcat:Catalog
+    rdfs:subClassOf crm:E31_Document,
+        crmdig:D1_Digital_Object .
+
+dcat:Dataset
+    rdfs:subClassOf crm:E73_Information_Object .
+
+dcat:Distribution
+    rdfs:subClassOf crmdig:D1_Digital_Object .
