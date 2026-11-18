@@ -1,5 +1,5 @@
 # RDF export of OSM holy wells (static Wikibase), Wikibase data model; base URI https://n4o-rse.github.io/osm-holywells-static
-# Generated with wikibase-static 0.28.0; data as of unknown
+# Generated with wikibase-static 0.32.0; data as of unknown
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -196611,7 +196611,7 @@ ohst:P3
 # with the superclasses of an extension class up to its first class of the CIDOC CRM, and subclass of / instance of spelled out as rdfs:subClassOf / rdf:type. Not part of the Wikibase data model.
 
 ohs:Q100
-    rdfs:subClassOf crm:E26 .
+    rdfs:subClassOf crm:E26_Physical_Feature .
 
 ohs:Q101
     a ohs:Q100 .
