@@ -2,8 +2,8 @@
 # workflow of wikibase-static (PRIMER.md there, S8): the command below twice, the working tree must be clean after each run (so docs/
 # is what a fresh build makes), a dead internal link makes the run red.
 #
-# Skeleton stage (PRIMER.md here, S1): `deploy: false`, and no check_attribution.py yet, because there is no docs/ to check and to
-# publish. The first harvest switches both on (PRIMER.md, step "Veröffentlichung").
+# Published since S7: `deploy: true`, and the command adds check_attribution.py (every page and Turtle file must carry
+# the OpenStreetMap attribution). docs/ and data/derived/ are built by the CI, not committed.
 #
 # Once per repository: Settings -> Pages -> Source: "GitHub Actions".
 
@@ -23,5 +23,5 @@ jobs:
       pages: write
       id-token: write
     with:
-      command: python main.py --strict
-      deploy: false
+      command: python main.py --strict && python check_attribution.py
+      deploy: true
