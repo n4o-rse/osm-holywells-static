@@ -9,6 +9,8 @@ rdf_base: https://n4o-rse.github.io/osm-holywells-static
 # The prefix names of the export: ohs:, ohst:, ohsp:, ... and not wd:, wdt:, p:, ..., which are those of Wikidata.
 # A proposal (PRIMER.md, A4 "URIs"); change it before the first publication if another name is wanted.
 rdf_prefix: ohs
+# The day the OSM data were read from Overpass (timestamp_osm_base in data/raw/osm/); the export and the registry state it.
+data_as_of: 2026-11-18
 edit_url: https://github.com/n4o-rse/osm-holywells-static/edit/main/data/csv
 languages:
   default: en
