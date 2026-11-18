@@ -1,0 +1,207 @@
+# Q360: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q360.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 12396662249)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12396662249)"@de ;
+    dcterms:identifier "Q360" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q360 ;
+    dcterms:title "Toberaphuca"@de,
+        "Toberaphuca"@en ;
+    schema:about ohs:Q360 ;
+    dcat:distribution ohsdist:Q360-html,
+        ohsdist:Q360-json,
+        ohsdist:Q360-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q360.html> .
+
+ohsdist:Q360-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q360, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q360.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q360-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q360, as archived from the Wikibase API"@en ;
+    dcat:byteSize "10665"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q360.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q360-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q360, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q360.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q360
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 12396662249)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12396662249)"@de ;
+    schema:name "Toberaphuca"@de,
+        "Toberaphuca"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "10"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q360-B1F83853-BE2D-534E-8AAF-8BE8C31F3695 ;
+    geo:hasGeometry ohss:Q360-B1F83853-BE2D-534E-8AAF-8BE8C31F3695 ;
+    rdfs:label "Toberaphuca"@de,
+        "Toberaphuca"@en ;
+    skos:prefLabel "Toberaphuca"@de,
+        "Toberaphuca"@en ;
+    ohsp:P2 ohss:Q360-FBA4A3FB-B9D0-54E7-8CCB-200282773AF2 ;
+    ohsp:P100 ohss:Q360-97DE9ADF-0DE2-53F6-B5EC-EB7ABB973187 ;
+    ohsp:P101 ohss:Q360-4C296E59-124E-5CD7-8896-00BCBCE30619 ;
+    ohsp:P107 ohss:Q360-11F2A1AE-5BDE-5EBF-8B16-6EF84D212BAB ;
+    ohsp:P110 ohss:Q360-27140439-47B9-5623-B3AB-4B86CFBB1F86 ;
+    ohsp:P111 ohss:Q360-B1F83853-BE2D-534E-8AAF-8BE8C31F3695 ;
+    ohsp:P113 ohss:Q360-0E74F84C-E500-51EE-B7B8-A45B8B05423A,
+        ohss:Q360-B9457C06-AEC7-5A44-B773-9795C42A4950,
+        ohss:Q360-DC5DF2C8-EDC3-5DDE-B8BA-60312F9C0959,
+        ohss:Q360-F0320FD3-B2F3-53E9-81F8-FA232643456A ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/12396662249> ;
+    ohst:P101 <https://www.openstreetmap.org/node/12396662249/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/12396662249/history/1> ;
+    ohst:P110 "Point(-6.8142056 52.4369508)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.8142056 52.4369508)" ;
+    ohst:P113 "name=Toberaphuca",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=OS 1st edition map" .
+
+ohss:Q360-0E74F84C-E500-51EE-B7B8-A45B8B05423A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:fa789baba1b1f44eb3a34fde9cbfb6c921f91be9 ;
+    ohsps:P113 "name=Toberaphuca" .
+
+ohss:Q360-4C296E59-124E-5CD7-8896-00BCBCE30619
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-12-04T20:50:25Z" ;
+    ohspq:P104 "159933454" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12396662249/history/1> .
+
+ohss:Q360-11F2A1AE-5BDE-5EBF-8B16-6EF84D212BAB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/12396662249/history/1> .
+
+ohss:Q360-97DE9ADF-0DE2-53F6-B5EC-EB7ABB973187
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/12396662249> .
+
+ohss:Q360-27140439-47B9-5623-B3AB-4B86CFBB1F86
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:fa789baba1b1f44eb3a34fde9cbfb6c921f91be9 ;
+    ohsps:P110 "Point(-6.8142056 52.4369508)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:341bdac47e658d5a0caa4def2cd602b7 .
+
+ohss:Q360-B1F83853-BE2D-534E-8AAF-8BE8C31F3695
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.8142056 52.4369508)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:fa789baba1b1f44eb3a34fde9cbfb6c921f91be9 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-12-04T20:50:25Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.8142056 52.4369508)" .
+
+ohss:Q360-B9457C06-AEC7-5A44-B773-9795C42A4950
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:fa789baba1b1f44eb3a34fde9cbfb6c921f91be9 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q360-DC5DF2C8-EDC3-5DDE-B8BA-60312F9C0959
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:fa789baba1b1f44eb3a34fde9cbfb6c921f91be9 ;
+    ohsps:P113 "source=OS 1st edition map" .
+
+ohss:Q360-F0320FD3-B2F3-53E9-81F8-FA232643456A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:fa789baba1b1f44eb3a34fde9cbfb6c921f91be9 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q360-FBA4A3FB-B9D0-54E7-8CCB-200282773AF2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohsref:fa789baba1b1f44eb3a34fde9cbfb6c921f91be9
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12396662249/history/1> .
+
+ohsv:341bdac47e658d5a0caa4def2cd602b7
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.4369508"^^xsd:double ;
+    wikibase:geoLongitude "-6.8142056"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

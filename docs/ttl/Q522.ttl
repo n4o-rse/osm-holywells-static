@@ -1,0 +1,207 @@
+# Q522: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q522.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13902816261)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13902816261)"@de ;
+    dcterms:identifier "Q522" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q522 ;
+    dcterms:title "Cromeen's Well"@de,
+        "Cromeen's Well"@en ;
+    schema:about ohs:Q522 ;
+    dcat:distribution ohsdist:Q522-html,
+        ohsdist:Q522-json,
+        ohsdist:Q522-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q522.html> .
+
+ohsdist:Q522-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q522, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q522.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q522-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q522, as archived from the Wikibase API"@en ;
+    dcat:byteSize "10672"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q522.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q522-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q522, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q522.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q522
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13902816261)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13902816261)"@de ;
+    schema:name "Cromeen's Well"@de,
+        "Cromeen's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "10"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q522-0163248C-6FEA-5AC8-A08A-C2CDE0402528 ;
+    geo:hasGeometry ohss:Q522-0163248C-6FEA-5AC8-A08A-C2CDE0402528 ;
+    rdfs:label "Cromeen's Well"@de,
+        "Cromeen's Well"@en ;
+    skos:prefLabel "Cromeen's Well"@de,
+        "Cromeen's Well"@en ;
+    ohsp:P2 ohss:Q522-9E0AE143-8E67-59DF-AC9C-084F69300B64 ;
+    ohsp:P100 ohss:Q522-989CF594-48BB-5C7B-99F8-E30E204C0A32 ;
+    ohsp:P101 ohss:Q522-3F933B61-00C9-52C1-BC77-B1126A91213F ;
+    ohsp:P107 ohss:Q522-A4C0FCF6-2B26-54E3-99BC-E621E4103E54 ;
+    ohsp:P110 ohss:Q522-A819704A-40F3-59A4-9752-307E340CF187 ;
+    ohsp:P111 ohss:Q522-0163248C-6FEA-5AC8-A08A-C2CDE0402528 ;
+    ohsp:P113 ohss:Q522-4A239E85-4056-53AA-B826-413D34424820,
+        ohss:Q522-9EAB3BD3-BF2C-5EAD-9F63-C3CF9F562B94,
+        ohss:Q522-3541E0DA-FB20-52DA-A600-F4E2D078F788,
+        ohss:Q522-06245E8B-877F-5691-BB5C-BB939AE8DC0F ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13902816261> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13902816261/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13902816261/history/1> ;
+    ohst:P110 "Point(-7.507216 53.5845204)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.507216 53.5845204)" ;
+    ohst:P113 "name=Cromeen's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=OS 2nd edition map" .
+
+ohss:Q522-3F933B61-00C9-52C1-BC77-B1126A91213F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-06-01T20:22:37Z" ;
+    ohspq:P104 "183517680" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13902816261/history/1> .
+
+ohss:Q522-4A239E85-4056-53AA-B826-413D34424820
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8b453a8b69ade0660afbd76cc4be4a0f7bd20cee ;
+    ohsps:P113 "name=Cromeen's Well" .
+
+ohss:Q522-9E0AE143-8E67-59DF-AC9C-084F69300B64
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q522-9EAB3BD3-BF2C-5EAD-9F63-C3CF9F562B94
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8b453a8b69ade0660afbd76cc4be4a0f7bd20cee ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q522-989CF594-48BB-5C7B-99F8-E30E204C0A32
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13902816261> .
+
+ohss:Q522-3541E0DA-FB20-52DA-A600-F4E2D078F788
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8b453a8b69ade0660afbd76cc4be4a0f7bd20cee ;
+    ohsps:P113 "source=OS 2nd edition map" .
+
+ohss:Q522-06245E8B-877F-5691-BB5C-BB939AE8DC0F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8b453a8b69ade0660afbd76cc4be4a0f7bd20cee ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q522-0163248C-6FEA-5AC8-A08A-C2CDE0402528
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.507216 53.5845204)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:8b453a8b69ade0660afbd76cc4be4a0f7bd20cee ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-06-01T20:22:37Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.507216 53.5845204)" .
+
+ohss:Q522-A4C0FCF6-2B26-54E3-99BC-E621E4103E54
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13902816261/history/1> .
+
+ohss:Q522-A819704A-40F3-59A4-9752-307E340CF187
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8b453a8b69ade0660afbd76cc4be4a0f7bd20cee ;
+    ohsps:P110 "Point(-7.507216 53.5845204)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:b72493b7899518db246f7dfe8cf79465 .
+
+ohsref:8b453a8b69ade0660afbd76cc4be4a0f7bd20cee
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13902816261/history/1> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:b72493b7899518db246f7dfe8cf79465
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.5845204"^^xsd:double ;
+    wikibase:geoLongitude "-7.507216"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

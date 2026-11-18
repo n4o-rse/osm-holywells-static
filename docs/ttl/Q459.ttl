@@ -1,0 +1,291 @@
+# Q459: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q459.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13668731329)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13668731329)"@de ;
+    dcterms:identifier "Q459" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q459 ;
+    dcterms:title "Saint Ite's Well"@de,
+        "Saint Ite's Well"@en ;
+    schema:about ohs:Q459 ;
+    dcat:distribution ohsdist:Q459-html,
+        ohsdist:Q459-json,
+        ohsdist:Q459-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q459.html> .
+
+ohsdist:Q459-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q459, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q459.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q459-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q459, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19272"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q459.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q459-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q459, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q459.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q459
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13668731329)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13668731329)"@de ;
+    schema:name "Saint Ite's Well"@de,
+        "Saint Ite's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q459-B5789C48-3A2E-500F-8819-7D62D3F29CE4 ;
+    geo:hasGeometry ohss:Q459-49C79F8B-74C7-5270-B9B3-25AB265EF120,
+        ohss:Q459-B5789C48-3A2E-500F-8819-7D62D3F29CE4 ;
+    rdfs:label "Saint Ite's Well"@de,
+        "Saint Ite's Well"@en ;
+    skos:prefLabel "Saint Ite's Well"@de,
+        "Saint Ite's Well"@en ;
+    ohsp:P2 ohss:Q459-96A6D23C-0082-54E7-9786-5B48D2676119 ;
+    ohsp:P100 ohss:Q459-CD97087D-84A5-5A44-ACF5-5AF628D3247B ;
+    ohsp:P101 ohss:Q459-0A10D463-A6DA-5C26-A90F-D9BDE2F430C7,
+        ohss:Q459-452D0DC5-9F9B-534A-BD09-381CFD2C66D7,
+        ohss:Q459-A112F74D-5400-5B8D-AF35-07E5CFB7BE56 ;
+    ohsp:P107 ohss:Q459-519F8F33-455F-56FC-86D5-FFC5CE8ABEB9 ;
+    ohsp:P110 ohss:Q459-732C9B78-2902-5425-89B2-15A328A40B2D ;
+    ohsp:P111 ohss:Q459-49C79F8B-74C7-5270-B9B3-25AB265EF120,
+        ohss:Q459-B5789C48-3A2E-500F-8819-7D62D3F29CE4 ;
+    ohsp:P113 ohss:Q459-0F9E16AB-FAAE-56FF-A60B-52C72B6C432A,
+        ohss:Q459-2F60657F-DF34-51A8-BCC4-2ECD22DB4F65,
+        ohss:Q459-8D7B8D4C-FAD6-52A5-BD6B-6B8FA43037A7,
+        ohss:Q459-9ABDAB86-979C-5286-84DA-FEBDA9C80551,
+        ohss:Q459-34756BA9-765D-5B8E-A00F-52AAD4A3D8B1,
+        ohss:Q459-A8E8AC2A-20E0-5234-9365-9D39F974C452,
+        ohss:Q459-D25DC405-828F-5819-884C-5374C91A5292 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13668731329> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13668731329/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13668731329/history/1> ;
+    ohst:P110 "Point(-9.0716702 52.38199)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-9.0716595 52.3820661)",
+        "POINT(-9.0716702 52.38199)" ;
+    ohst:P113 "description=small hole coveres with a grate and providing access to the water via a ladle. Note the two carved corbels and the window fragment nearby.",
+        "name=Saint Ite's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=survey",
+        "survey:date=2026-03-22",
+        "wikidata=Q138822463" .
+
+ohss:Q459-0A10D463-A6DA-5C26-A90F-D9BDE2F430C7
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-03-22T11:37:05Z" ;
+    ohspq:P104 "180244924" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13668731329/history/1> .
+
+ohss:Q459-0F9E16AB-FAAE-56FF-A60B-52C72B6C432A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5633ceaead3445efa914dc563bbe333df42ec40c ;
+    ohsps:P113 "wikidata=Q138822463" .
+
+ohss:Q459-2F60657F-DF34-51A8-BCC4-2ECD22DB4F65
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5633ceaead3445efa914dc563bbe333df42ec40c ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q459-8D7B8D4C-FAD6-52A5-BD6B-6B8FA43037A7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5633ceaead3445efa914dc563bbe333df42ec40c ;
+    ohsps:P113 "name=Saint Ite's Well" .
+
+ohss:Q459-9ABDAB86-979C-5286-84DA-FEBDA9C80551
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5633ceaead3445efa914dc563bbe333df42ec40c ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q459-49C79F8B-74C7-5270-B9B3-25AB265EF120
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.0716595 52.3820661)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:cffcac009f04a17a10f5f5a01aa09d62bf1654c4 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-03-22T11:37:05Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-9.0716595 52.3820661)" .
+
+ohss:Q459-96A6D23C-0082-54E7-9786-5B48D2676119
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q459-452D0DC5-9F9B-534A-BD09-381CFD2C66D7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2026-03-29T10:42:50Z" ;
+    ohspq:P104 "180576772" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13668731329/history/3> .
+
+ohss:Q459-519F8F33-455F-56FC-86D5-FFC5CE8ABEB9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13668731329/history/1> .
+
+ohss:Q459-732C9B78-2902-5425-89B2-15A328A40B2D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5633ceaead3445efa914dc563bbe333df42ec40c ;
+    ohsps:P110 "Point(-9.0716702 52.38199)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:992f72c4b6361eed4ee7cf6463f3bb79 .
+
+ohss:Q459-34756BA9-765D-5B8E-A00F-52AAD4A3D8B1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5633ceaead3445efa914dc563bbe333df42ec40c ;
+    ohsps:P113 "source=survey" .
+
+ohss:Q459-A8E8AC2A-20E0-5234-9365-9D39F974C452
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5633ceaead3445efa914dc563bbe333df42ec40c ;
+    ohsps:P113 "description=small hole coveres with a grate and providing access to the water via a ladle. Note the two carved corbels and the window fragment nearby." .
+
+ohss:Q459-A112F74D-5400-5B8D-AF35-07E5CFB7BE56
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-03-22T22:16:59Z" ;
+    ohspq:P104 "180274575" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13668731329/history/2> .
+
+ohss:Q459-B5789C48-3A2E-500F-8819-7D62D3F29CE4
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.0716702 52.38199)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:ff29045b5db3cad6f08c876ddf2b729a443f3fb7 ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-03-22T22:16:59Z" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P111 "POINT(-9.0716702 52.38199)" .
+
+ohss:Q459-CD97087D-84A5-5A44-ACF5-5AF628D3247B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13668731329> .
+
+ohss:Q459-D25DC405-828F-5819-884C-5374C91A5292
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5633ceaead3445efa914dc563bbe333df42ec40c ;
+    ohsps:P113 "survey:date=2026-03-22" .
+
+ohsref:5633ceaead3445efa914dc563bbe333df42ec40c
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13668731329/history/3> .
+
+ohsref:cffcac009f04a17a10f5f5a01aa09d62bf1654c4
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13668731329/history/1> .
+
+ohsref:ff29045b5db3cad6f08c876ddf2b729a443f3fb7
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13668731329/history/2> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:992f72c4b6361eed4ee7cf6463f3bb79
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.38199"^^xsd:double ;
+    wikibase:geoLongitude "-9.0716702"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

@@ -1,0 +1,289 @@
+# Q588: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q588.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 2842990649)"@en,
+        "Höhenmarke (OpenStreetMap-Node 2842990649)"@de ;
+    dcterms:identifier "Q588" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q588 ;
+    dcterms:title "Saint Vauk's Well"@de,
+        "Saint Vauk's Well"@en ;
+    schema:about ohs:Q588 ;
+    dcat:distribution ohsdist:Q588-html,
+        ohsdist:Q588-json,
+        ohsdist:Q588-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q588.html> .
+
+ohsdist:Q588-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q588, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q588.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q588-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q588, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19562"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q588.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q588-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q588, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q588.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q588
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 2842990649)"@en,
+        "Höhenmarke (OpenStreetMap-Node 2842990649)"@de ;
+    schema:name "Saint Vauk's Well"@de,
+        "Saint Vauk's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q588-0C5E820B-C6FA-5331-B9D9-C67A9B80287B ;
+    geo:hasGeometry ohss:Q588-0C5E820B-C6FA-5331-B9D9-C67A9B80287B ;
+    rdfs:label "Saint Vauk's Well"@de,
+        "Saint Vauk's Well"@en ;
+    skos:prefLabel "Saint Vauk's Well"@de,
+        "Saint Vauk's Well"@en ;
+    ohsp:P2 ohss:Q588-DC61F142-395F-500B-A11F-E48B2C9D4ABD ;
+    ohsp:P100 ohss:Q588-295F1C79-16CC-5DC1-A67F-5FF14D62D74D ;
+    ohsp:P101 ohss:Q588-1C3E6A91-DC15-5E48-A5D3-EF04223BF0E3,
+        ohss:Q588-26EDBD1C-8970-5BC5-9418-D949BCF3749A,
+        ohss:Q588-9106AEDC-AF66-55CE-87D3-A58F3523BC09,
+        ohss:Q588-B4CF7E36-5A63-56E4-9F9E-E1909FC4919A ;
+    ohsp:P107 ohss:Q588-F915910D-AF5E-5772-A182-B08A0AD4BD29 ;
+    ohsp:P110 ohss:Q588-EF80B549-DAAC-52EC-9187-602EDAC3EDD6 ;
+    ohsp:P111 ohss:Q588-0C5E820B-C6FA-5331-B9D9-C67A9B80287B ;
+    ohsp:P113 ohss:Q588-6C774FD4-0CB0-5779-9202-DEC2B555CF15,
+        ohss:Q588-9CC3C3C3-E938-504C-81EB-D58302EFD420,
+        ohss:Q588-9DAECB82-D3E8-5BD4-9DB5-67B3D561C2B0,
+        ohss:Q588-25C124B2-CBC4-5B41-A8B0-4E2EBFC177A8,
+        ohss:Q588-1180E179-7BBB-5515-9FAA-2A4E04945778,
+        ohss:Q588-CA030B15-1404-5309-B920-A1545406EDCE,
+        ohss:Q588-DF2E4C32-C9B9-5325-9D91-5388F128F4E6 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/2842990649> ;
+    ohst:P101 <https://www.openstreetmap.org/node/2842990649/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/node/2842990649/history/3> ;
+    ohst:P110 "Point(-6.3609335 52.1767851)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.3609335 52.1767851)" ;
+    ohst:P113 "alt_name=St. Vogue's Well",
+        "name=Saint Vauk's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=WX053-036----",
+        "source=OS 1st edition map",
+        "wikidata=Q139254789" .
+
+ohss:Q588-0C5E820B-C6FA-5331-B9D9-C67A9B80287B
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.3609335 52.1767851)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:5efaa6c0ae625a72bf97086f71a745e974f37ad4 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2014-05-07T21:20:32Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.3609335 52.1767851)" .
+
+ohss:Q588-1C3E6A91-DC15-5E48-A5D3-EF04223BF0E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2026-04-12T14:44:21Z" ;
+    ohspq:P104 "181234226" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2842990649/history/4> .
+
+ohss:Q588-6C774FD4-0CB0-5779-9202-DEC2B555CF15
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:890e95acc8a1602292725cf83e9708b983bec825 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q588-9CC3C3C3-E938-504C-81EB-D58302EFD420
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:890e95acc8a1602292725cf83e9708b983bec825 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q588-9DAECB82-D3E8-5BD4-9DB5-67B3D561C2B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:890e95acc8a1602292725cf83e9708b983bec825 ;
+    ohsps:P113 "ref:IE:smr=WX053-036----" .
+
+ohss:Q588-25C124B2-CBC4-5B41-A8B0-4E2EBFC177A8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:890e95acc8a1602292725cf83e9708b983bec825 ;
+    ohsps:P113 "source=OS 1st edition map" .
+
+ohss:Q588-26EDBD1C-8970-5BC5-9418-D949BCF3749A
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2024-12-05T00:11:19Z" ;
+    ohspq:P104 "159937409" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2842990649/history/3> .
+
+ohss:Q588-295F1C79-16CC-5DC1-A67F-5FF14D62D74D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/2842990649> .
+
+ohss:Q588-1180E179-7BBB-5515-9FAA-2A4E04945778
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:890e95acc8a1602292725cf83e9708b983bec825 ;
+    ohsps:P113 "name=Saint Vauk's Well" .
+
+ohss:Q588-9106AEDC-AF66-55CE-87D3-A58F3523BC09
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2014-05-07T21:20:32Z" ;
+    ohspq:P104 "22198325" ;
+    ohspq:P105 "pjna" ;
+    ohspq:P106 "80151" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2842990649/history/1> .
+
+ohss:Q588-B4CF7E36-5A63-56E4-9F9E-E1909FC4919A
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2019-11-30T21:04:18Z" ;
+    ohspq:P104 "77767399" ;
+    ohspq:P105 "Sascha Santschi-Cooney" ;
+    ohspq:P106 "10511769" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2842990649/history/2> .
+
+ohss:Q588-CA030B15-1404-5309-B920-A1545406EDCE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:890e95acc8a1602292725cf83e9708b983bec825 ;
+    ohsps:P113 "alt_name=St. Vogue's Well" .
+
+ohss:Q588-DC61F142-395F-500B-A11F-E48B2C9D4ABD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q588-DF2E4C32-C9B9-5325-9D91-5388F128F4E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:890e95acc8a1602292725cf83e9708b983bec825 ;
+    ohsps:P113 "wikidata=Q139254789" .
+
+ohss:Q588-EF80B549-DAAC-52EC-9187-602EDAC3EDD6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:890e95acc8a1602292725cf83e9708b983bec825 ;
+    ohsps:P110 "Point(-6.3609335 52.1767851)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:3e26e956f9d21757877bed6106816740 .
+
+ohss:Q588-F915910D-AF5E-5772-A182-B08A0AD4BD29
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/2842990649/history/3> .
+
+ohsref:5efaa6c0ae625a72bf97086f71a745e974f37ad4
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/2842990649/history/1> .
+
+ohsref:890e95acc8a1602292725cf83e9708b983bec825
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/2842990649/history/4> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:3e26e956f9d21757877bed6106816740
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.1767851"^^xsd:double ;
+    wikibase:geoLongitude "-6.3609335"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

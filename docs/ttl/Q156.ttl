@@ -1,0 +1,317 @@
+# Q156: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q156.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 10612166716)"@en,
+        "Höhenmarke (OpenStreetMap-Node 10612166716)"@de ;
+    dcterms:identifier "Q156" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q156 ;
+    dcterms:title "Lanfera's Well"@de,
+        "Lanfera's Well"@en ;
+    schema:about ohs:Q156 ;
+    dcat:distribution ohsdist:Q156-html,
+        ohsdist:Q156-json,
+        ohsdist:Q156-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q156.html> .
+
+ohsdist:Q156-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q156, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q156.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q156-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q156, as archived from the Wikibase API"@en ;
+    dcat:byteSize "21945"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q156.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q156-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q156, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q156.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q156
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 10612166716)"@en,
+        "Höhenmarke (OpenStreetMap-Node 10612166716)"@de ;
+    schema:name "Lanfera's Well"@de,
+        "Lanfera's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "20"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q156-EFD2D0F6-3F69-53B2-A59E-5F9A8BF19960 ;
+    geo:hasGeometry ohss:Q156-EFD2D0F6-3F69-53B2-A59E-5F9A8BF19960 ;
+    rdfs:label "Lanfera's Well"@de,
+        "Lanfera's Well"@en ;
+    skos:prefLabel "Lanfera's Well"@de,
+        "Lanfera's Well"@en ;
+    ohsp:P2 ohss:Q156-E2AED125-0113-52B6-8274-0CF26F9074EC ;
+    ohsp:P100 ohss:Q156-7DD335A3-25CD-5182-8BB2-159E57EDC7C5 ;
+    ohsp:P101 ohss:Q156-8F252F6F-563E-5333-A5D2-D73E3318DD32,
+        ohss:Q156-9CBB0556-2E30-50E7-9398-9BA22C05BE9F,
+        ohss:Q156-90876A0C-00EA-5781-A264-D1418D3B3E51 ;
+    ohsp:P107 ohss:Q156-FA1E6C44-441C-5BAD-B8FB-40ACBBA17F87 ;
+    ohsp:P110 ohss:Q156-BD650F1F-BF08-5057-B8C7-125EC58A13D6 ;
+    ohsp:P111 ohss:Q156-EFD2D0F6-3F69-53B2-A59E-5F9A8BF19960 ;
+    ohsp:P113 ohss:Q156-1EB97FB9-9985-56F7-AAE4-37357239F40C,
+        ohss:Q156-5B528F11-D746-5F66-B7C7-BC88E3B890E8,
+        ohss:Q156-48B12157-85B8-5CBC-BB65-D74EF0DF3168,
+        ohss:Q156-93D770F1-DD24-542B-A32A-1566F34F9EA5,
+        ohss:Q156-96A585FE-2747-5E4F-A7CB-A6432870F94B,
+        ohss:Q156-128D2851-FADB-5020-B7C6-B83E3FB255C8,
+        ohss:Q156-29167A2F-E22B-58B3-84A8-CAC7492C6259,
+        ohss:Q156-41672C7A-BE4D-5B26-A079-5D77967C5B02,
+        ohss:Q156-1641154F-D128-5B52-A04C-E74FADC56489,
+        ohss:Q156-B2B2A30F-672D-5A27-883F-04C2076EB215,
+        ohss:Q156-DD66DBD1-E04A-55C0-90AA-04202A9CFC5C,
+        ohss:Q156-ED6BAB50-4011-5235-87BA-E01174D0A00C ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/10612166716> ;
+    ohst:P101 <https://www.openstreetmap.org/node/10612166716/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/node/10612166716/history/1> ;
+    ohst:P110 "Point(-8.4001368 53.3332648)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.4001368 53.3332648)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "covered=no",
+        "denomination=roman_catholic",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "name=Lanfera's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=GA086-001001",
+        "religion=christian",
+        "source:name=British War Office map",
+        "wikidata=Q122309770" .
+
+ohss:Q156-1EB97FB9-9985-56F7-AAE4-37357239F40C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q156-5B528F11-D746-5F66-B7C7-BC88E3B890E8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q156-7DD335A3-25CD-5182-8BB2-159E57EDC7C5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/10612166716> .
+
+ohss:Q156-8F252F6F-563E-5333-A5D2-D73E3318DD32
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2023-02-06T18:07:09Z" ;
+    ohspq:P104 "132169117" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10612166716/history/1> .
+
+ohss:Q156-9CBB0556-2E30-50E7-9398-9BA22C05BE9F
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-09-07T18:55:27Z" ;
+    ohspq:P104 "140953950" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10612166716/history/2> .
+
+ohss:Q156-48B12157-85B8-5CBC-BB65-D74EF0DF3168
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "source:name=British War Office map" .
+
+ohss:Q156-93D770F1-DD24-542B-A32A-1566F34F9EA5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "name=Lanfera's Well" .
+
+ohss:Q156-96A585FE-2747-5E4F-A7CB-A6432870F94B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "ref:IE:smr=GA086-001001" .
+
+ohss:Q156-128D2851-FADB-5020-B7C6-B83E3FB255C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "wikidata=Q122309770" .
+
+ohss:Q156-29167A2F-E22B-58B3-84A8-CAC7492C6259
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q156-41672C7A-BE4D-5B26-A079-5D77967C5B02
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q156-90876A0C-00EA-5781-A264-D1418D3B3E51
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2024-11-28T15:21:57Z" ;
+    ohspq:P104 "159707699" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10612166716/history/3> .
+
+ohss:Q156-1641154F-D128-5B52-A04C-E74FADC56489
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q156-B2B2A30F-672D-5A27-883F-04C2076EB215
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q156-BD650F1F-BF08-5057-B8C7-125EC58A13D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P110 "Point(-8.4001368 53.3332648)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:6de2d08e522259c39acdd7383b07d956 .
+
+ohss:Q156-DD66DBD1-E04A-55C0-90AA-04202A9CFC5C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "covered=no" .
+
+ohss:Q156-E2AED125-0113-52B6-8274-0CF26F9074EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q156-ED6BAB50-4011-5235-87BA-E01174D0A00C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q156-EFD2D0F6-3F69-53B2-A59E-5F9A8BF19960
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.4001368 53.3332648)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:e3624166807da8b801e10dcd10badda52e9805f0 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2023-02-06T18:07:09Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.4001368 53.3332648)" .
+
+ohss:Q156-FA1E6C44-441C-5BAD-B8FB-40ACBBA17F87
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/10612166716/history/1> .
+
+ohsref:1c086b3bc134e5f4892f407d7e2157c6f5d5b3ef
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10612166716/history/3> .
+
+ohsref:e3624166807da8b801e10dcd10badda52e9805f0
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10612166716/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:6de2d08e522259c39acdd7383b07d956
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.3332648"^^xsd:double ;
+    wikibase:geoLongitude "-8.4001368"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

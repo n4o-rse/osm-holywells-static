@@ -1,0 +1,234 @@
+# Q494: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q494.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13746428038)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13746428038)"@de ;
+    dcterms:identifier "Q494" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q494 ;
+    dcterms:title "St Decla's Well"@de,
+        "St Decla's Well"@en ;
+    schema:about ohs:Q494 ;
+    dcat:distribution ohsdist:Q494-html,
+        ohsdist:Q494-json,
+        ohsdist:Q494-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q494.html> .
+
+ohsdist:Q494-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q494, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q494.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q494-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q494, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13383"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q494.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q494-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q494, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q494.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q494
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13746428038)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13746428038)"@de ;
+    schema:name "St Decla's Well"@de,
+        "St Decla's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q494-0D8AE142-851E-53EA-8B68-3B9C055596AD ;
+    geo:hasGeometry ohss:Q494-0D8AE142-851E-53EA-8B68-3B9C055596AD ;
+    rdfs:label "St Decla's Well"@de,
+        "St Decla's Well"@en ;
+    skos:prefLabel "St Decla's Well"@de,
+        "St Decla's Well"@en ;
+    ohsp:P2 ohss:Q494-7A6FFF33-93D6-5D6A-8125-405EEA3E477F ;
+    ohsp:P100 ohss:Q494-1198B01A-1576-5E31-9865-C000DF27B4D9 ;
+    ohsp:P101 ohss:Q494-0130B9EF-36B2-53B4-BA40-265482F73D45 ;
+    ohsp:P107 ohss:Q494-EB61EC48-DC8F-577A-8939-999A07F986E7 ;
+    ohsp:P110 ohss:Q494-4F145E05-3CEF-5120-8B34-B5BD24522316 ;
+    ohsp:P111 ohss:Q494-0D8AE142-851E-53EA-8B68-3B9C055596AD ;
+    ohsp:P113 ohss:Q494-4BF28CBC-04D1-55A7-BD78-8192BBAEC7A4,
+        ohss:Q494-4C65AD6C-39C7-55AE-926A-953EABDB5DC3,
+        ohss:Q494-90A955C8-31E9-5E55-B51E-1C1AAF4001FF,
+        ohss:Q494-208DD0D8-DB06-5E43-A873-4B53AD246506,
+        ohss:Q494-5956CDC5-09B2-5D00-B4F5-FB69413F8F4A,
+        ohss:Q494-17169B2A-1F2D-57BB-932D-EBDBA031B6B0,
+        ohss:Q494-F8B75397-BC27-5340-A3D5-478384143D5F ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13746428038> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13746428038/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13746428038/history/1> ;
+    ohst:P110 "Point(-8.6805135 52.2815133)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.6805135 52.2815133)" ;
+    ohst:P113 "name=St Decla's Well",
+        "natural=spring",
+        "old_name=Tobernadecla",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=CO007-121----",
+        "source=OS 1st edition map;OS 2nd edition map;GSGS 3906",
+        "wikidata=Q139493969" .
+
+ohss:Q494-0D8AE142-851E-53EA-8B68-3B9C055596AD
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.6805135 52.2815133)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-20T19:59:23Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.6805135 52.2815133)" .
+
+ohss:Q494-4BF28CBC-04D1-55A7-BD78-8192BBAEC7A4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q494-4C65AD6C-39C7-55AE-926A-953EABDB5DC3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohsps:P113 "wikidata=Q139493969" .
+
+ohss:Q494-4F145E05-3CEF-5120-8B34-B5BD24522316
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohsps:P110 "Point(-8.6805135 52.2815133)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:ba84d8911a72ef02ae87766514221d77 .
+
+ohss:Q494-7A6FFF33-93D6-5D6A-8125-405EEA3E477F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q494-90A955C8-31E9-5E55-B51E-1C1AAF4001FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q494-0130B9EF-36B2-53B4-BA40-265482F73D45
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-20T19:59:23Z" ;
+    ohspq:P104 "181599664" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13746428038/history/1> .
+
+ohss:Q494-208DD0D8-DB06-5E43-A873-4B53AD246506
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohsps:P113 "ref:IE:smr=CO007-121----" .
+
+ohss:Q494-1198B01A-1576-5E31-9865-C000DF27B4D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13746428038> .
+
+ohss:Q494-5956CDC5-09B2-5D00-B4F5-FB69413F8F4A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohsps:P113 "old_name=Tobernadecla" .
+
+ohss:Q494-17169B2A-1F2D-57BB-932D-EBDBA031B6B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohsps:P113 "name=St Decla's Well" .
+
+ohss:Q494-EB61EC48-DC8F-577A-8939-999A07F986E7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13746428038/history/1> .
+
+ohss:Q494-F8B75397-BC27-5340-A3D5-478384143D5F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28 ;
+    ohsps:P113 "source=OS 1st edition map;OS 2nd edition map;GSGS 3906" .
+
+ohsref:5ad6627d384a0e2969971a3370fb37e82147cc28
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13746428038/history/1> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:ba84d8911a72ef02ae87766514221d77
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.2815133"^^xsd:double ;
+    wikibase:geoLongitude "-8.6805135"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

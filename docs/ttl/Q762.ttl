@@ -1,0 +1,289 @@
+# Q762: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q762.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8646340711)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8646340711)"@de ;
+    dcterms:identifier "Q762" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q762 ;
+    dcterms:title "The Covered Well"@de,
+        "The Covered Well"@en ;
+    schema:about ohs:Q762 ;
+    dcat:distribution ohsdist:Q762-html,
+        ohsdist:Q762-json,
+        ohsdist:Q762-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q762.html> .
+
+ohsdist:Q762-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q762, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q762.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q762-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q762, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19535"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q762.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q762-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q762, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q762.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q762
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8646340711)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8646340711)"@de ;
+    schema:name "The Covered Well"@de,
+        "The Covered Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q762-4105F5D5-C7EF-5B27-9D22-451E5252FF30 ;
+    geo:hasGeometry ohss:Q762-4105F5D5-C7EF-5B27-9D22-451E5252FF30 ;
+    rdfs:label "The Covered Well"@de,
+        "The Covered Well"@en ;
+    skos:prefLabel "The Covered Well"@de,
+        "The Covered Well"@en ;
+    ohsp:P2 ohss:Q762-2401DAF4-A8C2-52BC-A795-46744539D096 ;
+    ohsp:P100 ohss:Q762-30E8C39D-7529-5DC7-B195-035D4DA47F64 ;
+    ohsp:P101 ohss:Q762-27ABB5F6-50EA-5846-96A8-B43F72F79CDC,
+        ohss:Q762-77D7FE47-F7BC-5218-8B3C-9EE9A68E6A9E,
+        ohss:Q762-408BEC96-2017-5383-BF8C-6B5007965FD0,
+        ohss:Q762-930D379D-43D2-5CCA-B931-26FFF391AE97 ;
+    ohsp:P107 ohss:Q762-1D2F5E4B-5462-5E64-9FE8-AE68ABDD0911 ;
+    ohsp:P110 ohss:Q762-076F1026-571F-5009-B436-6AFFF12D811D ;
+    ohsp:P111 ohss:Q762-4105F5D5-C7EF-5B27-9D22-451E5252FF30 ;
+    ohsp:P113 ohss:Q762-6DD2FEFB-C6DC-58C2-A410-57E45EB5BAEC,
+        ohss:Q762-14C61F68-D21E-5031-9F16-B1BC523860C8,
+        ohss:Q762-87C37BB5-730A-5607-8214-505C6D1D60E1,
+        ohss:Q762-9822A4EE-01DA-560A-B30A-88EC97363902,
+        ohss:Q762-36466795-EAC6-55D5-A0DC-0AFA8C43F3FE,
+        ohss:Q762-D972E9A8-7F3D-586B-B84C-887B07DD21CC,
+        ohss:Q762-E573DA4F-14D0-54DD-85AA-5E8FA65CA303 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8646340711> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8646340711/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8646340711/history/1> ;
+    ohst:P110 "Point(-6.4945586 53.3646859)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.4945586 53.3646859)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "drinking_water=no",
+        "name=The Covered Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q762-1D2F5E4B-5462-5E64-9FE8-AE68ABDD0911
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8646340711/history/1> .
+
+ohss:Q762-6DD2FEFB-C6DC-58C2-A410-57E45EB5BAEC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q762-14C61F68-D21E-5031-9F16-B1BC523860C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q762-27ABB5F6-50EA-5846-96A8-B43F72F79CDC
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2021-04-20T07:21:28Z" ;
+    ohspq:P104 "103246695" ;
+    ohspq:P105 "brianmc" ;
+    ohspq:P106 "20088" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8646340711/history/2> .
+
+ohss:Q762-30E8C39D-7529-5DC7-B195-035D4DA47F64
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8646340711> .
+
+ohss:Q762-076F1026-571F-5009-B436-6AFFF12D811D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315 ;
+    ohsps:P110 "Point(-6.4945586 53.3646859)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:74e6bc88bed7fb5eaea79dcb221e8f1a .
+
+ohss:Q762-77D7FE47-F7BC-5218-8B3C-9EE9A68E6A9E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2024-10-21T21:50:51Z" ;
+    ohspq:P104 "158188954" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8646340711/history/4> .
+
+ohss:Q762-87C37BB5-730A-5607-8214-505C6D1D60E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q762-408BEC96-2017-5383-BF8C-6B5007965FD0
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-04-20T07:17:23Z" ;
+    ohspq:P104 "103246318" ;
+    ohspq:P105 "brianmc" ;
+    ohspq:P106 "20088" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8646340711/history/1> .
+
+ohss:Q762-930D379D-43D2-5CCA-B931-26FFF391AE97
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2021-05-03T11:55:55Z" ;
+    ohspq:P104 "104054472" ;
+    ohspq:P105 "VictorIE" ;
+    ohspq:P106 "2008037" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8646340711/history/3> .
+
+ohss:Q762-2401DAF4-A8C2-52BC-A795-46744539D096
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q762-4105F5D5-C7EF-5B27-9D22-451E5252FF30
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.4945586 53.3646859)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:5027fc6500a0f258361797dceaa7ca14d2ee30b2 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-04-20T07:17:23Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.4945586 53.3646859)" .
+
+ohss:Q762-9822A4EE-01DA-560A-B30A-88EC97363902
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q762-36466795-EAC6-55D5-A0DC-0AFA8C43F3FE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315 ;
+    ohsps:P113 "drinking_water=no" .
+
+ohss:Q762-D972E9A8-7F3D-586B-B84C-887B07DD21CC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315 ;
+    ohsps:P113 "name=The Covered Well" .
+
+ohss:Q762-E573DA4F-14D0-54DD-85AA-5E8FA65CA303
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohsref:5027fc6500a0f258361797dceaa7ca14d2ee30b2
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8646340711/history/1> .
+
+ohsref:ec0c358f4482b911f4a5b5183a81f882ffb78315
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8646340711/history/4> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:74e6bc88bed7fb5eaea79dcb221e8f1a
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.3646859"^^xsd:double ;
+    wikibase:geoLongitude "-6.4945586"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

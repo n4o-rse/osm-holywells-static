@@ -1,0 +1,263 @@
+# Q214: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q214.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 11065786745)"@en,
+        "Höhenmarke (OpenStreetMap-Node 11065786745)"@de ;
+    dcterms:identifier "Q214" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q214 ;
+    dcterms:title "Well of Gailline"@de,
+        "Well of Gailline"@en ;
+    schema:about ohs:Q214 ;
+    dcat:distribution ohsdist:Q214-html,
+        ohsdist:Q214-json,
+        ohsdist:Q214-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q214.html> .
+
+ohsdist:Q214-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q214, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q214.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q214-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q214, as archived from the Wikibase API"@en ;
+    dcat:byteSize "16612"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q214.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q214-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q214, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q214.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q214
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 11065786745)"@en,
+        "Höhenmarke (OpenStreetMap-Node 11065786745)"@de ;
+    schema:name "Well of Gailline"@de,
+        "Well of Gailline"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q214-3E54B531-A3C5-5CC3-98F9-297DE37CE26B ;
+    geo:hasGeometry ohss:Q214-3E54B531-A3C5-5CC3-98F9-297DE37CE26B ;
+    rdfs:label "Well of Gailline"@de,
+        "Well of Gailline"@en ;
+    skos:prefLabel "Well of Gailline"@de,
+        "Well of Gailline"@en ;
+    ohsp:P2 ohss:Q214-880347D7-6E84-5049-9B33-11BF77DECEF5 ;
+    ohsp:P100 ohss:Q214-BCD866D2-D269-5631-93AD-CFD8DD714ED5 ;
+    ohsp:P101 ohss:Q214-9C0AC750-EAB1-5C7D-AC1E-1C41C66F9C97,
+        ohss:Q214-081B2379-149A-5D2E-A28D-C2C715A3988C,
+        ohss:Q214-97DA8B52-7AF0-52E8-B20F-9AB825C86CE1 ;
+    ohsp:P107 ohss:Q214-3F3B86D2-EF29-5C57-852D-3F7D114E79C5 ;
+    ohsp:P110 ohss:Q214-91EBC8CA-F0D8-5A08-8722-27D9F6639915 ;
+    ohsp:P111 ohss:Q214-3E54B531-A3C5-5CC3-98F9-297DE37CE26B ;
+    ohsp:P113 ohss:Q214-1CA559E1-8554-56AE-AFF1-947440AE10FF,
+        ohss:Q214-53D3A386-32E4-5DAE-9E5F-119BACD0CB1D,
+        ohss:Q214-8841E092-CB7A-5E5C-8B5C-24DA4190D38A,
+        ohss:Q214-A6BE0C1D-F777-567E-8751-CBFD8DDC3FC5,
+        ohss:Q214-D2752DBA-50CB-5D5D-8500-461AE79513E6,
+        ohss:Q214-DB1843FD-3135-5D0D-B555-8519B211B411 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/11065786745> ;
+    ohst:P101 <https://www.openstreetmap.org/node/11065786745/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/node/11065786745/history/2> ;
+    ohst:P110 "Point(-6.0920032 53.2722103)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.0920032 53.2722103)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "name=Well of Gailline",
+        "natural=spring",
+        "note=not on Sites and Monuments records",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q214-1CA559E1-8554-56AE-AFF1-947440AE10FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:eb7f3a76901bec8984d4af8696d77dfd5fd27aaa ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q214-3E54B531-A3C5-5CC3-98F9-297DE37CE26B
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.0920032 53.2722103)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:6ff4cb834d20662ba3118469ea46ef2dfbdfb0d9 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2023-07-24T21:05:20Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.0920032 53.2722103)" .
+
+ohss:Q214-3F3B86D2-EF29-5C57-852D-3F7D114E79C5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/11065786745/history/2> .
+
+ohss:Q214-9C0AC750-EAB1-5C7D-AC1E-1C41C66F9C97
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-07-24T21:11:34Z" ;
+    ohspq:P104 "138959342" ;
+    ohspq:P105 "alan_gr" ;
+    ohspq:P106 "5307206" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11065786745/history/2> .
+
+ohss:Q214-53D3A386-32E4-5DAE-9E5F-119BACD0CB1D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:eb7f3a76901bec8984d4af8696d77dfd5fd27aaa ;
+    ohsps:P113 "name=Well of Gailline" .
+
+ohss:Q214-081B2379-149A-5D2E-A28D-C2C715A3988C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-09-16T16:17:29Z" ;
+    ohspq:P104 "141350125" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11065786745/history/3> .
+
+ohss:Q214-91EBC8CA-F0D8-5A08-8722-27D9F6639915
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:eb7f3a76901bec8984d4af8696d77dfd5fd27aaa ;
+    ohsps:P110 "Point(-6.0920032 53.2722103)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:d9bf33b22e1bf8b49b79443628715290 .
+
+ohss:Q214-97DA8B52-7AF0-52E8-B20F-9AB825C86CE1
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2023-07-24T21:05:20Z" ;
+    ohspq:P104 "138959199" ;
+    ohspq:P105 "alan_gr" ;
+    ohspq:P106 "5307206" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11065786745/history/1> .
+
+ohss:Q214-8841E092-CB7A-5E5C-8B5C-24DA4190D38A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:eb7f3a76901bec8984d4af8696d77dfd5fd27aaa ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q214-880347D7-6E84-5049-9B33-11BF77DECEF5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q214-A6BE0C1D-F777-567E-8751-CBFD8DDC3FC5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:eb7f3a76901bec8984d4af8696d77dfd5fd27aaa ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q214-BCD866D2-D269-5631-93AD-CFD8DD714ED5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/11065786745> .
+
+ohss:Q214-D2752DBA-50CB-5D5D-8500-461AE79513E6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:eb7f3a76901bec8984d4af8696d77dfd5fd27aaa ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q214-DB1843FD-3135-5D0D-B555-8519B211B411
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:eb7f3a76901bec8984d4af8696d77dfd5fd27aaa ;
+    ohsps:P113 "note=not on Sites and Monuments records" .
+
+ohsref:6ff4cb834d20662ba3118469ea46ef2dfbdfb0d9
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/11065786745/history/1> .
+
+ohsref:eb7f3a76901bec8984d4af8696d77dfd5fd27aaa
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/11065786745/history/3> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:d9bf33b22e1bf8b49b79443628715290
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.2722103"^^xsd:double ;
+    wikibase:geoLongitude "-6.0920032"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

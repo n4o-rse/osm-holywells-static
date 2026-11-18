@@ -1,0 +1,216 @@
+# Q320: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q320.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 12023726123)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12023726123)"@de ;
+    dcterms:identifier "Q320" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q320 ;
+    dcterms:title "Tober Kieran"@de,
+        "Tober Kieran"@en ;
+    schema:about ohs:Q320 ;
+    dcat:distribution ohsdist:Q320-html,
+        ohsdist:Q320-json,
+        ohsdist:Q320-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q320.html> .
+
+ohsdist:Q320-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q320, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q320.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q320-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q320, as archived from the Wikibase API"@en ;
+    dcat:byteSize "11556"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q320.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q320-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q320, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q320.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q320
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 12023726123)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12023726123)"@de ;
+    schema:name "Tober Kieran"@de,
+        "Tober Kieran"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "11"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q320-88C03C40-F238-5D1A-B84A-C5600F55B660 ;
+    geo:hasGeometry ohss:Q320-88C03C40-F238-5D1A-B84A-C5600F55B660 ;
+    rdfs:label "Tober Kieran"@de,
+        "Tober Kieran"@en ;
+    skos:prefLabel "Tober Kieran"@de,
+        "Tober Kieran"@en ;
+    ohsp:P2 ohss:Q320-08984854-6B1F-552A-BE6F-2677DECE9005 ;
+    ohsp:P100 ohss:Q320-C023EC74-BD3B-5BD5-A946-776D2141945A ;
+    ohsp:P101 ohss:Q320-49879C52-6BB5-55EB-BEA9-5DDD414192F6 ;
+    ohsp:P107 ohss:Q320-7A49CB4F-067A-593A-B2AB-8B07DBC9A522 ;
+    ohsp:P110 ohss:Q320-697BF49C-4B0C-57D6-826F-212E5D86F2FA ;
+    ohsp:P111 ohss:Q320-88C03C40-F238-5D1A-B84A-C5600F55B660 ;
+    ohsp:P113 ohss:Q320-2BBCB755-CDBA-50A2-9675-B98D9F100725,
+        ohss:Q320-7A6E3FB3-8A72-50BE-8A94-74DCBD65C0BF,
+        ohss:Q320-7BACD7F6-573B-5C73-BDB8-B48F28DF29A9,
+        ohss:Q320-1758797F-6D43-5141-BDA1-9086B89B651C,
+        ohss:Q320-A4310E0E-22D2-502E-9176-7BA2813B14B0 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/12023726123> ;
+    ohst:P101 <https://www.openstreetmap.org/node/12023726123/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/12023726123/history/1> ;
+    ohst:P110 "Point(-7.2292559 52.2913415)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.2292559 52.2913415)" ;
+    ohst:P113 "name:ga=Tobar Chiaráin",
+        "name=Tober Kieran",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "wikidata=Q126665980" .
+
+ohss:Q320-2BBCB755-CDBA-50A2-9675-B98D9F100725
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8e4fe27272c9a6ad5082cf14138cba9df2d9ffed ;
+    ohsps:P113 "name:ga=Tobar Chiaráin" .
+
+ohss:Q320-7A6E3FB3-8A72-50BE-8A94-74DCBD65C0BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8e4fe27272c9a6ad5082cf14138cba9df2d9ffed ;
+    ohsps:P113 "name=Tober Kieran" .
+
+ohss:Q320-7A49CB4F-067A-593A-B2AB-8B07DBC9A522
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/12023726123/history/1> .
+
+ohss:Q320-7BACD7F6-573B-5C73-BDB8-B48F28DF29A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8e4fe27272c9a6ad5082cf14138cba9df2d9ffed ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q320-88C03C40-F238-5D1A-B84A-C5600F55B660
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.2292559 52.2913415)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:8e4fe27272c9a6ad5082cf14138cba9df2d9ffed ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-06-30T22:08:11Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.2292559 52.2913415)" .
+
+ohss:Q320-697BF49C-4B0C-57D6-826F-212E5D86F2FA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8e4fe27272c9a6ad5082cf14138cba9df2d9ffed ;
+    ohsps:P110 "Point(-7.2292559 52.2913415)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:672c1cd7fb708333598dd88d73ade97b .
+
+ohss:Q320-49879C52-6BB5-55EB-BEA9-5DDD414192F6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-06-30T22:08:11Z" ;
+    ohspq:P104 "153387410" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12023726123/history/1> .
+
+ohss:Q320-1758797F-6D43-5141-BDA1-9086B89B651C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8e4fe27272c9a6ad5082cf14138cba9df2d9ffed ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q320-08984854-6B1F-552A-BE6F-2677DECE9005
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q320-A4310E0E-22D2-502E-9176-7BA2813B14B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:8e4fe27272c9a6ad5082cf14138cba9df2d9ffed ;
+    ohsps:P113 "wikidata=Q126665980" .
+
+ohss:Q320-C023EC74-BD3B-5BD5-A946-776D2141945A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/12023726123> .
+
+ohsref:8e4fe27272c9a6ad5082cf14138cba9df2d9ffed
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12023726123/history/1> .
+
+ohsv:672c1cd7fb708333598dd88d73ade97b
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.2913415"^^xsd:double ;
+    wikibase:geoLongitude "-7.2292559"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

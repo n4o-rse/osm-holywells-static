@@ -1,0 +1,300 @@
+# Q789: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q789.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8985198704)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8985198704)"@de ;
+    dcterms:identifier "Q789" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q789 ;
+    dcterms:title "Tobarcronan"@de,
+        "Tobarcronan"@en ;
+    schema:about ohs:Q789 ;
+    dcat:distribution ohsdist:Q789-html,
+        ohsdist:Q789-json,
+        ohsdist:Q789-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q789.html> .
+
+ohsdist:Q789-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q789, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q789.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q789-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q789, as archived from the Wikibase API"@en ;
+    dcat:byteSize "20027"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q789.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q789-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q789, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q789.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q789
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8985198704)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8985198704)"@de ;
+    schema:name "Tobarcronan"@de,
+        "Tobarcronan"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "17"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q789-F104A1A3-30B0-581A-B3E5-F45C4CF8215C ;
+    geo:hasGeometry ohss:Q789-AA652E26-5B8A-55A7-BFCC-C20E1E6C71F6,
+        ohss:Q789-F104A1A3-30B0-581A-B3E5-F45C4CF8215C ;
+    rdfs:label "Tobarcronan"@de,
+        "Tobarcronan"@en ;
+    skos:prefLabel "Tobarcronan"@de,
+        "Tobarcronan"@en ;
+    ohsp:P2 ohss:Q789-BC7AADEB-99D4-59B6-8887-513D4959FC9F ;
+    ohsp:P100 ohss:Q789-CF6849A4-5DF5-59FF-8E56-BC650CF43C75 ;
+    ohsp:P101 ohss:Q789-2030FF7B-08D1-5BF1-B8F2-904CFC881083,
+        ohss:Q789-B9E388DF-AE6A-55C4-810D-9F10B07A5CAB,
+        ohss:Q789-F564CCF2-28FB-5F41-86A7-21842A89A80A ;
+    ohsp:P107 ohss:Q789-4D345939-DD08-580B-9251-EC2142F5D269 ;
+    ohsp:P110 ohss:Q789-408FD328-DABA-5B1E-B1C3-9BB9E76CB1BB ;
+    ohsp:P111 ohss:Q789-AA652E26-5B8A-55A7-BFCC-C20E1E6C71F6,
+        ohss:Q789-F104A1A3-30B0-581A-B3E5-F45C4CF8215C ;
+    ohsp:P113 ohss:Q789-0B67EE8A-6AF6-5A50-9A22-88516304BD09,
+        ohss:Q789-4E00B632-DC77-587E-8C26-7DBC0F7753EC,
+        ohss:Q789-27C7937C-416C-5E12-B12F-A1D9CEFB87DF,
+        ohss:Q789-689A9ACB-B0F6-5587-A5B2-2FCF79F2266D,
+        ohss:Q789-584022D7-33E7-5D04-B4FA-8EED88058F6B,
+        ohss:Q789-AF1F423B-37CD-57F3-8947-8345CB8CF014,
+        ohss:Q789-EB6EED5D-6A51-5E20-BD9C-F4A33996A2D6,
+        ohss:Q789-F0572D72-DDA6-543E-B2AF-7F7638681B6A ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8985198704> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8985198704/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8985198704/history/1> ;
+    ohst:P110 "Point(-9.0608963 53.045339)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-9.0608963 53.045339)",
+        "POINT(-9.0609017 53.0453374)" ;
+    ohst:P113 "denomination=roman_catholic",
+        "drinking_water=yes",
+        "name:etymology:wikidata=Q5191499",
+        "name:ga=Tobar Chrónáin",
+        "name=Tobarcronan",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q789-0B67EE8A-6AF6-5A50-9A22-88516304BD09
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P113 "name:etymology:wikidata=Q5191499" .
+
+ohss:Q789-4D345939-DD08-580B-9251-EC2142F5D269
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8985198704/history/1> .
+
+ohss:Q789-4E00B632-DC77-587E-8C26-7DBC0F7753EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q789-27C7937C-416C-5E12-B12F-A1D9CEFB87DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q789-408FD328-DABA-5B1E-B1C3-9BB9E76CB1BB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P110 "Point(-9.0608963 53.045339)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:3258bbc405af6d5f6a673a697bd7fc29 .
+
+ohss:Q789-689A9ACB-B0F6-5587-A5B2-2FCF79F2266D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P113 "drinking_water=yes" .
+
+ohss:Q789-2030FF7B-08D1-5BF1-B8F2-904CFC881083
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-08-06T08:34:26Z" ;
+    ohspq:P104 "109244588" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8985198704/history/1> .
+
+ohss:Q789-584022D7-33E7-5D04-B4FA-8EED88058F6B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q789-AA652E26-5B8A-55A7-BFCC-C20E1E6C71F6
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.0609017 53.0453374)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:d4bba0e52a34cb2e3af1204707621fec47e5d8f5 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-08-06T08:34:26Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-9.0609017 53.0453374)" .
+
+ohss:Q789-AF1F423B-37CD-57F3-8947-8345CB8CF014
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P113 "name=Tobarcronan" .
+
+ohss:Q789-B9E388DF-AE6A-55C4-810D-9F10B07A5CAB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-07-29T09:33:51Z" ;
+    ohspq:P104 "139165304" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8985198704/history/3> .
+
+ohss:Q789-BC7AADEB-99D4-59B6-8887-513D4959FC9F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q789-CF6849A4-5DF5-59FF-8E56-BC650CF43C75
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8985198704> .
+
+ohss:Q789-EB6EED5D-6A51-5E20-BD9C-F4A33996A2D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P113 "name:ga=Tobar Chrónáin" .
+
+ohss:Q789-F104A1A3-30B0-581A-B3E5-F45C4CF8215C
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.0608963 53.045339)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:473afc57d0e4d29c3d00b8c303fd7b33609a648a ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-06-07T17:26:34Z" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P111 "POINT(-9.0608963 53.045339)" .
+
+ohss:Q789-F564CCF2-28FB-5F41-86A7-21842A89A80A
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-06-07T17:26:34Z" ;
+    ohspq:P104 "137065549" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8985198704/history/2> .
+
+ohss:Q789-F0572D72-DDA6-543E-B2AF-7F7638681B6A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:49c75007d433346f50faaeb9fce0205752741f31 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohsref:49c75007d433346f50faaeb9fce0205752741f31
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8985198704/history/3> .
+
+ohsref:473afc57d0e4d29c3d00b8c303fd7b33609a648a
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8985198704/history/2> .
+
+ohsref:d4bba0e52a34cb2e3af1204707621fec47e5d8f5
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8985198704/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:3258bbc405af6d5f6a673a697bd7fc29
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.045339"^^xsd:double ;
+    wikibase:geoLongitude "-9.0608963"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

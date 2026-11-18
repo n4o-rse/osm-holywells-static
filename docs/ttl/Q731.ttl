@@ -1,0 +1,403 @@
+# Q731: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q731.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8526348855)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8526348855)"@de ;
+    dcterms:identifier "Q731" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q731 ;
+    dcterms:title "Saint Brendan's Well"@de,
+        "Saint Brendan's Well"@en ;
+    schema:about ohs:Q731 ;
+    dcat:distribution ohsdist:Q731-html,
+        ohsdist:Q731-json,
+        ohsdist:Q731-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q731.html> .
+
+ohsdist:Q731-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q731, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q731.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q731-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q731, as archived from the Wikibase API"@en ;
+    dcat:byteSize "32173"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q731.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q731-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q731, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q731.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q731
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8526348855)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8526348855)"@de ;
+    schema:name "Saint Brendan's Well"@de,
+        "Saint Brendan's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "26"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q731-894C8BA4-5449-5B28-8C7B-E9C796A8BC36 ;
+    geo:hasGeometry ohss:Q731-894C8BA4-5449-5B28-8C7B-E9C796A8BC36 ;
+    rdfs:label "Saint Brendan's Well"@de,
+        "Saint Brendan's Well"@en ;
+    skos:prefLabel "Saint Brendan's Well"@de,
+        "Saint Brendan's Well"@en ;
+    ohsp:P2 ohss:Q731-CAE834F4-C25C-5AFF-8BAF-BAA96CDD42D5 ;
+    ohsp:P100 ohss:Q731-C108983A-BF1C-5F1B-94BA-080E7FB12B6D ;
+    ohsp:P101 ohss:Q731-2C214281-3741-5F82-AF28-E38FF5F7B719,
+        ohss:Q731-9E609C6E-7895-51B2-90A6-3E5123B4988D,
+        ohss:Q731-68CAD994-5D63-5F57-A4A0-EF5988F3E04F,
+        ohss:Q731-75E05740-9B4E-584E-B6B3-BDF4ACB80D54,
+        ohss:Q731-BCAE0136-5BA2-5C69-A47F-BC57113699C3,
+        ohss:Q731-D41BC3C6-809F-58EC-8931-160AE20AE6BB,
+        ohss:Q731-DDAF5F6C-B0F8-5074-A201-73482C45AC90 ;
+    ohsp:P107 ohss:Q731-144FFA98-FEE7-54EF-B345-223C192F4DBD ;
+    ohsp:P110 ohss:Q731-76B55742-ABC4-5BEA-A758-C2C7EC1DBBDB ;
+    ohsp:P111 ohss:Q731-894C8BA4-5449-5B28-8C7B-E9C796A8BC36 ;
+    ohsp:P113 ohss:Q731-0CB0EAF0-A31C-57FD-B25E-3CD25E4565F2,
+        ohss:Q731-4AE5A971-EBC3-5411-9005-D30A6DAB5D3E,
+        ohss:Q731-7DA875FC-2C63-5365-AE10-FBC3268F00AC,
+        ohss:Q731-171AEC10-AEAA-53DE-AEB3-DEDF231CEE3A,
+        ohss:Q731-539D504E-5AA5-53E3-94DF-CFDE232443EC,
+        ohss:Q731-62512AA4-C96A-5441-A68F-5633CD904EFB,
+        ohss:Q731-AF8939D4-ABD6-5FC6-86F2-C2C1395EBEBC,
+        ohss:Q731-C2BEF7B6-923F-52B1-85E0-4DACC4D7AF77,
+        ohss:Q731-C92FD6D5-5547-58CA-9F2E-BA26AB7F0369,
+        ohss:Q731-C0670BDB-C36C-5764-B322-1022E3C423C4,
+        ohss:Q731-D78CEB3F-36B4-5854-BCE4-D25ACCBDE3B3,
+        ohss:Q731-DA5EB583-A31A-5A6F-A8B4-9B1BA2AD2B53,
+        ohss:Q731-DAACD78C-7938-551D-B886-F51DF75D0F7C,
+        ohss:Q731-FF02C94B-AF64-5A52-ACC8-E4123BE2E56B ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8526348855> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8526348855/history/7> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8526348855/history/2> ;
+    ohst:P110 "Point(-7.2707298 52.4669135)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.2707298 52.4669135)" ;
+    ohst:P113 "description=In a hollow of about 2m diameter, covered by a concrete shelter, not signposted. Access to water from the West.",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "name:etymology:wikidata=Q208961",
+        "name:ga=Tobar Bhrandáin",
+        "name=Saint Brendan's Well",
+        "natural=spring",
+        "old_name=Saint Brandon's Well",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=KK031-029",
+        "source=British War Office map;O'Kelly's Placenames p. 158;Esri Clarity",
+        "subject:wikidata=Q208961",
+        "survey:date=2024-06-26",
+        "wikidata=Q126435825" .
+
+ohss:Q731-0CB0EAF0-A31C-57FD-B25E-3CD25E4565F2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "name:ga=Tobar Bhrandáin" .
+
+ohss:Q731-2C214281-3741-5F82-AF28-E38FF5F7B719
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2023-10-23T16:44:30Z" ;
+    ohspq:P104 "143026733" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8526348855/history/4> .
+
+ohss:Q731-4AE5A971-EBC3-5411-9005-D30A6DAB5D3E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q731-7DA875FC-2C63-5365-AE10-FBC3268F00AC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "subject:wikidata=Q208961" .
+
+ohss:Q731-9E609C6E-7895-51B2-90A6-3E5123B4988D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+7"^^xsd:decimal ;
+    ohspq:P103 "2024-12-19T06:38:32Z" ;
+    ohspq:P104 "160379214" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:187a57b7a4159b90f1b51b12225fda5f ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8526348855/history/7> .
+
+ohss:Q731-68CAD994-5D63-5F57-A4A0-EF5988F3E04F
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-07-27T22:42:44Z" ;
+    ohspq:P104 "139110025" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8526348855/history/3> .
+
+ohss:Q731-75E05740-9B4E-584E-B6B3-BDF4ACB80D54
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-07-27T21:57:48Z" ;
+    ohspq:P104 "139108988" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8526348855/history/2> .
+
+ohss:Q731-76B55742-ABC4-5BEA-A758-C2C7EC1DBBDB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P110 "Point(-7.2707298 52.4669135)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:8e7d4868ef762a595210a53fe81a0098 .
+
+ohss:Q731-144FFA98-FEE7-54EF-B345-223C192F4DBD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8526348855/history/2> .
+
+ohss:Q731-171AEC10-AEAA-53DE-AEB3-DEDF231CEE3A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "name=Saint Brendan's Well" .
+
+ohss:Q731-539D504E-5AA5-53E3-94DF-CFDE232443EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "source=British War Office map;O'Kelly's Placenames p. 158;Esri Clarity" .
+
+ohss:Q731-894C8BA4-5449-5B28-8C7B-E9C796A8BC36
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.2707298 52.4669135)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:d873c111ac5821b64789946bf9f7db7cbce89e55 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-03-16T22:30:18Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.2707298 52.4669135)" .
+
+ohss:Q731-62512AA4-C96A-5441-A68F-5633CD904EFB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "ref:IE:smr=KK031-029" .
+
+ohss:Q731-AF8939D4-ABD6-5FC6-86F2-C2C1395EBEBC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q731-BCAE0136-5BA2-5C69-A47F-BC57113699C3
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-03-16T22:30:18Z" ;
+    ohspq:P104 "101147052" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8526348855/history/1> .
+
+ohss:Q731-C2BEF7B6-923F-52B1-85E0-4DACC4D7AF77
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "name:etymology:wikidata=Q208961" .
+
+ohss:Q731-C92FD6D5-5547-58CA-9F2E-BA26AB7F0369
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q731-C0670BDB-C36C-5764-B322-1022E3C423C4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "old_name=Saint Brandon's Well" .
+
+ohss:Q731-C108983A-BF1C-5F1B-94BA-080E7FB12B6D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8526348855> .
+
+ohss:Q731-CAE834F4-C25C-5AFF-8BAF-BAA96CDD42D5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q731-D41BC3C6-809F-58EC-8931-160AE20AE6BB
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+6"^^xsd:decimal ;
+    ohspq:P103 "2024-06-27T10:48:35Z" ;
+    ohspq:P104 "153241621" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:4a452dffd06b2507ab2eb1eddf5c4e2f ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8526348855/history/6> .
+
+ohss:Q731-D78CEB3F-36B4-5854-BCE4-D25ACCBDE3B3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q731-DA5EB583-A31A-5A6F-A8B4-9B1BA2AD2B53
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "survey:date=2024-06-26" .
+
+ohss:Q731-DAACD78C-7938-551D-B886-F51DF75D0F7C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "description=In a hollow of about 2m diameter, covered by a concrete shelter, not signposted. Access to water from the West." .
+
+ohss:Q731-DDAF5F6C-B0F8-5074-A201-73482C45AC90
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+5"^^xsd:decimal ;
+    ohspq:P103 "2024-06-10T23:45:51Z" ;
+    ohspq:P104 "152519349" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:30e603cac620241526fa9f81268ba25c ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8526348855/history/5> .
+
+ohss:Q731-FF02C94B-AF64-5A52-ACC8-E4123BE2E56B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e ;
+    ohsps:P113 "wikidata=Q126435825" .
+
+ohsref:6aa5a16aaf64890f3ed07a26e6865d9392d2ac4e
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8526348855/history/7> .
+
+ohsref:d873c111ac5821b64789946bf9f7db7cbce89e55
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8526348855/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:4a452dffd06b2507ab2eb1eddf5c4e2f
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+6"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:8e7d4868ef762a595210a53fe81a0098
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.4669135"^^xsd:double ;
+    wikibase:geoLongitude "-7.2707298"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:187a57b7a4159b90f1b51b12225fda5f
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+7"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

@@ -1,0 +1,361 @@
+# Q742: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q742.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8567014803)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8567014803)"@de ;
+    dcterms:identifier "Q742" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q742 ;
+    dcterms:title "John's Well"@de,
+        "John's Well"@en ;
+    schema:about ohs:Q742 ;
+    dcat:distribution ohsdist:Q742-html,
+        ohsdist:Q742-json,
+        ohsdist:Q742-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q742.html> .
+
+ohsdist:Q742-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q742, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q742.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q742-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q742, as archived from the Wikibase API"@en ;
+    dcat:byteSize "26915"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q742.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q742-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q742, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q742.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q742
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8567014803)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8567014803)"@de ;
+    schema:name "John's Well"@de,
+        "John's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "22"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q742-31CAE05A-A6E6-5D40-A3B3-AA550005BAE1 ;
+    geo:hasGeometry ohss:Q742-7A42087F-8271-5ADD-BAA9-E1CB33ABC4F6,
+        ohss:Q742-31CAE05A-A6E6-5D40-A3B3-AA550005BAE1 ;
+    rdfs:label "John's Well"@de,
+        "John's Well"@en ;
+    skos:prefLabel "John's Well"@de,
+        "John's Well"@en ;
+    ohsp:P2 ohss:Q742-F37FA3C6-4308-5310-AAC9-095A3A4C4B7D ;
+    ohsp:P100 ohss:Q742-2F90DC06-E5A6-5EC6-A92C-3B83BF0D37AE ;
+    ohsp:P101 ohss:Q742-5BDBA5E5-5A3B-5BAE-8B14-4344135547D6,
+        ohss:Q742-9E8437CD-3494-5680-8B31-CDD8CAF39242,
+        ohss:Q742-89426AAE-072A-57AD-8C5A-3BA9C3FD55CE,
+        ohss:Q742-474712EF-7806-5AB1-A144-5753A2EC11DA,
+        ohss:Q742-F69D8F10-62D7-5D4A-9EB0-6B87D7728C6E ;
+    ohsp:P107 ohss:Q742-392B0F9E-6835-5BF2-BE72-8DA67C30A0E0 ;
+    ohsp:P110 ohss:Q742-A093A78A-5A60-5C99-8AAE-5CA62891A52B ;
+    ohsp:P111 ohss:Q742-7A42087F-8271-5ADD-BAA9-E1CB33ABC4F6,
+        ohss:Q742-31CAE05A-A6E6-5D40-A3B3-AA550005BAE1 ;
+    ohsp:P113 ohss:Q742-3ADD0DA3-977E-542F-AC08-F192646AEE0A,
+        ohss:Q742-5D675902-61C6-5235-9F6A-180436A613BB,
+        ohss:Q742-8A4B9389-11EA-5821-A84C-60169C105ABF,
+        ohss:Q742-24D2F433-5731-5A12-8620-DE57B14C1B50,
+        ohss:Q742-33EE1DBA-3A9F-5E08-B17E-62BF849013BD,
+        ohss:Q742-843C9300-1E51-511D-8BEC-D825D5EF32D3,
+        ohss:Q742-41785C4A-8F4C-5EAE-9C36-57EAFB5F4D89,
+        ohss:Q742-2685778B-2000-56F9-825B-E427BECC7D9B,
+        ohss:Q742-C1BD1C66-CC53-5927-9424-305E0158DD21,
+        ohss:Q742-E02C188A-590D-50BF-904D-636C6E35AD44,
+        ohss:Q742-E8A0F73A-474C-59F5-B57B-AED1B4951092 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8567014803> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8567014803/history/5> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8567014803/history/2> ;
+    ohst:P110 "Point(-7.169588 52.7028688)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.169588 52.7028688)",
+        "POINT(-7.1696203 52.7028624)" ;
+    ohst:P113 "bubbleid=1049101667",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "name:etymology:wikidata=Q40662",
+        "name=John's Well",
+        "natural=spring",
+        "note=Pattern went out of use, but people in the area still burn bonfires for St. John's Eve.",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=KK015-009",
+        "source=local knowledge;O'Kelly Placenames p. 89",
+        "wikidata=Q55028616" .
+
+ohss:Q742-2F90DC06-E5A6-5EC6-A92C-3B83BF0D37AE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8567014803> .
+
+ohss:Q742-3ADD0DA3-977E-542F-AC08-F192646AEE0A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "wikidata=Q55028616" .
+
+ohss:Q742-5BDBA5E5-5A3B-5BAE-8B14-4344135547D6
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-07-27T21:21:17Z" ;
+    ohspq:P104 "139107942" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8567014803/history/2> .
+
+ohss:Q742-5D675902-61C6-5235-9F6A-180436A613BB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "source=local knowledge;O'Kelly Placenames p. 89" .
+
+ohss:Q742-7A42087F-8271-5ADD-BAA9-E1CB33ABC4F6
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.1696203 52.7028624)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:67b324bdf11a8c781342156e997c2ac9dace99c4 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-03-27T13:04:35Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.1696203 52.7028624)" .
+
+ohss:Q742-8A4B9389-11EA-5821-A84C-60169C105ABF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "name:etymology:wikidata=Q40662" .
+
+ohss:Q742-9E8437CD-3494-5680-8B31-CDD8CAF39242
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-03-27T13:04:35Z" ;
+    ohspq:P104 "101836490" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8567014803/history/1> .
+
+ohss:Q742-24D2F433-5731-5A12-8620-DE57B14C1B50
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q742-31CAE05A-A6E6-5D40-A3B3-AA550005BAE1
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.169588 52.7028688)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:a0c24f81daf15629bebaf8f2b1b6491f6628b560 ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2023-09-01T15:02:49Z" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P111 "POINT(-7.169588 52.7028688)" .
+
+ohss:Q742-33EE1DBA-3A9F-5E08-B17E-62BF849013BD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "note=Pattern went out of use, but people in the area still burn bonfires for St. John's Eve." .
+
+ohss:Q742-392B0F9E-6835-5BF2-BE72-8DA67C30A0E0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8567014803/history/2> .
+
+ohss:Q742-843C9300-1E51-511D-8BEC-D825D5EF32D3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "bubbleid=1049101667" .
+
+ohss:Q742-41785C4A-8F4C-5EAE-9C36-57EAFB5F4D89
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q742-89426AAE-072A-57AD-8C5A-3BA9C3FD55CE
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2023-09-01T15:02:49Z" ;
+    ohspq:P104 "140684093" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8567014803/history/4> .
+
+ohss:Q742-474712EF-7806-5AB1-A144-5753A2EC11DA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+5"^^xsd:decimal ;
+    ohspq:P103 "2024-12-11T06:53:09Z" ;
+    ohspq:P104 "160155386" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:30e603cac620241526fa9f81268ba25c ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8567014803/history/5> .
+
+ohss:Q742-2685778B-2000-56F9-825B-E427BECC7D9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q742-A093A78A-5A60-5C99-8AAE-5CA62891A52B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P110 "Point(-7.169588 52.7028688)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:ac970c6dde5ae03d12296405d244fdf0 .
+
+ohss:Q742-C1BD1C66-CC53-5927-9424-305E0158DD21
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "ref:IE:smr=KK015-009" .
+
+ohss:Q742-E02C188A-590D-50BF-904D-636C6E35AD44
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "name=John's Well" .
+
+ohss:Q742-E8A0F73A-474C-59F5-B57B-AED1B4951092
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6 ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q742-F37FA3C6-4308-5310-AAC9-095A3A4C4B7D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q742-F69D8F10-62D7-5D4A-9EB0-6B87D7728C6E
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-07-28T20:10:50Z" ;
+    ohspq:P104 "139150484" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8567014803/history/3> .
+
+ohsref:40ff8edf06ab8309a18a457e15e445693bac6ca6
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8567014803/history/5> .
+
+ohsref:67b324bdf11a8c781342156e997c2ac9dace99c4
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8567014803/history/1> .
+
+ohsref:a0c24f81daf15629bebaf8f2b1b6491f6628b560
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8567014803/history/4> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:ac970c6dde5ae03d12296405d244fdf0
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.7028688"^^xsd:double ;
+    wikibase:geoLongitude "-7.169588"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

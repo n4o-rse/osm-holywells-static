@@ -1,0 +1,290 @@
+# Q611: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q611.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 3608093585)"@en,
+        "Höhenmarke (OpenStreetMap-Node 3608093585)"@de ;
+    dcterms:identifier "Q611" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q611 ;
+    dcterms:title "Nunnery Well"@de,
+        "Nunnery Well"@en ;
+    schema:about ohs:Q611 ;
+    dcat:distribution ohsdist:Q611-html,
+        ohsdist:Q611-json,
+        ohsdist:Q611-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q611.html> .
+
+ohsdist:Q611-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q611, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q611.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q611-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q611, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19407"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q611.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q611-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q611, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q611.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q611
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 3608093585)"@en,
+        "Höhenmarke (OpenStreetMap-Node 3608093585)"@de ;
+    schema:name "Nunnery Well"@de,
+        "Nunnery Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q611-E24A88FF-C1CD-51F7-8F45-E35549E2BB2E ;
+    geo:hasGeometry ohss:Q611-7F663AC4-86A3-538D-A9C1-E866E7BFFA23,
+        ohss:Q611-E24A88FF-C1CD-51F7-8F45-E35549E2BB2E ;
+    rdfs:label "Nunnery Well"@de,
+        "Nunnery Well"@en ;
+    skos:prefLabel "Nunnery Well"@de,
+        "Nunnery Well"@en ;
+    ohsp:P2 ohss:Q611-4962B999-93F2-51C6-9524-E89630BF1CA0 ;
+    ohsp:P100 ohss:Q611-C4B1C193-03D6-5D9B-AB60-6B8C934D43F3 ;
+    ohsp:P101 ohss:Q611-1DA512F6-D9FC-5600-89CA-CA19504E6B0C,
+        ohss:Q611-06EDE371-DB6F-56E3-B3E5-351856A59B96,
+        ohss:Q611-9800EDCE-13CB-5913-AC85-958B8C06669F,
+        ohss:Q611-0795532E-023D-5C8E-A175-24E79F029E83 ;
+    ohsp:P107 ohss:Q611-B7A1187A-5D17-5F91-B65F-9283FB5E1736 ;
+    ohsp:P110 ohss:Q611-DE1BA84F-3E8E-58D8-853C-EBB41B5489C1 ;
+    ohsp:P111 ohss:Q611-7F663AC4-86A3-538D-A9C1-E866E7BFFA23,
+        ohss:Q611-E24A88FF-C1CD-51F7-8F45-E35549E2BB2E ;
+    ohsp:P113 ohss:Q611-3A062231-04DE-5259-8547-A599BBA095A2,
+        ohss:Q611-AE99E945-D803-5672-BADB-AFB13D4ECB5C,
+        ohss:Q611-BADDFCB3-59F0-5BBF-A571-A89EC0E7F043,
+        ohss:Q611-FAD9996D-336E-5440-8DCF-E9C636C78360,
+        ohss:Q611-FBB60A15-554E-568F-AC25-A48DF4FD5889 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/3608093585> ;
+    ohst:P101 <https://www.openstreetmap.org/node/3608093585/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/node/3608093585/history/3> ;
+    ohst:P110 "Point(-6.6522654 52.3206695)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.6521897 52.3207524)",
+        "POINT(-6.6522654 52.3206695)" ;
+    ohst:P113 "name=Nunnery Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=OS 1st edition map",
+        "wikidata=Q139265039" .
+
+ohss:Q611-1DA512F6-D9FC-5600-89CA-CA19504E6B0C
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2015-06-20T23:58:50Z" ;
+    ohspq:P104 "32107149" ;
+    ohspq:P105 "pjna" ;
+    ohspq:P106 "80151" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/3608093585/history/1> .
+
+ohss:Q611-3A062231-04DE-5259-8547-A599BBA095A2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5886677bfe31f3c3d7c4ce7bc95540156cb47e96 ;
+    ohsps:P113 "source=OS 1st edition map" .
+
+ohss:Q611-06EDE371-DB6F-56E3-B3E5-351856A59B96
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2024-03-17T00:20:50Z" ;
+    ohspq:P104 "148754904" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/3608093585/history/2> .
+
+ohss:Q611-7F663AC4-86A3-538D-A9C1-E866E7BFFA23
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.6521897 52.3207524)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:f684e10673f5ef5a3f9b7c45e3650a17cb8c1655 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2015-06-20T23:58:50Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.6521897 52.3207524)" .
+
+ohss:Q611-4962B999-93F2-51C6-9524-E89630BF1CA0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q611-9800EDCE-13CB-5913-AC85-958B8C06669F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2026-04-12T23:19:14Z" ;
+    ohspq:P104 "181252196" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/3608093585/history/4> .
+
+ohss:Q611-0795532E-023D-5C8E-A175-24E79F029E83
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2024-12-04T23:03:52Z" ;
+    ohspq:P104 "159936369" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/3608093585/history/3> .
+
+ohss:Q611-AE99E945-D803-5672-BADB-AFB13D4ECB5C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5886677bfe31f3c3d7c4ce7bc95540156cb47e96 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q611-B7A1187A-5D17-5F91-B65F-9283FB5E1736
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/3608093585/history/3> .
+
+ohss:Q611-BADDFCB3-59F0-5BBF-A571-A89EC0E7F043
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5886677bfe31f3c3d7c4ce7bc95540156cb47e96 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q611-C4B1C193-03D6-5D9B-AB60-6B8C934D43F3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/3608093585> .
+
+ohss:Q611-DE1BA84F-3E8E-58D8-853C-EBB41B5489C1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5886677bfe31f3c3d7c4ce7bc95540156cb47e96 ;
+    ohsps:P110 "Point(-6.6522654 52.3206695)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:1a88b2c73c142af73599a560239745c3 .
+
+ohss:Q611-E24A88FF-C1CD-51F7-8F45-E35549E2BB2E
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.6522654 52.3206695)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:35dd622c796967c071cd3ff3959c433843c2525f ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2024-03-17T00:20:50Z" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P111 "POINT(-6.6522654 52.3206695)" .
+
+ohss:Q611-FAD9996D-336E-5440-8DCF-E9C636C78360
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5886677bfe31f3c3d7c4ce7bc95540156cb47e96 ;
+    ohsps:P113 "name=Nunnery Well" .
+
+ohss:Q611-FBB60A15-554E-568F-AC25-A48DF4FD5889
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:5886677bfe31f3c3d7c4ce7bc95540156cb47e96 ;
+    ohsps:P113 "wikidata=Q139265039" .
+
+ohsref:35dd622c796967c071cd3ff3959c433843c2525f
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/3608093585/history/2> .
+
+ohsref:5886677bfe31f3c3d7c4ce7bc95540156cb47e96
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/3608093585/history/4> .
+
+ohsref:f684e10673f5ef5a3f9b7c45e3650a17cb8c1655
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/3608093585/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:1a88b2c73c142af73599a560239745c3
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.3206695"^^xsd:double ;
+    wikibase:geoLongitude "-6.6522654"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

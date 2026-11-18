@@ -1,0 +1,288 @@
+# Q629: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q629.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 4882251995)"@en,
+        "Höhenmarke (OpenStreetMap-Node 4882251995)"@de ;
+    dcterms:identifier "Q629" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q629 ;
+    dcterms:title "Tobar Cholm Cille"@de,
+        "Tobar Cholm Cille"@en ;
+    schema:about ohs:Q629 ;
+    dcat:distribution ohsdist:Q629-html,
+        ohsdist:Q629-json,
+        ohsdist:Q629-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q629.html> .
+
+ohsdist:Q629-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q629, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q629.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q629-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q629, as archived from the Wikibase API"@en ;
+    dcat:byteSize "18877"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q629.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q629-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q629, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q629.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q629
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 4882251995)"@en,
+        "Höhenmarke (OpenStreetMap-Node 4882251995)"@de ;
+    schema:name "Tobar Cholm Cille"@de,
+        "Tobar Cholm Cille"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "17"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q629-522F5FE2-6AD2-5480-862B-135BAC5FAD0D ;
+    geo:hasGeometry ohss:Q629-82AB5BF7-0970-528F-851B-BD87993F94A2,
+        ohss:Q629-522F5FE2-6AD2-5480-862B-135BAC5FAD0D ;
+    rdfs:label "Tobar Cholm Cille"@de,
+        "Tobar Cholm Cille"@en ;
+    skos:prefLabel "Tobar Cholm Cille"@de,
+        "Tobar Cholm Cille"@en ;
+    ohsp:P2 ohss:Q629-D5A74596-F742-5FAF-A412-0BF81C58E8D3 ;
+    ohsp:P100 ohss:Q629-BEB5BCD5-59F3-5BF7-9EE6-7AD8D9A88C6A ;
+    ohsp:P101 ohss:Q629-6BA6E825-BABC-5B43-9844-A833BA64EA55,
+        ohss:Q629-EBFA5C2A-3FAE-5815-BD15-6E6ACEB0F478 ;
+    ohsp:P107 ohss:Q629-2A052C03-6E26-5DA5-A42D-7DE691D8C3DC ;
+    ohsp:P110 ohss:Q629-2AB7B8D2-821D-5D45-830B-1F261CADBCC4 ;
+    ohsp:P111 ohss:Q629-82AB5BF7-0970-528F-851B-BD87993F94A2,
+        ohss:Q629-522F5FE2-6AD2-5480-862B-135BAC5FAD0D ;
+    ohsp:P113 ohss:Q629-3AE3AF6A-23E9-5C10-B75F-B370467C34B7,
+        ohss:Q629-3B608681-161A-5BB1-9C16-7FC7BB695CD8,
+        ohss:Q629-9A685A1F-D9DD-57E2-8F7A-98E22E66E30B,
+        ohss:Q629-69C454CA-8235-5504-ACE4-89B309ABD6DB,
+        ohss:Q629-084F9AA3-11FF-55DA-949B-99EA3C1427FB,
+        ohss:Q629-AC0B60AC-158D-56B5-B919-200222050F95,
+        ohss:Q629-C78C2CB9-2012-51C0-B7E0-F15295FB0C13,
+        ohss:Q629-D1BE9E41-1648-5A45-A481-16966F03B37D,
+        ohss:Q629-FC610349-9D56-5FF4-829C-04D24E5A61D0 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/4882251995> ;
+    ohst:P101 <https://www.openstreetmap.org/node/4882251995/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/4882251995/history/2> ;
+    ohst:P110 "Point(-8.738447 54.7206861)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.738447 54.7206861)",
+        "POINT(-8.7384035 54.720608)" ;
+    ohst:P113 "alt_name:en=St Colombus well",
+        "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "man_made=water_well",
+        "name:en=Saint Columbkille's Well",
+        "name:ga=Tobar Cholm Cille",
+        "name=Tobar Cholm Cille",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q629-2A052C03-6E26-5DA5-A42D-7DE691D8C3DC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/4882251995/history/2> .
+
+ohss:Q629-2AB7B8D2-821D-5D45-830B-1F261CADBCC4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P110 "Point(-8.738447 54.7206861)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:50659fcf052c5a9b81412e2e0d2d86dd .
+
+ohss:Q629-3AE3AF6A-23E9-5C10-B75F-B370467C34B7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "alt_name:en=St Colombus well" .
+
+ohss:Q629-3B608681-161A-5BB1-9C16-7FC7BB695CD8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "name:en=Saint Columbkille's Well" .
+
+ohss:Q629-6BA6E825-BABC-5B43-9844-A833BA64EA55
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-08-22T11:24:09Z" ;
+    ohspq:P104 "187837210" ;
+    ohspq:P105 "smeòrach" ;
+    ohspq:P106 "2922304" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4882251995/history/2> .
+
+ohss:Q629-9A685A1F-D9DD-57E2-8F7A-98E22E66E30B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q629-69C454CA-8235-5504-ACE4-89B309ABD6DB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q629-82AB5BF7-0970-528F-851B-BD87993F94A2
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.7384035 54.720608)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:10266ee4c904c151c7bf55eb63989fa8cd3edc9d ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2017-05-28T21:17:51Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.7384035 54.720608)" .
+
+ohss:Q629-084F9AA3-11FF-55DA-949B-99EA3C1427FB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "name:ga=Tobar Cholm Cille" .
+
+ohss:Q629-522F5FE2-6AD2-5480-862B-135BAC5FAD0D
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.738447 54.7206861)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-08-22T11:24:09Z" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P111 "POINT(-8.738447 54.7206861)" .
+
+ohss:Q629-AC0B60AC-158D-56B5-B919-200222050F95
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "name=Tobar Cholm Cille" .
+
+ohss:Q629-BEB5BCD5-59F3-5BF7-9EE6-7AD8D9A88C6A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/4882251995> .
+
+ohss:Q629-C78C2CB9-2012-51C0-B7E0-F15295FB0C13
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q629-D1BE9E41-1648-5A45-A481-16966F03B37D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "man_made=water_well" .
+
+ohss:Q629-D5A74596-F742-5FAF-A412-0BF81C58E8D3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q629-EBFA5C2A-3FAE-5815-BD15-6E6ACEB0F478
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2017-05-28T21:17:51Z" ;
+    ohspq:P104 "49055163" ;
+    ohspq:P105 "zabounette" ;
+    ohspq:P106 "1852703" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4882251995/history/1> .
+
+ohss:Q629-FC610349-9D56-5FF4-829C-04D24E5A61D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohsref:6341d6943ea67b1e91e7afcd4d35a05fc9a96a70
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4882251995/history/2> .
+
+ohsref:10266ee4c904c151c7bf55eb63989fa8cd3edc9d
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4882251995/history/1> .
+
+ohsv:50659fcf052c5a9b81412e2e0d2d86dd
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.7206861"^^xsd:double ;
+    wikibase:geoLongitude "-8.738447"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

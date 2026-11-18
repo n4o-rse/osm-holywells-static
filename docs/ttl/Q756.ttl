@@ -1,0 +1,316 @@
+# Q756: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q756.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8615769739)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8615769739)"@de ;
+    dcterms:identifier "Q756" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q756 ;
+    dcterms:title "The Seven Blessed Wells of Killeigh"@de,
+        "The Seven Blessed Wells of Killeigh"@en ;
+    schema:about ohs:Q756 ;
+    dcat:distribution ohsdist:Q756-html,
+        ohsdist:Q756-json,
+        ohsdist:Q756-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q756.html> .
+
+ohsdist:Q756-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q756, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q756.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q756-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q756, as archived from the Wikibase API"@en ;
+    dcat:byteSize "22270"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q756.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q756-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q756, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q756.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q756
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8615769739)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8615769739)"@de ;
+    schema:name "The Seven Blessed Wells of Killeigh"@de,
+        "The Seven Blessed Wells of Killeigh"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "19"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q756-CF075097-E64C-589A-A58C-7E710FA907AE ;
+    geo:hasGeometry ohss:Q756-CF075097-E64C-589A-A58C-7E710FA907AE ;
+    rdfs:label "The Seven Blessed Wells of Killeigh"@de,
+        "The Seven Blessed Wells of Killeigh"@en ;
+    skos:prefLabel "The Seven Blessed Wells of Killeigh"@de,
+        "The Seven Blessed Wells of Killeigh"@en ;
+    ohsp:P2 ohss:Q756-03F14F80-9709-59E2-84E8-C8D0DE46A064 ;
+    ohsp:P100 ohss:Q756-F260E504-6B60-5CEB-8B09-4D2B2BD2C9EC ;
+    ohsp:P101 ohss:Q756-42AA3F26-3B6E-5B2A-B901-8581A85690A3,
+        ohss:Q756-61292046-496F-5772-8281-BB925B7ACE55,
+        ohss:Q756-B2D102A9-D134-5725-8EA6-0C25DD3F301B,
+        ohss:Q756-E8B5AD05-4B71-5314-9111-E683611E2003 ;
+    ohsp:P107 ohss:Q756-DD0BA6AB-1978-568E-BDB3-2312E6D15359 ;
+    ohsp:P110 ohss:Q756-7E12AA59-CC8C-596E-8DC3-1BA9D81FA878 ;
+    ohsp:P111 ohss:Q756-CF075097-E64C-589A-A58C-7E710FA907AE ;
+    ohsp:P113 ohss:Q756-6AE9EF94-D145-5631-AB54-043786D739CB,
+        ohss:Q756-6CD7CDD8-E9A2-578A-8173-98696D37D66F,
+        ohss:Q756-6D5A9AF2-FB9C-572D-AE36-C6C29363D74C,
+        ohss:Q756-49C0B0E2-85EF-5DC2-9A3E-5AA0E25C9EEF,
+        ohss:Q756-678BDB38-BFFA-581D-A37C-55FC3D36AD6C,
+        ohss:Q756-B8B7E84E-D265-5BDA-BAD3-2CA92C27FCB8,
+        ohss:Q756-CCEEA620-5F4B-5189-B888-B4B16C341F74,
+        ohss:Q756-D63C378E-8568-5A8E-942B-72639B9055E9,
+        ohss:Q756-F46BB26A-CBE2-5072-8069-7A0C9C8B857C,
+        ohss:Q756-FC8033BC-FFBF-5602-9837-D118A82C520D ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8615769739> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8615769739/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8615769739/history/2> ;
+    ohst:P110 "Point(-7.4575486 53.2138796)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.4575486 53.2138796)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "man_made=water_well",
+        "name=The Seven Blessed Wells of Killeigh",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=OF025-017006-",
+        "religion=christian" .
+
+ohss:Q756-03F14F80-9709-59E2-84E8-C8D0DE46A064
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q756-6AE9EF94-D145-5631-AB54-043786D739CB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q756-6CD7CDD8-E9A2-578A-8173-98696D37D66F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q756-6D5A9AF2-FB9C-572D-AE36-C6C29363D74C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q756-7E12AA59-CC8C-596E-8DC3-1BA9D81FA878
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P110 "Point(-7.4575486 53.2138796)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:58a5c0cb1fe9305f9d36856f61fd1b0d .
+
+ohss:Q756-42AA3F26-3B6E-5B2A-B901-8581A85690A3
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2021-10-10T10:38:10Z" ;
+    ohspq:P104 "112328271" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8615769739/history/2> .
+
+ohss:Q756-49C0B0E2-85EF-5DC2-9A3E-5AA0E25C9EEF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q756-678BDB38-BFFA-581D-A37C-55FC3D36AD6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "ref:IE:smr=OF025-017006-" .
+
+ohss:Q756-61292046-496F-5772-8281-BB925B7ACE55
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2024-12-22T09:47:54Z" ;
+    ohspq:P104 "160494986" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8615769739/history/4> .
+
+ohss:Q756-B2D102A9-D134-5725-8EA6-0C25DD3F301B
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-04-10T19:21:29Z" ;
+    ohspq:P104 "102712581" ;
+    ohspq:P105 "Liamst" ;
+    ohspq:P106 "12848266" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8615769739/history/1> .
+
+ohss:Q756-B8B7E84E-D265-5BDA-BAD3-2CA92C27FCB8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q756-CCEEA620-5F4B-5189-B888-B4B16C341F74
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "name=The Seven Blessed Wells of Killeigh" .
+
+ohss:Q756-CF075097-E64C-589A-A58C-7E710FA907AE
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.4575486 53.2138796)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:20c3e6f25c59cbc72926348ebe8bcfd5024436ac ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-04-10T19:21:29Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.4575486 53.2138796)" .
+
+ohss:Q756-D63C378E-8568-5A8E-942B-72639B9055E9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "man_made=water_well" .
+
+ohss:Q756-DD0BA6AB-1978-568E-BDB3-2312E6D15359
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8615769739/history/2> .
+
+ohss:Q756-E8B5AD05-4B71-5314-9111-E683611E2003
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2024-03-08T11:14:54Z" ;
+    ohspq:P104 "148379174" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8615769739/history/3> .
+
+ohss:Q756-F46BB26A-CBE2-5072-8069-7A0C9C8B857C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q756-F260E504-6B60-5CEB-8B09-4D2B2BD2C9EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8615769739> .
+
+ohss:Q756-FC8033BC-FFBF-5602-9837-D118A82C520D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohsref:20c3e6f25c59cbc72926348ebe8bcfd5024436ac
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8615769739/history/1> .
+
+ohsref:84c04acfd5c59a4d01ec2cb944f01b653a18fcea
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8615769739/history/4> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:58a5c0cb1fe9305f9d36856f61fd1b0d
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.2138796"^^xsd:double ;
+    wikibase:geoLongitude "-7.4575486"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

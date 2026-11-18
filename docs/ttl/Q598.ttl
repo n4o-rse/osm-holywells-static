@@ -1,0 +1,255 @@
+# Q598: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q598.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 3123363884)"@en,
+        "Höhenmarke (OpenStreetMap-Node 3123363884)"@de ;
+    dcterms:identifier "Q598" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q598 ;
+    dcterms:title "Saint Bevin's Well"@de,
+        "Saint Bevin's Well"@en ;
+    schema:about ohs:Q598 ;
+    dcat:distribution ohsdist:Q598-html,
+        ohsdist:Q598-json,
+        ohsdist:Q598-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q598.html> .
+
+ohsdist:Q598-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q598, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q598.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q598-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q598, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15475"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q598.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q598-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q598, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q598.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q598
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 3123363884)"@en,
+        "Höhenmarke (OpenStreetMap-Node 3123363884)"@de ;
+    schema:name "Saint Bevin's Well"@de,
+        "Saint Bevin's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q598-D5270E5B-2479-589B-B7EA-152EFD7836FD ;
+    geo:hasGeometry ohss:Q598-D5270E5B-2479-589B-B7EA-152EFD7836FD ;
+    rdfs:label "Saint Bevin's Well"@de,
+        "Saint Bevin's Well"@en ;
+    skos:prefLabel "Saint Bevin's Well"@de,
+        "Saint Bevin's Well"@en ;
+    ohsp:P2 ohss:Q598-5391EAAA-5428-540F-BEE4-B39FBC8C1379 ;
+    ohsp:P100 ohss:Q598-2EA2FF20-BF7A-506A-BC36-525F1D03B967 ;
+    ohsp:P101 ohss:Q598-1E4BFFFF-FDA2-5F28-B04D-D1A09197D1C1,
+        ohss:Q598-2DE5D9AF-5CF7-52A9-AD85-7651D751B1A5 ;
+    ohsp:P107 ohss:Q598-5DD062DD-95BC-5EC0-84C7-26C694AF52D6 ;
+    ohsp:P110 ohss:Q598-E46DACC3-10CA-568B-BFFF-296C5CCB34D9 ;
+    ohsp:P111 ohss:Q598-D5270E5B-2479-589B-B7EA-152EFD7836FD ;
+    ohsp:P113 ohss:Q598-0F5F528C-2B5A-53F2-8C63-586AFF92E67C,
+        ohss:Q598-4D6C6743-C84F-555D-BED3-5B7ECE0AC769,
+        ohss:Q598-6EAE30DB-105A-54E2-9019-82ED30074FCA,
+        ohss:Q598-67E53DB4-8194-5E5F-AABD-C7D97E77B7EB,
+        ohss:Q598-161BFCF8-682B-5D3D-AF81-E56211925BCD,
+        ohss:Q598-2261BE0B-B591-5F3E-A2CE-4D4404F86853,
+        ohss:Q598-65022643-8050-516A-B133-C4EAC59057E9 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/3123363884> ;
+    ohst:P101 <https://www.openstreetmap.org/node/3123363884/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/3123363884/history/2> ;
+    ohst:P110 "Point(-8.6786358 53.454811)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.6786358 53.454811)" ;
+    ohst:P113 "historic=well",
+        "name=Saint Bevin's Well",
+        "natural=spring",
+        "note=NMS says it is dedicated to Kevin, but both 1st and 2nd edition map read Bevin imho",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=GA044-041----",
+        "source:name=OS 1st edition map" .
+
+ohss:Q598-0F5F528C-2B5A-53F2-8C63-586AFF92E67C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q598-1E4BFFFF-FDA2-5F28-B04D-D1A09197D1C1
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2014-10-11T02:52:47Z" ;
+    ohspq:P104 "25995626" ;
+    ohspq:P105 "DaCor" ;
+    ohspq:P106 "578519" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/3123363884/history/1> .
+
+ohss:Q598-2DE5D9AF-5CF7-52A9-AD85-7651D751B1A5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2025-03-23T16:17:37Z" ;
+    ohspq:P104 "163995179" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/3123363884/history/2> .
+
+ohss:Q598-2EA2FF20-BF7A-506A-BC36-525F1D03B967
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/3123363884> .
+
+ohss:Q598-4D6C6743-C84F-555D-BED3-5B7ECE0AC769
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe ;
+    ohsps:P113 "name=Saint Bevin's Well" .
+
+ohss:Q598-5DD062DD-95BC-5EC0-84C7-26C694AF52D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/3123363884/history/2> .
+
+ohss:Q598-6EAE30DB-105A-54E2-9019-82ED30074FCA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe ;
+    ohsps:P113 "historic=well" .
+
+ohss:Q598-67E53DB4-8194-5E5F-AABD-C7D97E77B7EB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe ;
+    ohsps:P113 "source:name=OS 1st edition map" .
+
+ohss:Q598-161BFCF8-682B-5D3D-AF81-E56211925BCD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe ;
+    ohsps:P113 "note=NMS says it is dedicated to Kevin, but both 1st and 2nd edition map read Bevin imho" .
+
+ohss:Q598-2261BE0B-B591-5F3E-A2CE-4D4404F86853
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q598-5391EAAA-5428-540F-BEE4-B39FBC8C1379
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q598-65022643-8050-516A-B133-C4EAC59057E9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe ;
+    ohsps:P113 "ref:IE:smr=GA044-041----" .
+
+ohss:Q598-D5270E5B-2479-589B-B7EA-152EFD7836FD
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.6786358 53.454811)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:c58756c50d08386b3ee0a3bffbaeb00ba58a01fe ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2014-10-11T02:52:47Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.6786358 53.454811)" .
+
+ohss:Q598-E46DACC3-10CA-568B-BFFF-296C5CCB34D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe ;
+    ohsps:P110 "Point(-8.6786358 53.454811)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:4279b7c8c1ddc0de7329a0d5f7521edb .
+
+ohsref:2e94c6df1a18976b68d6ae37689c80162e01d9fe
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/3123363884/history/2> .
+
+ohsref:c58756c50d08386b3ee0a3bffbaeb00ba58a01fe
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/3123363884/history/1> .
+
+ohsv:4279b7c8c1ddc0de7329a0d5f7521edb
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.454811"^^xsd:double ;
+    wikibase:geoLongitude "-8.6786358"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

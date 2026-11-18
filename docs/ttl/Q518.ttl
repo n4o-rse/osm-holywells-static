@@ -1,0 +1,290 @@
+# Q518: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q518.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13892730804)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13892730804)"@de ;
+    dcterms:identifier "Q518" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q518 ;
+    dcterms:title "St. Saran's Well"@de,
+        "St. Saran's Well"@en ;
+    schema:about ohs:Q518 ;
+    dcat:distribution ohsdist:Q518-html,
+        ohsdist:Q518-json,
+        ohsdist:Q518-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q518.html> .
+
+ohsdist:Q518-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q518, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q518.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q518-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q518, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19291"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q518.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q518-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q518, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q518.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q518
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13892730804)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13892730804)"@de ;
+    schema:name "St. Saran's Well"@de,
+        "St. Saran's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "17"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q518-6D20E94A-0892-5386-8B35-5D1176A155BF ;
+    geo:hasGeometry ohss:Q518-6D20E94A-0892-5386-8B35-5D1176A155BF ;
+    rdfs:label "St. Saran's Well"@de,
+        "St. Saran's Well"@en ;
+    skos:prefLabel "St. Saran's Well"@de,
+        "St. Saran's Well"@en ;
+    ohsp:P2 ohss:Q518-CA119717-CD61-5449-971D-0119B10D5A49 ;
+    ohsp:P100 ohss:Q518-A6D3B6BF-A5BB-5BA4-8016-2ADF941F6C9B ;
+    ohsp:P101 ohss:Q518-9EFFF00A-68D9-5ADC-A39C-1F9AD5486B98,
+        ohss:Q518-826C784A-19D4-5634-BEFE-82E37839280E,
+        ohss:Q518-FAF4E825-C0ED-5EEE-A9C1-8456692B0C27 ;
+    ohsp:P107 ohss:Q518-2AA6B44B-7E21-5125-992B-8D3804A145E3 ;
+    ohsp:P110 ohss:Q518-703A4D9C-0A71-53A6-B0BC-BF05179FB3FB ;
+    ohsp:P111 ohss:Q518-6D20E94A-0892-5386-8B35-5D1176A155BF ;
+    ohsp:P113 ohss:Q518-2B284BF8-A8EE-5EDD-9EEF-97CBEBB6E9C1,
+        ohss:Q518-2CDEEC48-249B-54E1-9D58-64221BD8B503,
+        ohss:Q518-05E098AD-B88E-5BA8-B2A6-08AF6612DE8A,
+        ohss:Q518-6DA5549A-2262-5DEC-8188-74E2AB0BBDB8,
+        ohss:Q518-64705550-DD9D-551D-B0E2-05BE57004555,
+        ohss:Q518-A179ADD2-482B-5387-9228-413F746A9E99,
+        ohss:Q518-CA49F437-3B6E-5C08-BEF5-2749B1D79973,
+        ohss:Q518-E64A3196-A987-575D-B567-9800BB7FC5A0,
+        ohss:Q518-FD2A9510-9B48-58BF-9F3F-6371CCD9465B ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13892730804> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13892730804/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13892730804/history/1> ;
+    ohst:P110 "Point(-7.9400424 53.2368922)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.9400424 53.2368922)" ;
+    ohst:P113 "name:en=Saint Saran's Well",
+        "name:ga=Tobar na Saran",
+        "name=St. Saran's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=survey",
+        "survey:date=2026-05-28",
+        "url:sketchfab=https://skfb.ly/pKBpZ",
+        "wikidata=Q139976433" .
+
+ohss:Q518-2AA6B44B-7E21-5125-992B-8D3804A145E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13892730804/history/1> .
+
+ohss:Q518-2B284BF8-A8EE-5EDD-9EEF-97CBEBB6E9C1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "survey:date=2026-05-28" .
+
+ohss:Q518-2CDEEC48-249B-54E1-9D58-64221BD8B503
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "wikidata=Q139976433" .
+
+ohss:Q518-05E098AD-B88E-5BA8-B2A6-08AF6612DE8A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "name:en=Saint Saran's Well" .
+
+ohss:Q518-6D20E94A-0892-5386-8B35-5D1176A155BF
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.9400424 53.2368922)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:21f4d79951d427793e0bd286e75a3c62d2d80209 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-05-28T22:46:51Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.9400424 53.2368922)" .
+
+ohss:Q518-6DA5549A-2262-5DEC-8188-74E2AB0BBDB8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "name=St. Saran's Well" .
+
+ohss:Q518-9EFFF00A-68D9-5ADC-A39C-1F9AD5486B98
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-05-28T22:46:51Z" ;
+    ohspq:P104 "183327096" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13892730804/history/1> .
+
+ohss:Q518-703A4D9C-0A71-53A6-B0BC-BF05179FB3FB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P110 "Point(-7.9400424 53.2368922)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:35b39ccdf8827910539bb5bdb81a5ad5 .
+
+ohss:Q518-826C784A-19D4-5634-BEFE-82E37839280E
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-05-28T22:51:49Z" ;
+    ohspq:P104 "183327163" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13892730804/history/2> .
+
+ohss:Q518-64705550-DD9D-551D-B0E2-05BE57004555
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "source=survey" .
+
+ohss:Q518-A6D3B6BF-A5BB-5BA4-8016-2ADF941F6C9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13892730804> .
+
+ohss:Q518-A179ADD2-482B-5387-9228-413F746A9E99
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q518-CA49F437-3B6E-5C08-BEF5-2749B1D79973
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "name:ga=Tobar na Saran" .
+
+ohss:Q518-CA119717-CD61-5449-971D-0119B10D5A49
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q518-E64A3196-A987-575D-B567-9800BB7FC5A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q518-FAF4E825-C0ED-5EEE-A9C1-8456692B0C27
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2026-05-29T15:28:31Z" ;
+    ohspq:P104 "183361733" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13892730804/history/3> .
+
+ohss:Q518-FD2A9510-9B48-58BF-9F3F-6371CCD9465B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3 ;
+    ohsps:P113 "url:sketchfab=https://skfb.ly/pKBpZ" .
+
+ohsref:21f4d79951d427793e0bd286e75a3c62d2d80209
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13892730804/history/1> .
+
+ohsref:a851c01d113a64002c9e51e39fcd0f2dfa2400b3
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13892730804/history/3> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:35b39ccdf8827910539bb5bdb81a5ad5
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.2368922"^^xsd:double ;
+    wikibase:geoLongitude "-7.9400424"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

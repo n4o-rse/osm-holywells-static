@@ -1,0 +1,228 @@
+# Q499: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q499.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13759582986)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13759582986)"@de ;
+    dcterms:identifier "Q499" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q499 ;
+    dcterms:title "Bridget's Well"@de,
+        "Bridget's Well"@en ;
+    schema:about ohs:Q499 ;
+    dcat:distribution ohsdist:Q499-html,
+        ohsdist:Q499-json,
+        ohsdist:Q499-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q499.html> .
+
+ohsdist:Q499-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q499, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q499.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q499-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q499, as archived from the Wikibase API"@en ;
+    dcat:byteSize "12778"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q499.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q499-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q499, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q499.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q499
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13759582986)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13759582986)"@de ;
+    schema:name "Bridget's Well"@de,
+        "Bridget's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "11"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q499-13E8BD50-CB66-5D80-8EF0-5967A258C6CA ;
+    geo:hasGeometry ohss:Q499-13E8BD50-CB66-5D80-8EF0-5967A258C6CA ;
+    rdfs:label "Bridget's Well"@de,
+        "Bridget's Well"@en ;
+    skos:prefLabel "Bridget's Well"@de,
+        "Bridget's Well"@en ;
+    ohsp:P2 ohss:Q499-B71745DB-3919-5E52-8AD9-3D1A96A603F0 ;
+    ohsp:P100 ohss:Q499-BD3E8CB6-393F-5231-99C9-E50778A94235 ;
+    ohsp:P101 ohss:Q499-9D4D43E2-3DD6-5352-AAA5-620D5B8020F5,
+        ohss:Q499-AF7B9420-FA0E-5708-B53C-BFA29BF3014A ;
+    ohsp:P107 ohss:Q499-5EF3D991-6BCD-528E-83B2-CBA85F431750 ;
+    ohsp:P110 ohss:Q499-6A971FF7-60D1-57AE-A1AF-A6A5C12AE0BD ;
+    ohsp:P111 ohss:Q499-13E8BD50-CB66-5D80-8EF0-5967A258C6CA ;
+    ohsp:P113 ohss:Q499-2D878258-54D6-56BB-90DD-82AC82C9561F,
+        ohss:Q499-A2B1491D-A1F7-5EB2-8020-D21AFEE8A6D1,
+        ohss:Q499-DBB6727C-FE49-59A3-AC9E-ADC704C3BA08,
+        ohss:Q499-FC824E86-1C47-592F-B037-A8C0BB517A42 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13759582986> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13759582986/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13759582986/history/2> ;
+    ohst:P110 "Point(-7.5175721 53.6012915)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.5175721 53.6012915)" ;
+    ohst:P113 "name=Bridget's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=OS 2nd edition map;OS 1st edition map;Esri Clarity" .
+
+ohss:Q499-2D878258-54D6-56BB-90DD-82AC82C9561F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2d7b7d24e42d2777073626bebb6856f618adfa14 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q499-5EF3D991-6BCD-528E-83B2-CBA85F431750
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13759582986/history/2> .
+
+ohss:Q499-6A971FF7-60D1-57AE-A1AF-A6A5C12AE0BD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2d7b7d24e42d2777073626bebb6856f618adfa14 ;
+    ohsps:P110 "Point(-7.5175721 53.6012915)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:a95cd2f995ac274eb4b3141a6757b7d3 .
+
+ohss:Q499-9D4D43E2-3DD6-5352-AAA5-620D5B8020F5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-05-29T19:07:09Z" ;
+    ohspq:P104 "183370848" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13759582986/history/2> .
+
+ohss:Q499-13E8BD50-CB66-5D80-8EF0-5967A258C6CA
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.5175721 53.6012915)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:a187bb40a99992d2a318a35e9992d70650a25bc8 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-24T21:21:07Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.5175721 53.6012915)" .
+
+ohss:Q499-A2B1491D-A1F7-5EB2-8020-D21AFEE8A6D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2d7b7d24e42d2777073626bebb6856f618adfa14 ;
+    ohsps:P113 "source=OS 2nd edition map;OS 1st edition map;Esri Clarity" .
+
+ohss:Q499-AF7B9420-FA0E-5708-B53C-BFA29BF3014A
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-24T21:21:07Z" ;
+    ohspq:P104 "181784339" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13759582986/history/1> .
+
+ohss:Q499-B71745DB-3919-5E52-8AD9-3D1A96A603F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q499-BD3E8CB6-393F-5231-99C9-E50778A94235
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13759582986> .
+
+ohss:Q499-DBB6727C-FE49-59A3-AC9E-ADC704C3BA08
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2d7b7d24e42d2777073626bebb6856f618adfa14 ;
+    ohsps:P113 "name=Bridget's Well" .
+
+ohss:Q499-FC824E86-1C47-592F-B037-A8C0BB517A42
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:2d7b7d24e42d2777073626bebb6856f618adfa14 ;
+    ohsps:P113 "natural=spring" .
+
+ohsref:2d7b7d24e42d2777073626bebb6856f618adfa14
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13759582986/history/2> .
+
+ohsref:a187bb40a99992d2a318a35e9992d70650a25bc8
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13759582986/history/1> .
+
+ohsv:a95cd2f995ac274eb4b3141a6757b7d3
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.6012915"^^xsd:double ;
+    wikibase:geoLongitude "-7.5175721"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

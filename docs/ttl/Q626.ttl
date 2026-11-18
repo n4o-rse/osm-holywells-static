@@ -1,0 +1,237 @@
+# Q626: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q626.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 4666029919)"@en,
+        "Höhenmarke (OpenStreetMap-Node 4666029919)"@de ;
+    dcterms:identifier "Q626" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q626 ;
+    dcterms:title "St Cummins Well"@de,
+        "St Cummins Well"@en ;
+    schema:about ohs:Q626 ;
+    dcat:distribution ohsdist:Q626-html,
+        ohsdist:Q626-json,
+        ohsdist:Q626-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q626.html> .
+
+ohsdist:Q626-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q626, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q626.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q626-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q626, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13613"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q626.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q626-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q626, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q626.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q626
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 4666029919)"@en,
+        "Höhenmarke (OpenStreetMap-Node 4666029919)"@de ;
+    schema:name "St Cummins Well"@de,
+        "St Cummins Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q626-CF650036-B4E3-5F0A-8F50-CB6913B96E15 ;
+    geo:hasGeometry ohss:Q626-CF650036-B4E3-5F0A-8F50-CB6913B96E15 ;
+    rdfs:label "St Cummins Well"@de,
+        "St Cummins Well"@en ;
+    skos:prefLabel "St Cummins Well"@de,
+        "St Cummins Well"@en ;
+    ohsp:P2 ohss:Q626-3B3B6A3C-7390-523F-945D-5F25C7D8DEB8 ;
+    ohsp:P100 ohss:Q626-B3023E80-A8BC-5C14-9BBB-585F2BF51C99 ;
+    ohsp:P101 ohss:Q626-29A35F53-4F5C-5B32-A197-DC4BE1577B7F,
+        ohss:Q626-E8A0C7D4-1BE5-52D1-9842-43E7A91F9EED ;
+    ohsp:P107 ohss:Q626-15F33777-0F3D-5B23-8CB5-4ECA5FA00D13 ;
+    ohsp:P110 ohss:Q626-E495680F-743C-531D-918B-0E9DB7990511 ;
+    ohsp:P111 ohss:Q626-CF650036-B4E3-5F0A-8F50-CB6913B96E15 ;
+    ohsp:P113 ohss:Q626-5C19A0F5-5FA3-5246-9FD5-35F28B681FC9,
+        ohss:Q626-7114D6E7-5648-5B37-8920-71BC676056D6,
+        ohss:Q626-833552B0-53F6-5E0E-9BE6-BBA16A261C88,
+        ohss:Q626-DB61073B-257F-5088-AB5B-3A3DB060E9AA,
+        ohss:Q626-E6301120-D341-54D0-AAFE-47156EA6E276 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/4666029919> ;
+    ohst:P101 <https://www.openstreetmap.org/node/4666029919/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/4666029919/history/2> ;
+    ohst:P110 "Point(-9.2103352 54.277845)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-9.2103352 54.277845)" ;
+    ohst:P113 "historic=yes",
+        "man_made=water_well",
+        "name=St Cummins Well",
+        "natural=spring",
+        "place_of_worship=holy_well" .
+
+ohss:Q626-3B3B6A3C-7390-523F-945D-5F25C7D8DEB8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q626-5C19A0F5-5FA3-5246-9FD5-35F28B681FC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:38dea42898e76719ba0cad824040fac17a6a5621 ;
+    ohsps:P113 "man_made=water_well" .
+
+ohss:Q626-15F33777-0F3D-5B23-8CB5-4ECA5FA00D13
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/4666029919/history/2> .
+
+ohss:Q626-29A35F53-4F5C-5B32-A197-DC4BE1577B7F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2024-03-16T18:39:09Z" ;
+    ohspq:P104 "148745517" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4666029919/history/2> .
+
+ohss:Q626-7114D6E7-5648-5B37-8920-71BC676056D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:38dea42898e76719ba0cad824040fac17a6a5621 ;
+    ohsps:P113 "historic=yes" .
+
+ohss:Q626-833552B0-53F6-5E0E-9BE6-BBA16A261C88
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:38dea42898e76719ba0cad824040fac17a6a5621 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q626-B3023E80-A8BC-5C14-9BBB-585F2BF51C99
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/4666029919> .
+
+ohss:Q626-CF650036-B4E3-5F0A-8F50-CB6913B96E15
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.2103352 54.277845)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:36dbf548bceab55b6d176e4178a0f14e51c96f6a ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2017-02-05T20:06:12Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-9.2103352 54.277845)" .
+
+ohss:Q626-DB61073B-257F-5088-AB5B-3A3DB060E9AA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:38dea42898e76719ba0cad824040fac17a6a5621 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q626-E8A0C7D4-1BE5-52D1-9842-43E7A91F9EED
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2017-02-05T20:06:12Z" ;
+    ohspq:P104 "45838845" ;
+    ohspq:P105 "OscarBrownbread" ;
+    ohspq:P106 "4637589" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4666029919/history/1> .
+
+ohss:Q626-E495680F-743C-531D-918B-0E9DB7990511
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:38dea42898e76719ba0cad824040fac17a6a5621 ;
+    ohsps:P110 "Point(-9.2103352 54.277845)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:fd2ac205cdefa64b5e312ab3a4ee241c .
+
+ohss:Q626-E6301120-D341-54D0-AAFE-47156EA6E276
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:38dea42898e76719ba0cad824040fac17a6a5621 ;
+    ohsps:P113 "name=St Cummins Well" .
+
+ohsref:36dbf548bceab55b6d176e4178a0f14e51c96f6a
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4666029919/history/1> .
+
+ohsref:38dea42898e76719ba0cad824040fac17a6a5621
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4666029919/history/2> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:fd2ac205cdefa64b5e312ab3a4ee241c
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.277845"^^xsd:double ;
+    wikibase:geoLongitude "-9.2103352"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

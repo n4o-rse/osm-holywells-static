@@ -1,0 +1,351 @@
+# Q680: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q680.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8077924781)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8077924781)"@de ;
+    dcterms:identifier "Q680" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q680 ;
+    dcterms:title "St. Colum's Headache Well"@de,
+        "St. Colum's Headache Well"@en ;
+    schema:about ohs:Q680 ;
+    dcat:distribution ohsdist:Q680-html,
+        ohsdist:Q680-json,
+        ohsdist:Q680-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q680.html> .
+
+ohsdist:Q680-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q680, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q680.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q680-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q680, as archived from the Wikibase API"@en ;
+    dcat:byteSize "26113"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q680.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q680-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q680, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q680.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q680
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8077924781)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8077924781)"@de ;
+    schema:name "St. Colum's Headache Well"@de,
+        "St. Colum's Headache Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "22"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q680-6F4EDA26-8D51-593B-922D-A71F03E48D8C ;
+    geo:hasGeometry ohss:Q680-6F4EDA26-8D51-593B-922D-A71F03E48D8C ;
+    rdfs:label "St. Colum's Headache Well"@de,
+        "St. Colum's Headache Well"@en ;
+    skos:prefLabel "St. Colum's Headache Well"@de,
+        "St. Colum's Headache Well"@en ;
+    ohsp:P2 ohss:Q680-BC05730B-01CF-5A1F-B126-FD8AE337A424 ;
+    ohsp:P100 ohss:Q680-F5CF064B-EF4E-57B7-B4CD-ACF01463BF9B ;
+    ohsp:P101 ohss:Q680-200DEA05-660A-51BD-A04B-101F4B87F295,
+        ohss:Q680-318E1DFA-508B-5894-A06C-C690DB7AC281,
+        ohss:Q680-84873F7E-0EEE-5004-9594-B486150D7193,
+        ohss:Q680-A508ECC1-0F9B-56DF-99FE-16C10150D8CA,
+        ohss:Q680-DC254761-0A3F-500D-8EE8-D19CE44B1C86 ;
+    ohsp:P107 ohss:Q680-2B404025-3A03-57D1-B2B2-5C9457A206E1 ;
+    ohsp:P110 ohss:Q680-FDF3D656-BFE1-53A9-A770-87F58FE6E2C8 ;
+    ohsp:P111 ohss:Q680-6F4EDA26-8D51-593B-922D-A71F03E48D8C ;
+    ohsp:P113 ohss:Q680-1B0A3804-08DB-51FD-A93B-BFA34E406E51,
+        ohss:Q680-5BD2AB2B-4C17-5153-A161-CBA26CA2F496,
+        ohss:Q680-91CE881E-14BE-52DA-8386-9FD59D874B9B,
+        ohss:Q680-190BF005-5C61-5FC5-A372-CD75EBDDA0AA,
+        ohss:Q680-763FDA3D-85F3-5C73-91B5-636DE430387F,
+        ohss:Q680-009842D4-F6E7-5E2B-8D45-DE5F7F9F9FCB,
+        ohss:Q680-77250459-08F0-53F7-A80E-A161A9874805,
+        ohss:Q680-C7F026A0-78F3-5565-BEA8-12FF89224D20,
+        ohss:Q680-C771E684-AE36-5AFC-9535-42226EC71E30,
+        ohss:Q680-C3908F2C-E14F-5C23-901E-2EA4005036D0,
+        ohss:Q680-E7899DB4-E05D-5F34-B6C8-2A0207A65166,
+        ohss:Q680-F3021E0E-40AA-5FFE-84DB-39921E652F62 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8077924781> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8077924781/history/5> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8077924781/history/2> ;
+    ohst:P110 "Point(-8.2035903 53.0559889)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.2035903 53.0559889)" ;
+    ohst:P113 "alt_name=Saint Columb's Well",
+        "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "name:etymology:wikidata=Q236326",
+        "name=St. Colum's Headache Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=TN006-003005-",
+        "religion=christian",
+        "well:cure=headache" .
+
+ohss:Q680-1B0A3804-08DB-51FD-A93B-BFA34E406E51
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q680-2B404025-3A03-57D1-B2B2-5C9457A206E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8077924781/history/2> .
+
+ohss:Q680-5BD2AB2B-4C17-5153-A161-CBA26CA2F496
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "name=St. Colum's Headache Well" .
+
+ohss:Q680-6F4EDA26-8D51-593B-922D-A71F03E48D8C
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.2035903 53.0559889)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:546bd4880a186f64a93ca4678256d7c6629fdebd ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2020-11-03T12:53:34Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.2035903 53.0559889)" .
+
+ohss:Q680-91CE881E-14BE-52DA-8386-9FD59D874B9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "well:cure=headache" .
+
+ohss:Q680-190BF005-5C61-5FC5-A372-CD75EBDDA0AA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "ref:IE:smr=TN006-003005-" .
+
+ohss:Q680-200DEA05-660A-51BD-A04B-101F4B87F295
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2020-11-03T12:53:34Z" ;
+    ohspq:P104 "93484621" ;
+    ohspq:P105 "simongdunne" ;
+    ohspq:P106 "12108010" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8077924781/history/1> .
+
+ohss:Q680-318E1DFA-508B-5894-A06C-C690DB7AC281
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-07-28T21:47:50Z" ;
+    ohspq:P104 "139153610" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8077924781/history/3> .
+
+ohss:Q680-763FDA3D-85F3-5C73-91B5-636DE430387F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q680-009842D4-F6E7-5E2B-8D45-DE5F7F9F9FCB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q680-84873F7E-0EEE-5004-9594-B486150D7193
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+5"^^xsd:decimal ;
+    ohspq:P103 "2024-11-28T15:21:57Z" ;
+    ohspq:P104 "159707699" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:30e603cac620241526fa9f81268ba25c ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8077924781/history/5> .
+
+ohss:Q680-77250459-08F0-53F7-A80E-A161A9874805
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q680-A508ECC1-0F9B-56DF-99FE-16C10150D8CA
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2021-07-14T20:39:07Z" ;
+    ohspq:P104 "108000964" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8077924781/history/2> .
+
+ohss:Q680-BC05730B-01CF-5A1F-B126-FD8AE337A424
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q680-C7F026A0-78F3-5565-BEA8-12FF89224D20
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q680-C771E684-AE36-5AFC-9535-42226EC71E30
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q680-C3908F2C-E14F-5C23-901E-2EA4005036D0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q680-DC254761-0A3F-500D-8EE8-D19CE44B1C86
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2023-09-16T17:34:04Z" ;
+    ohspq:P104 "141352967" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8077924781/history/4> .
+
+ohss:Q680-E7899DB4-E05D-5F34-B6C8-2A0207A65166
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "alt_name=Saint Columb's Well" .
+
+ohss:Q680-F5CF064B-EF4E-57B7-B4CD-ACF01463BF9B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8077924781> .
+
+ohss:Q680-F3021E0E-40AA-5FFE-84DB-39921E652F62
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P113 "name:etymology:wikidata=Q236326" .
+
+ohss:Q680-FDF3D656-BFE1-53A9-A770-87F58FE6E2C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929 ;
+    ohsps:P110 "Point(-8.2035903 53.0559889)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:228624ae37fae3218b6808bad830d74a .
+
+ohsref:6c06dda7421ba8d32f7c0f92d4b849a5339fa929
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8077924781/history/5> .
+
+ohsref:546bd4880a186f64a93ca4678256d7c6629fdebd
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8077924781/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:228624ae37fae3218b6808bad830d74a
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.0559889"^^xsd:double ;
+    wikibase:geoLongitude "-8.2035903"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

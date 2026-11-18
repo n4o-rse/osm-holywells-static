@@ -1,0 +1,207 @@
+# Q365: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q365.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 12396698054)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12396698054)"@de ;
+    dcterms:identifier "Q365" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q365 ;
+    dcterms:title "Brandon Well"@de,
+        "Brandon Well"@en ;
+    schema:about ohs:Q365 ;
+    dcat:distribution ohsdist:Q365-html,
+        ohsdist:Q365-json,
+        ohsdist:Q365-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q365.html> .
+
+ohsdist:Q365-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q365, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q365.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q365-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q365, as archived from the Wikibase API"@en ;
+    dcat:byteSize "10668"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q365.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q365-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q365, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q365.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q365
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 12396698054)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12396698054)"@de ;
+    schema:name "Brandon Well"@de,
+        "Brandon Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "10"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q365-14E83E4E-791D-5AB5-9BC2-680613C7C2A2 ;
+    geo:hasGeometry ohss:Q365-14E83E4E-791D-5AB5-9BC2-680613C7C2A2 ;
+    rdfs:label "Brandon Well"@de,
+        "Brandon Well"@en ;
+    skos:prefLabel "Brandon Well"@de,
+        "Brandon Well"@en ;
+    ohsp:P2 ohss:Q365-F54DDC85-7607-5D0F-8CB3-864584027F8C ;
+    ohsp:P100 ohss:Q365-723C984A-BDBB-5FF5-8B47-8CBB81207435 ;
+    ohsp:P101 ohss:Q365-46F3E75C-6289-504B-807B-3F1B7970A6A0 ;
+    ohsp:P107 ohss:Q365-F82927A3-81A5-51F0-B7F4-969BDAA34F71 ;
+    ohsp:P110 ohss:Q365-13E1D630-7F2A-5D12-93FA-00AB745C9996 ;
+    ohsp:P111 ohss:Q365-14E83E4E-791D-5AB5-9BC2-680613C7C2A2 ;
+    ohsp:P113 ohss:Q365-95E5944D-2E82-52D8-A35B-0EE1A59F25B3,
+        ohss:Q365-420E84DA-7691-5360-A6AA-8C1D0825356D,
+        ohss:Q365-AE6FCFD3-A209-540D-93A3-221353783149,
+        ohss:Q365-D6120C0B-296E-5B19-8FED-7C1C9174CF8A ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/12396698054> ;
+    ohst:P101 <https://www.openstreetmap.org/node/12396698054/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/12396698054/history/1> ;
+    ohst:P110 "Point(-6.9475088 52.3858091)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.9475088 52.3858091)" ;
+    ohst:P113 "name=Brandon Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=OS 1st edition map" .
+
+ohss:Q365-13E1D630-7F2A-5D12-93FA-00AB745C9996
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:427ecaf642ce2e810788e6de73c43639f8e75428 ;
+    ohsps:P110 "Point(-6.9475088 52.3858091)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:c54d76d03ce1b19ce7b44b5c4d56b2b8 .
+
+ohss:Q365-14E83E4E-791D-5AB5-9BC2-680613C7C2A2
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.9475088 52.3858091)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:427ecaf642ce2e810788e6de73c43639f8e75428 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-12-04T20:43:13Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.9475088 52.3858091)" .
+
+ohss:Q365-46F3E75C-6289-504B-807B-3F1B7970A6A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-12-04T20:43:13Z" ;
+    ohspq:P104 "159933306" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12396698054/history/1> .
+
+ohss:Q365-95E5944D-2E82-52D8-A35B-0EE1A59F25B3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:427ecaf642ce2e810788e6de73c43639f8e75428 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q365-420E84DA-7691-5360-A6AA-8C1D0825356D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:427ecaf642ce2e810788e6de73c43639f8e75428 ;
+    ohsps:P113 "name=Brandon Well" .
+
+ohss:Q365-723C984A-BDBB-5FF5-8B47-8CBB81207435
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/12396698054> .
+
+ohss:Q365-AE6FCFD3-A209-540D-93A3-221353783149
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:427ecaf642ce2e810788e6de73c43639f8e75428 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q365-D6120C0B-296E-5B19-8FED-7C1C9174CF8A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:427ecaf642ce2e810788e6de73c43639f8e75428 ;
+    ohsps:P113 "source=OS 1st edition map" .
+
+ohss:Q365-F54DDC85-7607-5D0F-8CB3-864584027F8C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q365-F82927A3-81A5-51F0-B7F4-969BDAA34F71
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/12396698054/history/1> .
+
+ohsref:427ecaf642ce2e810788e6de73c43639f8e75428
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12396698054/history/1> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c54d76d03ce1b19ce7b44b5c4d56b2b8
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.3858091"^^xsd:double ;
+    wikibase:geoLongitude "-6.9475088"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

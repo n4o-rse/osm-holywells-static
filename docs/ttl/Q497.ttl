@@ -1,0 +1,273 @@
+# Q497: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q497.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13759140447)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13759140447)"@de ;
+    dcterms:identifier "Q497" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q497 ;
+    dcterms:title "Tobar Damhnata"@de,
+        "Tobar Damhnata"@en ;
+    schema:about ohs:Q497 ;
+    dcat:distribution ohsdist:Q497-html,
+        ohsdist:Q497-json,
+        ohsdist:Q497-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q497.html> .
+
+ohsdist:Q497-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q497, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q497.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q497-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q497, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17188"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q497.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q497-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q497, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q497.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q497
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13759140447)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13759140447)"@de ;
+    schema:name "Tobar Damhnata"@de,
+        "Tobar Damhnata"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q497-95DAA5DC-7BA4-556D-AAEF-7741770DA936 ;
+    geo:hasGeometry ohss:Q497-95DAA5DC-7BA4-556D-AAEF-7741770DA936 ;
+    rdfs:label "Tobar Damhnata"@de,
+        "Tobar Damhnata"@en ;
+    skos:prefLabel "Tobar Damhnata"@de,
+        "Tobar Damhnata"@en ;
+    ohsp:P2 ohss:Q497-3694202C-7CCE-5F2B-82AC-C95B0BF58C10 ;
+    ohsp:P100 ohss:Q497-85936464-FC0F-514A-AECA-A89124FB30EB ;
+    ohsp:P101 ohss:Q497-649BAE02-FA78-5D95-BE8F-BD1657640DB1,
+        ohss:Q497-CD42E581-C0C4-53CA-910C-FDA1D356CFC3 ;
+    ohsp:P107 ohss:Q497-20B3E409-2EBE-5AEC-BB03-EFF2821336F7 ;
+    ohsp:P110 ohss:Q497-1B7299EE-BD58-516D-822A-67AE9197F205 ;
+    ohsp:P111 ohss:Q497-95DAA5DC-7BA4-556D-AAEF-7741770DA936 ;
+    ohsp:P113 ohss:Q497-2E418E43-25E1-5C9D-B6DA-05F209DFEA55,
+        ohss:Q497-7A1FC93C-7CC9-5C58-B2FF-5CB82D0338CD,
+        ohss:Q497-335E225F-A965-50A0-8817-B84B6A43C5BD,
+        ohss:Q497-3537D65E-5437-5286-A289-3E057ECA025C,
+        ohss:Q497-58804AFE-92B3-56E7-93B7-6157B1F8CE2A,
+        ohss:Q497-A24D83EC-76E2-5128-800F-EC2A1FD2CDD3,
+        ohss:Q497-ACD172CF-4EC0-5B9F-939D-10BD4C2B72FC,
+        ohss:Q497-B2EE162D-F6A0-5A39-AB41-5066718C3F52,
+        ohss:Q497-DD5B9D8E-68C9-5C91-A528-17957019DBD8 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13759140447> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13759140447/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13759140447/history/2> ;
+    ohst:P110 "Point(-6.9051553 53.5764397)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.9051553 53.5764397)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "name=Tobar Damhnata",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=ME029-020002-",
+        "source=Bing",
+        "wikidata=Q139551587" .
+
+ohss:Q497-1B7299EE-BD58-516D-822A-67AE9197F205
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P110 "Point(-6.9051553 53.5764397)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:328e8d5fed9d2c740c3dab1495d1067d .
+
+ohss:Q497-2E418E43-25E1-5C9D-B6DA-05F209DFEA55
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q497-7A1FC93C-7CC9-5C58-B2FF-5CB82D0338CD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "wikidata=Q139551587" .
+
+ohss:Q497-20B3E409-2EBE-5AEC-BB03-EFF2821336F7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13759140447/history/2> .
+
+ohss:Q497-95DAA5DC-7BA4-556D-AAEF-7741770DA936
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.9051553 53.5764397)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:14a2d7998ad2b16e99c16a4d508a6671cdf2f587 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-24T17:46:56Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.9051553 53.5764397)" .
+
+ohss:Q497-335E225F-A965-50A0-8817-B84B6A43C5BD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q497-649BAE02-FA78-5D95-BE8F-BD1657640DB1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-05-03T09:47:05Z" ;
+    ohspq:P104 "182150944" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13759140447/history/2> .
+
+ohss:Q497-3537D65E-5437-5286-A289-3E057ECA025C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q497-58804AFE-92B3-56E7-93B7-6157B1F8CE2A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "ref:IE:smr=ME029-020002-" .
+
+ohss:Q497-3694202C-7CCE-5F2B-82AC-C95B0BF58C10
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q497-85936464-FC0F-514A-AECA-A89124FB30EB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13759140447> .
+
+ohss:Q497-A24D83EC-76E2-5128-800F-EC2A1FD2CDD3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q497-ACD172CF-4EC0-5B9F-939D-10BD4C2B72FC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q497-B2EE162D-F6A0-5A39-AB41-5066718C3F52
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "source=Bing" .
+
+ohss:Q497-CD42E581-C0C4-53CA-910C-FDA1D356CFC3
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-24T17:46:56Z" ;
+    ohspq:P104 "181776966" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13759140447/history/1> .
+
+ohss:Q497-DD5B9D8E-68C9-5C91-A528-17957019DBD8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b ;
+    ohsps:P113 "name=Tobar Damhnata" .
+
+ohsref:14a2d7998ad2b16e99c16a4d508a6671cdf2f587
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13759140447/history/1> .
+
+ohsref:628ed9c7df1bd3965e3efee0b21feb760e49d62b
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13759140447/history/2> .
+
+ohsv:328e8d5fed9d2c740c3dab1495d1067d
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.5764397"^^xsd:double ;
+    wikibase:geoLongitude "-6.9051553"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

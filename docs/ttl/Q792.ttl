@@ -1,0 +1,255 @@
+# Q792: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q792.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8987587592)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8987587592)"@de ;
+    dcterms:identifier "Q792" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q792 ;
+    dcterms:title "Shanavoulia Well"@de,
+        "Shanavoulia Well"@en ;
+    schema:about ohs:Q792 ;
+    dcat:distribution ohsdist:Q792-html,
+        ohsdist:Q792-json,
+        ohsdist:Q792-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q792.html> .
+
+ohsdist:Q792-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q792, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q792.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q792-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q792, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15428"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q792.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q792-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q792, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q792.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q792
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8987587592)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8987587592)"@de ;
+    schema:name "Shanavoulia Well"@de,
+        "Shanavoulia Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q792-61ACA89E-E0CA-5280-A62E-597DDDDCC27F ;
+    geo:hasGeometry ohss:Q792-61ACA89E-E0CA-5280-A62E-597DDDDCC27F ;
+    rdfs:label "Shanavoulia Well"@de,
+        "Shanavoulia Well"@en ;
+    skos:prefLabel "Shanavoulia Well"@de,
+        "Shanavoulia Well"@en ;
+    ohsp:P2 ohss:Q792-F510688D-5E81-5872-A2B5-DFABF586282B ;
+    ohsp:P100 ohss:Q792-4B6BF0E0-4D89-5F18-9C03-8A290059A126 ;
+    ohsp:P101 ohss:Q792-800C7FDD-2CC9-56E5-A380-E38D82CEA4AC,
+        ohss:Q792-4881EC15-052D-50E9-8E61-E64B3954C80C ;
+    ohsp:P107 ohss:Q792-BAF3CC41-E2FC-5C27-A0B3-0403365E8347 ;
+    ohsp:P110 ohss:Q792-8C60A21B-8347-5456-BB8E-482C264D0B21 ;
+    ohsp:P111 ohss:Q792-61ACA89E-E0CA-5280-A62E-597DDDDCC27F ;
+    ohsp:P113 ohss:Q792-6DF972C7-CBBA-50A0-93C5-629F903AB39B,
+        ohss:Q792-019E223A-A2F5-5229-B680-2FA632818D96,
+        ohss:Q792-35AF9BCD-C6A9-5F95-A0F8-C62EA1002C01,
+        ohss:Q792-86E797DA-98EC-51F1-8B9C-B88E886C9900,
+        ohss:Q792-988FC47E-C500-5639-BCC0-D53CBAA11C96,
+        ohss:Q792-4853B651-7FF4-5196-8914-FF95B5A7694D,
+        ohss:Q792-DA26536A-3173-5F73-A795-9A210681C9DC ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8987587592> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8987587592/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8987587592/history/1> ;
+    ohst:P110 "Point(-7.2453949 52.9021869)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.2453949 52.9021869)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "name=Shanavoulia Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "religion=christian",
+        "source:name=British War Office map" .
+
+ohss:Q792-4B6BF0E0-4D89-5F18-9C03-8A290059A126
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8987587592> .
+
+ohss:Q792-6DF972C7-CBBA-50A0-93C5-629F903AB39B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:feb19f8c613161d0440552c4e7a99b745229ff06 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q792-8C60A21B-8347-5456-BB8E-482C264D0B21
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:feb19f8c613161d0440552c4e7a99b745229ff06 ;
+    ohsps:P110 "Point(-7.2453949 52.9021869)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:a3408ee486b0a88ec43df6a37faf2109 .
+
+ohss:Q792-019E223A-A2F5-5229-B680-2FA632818D96
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:feb19f8c613161d0440552c4e7a99b745229ff06 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q792-35AF9BCD-C6A9-5F95-A0F8-C62EA1002C01
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:feb19f8c613161d0440552c4e7a99b745229ff06 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q792-61ACA89E-E0CA-5280-A62E-597DDDDCC27F
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.2453949 52.9021869)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:ad4e06e21f327f3a326f94c4dd51e23dbe74b64b ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-08-07T10:06:51Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.2453949 52.9021869)" .
+
+ohss:Q792-86E797DA-98EC-51F1-8B9C-B88E886C9900
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:feb19f8c613161d0440552c4e7a99b745229ff06 ;
+    ohsps:P113 "name=Shanavoulia Well" .
+
+ohss:Q792-800C7FDD-2CC9-56E5-A380-E38D82CEA4AC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-07-29T18:23:38Z" ;
+    ohspq:P104 "139184197" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8987587592/history/2> .
+
+ohss:Q792-988FC47E-C500-5639-BCC0-D53CBAA11C96
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:feb19f8c613161d0440552c4e7a99b745229ff06 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q792-4853B651-7FF4-5196-8914-FF95B5A7694D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:feb19f8c613161d0440552c4e7a99b745229ff06 ;
+    ohsps:P113 "source:name=British War Office map" .
+
+ohss:Q792-4881EC15-052D-50E9-8E61-E64B3954C80C
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-08-07T10:06:51Z" ;
+    ohspq:P104 "109303213" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8987587592/history/1> .
+
+ohss:Q792-BAF3CC41-E2FC-5C27-A0B3-0403365E8347
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8987587592/history/1> .
+
+ohss:Q792-DA26536A-3173-5F73-A795-9A210681C9DC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:feb19f8c613161d0440552c4e7a99b745229ff06 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q792-F510688D-5E81-5872-A2B5-DFABF586282B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohsref:ad4e06e21f327f3a326f94c4dd51e23dbe74b64b
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8987587592/history/1> .
+
+ohsref:feb19f8c613161d0440552c4e7a99b745229ff06
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8987587592/history/2> .
+
+ohsv:a3408ee486b0a88ec43df6a37faf2109
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.9021869"^^xsd:double ;
+    wikibase:geoLongitude "-7.2453949"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

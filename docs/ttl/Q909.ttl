@@ -1,0 +1,246 @@
+# Q909: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q909.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap way 1281207491)"@en,
+        "Höhenmarke (OpenStreetMap-Weg 1281207491)"@de ;
+    dcterms:identifier "Q909" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q909 ;
+    dcterms:title "St. Eoin's Well"@de,
+        "St. Eoin's Well"@en ;
+    schema:about ohs:Q909 ;
+    dcat:distribution ohsdist:Q909-html,
+        ohsdist:Q909-json,
+        ohsdist:Q909-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q909.html> .
+
+ohsdist:Q909-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q909, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q909.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q909-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q909, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14939"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q909.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q909-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q909, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q909.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q909
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap way 1281207491)"@en,
+        "Höhenmarke (OpenStreetMap-Weg 1281207491)"@de ;
+    schema:name "St. Eoin's Well"@de,
+        "St. Eoin's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q909-0A1957A2-CA0F-55F8-B7A5-2C6D61EF4A28 ;
+    geo:hasGeometry ohss:Q909-0A1957A2-CA0F-55F8-B7A5-2C6D61EF4A28 ;
+    rdfs:label "St. Eoin's Well"@de,
+        "St. Eoin's Well"@en ;
+    skos:prefLabel "St. Eoin's Well"@de,
+        "St. Eoin's Well"@en ;
+    ohsp:P2 ohss:Q909-D82D0DF4-E958-5A60-A7D0-50EE38F36B29 ;
+    ohsp:P100 ohss:Q909-7929EED9-BAC4-5BD5-8A52-78B7B77C8643 ;
+    ohsp:P101 ohss:Q909-56DE80B8-6F6A-5FB6-B083-A279B1788553,
+        ohss:Q909-10941C69-C7EA-5BD4-B25E-F909B9BA2E10 ;
+    ohsp:P107 ohss:Q909-3FBC2406-ED0A-5281-B162-FA0FBCB0F977 ;
+    ohsp:P110 ohss:Q909-6C1E1F98-D088-54C0-8878-886D004D226E ;
+    ohsp:P111 ohss:Q909-0A1957A2-CA0F-55F8-B7A5-2C6D61EF4A28 ;
+    ohsp:P113 ohss:Q909-2F9DEF0A-EF33-53F8-82FF-FF6C95DED41F,
+        ohss:Q909-9F499F93-9385-5086-A3EB-019F270198F0,
+        ohss:Q909-0220828E-AFCC-59EC-96EF-BE5EE90D5747,
+        ohss:Q909-54589908-3CC4-519C-8EB2-42632B3F8450,
+        ohss:Q909-A5BC3EED-95D6-5712-98BE-EFFD3C2DBA5F,
+        ohss:Q909-D7AFA6C0-0120-5F1E-AA48-D7160D56F2C2 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/way/1281207491> ;
+    ohst:P101 <https://www.openstreetmap.org/way/1281207491/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/way/1281207491/history/2> ;
+    ohst:P110 "Point(-9.558576 52.5598141)"^^geo:wktLiteral ;
+    ohst:P111 "POLYGON((-9.5583245 52.5598434, -9.5583322 52.5598714, -9.5585155 52.5598738, -9.5586981 52.5598541, -9.5588275 52.5598106, -9.5587859 52.5597829, -9.5586526 52.5597544, -9.5585979 52.5597801, -9.5584654 52.5597914, -9.5583699 52.5598246, -9.5583245 52.5598434))" ;
+    ohst:P113 "denomination=roman_catholic",
+        "description=St. Eoin's well is a circular well filled with clear water located in a field with a small wooden fence around it. It is below ground, surrounded by stone and has a shrine with a Virgin Mary statue near it.",
+        "landuse=religious",
+        "name=St. Eoin's Well",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q909-0A1957A2-CA0F-55F8-B7A5-2C6D61EF4A28
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POLYGON((-9.5583245 52.5598434, -9.5583322 52.5598714, -9.5585155 52.5598738, -9.5586981 52.5598541, -9.5588275 52.5598106, -9.5587859 52.5597829, -9.5586526 52.5597544, -9.5585979 52.5597801, -9.5584654 52.5597914, -9.5583699 52.5598246, -9.5583245 52.5598434))"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:cdcd742b2700e9d4067fb2b33aa90f6a4ddc320f ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-05-09T15:25:19Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POLYGON((-9.5583245 52.5598434, -9.5583322 52.5598714, -9.5585155 52.5598738, -9.5586981 52.5598541, -9.5588275 52.5598106, -9.5587859 52.5597829, -9.5586526 52.5597544, -9.5585979 52.5597801, -9.5584654 52.5597914, -9.5583699 52.5598246, -9.5583245 52.5598434))" .
+
+ohss:Q909-2F9DEF0A-EF33-53F8-82FF-FF6C95DED41F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:f23095f9a82fb6aaa2af7e59376b45a86b145de0 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q909-3FBC2406-ED0A-5281-B162-FA0FBCB0F977
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/way/1281207491/history/2> .
+
+ohss:Q909-6C1E1F98-D088-54C0-8878-886D004D226E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:cdcd742b2700e9d4067fb2b33aa90f6a4ddc320f ;
+    ohsps:P110 "Point(-9.558576 52.5598141)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:7effe20c23d5e06aeed4e031a0f093f5 .
+
+ohss:Q909-9F499F93-9385-5086-A3EB-019F270198F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:f23095f9a82fb6aaa2af7e59376b45a86b145de0 ;
+    ohsps:P113 "description=St. Eoin's well is a circular well filled with clear water located in a field with a small wooden fence around it. It is below ground, surrounded by stone and has a shrine with a Virgin Mary statue near it." .
+
+ohss:Q909-56DE80B8-6F6A-5FB6-B083-A279B1788553
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-05-09T15:25:19Z" ;
+    ohspq:P104 "151106189" ;
+    ohspq:P105 "liamoconnor03" ;
+    ohspq:P106 "21199199" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/way/1281207491/history/1> .
+
+ohss:Q909-7929EED9-BAC4-5BD5-8A52-78B7B77C8643
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/way/1281207491> .
+
+ohss:Q909-10941C69-C7EA-5BD4-B25E-F909B9BA2E10
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2025-12-11T11:18:47Z" ;
+    ohspq:P104 "175797656" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/way/1281207491/history/2> .
+
+ohss:Q909-0220828E-AFCC-59EC-96EF-BE5EE90D5747
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:f23095f9a82fb6aaa2af7e59376b45a86b145de0 ;
+    ohsps:P113 "name=St. Eoin's Well" .
+
+ohss:Q909-54589908-3CC4-519C-8EB2-42632B3F8450
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:f23095f9a82fb6aaa2af7e59376b45a86b145de0 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q909-A5BC3EED-95D6-5712-98BE-EFFD3C2DBA5F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:f23095f9a82fb6aaa2af7e59376b45a86b145de0 ;
+    ohsps:P113 "landuse=religious" .
+
+ohss:Q909-D7AFA6C0-0120-5F1E-AA48-D7160D56F2C2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:f23095f9a82fb6aaa2af7e59376b45a86b145de0 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q909-D82D0DF4-E958-5A60-A7D0-50EE38F36B29
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohsref:cdcd742b2700e9d4067fb2b33aa90f6a4ddc320f
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/way/1281207491/history/1> .
+
+ohsref:f23095f9a82fb6aaa2af7e59376b45a86b145de0
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/way/1281207491/history/2> .
+
+ohsv:7effe20c23d5e06aeed4e031a0f093f5
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.5598141"^^xsd:double ;
+    wikibase:geoLongitude "-9.558576"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

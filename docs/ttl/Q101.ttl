@@ -1,0 +1,255 @@
+# Q101: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q101.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 10009186152)"@en,
+        "Höhenmarke (OpenStreetMap-Node 10009186152)"@de ;
+    dcterms:identifier "Q101" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q101 ;
+    dcterms:title "Saint Patrick's Well"@de,
+        "Saint Patrick's Well"@en ;
+    schema:about ohs:Q101 ;
+    dcat:distribution ohsdist:Q101-html,
+        ohsdist:Q101-json,
+        ohsdist:Q101-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q101.html> .
+
+ohsdist:Q101-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q101, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q101.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q101-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q101, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15452"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q101.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q101-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q101, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q101.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q101
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 10009186152)"@en,
+        "Höhenmarke (OpenStreetMap-Node 10009186152)"@de ;
+    schema:name "Saint Patrick's Well"@de,
+        "Saint Patrick's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q101-8EB6BF1E-A7DB-5444-A5E7-D3A9AC73B3F7 ;
+    geo:hasGeometry ohss:Q101-8EB6BF1E-A7DB-5444-A5E7-D3A9AC73B3F7 ;
+    rdfs:label "Saint Patrick's Well"@de,
+        "Saint Patrick's Well"@en ;
+    skos:prefLabel "Saint Patrick's Well"@de,
+        "Saint Patrick's Well"@en ;
+    ohsp:P2 ohss:Q101-07A372F5-2E9F-5447-A90A-37F4B9B3C28F ;
+    ohsp:P100 ohss:Q101-30FD1A3B-B847-5CA3-8732-9A4AD322AE19 ;
+    ohsp:P101 ohss:Q101-1998BFAA-F056-5D65-894C-4C36503EF4C6,
+        ohss:Q101-CCA69730-8160-5873-B8CB-1A4C9DBAA51C ;
+    ohsp:P107 ohss:Q101-93EC517F-BFAF-51F3-A0EC-ECDCDF6731A7 ;
+    ohsp:P110 ohss:Q101-89242E25-6BA6-5361-8494-66F42B959F68 ;
+    ohsp:P111 ohss:Q101-8EB6BF1E-A7DB-5444-A5E7-D3A9AC73B3F7 ;
+    ohsp:P113 ohss:Q101-1CC6E499-BEAF-5270-ACC5-83AB1C535DA4,
+        ohss:Q101-12BBDA1D-3D94-572B-9DE5-8965DA193595,
+        ohss:Q101-65D7475A-4EFF-547C-8DDE-326A21FBC8AD,
+        ohss:Q101-6380BDFE-7924-59BD-8D91-655A4EBC317F,
+        ohss:Q101-50023088-73B9-57E6-BA7E-6FD718ED9A6C,
+        ohss:Q101-E693ADA5-54E3-5D47-A198-4D505077F00F,
+        ohss:Q101-E9096426-9969-58B7-AD2F-0BFA4E5E1466 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/10009186152> ;
+    ohst:P101 <https://www.openstreetmap.org/node/10009186152/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/10009186152/history/1> ;
+    ohst:P110 "Point(-7.9671344 54.0549481)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.9671344 54.0549481)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "name:etymology:wikidata=Q165479",
+        "name=Saint Patrick's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q101-1CC6E499-BEAF-5270-ACC5-83AB1C535DA4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q101-07A372F5-2E9F-5447-A90A-37F4B9B3C28F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q101-8EB6BF1E-A7DB-5444-A5E7-D3A9AC73B3F7
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.9671344 54.0549481)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:7408a43efca2e794d4ec3fb41b8387833509f044 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2022-09-08T14:22:42Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.9671344 54.0549481)" .
+
+ohss:Q101-12BBDA1D-3D94-572B-9DE5-8965DA193595
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q101-30FD1A3B-B847-5CA3-8732-9A4AD322AE19
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/10009186152> .
+
+ohss:Q101-65D7475A-4EFF-547C-8DDE-326A21FBC8AD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912 ;
+    ohsps:P113 "name=Saint Patrick's Well" .
+
+ohss:Q101-93EC517F-BFAF-51F3-A0EC-ECDCDF6731A7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/10009186152/history/1> .
+
+ohss:Q101-1998BFAA-F056-5D65-894C-4C36503EF4C6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-07-28T21:24:02Z" ;
+    ohspq:P104 "139153017" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10009186152/history/2> .
+
+ohss:Q101-6380BDFE-7924-59BD-8D91-655A4EBC317F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912 ;
+    ohsps:P113 "name:etymology:wikidata=Q165479" .
+
+ohss:Q101-89242E25-6BA6-5361-8494-66F42B959F68
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912 ;
+    ohsps:P110 "Point(-7.9671344 54.0549481)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:5387584b7005515331236f195b1c0b68 .
+
+ohss:Q101-50023088-73B9-57E6-BA7E-6FD718ED9A6C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q101-CCA69730-8160-5873-B8CB-1A4C9DBAA51C
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2022-09-08T14:22:42Z" ;
+    ohspq:P104 "125945878" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10009186152/history/1> .
+
+ohss:Q101-E693ADA5-54E3-5D47-A198-4D505077F00F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q101-E9096426-9969-58B7-AD2F-0BFA4E5E1466
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912 ;
+    ohsps:P113 "natural=spring" .
+
+ohsref:7408a43efca2e794d4ec3fb41b8387833509f044
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10009186152/history/1> .
+
+ohsref:d5811bc0e1f475a18a395f0de5aefea64210f912
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10009186152/history/2> .
+
+ohsv:5387584b7005515331236f195b1c0b68
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.0549481"^^xsd:double ;
+    wikibase:geoLongitude "-7.9671344"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

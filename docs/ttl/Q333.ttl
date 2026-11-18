@@ -1,0 +1,282 @@
+# Q333: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q333.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 12331250194)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12331250194)"@de ;
+    dcterms:identifier "Q333" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q333 ;
+    dcterms:title "St. Abigail's Well"@de,
+        "St. Abigail's Well"@en ;
+    schema:about ohs:Q333 ;
+    dcat:distribution ohsdist:Q333-html,
+        ohsdist:Q333-json,
+        ohsdist:Q333-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q333.html> .
+
+ohsdist:Q333-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q333, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q333.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q333-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q333, as archived from the Wikibase API"@en ;
+    dcat:byteSize "18351"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q333.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q333-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q333, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q333.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q333
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 12331250194)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12331250194)"@de ;
+    schema:name "St. Abigail's Well"@de,
+        "St. Abigail's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q333-F7A5687C-CC3B-5685-BCCC-24F644A3C730 ;
+    geo:hasGeometry ohss:Q333-D81D0EF4-0823-5029-898F-4F3A8133B2CC,
+        ohss:Q333-F7A5687C-CC3B-5685-BCCC-24F644A3C730 ;
+    rdfs:label "St. Abigail's Well"@de,
+        "St. Abigail's Well"@en ;
+    skos:prefLabel "St. Abigail's Well"@de,
+        "St. Abigail's Well"@en ;
+    ohsp:P2 ohss:Q333-F7B7C1E1-2AB2-546E-841E-FDF62E95BE64 ;
+    ohsp:P100 ohss:Q333-550CFCA6-D712-5236-88E3-8FB68AC978D9 ;
+    ohsp:P101 ohss:Q333-86EEEBDE-5F75-5933-86D0-D37E1FE1B288,
+        ohss:Q333-B2C6A1FE-ACA8-5FCA-9E66-32EB95E83BA3,
+        ohss:Q333-F8371E0B-3BA5-5674-9DFA-9FB445A52C61 ;
+    ohsp:P107 ohss:Q333-5B2F6D92-1EB7-5F71-B2F8-B0A5F6C1161F ;
+    ohsp:P110 ohss:Q333-AC5FC053-243B-515C-8198-3647CBB9BF02 ;
+    ohsp:P111 ohss:Q333-D81D0EF4-0823-5029-898F-4F3A8133B2CC,
+        ohss:Q333-F7A5687C-CC3B-5685-BCCC-24F644A3C730 ;
+    ohsp:P112 ohss:Q333-56492724-4684-5CFC-8211-AC3EF5ECF8DC ;
+    ohsp:P113 ohss:Q333-1DBB59EB-91D8-5F77-9806-4DEC02E3A7CB,
+        ohss:Q333-83EEA18D-1E5F-58F0-9A77-38C4F5356196,
+        ohss:Q333-9832C83F-5820-5A39-9DD5-48F4497B5393,
+        ohss:Q333-EB0403D5-E0C8-5835-9B8B-32D967893059,
+        ohss:Q333-EC38FFBE-C27D-5105-8FC9-360AACB2C553 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/12331250194> ;
+    ohst:P101 <https://www.openstreetmap.org/node/12331250194/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/node/12331250194/history/1> ;
+    ohst:P110 "Point(-8.7762918 52.0988209)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.7762918 52.0988209)",
+        "POINT(-8.7772574 52.0987047)" ;
+    ohst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/St%20Abigal%27s%20Holy%20Well%20-%20geograph.org.uk%20-%20561918.jpg> ;
+    ohst:P113 "name=St. Abigail's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=British War office map;OS 1st edition map",
+        "wikidata=Q55045620" .
+
+ohss:Q333-1DBB59EB-91D8-5F77-9806-4DEC02E3A7CB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7a45f0f1e2481e4cafd8f28e83a99539a6c5f607 ;
+    ohsps:P113 "wikidata=Q55045620" .
+
+ohss:Q333-5B2F6D92-1EB7-5F71-B2F8-B0A5F6C1161F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/12331250194/history/1> .
+
+ohss:Q333-83EEA18D-1E5F-58F0-9A77-38C4F5356196
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7a45f0f1e2481e4cafd8f28e83a99539a6c5f607 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q333-86EEEBDE-5F75-5933-86D0-D37E1FE1B288
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2025-04-07T22:18:35Z" ;
+    ohspq:P104 "164654725" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12331250194/history/2> .
+
+ohss:Q333-550CFCA6-D712-5236-88E3-8FB68AC978D9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/12331250194> .
+
+ohss:Q333-9832C83F-5820-5A39-9DD5-48F4497B5393
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7a45f0f1e2481e4cafd8f28e83a99539a6c5f607 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q333-56492724-4684-5CFC-8211-AC3EF5ECF8DC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7a45f0f1e2481e4cafd8f28e83a99539a6c5f607 ;
+    ohsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/St%20Abigal%27s%20Holy%20Well%20-%20geograph.org.uk%20-%20561918.jpg> .
+
+ohss:Q333-AC5FC053-243B-515C-8198-3647CBB9BF02
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7a45f0f1e2481e4cafd8f28e83a99539a6c5f607 ;
+    ohsps:P110 "Point(-8.7762918 52.0988209)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:a26a30fae91487aae24908bd24d5f436 .
+
+ohss:Q333-B2C6A1FE-ACA8-5FCA-9E66-32EB95E83BA3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2026-04-20T10:42:20Z" ;
+    ohspq:P104 "181575774" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12331250194/history/3> .
+
+ohss:Q333-D81D0EF4-0823-5029-898F-4F3A8133B2CC
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.7772574 52.0987047)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:b0a98942609b1bd8d2c621901475ecb9921273aa ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-11-11T16:29:54Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.7772574 52.0987047)" .
+
+ohss:Q333-EB0403D5-E0C8-5835-9B8B-32D967893059
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7a45f0f1e2481e4cafd8f28e83a99539a6c5f607 ;
+    ohsps:P113 "source=British War office map;OS 1st edition map" .
+
+ohss:Q333-EC38FFBE-C27D-5105-8FC9-360AACB2C553
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7a45f0f1e2481e4cafd8f28e83a99539a6c5f607 ;
+    ohsps:P113 "name=St. Abigail's Well" .
+
+ohss:Q333-F7A5687C-CC3B-5685-BCCC-24F644A3C730
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.7762918 52.0988209)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:7f205d92742602d9831322ac58ea44db342f74c1 ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2025-04-07T22:18:35Z" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P111 "POINT(-8.7762918 52.0988209)" .
+
+ohss:Q333-F7B7C1E1-2AB2-546E-841E-FDF62E95BE64
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q333-F8371E0B-3BA5-5674-9DFA-9FB445A52C61
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-11-11T16:29:54Z" ;
+    ohspq:P104 "159016296" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12331250194/history/1> .
+
+ohsref:7a45f0f1e2481e4cafd8f28e83a99539a6c5f607
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12331250194/history/3> .
+
+ohsref:7f205d92742602d9831322ac58ea44db342f74c1
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12331250194/history/2> .
+
+ohsref:b0a98942609b1bd8d2c621901475ecb9921273aa
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12331250194/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:a26a30fae91487aae24908bd24d5f436
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.0988209"^^xsd:double ;
+    wikibase:geoLongitude "-8.7762918"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

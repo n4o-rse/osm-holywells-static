@@ -1,0 +1,189 @@
+# Q787: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q787.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8949707289)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8949707289)"@de ;
+    dcterms:identifier "Q787" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q787 ;
+    dcterms:title "Dernasmallan Holy Well"@de,
+        "Dernasmallan Holy Well"@en ;
+    schema:about ohs:Q787 ;
+    dcat:distribution ohsdist:Q787-html,
+        ohsdist:Q787-json,
+        ohsdist:Q787-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q787.html> .
+
+ohsdist:Q787-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q787, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q787.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q787-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q787, as archived from the Wikibase API"@en ;
+    dcat:byteSize "8901"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q787.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q787-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q787, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q787.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q787
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8949707289)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8949707289)"@de ;
+    schema:name "Dernasmallan Holy Well"@de,
+        "Dernasmallan Holy Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "8"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q787-5E3518AC-F2E3-5FCD-84FC-CC8AA365D6BA ;
+    geo:hasGeometry ohss:Q787-5E3518AC-F2E3-5FCD-84FC-CC8AA365D6BA ;
+    rdfs:label "Dernasmallan Holy Well"@de,
+        "Dernasmallan Holy Well"@en ;
+    skos:prefLabel "Dernasmallan Holy Well"@de,
+        "Dernasmallan Holy Well"@en ;
+    ohsp:P2 ohss:Q787-C9A8D92A-5DF8-5E64-85CC-FB04044F9B02 ;
+    ohsp:P100 ohss:Q787-2A5A77A9-1B4F-5463-8FBC-D2EB5798C32D ;
+    ohsp:P101 ohss:Q787-70A6F600-5D1C-5576-883D-03F8F359BF00 ;
+    ohsp:P107 ohss:Q787-0C4497CC-4A43-5A70-8E69-803D2C1CC7E9 ;
+    ohsp:P110 ohss:Q787-9F323FE3-B91E-5AF2-B404-479BDFAE3AEC ;
+    ohsp:P111 ohss:Q787-5E3518AC-F2E3-5FCD-84FC-CC8AA365D6BA ;
+    ohsp:P113 ohss:Q787-3EDAC86D-6D38-5326-9A4A-9DF3B53C6F4F,
+        ohss:Q787-45AB5A08-550C-5AE4-A039-B8DB1DC2DCA4 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8949707289> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8949707289/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8949707289/history/1> ;
+    ohst:P110 "Point(-7.8345126 54.0845999)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.8345126 54.0845999)" ;
+    ohst:P113 "name=Dernasmallan Holy Well",
+        "place_of_worship=holy_well" .
+
+ohss:Q787-0C4497CC-4A43-5A70-8E69-803D2C1CC7E9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8949707289/history/1> .
+
+ohss:Q787-2A5A77A9-1B4F-5463-8FBC-D2EB5798C32D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8949707289> .
+
+ohss:Q787-3EDAC86D-6D38-5326-9A4A-9DF3B53C6F4F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:01991621521675083c184a8e59e06e5b251872fe ;
+    ohsps:P113 "name=Dernasmallan Holy Well" .
+
+ohss:Q787-5E3518AC-F2E3-5FCD-84FC-CC8AA365D6BA
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.8345126 54.0845999)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:01991621521675083c184a8e59e06e5b251872fe ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-07-25T21:40:22Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.8345126 54.0845999)" .
+
+ohss:Q787-9F323FE3-B91E-5AF2-B404-479BDFAE3AEC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:01991621521675083c184a8e59e06e5b251872fe ;
+    ohsps:P110 "Point(-7.8345126 54.0845999)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:b6ee422d98dcc91697eae7c40206a0cd .
+
+ohss:Q787-45AB5A08-550C-5AE4-A039-B8DB1DC2DCA4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:01991621521675083c184a8e59e06e5b251872fe ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q787-70A6F600-5D1C-5576-883D-03F8F359BF00
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-07-25T21:40:22Z" ;
+    ohspq:P104 "108581598" ;
+    ohspq:P105 "Dafo43" ;
+    ohspq:P106 "114051" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8949707289/history/1> .
+
+ohss:Q787-C9A8D92A-5DF8-5E64-85CC-FB04044F9B02
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohsref:01991621521675083c184a8e59e06e5b251872fe
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8949707289/history/1> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:b6ee422d98dcc91697eae7c40206a0cd
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.0845999"^^xsd:double ;
+    wikibase:geoLongitude "-7.8345126"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

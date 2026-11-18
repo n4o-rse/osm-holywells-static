@@ -1,0 +1,299 @@
+# Q321: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q321.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 12023823000)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12023823000)"@de ;
+    dcterms:identifier "Q321" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q321 ;
+    dcterms:title "Saint Colmcille's Well"@de,
+        "Saint Colmcille's Well"@en ;
+    schema:about ohs:Q321 ;
+    dcat:distribution ohsdist:Q321-html,
+        ohsdist:Q321-json,
+        ohsdist:Q321-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q321.html> .
+
+ohsdist:Q321-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q321, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q321.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q321-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q321, as archived from the Wikibase API"@en ;
+    dcat:byteSize "20369"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q321.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q321-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q321, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q321.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q321
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 12023823000)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12023823000)"@de ;
+    schema:name "Saint Colmcille's Well"@de,
+        "Saint Colmcille's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q321-C35470FF-975B-5FDB-9697-A7AC156FE123 ;
+    geo:hasGeometry ohss:Q321-B94A7461-A6FD-5C4C-AE6F-72B8D8C26D74,
+        ohss:Q321-C35470FF-975B-5FDB-9697-A7AC156FE123 ;
+    rdfs:label "Saint Colmcille's Well"@de,
+        "Saint Colmcille's Well"@en ;
+    skos:prefLabel "Saint Colmcille's Well"@de,
+        "Saint Colmcille's Well"@en ;
+    ohsp:P2 ohss:Q321-CB62F618-B5C8-5FEB-B802-1912ABF8732B ;
+    ohsp:P100 ohss:Q321-9BAC2C1E-360C-5D44-BFDB-B75A4335759F ;
+    ohsp:P101 ohss:Q321-2CD6E8C2-2C20-58A9-A63F-69814CB096D3,
+        ohss:Q321-8AB315F0-430E-515D-8B9C-CD6EE49A213D,
+        ohss:Q321-27921828-539E-5FFE-862D-0AC973B885D6,
+        ohss:Q321-B8EA3C3C-09CB-5B43-BACC-2F005A2F0D9D ;
+    ohsp:P107 ohss:Q321-F7252493-8CA8-52A7-8944-E438F75DD82F ;
+    ohsp:P110 ohss:Q321-70FEA52C-E44C-5B9D-9C95-94CEDE14734F ;
+    ohsp:P111 ohss:Q321-B94A7461-A6FD-5C4C-AE6F-72B8D8C26D74,
+        ohss:Q321-C35470FF-975B-5FDB-9697-A7AC156FE123 ;
+    ohsp:P113 ohss:Q321-0FF8AF42-FBDE-5B52-9B02-05EDD1E7642F,
+        ohss:Q321-8B293D94-14BB-5199-9CF6-D443F2CDDE26,
+        ohss:Q321-E4A71A63-01BA-5AE1-8C17-A9308A4B4C9F,
+        ohss:Q321-E1766431-04A4-5836-B188-38373DC86502,
+        ohss:Q321-EEEF88C9-3BF1-5BB9-825E-6E5C5F4EDB10,
+        ohss:Q321-F0B7F2A8-16CA-557F-A262-92356F87A862 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/12023823000> ;
+    ohst:P101 <https://www.openstreetmap.org/node/12023823000/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/node/12023823000/history/2> ;
+    ohst:P110 "Point(-6.8877371 53.7264196)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.8877371 53.7264196)",
+        "POINT(-6.8877691 53.726407)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "name:ga=Tobar Naomh Colmcille",
+        "name=Saint Colmcille's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q321-0FF8AF42-FBDE-5B52-9B02-05EDD1E7642F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:50d317fe6bc52e21de109e98e6418b5013ad3946 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q321-2CD6E8C2-2C20-58A9-A63F-69814CB096D3
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-06-30T23:17:45Z" ;
+    ohspq:P104 "153388721" ;
+    ohspq:P105 "AdrianLangtry" ;
+    ohspq:P106 "15572835" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12023823000/history/1> .
+
+ohss:Q321-8AB315F0-430E-515D-8B9C-CD6EE49A213D
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2024-12-02T11:39:11Z" ;
+    ohspq:P104 "159839216" ;
+    ohspq:P105 "AdrianLangtry" ;
+    ohspq:P106 "15572835" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12023823000/history/2> .
+
+ohss:Q321-8B293D94-14BB-5199-9CF6-D443F2CDDE26
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:50d317fe6bc52e21de109e98e6418b5013ad3946 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q321-9BAC2C1E-360C-5D44-BFDB-B75A4335759F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/12023823000> .
+
+ohss:Q321-70FEA52C-E44C-5B9D-9C95-94CEDE14734F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:50d317fe6bc52e21de109e98e6418b5013ad3946 ;
+    ohsps:P110 "Point(-6.8877371 53.7264196)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:3d9d1ab4fac3e2ea3fcd8060df5fc227 .
+
+ohss:Q321-27921828-539E-5FFE-862D-0AC973B885D6
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2025-12-18T11:02:30Z" ;
+    ohspq:P104 "176089400" ;
+    ohspq:P105 "AdrianLangtry" ;
+    ohspq:P106 "15572835" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12023823000/history/3> .
+
+ohss:Q321-B8EA3C3C-09CB-5B43-BACC-2F005A2F0D9D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2025-12-18T15:27:53Z" ;
+    ohspq:P104 "176100938" ;
+    ohspq:P105 "AdrianLangtry" ;
+    ohspq:P106 "15572835" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/12023823000/history/4> .
+
+ohss:Q321-B94A7461-A6FD-5C4C-AE6F-72B8D8C26D74
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.8877691 53.726407)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:2d73186e636c131adc97b2db510a3ade453caf0a ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-06-30T23:17:45Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.8877691 53.726407)" .
+
+ohss:Q321-C35470FF-975B-5FDB-9697-A7AC156FE123
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.8877371 53.7264196)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:1043027694929339fac10ca941d141e628813e45 ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2024-12-02T11:39:11Z" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P111 "POINT(-6.8877371 53.7264196)" .
+
+ohss:Q321-CB62F618-B5C8-5FEB-B802-1912ABF8732B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q321-E4A71A63-01BA-5AE1-8C17-A9308A4B4C9F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:50d317fe6bc52e21de109e98e6418b5013ad3946 ;
+    ohsps:P113 "name:ga=Tobar Naomh Colmcille" .
+
+ohss:Q321-E1766431-04A4-5836-B188-38373DC86502
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:50d317fe6bc52e21de109e98e6418b5013ad3946 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q321-EEEF88C9-3BF1-5BB9-825E-6E5C5F4EDB10
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:50d317fe6bc52e21de109e98e6418b5013ad3946 ;
+    ohsps:P113 "name=Saint Colmcille's Well" .
+
+ohss:Q321-F0B7F2A8-16CA-557F-A262-92356F87A862
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:50d317fe6bc52e21de109e98e6418b5013ad3946 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q321-F7252493-8CA8-52A7-8944-E438F75DD82F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/12023823000/history/2> .
+
+ohsref:2d73186e636c131adc97b2db510a3ade453caf0a
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12023823000/history/1> .
+
+ohsref:50d317fe6bc52e21de109e98e6418b5013ad3946
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12023823000/history/4> .
+
+ohsref:1043027694929339fac10ca941d141e628813e45
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/12023823000/history/2> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:3d9d1ab4fac3e2ea3fcd8060df5fc227
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.7264196"^^xsd:double ;
+    wikibase:geoLongitude "-6.8877371"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

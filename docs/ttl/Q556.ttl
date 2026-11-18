@@ -1,0 +1,393 @@
+# Q556: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q556.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 2092725716)"@en,
+        "Höhenmarke (OpenStreetMap-Node 2092725716)"@de ;
+    dcterms:identifier "Q556" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q556 ;
+    dcterms:title "Tobermurry"@de,
+        "Tobermurry"@en ;
+    schema:about ohs:Q556 ;
+    dcat:distribution ohsdist:Q556-html,
+        ohsdist:Q556-json,
+        ohsdist:Q556-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q556.html> .
+
+ohsdist:Q556-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q556, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q556.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q556-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q556, as archived from the Wikibase API"@en ;
+    dcat:byteSize "31352"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q556.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q556-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q556, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q556.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q556
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 2092725716)"@en,
+        "Höhenmarke (OpenStreetMap-Node 2092725716)"@de ;
+    schema:name "Tobermurry"@de,
+        "Tobermurry"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "24"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q556-69A46553-0B4F-5BD7-B797-65635EAA6EB9 ;
+    geo:hasGeometry ohss:Q556-69A46553-0B4F-5BD7-B797-65635EAA6EB9 ;
+    rdfs:label "Tobermurry"@de,
+        "Tobermurry"@en ;
+    skos:prefLabel "Tobermurry"@de,
+        "Tobermurry"@en ;
+    ohsp:P2 ohss:Q556-A7FE42EE-FB6D-5AED-9322-B46FB92FB3B8 ;
+    ohsp:P100 ohss:Q556-92956DE8-8C32-51C3-B391-3D5859B7BFF8 ;
+    ohsp:P101 ohss:Q556-2ADDD6D5-E183-5D04-A1E2-841E1B7CCAB0,
+        ohss:Q556-42C2895A-7462-5D67-9B24-3668BD64460F,
+        ohss:Q556-82BED44A-76E6-583D-BDC0-9A57DD1F93AD,
+        ohss:Q556-0408FCFD-E2B0-512C-87A1-D8048778464C,
+        ohss:Q556-D64D00F3-D63F-5D71-81AD-E18067CB4C62,
+        ohss:Q556-D84D081F-805D-5124-BC35-A73D68E66B40,
+        ohss:Q556-E496F13D-0798-58C3-8B06-04197ABC84A9,
+        ohss:Q556-FA569FB1-A442-5489-B31A-EBBA84B87366 ;
+    ohsp:P107 ohss:Q556-0143ABF0-5D00-5099-9446-47399D3A9EF7 ;
+    ohsp:P110 ohss:Q556-A2D52ED2-019E-5E80-89F0-C80A5A06A30C ;
+    ohsp:P111 ohss:Q556-69A46553-0B4F-5BD7-B797-65635EAA6EB9 ;
+    ohsp:P113 ohss:Q556-3B38F3D6-8610-5472-A7F8-884C99F312CA,
+        ohss:Q556-9B0BBD9E-A6BD-5205-A0BE-A8EBF2F059B7,
+        ohss:Q556-80D7E10A-53DB-5D3E-B9D1-AD15E9D07BAB,
+        ohss:Q556-677B8322-88B8-51CA-9D11-BE702E3B1404,
+        ohss:Q556-848B0CF6-FE8F-5478-B3D3-A1882E61A5D8,
+        ohss:Q556-850A057D-251D-5D8F-A6BF-20A61F13A3CA,
+        ohss:Q556-83281A6C-AD71-5DC6-86A4-F68CF7EB1B86,
+        ohss:Q556-A5F031CA-3A7E-58F8-9CFD-D07328540E4B,
+        ohss:Q556-C4A56047-2EF2-5E23-8E36-595C5B20D4AA,
+        ohss:Q556-F1D107EC-EACE-57CF-8F5E-F58F462B00B6,
+        ohss:Q556-FDD68542-431E-5430-8DE7-7B89AC810FDF ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/2092725716> ;
+    ohst:P101 <https://www.openstreetmap.org/node/2092725716/history/8> ;
+    ohst:P107 <https://www.openstreetmap.org/node/2092725716/history/3> ;
+    ohst:P110 "Point(-6.2086197 52.5806682)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.2086197 52.5806682)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "name:en=Lady's Well",
+        "name:etymology:wikidata=Q345",
+        "name=Tobermurry",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=WX017-009----",
+        "religion=christian",
+        "wikidata=Q139257384" .
+
+ohss:Q556-2ADDD6D5-E183-5D04-A1E2-841E1B7CCAB0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+8"^^xsd:decimal ;
+    ohspq:P103 "2026-04-12T21:22:42Z" ;
+    ohspq:P104 "181249748" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:3b42a0a3f7b7a6e4e6c51b88effdd574 ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2092725716/history/8> .
+
+ohss:Q556-3B38F3D6-8610-5472-A7F8-884C99F312CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "name=Tobermurry" .
+
+ohss:Q556-9B0BBD9E-A6BD-5205-A0BE-A8EBF2F059B7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "name:etymology:wikidata=Q345" .
+
+ohss:Q556-42C2895A-7462-5D67-9B24-3668BD64460F
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2013-01-02T20:28:36Z" ;
+    ohspq:P104 "14505029" ;
+    ohspq:P105 "pjna" ;
+    ohspq:P106 "80151" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2092725716/history/1> .
+
+ohss:Q556-69A46553-0B4F-5BD7-B797-65635EAA6EB9
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.2086197 52.5806682)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:500e7a33cd9efff1b135acbc46c1e84ebc9055bb ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2013-01-02T20:28:36Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.2086197 52.5806682)" .
+
+ohss:Q556-80D7E10A-53DB-5D3E-B9D1-AD15E9D07BAB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q556-82BED44A-76E6-583D-BDC0-9A57DD1F93AD
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+7"^^xsd:decimal ;
+    ohspq:P103 "2024-12-20T06:38:38Z" ;
+    ohspq:P104 "160420015" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:187a57b7a4159b90f1b51b12225fda5f ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2092725716/history/7> .
+
+ohss:Q556-0143ABF0-5D00-5099-9446-47399D3A9EF7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/2092725716/history/3> .
+
+ohss:Q556-0408FCFD-E2B0-512C-87A1-D8048778464C
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+6"^^xsd:decimal ;
+    ohspq:P103 "2024-12-04T18:42:22Z" ;
+    ohspq:P104 "159929980" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:4a452dffd06b2507ab2eb1eddf5c4e2f ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2092725716/history/6> .
+
+ohss:Q556-677B8322-88B8-51CA-9D11-BE702E3B1404
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q556-848B0CF6-FE8F-5478-B3D3-A1882E61A5D8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q556-850A057D-251D-5D8F-A6BF-20A61F13A3CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q556-83281A6C-AD71-5DC6-86A4-F68CF7EB1B86
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "name:en=Lady's Well" .
+
+ohss:Q556-92956DE8-8C32-51C3-B391-3D5859B7BFF8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/2092725716> .
+
+ohss:Q556-A2D52ED2-019E-5E80-89F0-C80A5A06A30C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P110 "Point(-6.2086197 52.5806682)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:ffbd514a042fc3d8c7ae18b63815c228 .
+
+ohss:Q556-A5F031CA-3A7E-58F8-9CFD-D07328540E4B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "ref:IE:smr=WX017-009----" .
+
+ohss:Q556-A7FE42EE-FB6D-5AED-9322-B46FB92FB3B8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q556-C4A56047-2EF2-5E23-8E36-595C5B20D4AA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q556-D64D00F3-D63F-5D71-81AD-E18067CB4C62
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2021-03-29T16:42:37Z" ;
+    ohspq:P104 "101929806" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2092725716/history/3> .
+
+ohss:Q556-D84D081F-805D-5124-BC35-A73D68E66B40
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+5"^^xsd:decimal ;
+    ohspq:P103 "2023-09-16T18:46:10Z" ;
+    ohspq:P104 "141355130" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:30e603cac620241526fa9f81268ba25c ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2092725716/history/5> .
+
+ohss:Q556-E496F13D-0798-58C3-8B06-04197ABC84A9
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2023-07-27T22:58:09Z" ;
+    ohspq:P104 "139110314" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2092725716/history/4> .
+
+ohss:Q556-F1D107EC-EACE-57CF-8F5E-F58F462B00B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "wikidata=Q139257384" .
+
+ohss:Q556-FA569FB1-A442-5489-B31A-EBBA84B87366
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2013-01-02T20:47:16Z" ;
+    ohspq:P104 "14505283" ;
+    ohspq:P105 "pjna" ;
+    ohspq:P106 "80151" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/2092725716/history/2> .
+
+ohss:Q556-FDD68542-431E-5430-8DE7-7B89AC810FDF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61 ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohsref:500e7a33cd9efff1b135acbc46c1e84ebc9055bb
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/2092725716/history/1> .
+
+ohsref:a9dca31372b65d76ecf68459d062bf9906c69d61
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/2092725716/history/8> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:3b42a0a3f7b7a6e4e6c51b88effdd574
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+8"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:4a452dffd06b2507ab2eb1eddf5c4e2f
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+6"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:187a57b7a4159b90f1b51b12225fda5f
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+7"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:ffbd514a042fc3d8c7ae18b63815c228
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.5806682"^^xsd:double ;
+    wikibase:geoLongitude "-6.2086197"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

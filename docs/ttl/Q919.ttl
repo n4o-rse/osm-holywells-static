@@ -1,0 +1,296 @@
+# Q919: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q919.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap way 488894972)"@en,
+        "Höhenmarke (OpenStreetMap-Weg 488894972)"@de ;
+    dcterms:identifier "Q919" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q919 ;
+    dcterms:title "Saint Sylvester's Well"@de,
+        "Saint Sylvester's Well"@en ;
+    schema:about ohs:Q919 ;
+    dcat:distribution ohsdist:Q919-html,
+        ohsdist:Q919-json,
+        ohsdist:Q919-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q919.html> .
+
+ohsdist:Q919-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q919, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q919.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q919-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q919, as archived from the Wikibase API"@en ;
+    dcat:byteSize "20901"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q919.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q919-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q919, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q919.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q919
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap way 488894972)"@en,
+        "Höhenmarke (OpenStreetMap-Weg 488894972)"@de ;
+    schema:name "Saint Sylvester's Well"@de,
+        "Saint Sylvester's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "17"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q919-F715811F-A5BF-5ED5-99FF-DA7A2D202953 ;
+    geo:hasGeometry ohss:Q919-C9DA7A8D-8DAA-56D6-BC41-1FD44678946E,
+        ohss:Q919-F715811F-A5BF-5ED5-99FF-DA7A2D202953 ;
+    rdfs:label "Saint Sylvester's Well"@de,
+        "Saint Sylvester's Well"@en ;
+    skos:prefLabel "Saint Sylvester's Well"@de,
+        "Saint Sylvester's Well"@en ;
+    ohsp:P2 ohss:Q919-7CFB5052-E864-5C08-B03D-C67A72B8BAAF ;
+    ohsp:P100 ohss:Q919-A185D162-2423-57ED-9F2F-2CF80AEC8032 ;
+    ohsp:P101 ohss:Q919-4A2DA62C-DACB-5001-9C69-CB8C17427B3E,
+        ohss:Q919-29E30832-7BEA-5EB3-BE29-5C4A3FD7FD7C,
+        ohss:Q919-DB27BA70-CEB5-5246-85FB-7D84A66ABFB7 ;
+    ohsp:P107 ohss:Q919-2D93FA16-BE30-542D-A695-8163164E54C1 ;
+    ohsp:P110 ohss:Q919-5234BC56-DA26-5931-9C5F-EB774C4B7098 ;
+    ohsp:P111 ohss:Q919-C9DA7A8D-8DAA-56D6-BC41-1FD44678946E,
+        ohss:Q919-F715811F-A5BF-5ED5-99FF-DA7A2D202953 ;
+    ohsp:P113 ohss:Q919-1FB58A75-B987-58C8-AF67-72AABDCD1C65,
+        ohss:Q919-43C7BDCC-2DA0-583C-9618-2C2427456492,
+        ohss:Q919-69B829A9-0A09-5A75-827A-3BBE447287BC,
+        ohss:Q919-71F8D6DC-A7BC-53DB-B543-77ED2F144AAB,
+        ohss:Q919-93FA0EA6-1E00-5EA7-9C16-F5B42F665722,
+        ohss:Q919-22820FD3-5427-503D-916D-D56222AE82FE,
+        ohss:Q919-C1090902-0CDD-5929-BB81-2C94118E7049,
+        ohss:Q919-CF854C10-C4CD-5105-B9A1-A5FBBB34B418 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/way/488894972> ;
+    ohst:P101 <https://www.openstreetmap.org/way/488894972/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/way/488894972/history/3> ;
+    ohst:P110 "Point(-6.1551187 53.4511469)"^^geo:wktLiteral ;
+    ohst:P111 "POLYGON((-6.1551191 53.4511608, -6.1551267 53.45116, -6.1551335 53.4511577, -6.1551386 53.4511543, -6.1551416 53.4511501, -6.1551421 53.4511455, -6.1551401 53.451141, -6.1551357 53.4511372, -6.1551296 53.4511344, -6.1551222 53.451133, -6.1551145 53.4511331, -6.1551072 53.4511346, -6.1551012 53.4511375, -6.155097 53.4511414, -6.1550953 53.4511459, -6.155096 53.4511505, -6.1550993 53.4511547, -6.1551046 53.451158, -6.1551114 53.4511602, -6.1551191 53.4511608))",
+        "POLYGON((-6.1551191 53.4511608, -6.1551268 53.45116, -6.1551335 53.4511577, -6.1551387 53.4511542, -6.1551417 53.4511499, -6.1551421 53.4511453, -6.1551399 53.4511408, -6.1551355 53.451137, -6.1551291 53.4511343, -6.1551218 53.451133, -6.1551142 53.4511331, -6.155107 53.4511347, -6.1551011 53.4511376, -6.155097 53.4511414, -6.1550953 53.4511459, -6.155096 53.4511504, -6.1550991 53.4511546, -6.1551044 53.451158, -6.1551114 53.4511601, -6.1551191 53.4511608))" ;
+    ohst:P113 "building=water_well",
+        "historic=yes",
+        "man_made=water_well",
+        "name=Saint Sylvester's Well",
+        "place_of_worship=holy_well",
+        "tourism=attraction",
+        "website=http://www.malahideheritage.com/#!sylvesters-well/cidb",
+        "wheelchair=yes" .
+
+ohss:Q919-1FB58A75-B987-58C8-AF67-72AABDCD1C65
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b ;
+    ohsps:P113 "man_made=water_well" .
+
+ohss:Q919-2D93FA16-BE30-542D-A695-8163164E54C1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/way/488894972/history/3> .
+
+ohss:Q919-4A2DA62C-DACB-5001-9C69-CB8C17427B3E
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2021-03-30T19:09:50Z" ;
+    ohspq:P104 "102004611" ;
+    ohspq:P105 "lianotragouda" ;
+    ohspq:P106 "8976679" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/way/488894972/history/2> .
+
+ohss:Q919-7CFB5052-E864-5C08-B03D-C67A72B8BAAF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q919-29E30832-7BEA-5EB3-BE29-5C4A3FD7FD7C
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2017-04-23T16:32:33Z" ;
+    ohspq:P104 "48065362" ;
+    ohspq:P105 "khbritish" ;
+    ohspq:P106 "4445529" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/way/488894972/history/1> .
+
+ohss:Q919-43C7BDCC-2DA0-583C-9618-2C2427456492
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b ;
+    ohsps:P113 "building=water_well" .
+
+ohss:Q919-69B829A9-0A09-5A75-827A-3BBE447287BC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b ;
+    ohsps:P113 "name=Saint Sylvester's Well" .
+
+ohss:Q919-71F8D6DC-A7BC-53DB-B543-77ED2F144AAB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b ;
+    ohsps:P113 "tourism=attraction" .
+
+ohss:Q919-93FA0EA6-1E00-5EA7-9C16-F5B42F665722
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b ;
+    ohsps:P113 "wheelchair=yes" .
+
+ohss:Q919-5234BC56-DA26-5931-9C5F-EB774C4B7098
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:72545b05d34dea64f91c921b14806c1465293cdc ;
+    ohsps:P110 "Point(-6.1551187 53.4511469)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:7b328c1fd9faddc8437a83f674d08f9a .
+
+ohss:Q919-22820FD3-5427-503D-916D-D56222AE82FE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b ;
+    ohsps:P113 "website=http://www.malahideheritage.com/#!sylvesters-well/cidb" .
+
+ohss:Q919-A185D162-2423-57ED-9F2F-2CF80AEC8032
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/way/488894972> .
+
+ohss:Q919-C9DA7A8D-8DAA-56D6-BC41-1FD44678946E
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POLYGON((-6.1551191 53.4511608, -6.1551268 53.45116, -6.1551335 53.4511577, -6.1551387 53.4511542, -6.1551417 53.4511499, -6.1551421 53.4511453, -6.1551399 53.4511408, -6.1551355 53.451137, -6.1551291 53.4511343, -6.1551218 53.451133, -6.1551142 53.4511331, -6.155107 53.4511347, -6.1551011 53.4511376, -6.155097 53.4511414, -6.1550953 53.4511459, -6.155096 53.4511504, -6.1550991 53.4511546, -6.1551044 53.451158, -6.1551114 53.4511601, -6.1551191 53.4511608))"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:72545b05d34dea64f91c921b14806c1465293cdc ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2017-04-23T16:32:33Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POLYGON((-6.1551191 53.4511608, -6.1551268 53.45116, -6.1551335 53.4511577, -6.1551387 53.4511542, -6.1551417 53.4511499, -6.1551421 53.4511453, -6.1551399 53.4511408, -6.1551355 53.451137, -6.1551291 53.4511343, -6.1551218 53.451133, -6.1551142 53.4511331, -6.155107 53.4511347, -6.1551011 53.4511376, -6.155097 53.4511414, -6.1550953 53.4511459, -6.155096 53.4511504, -6.1550991 53.4511546, -6.1551044 53.451158, -6.1551114 53.4511601, -6.1551191 53.4511608))" .
+
+ohss:Q919-C1090902-0CDD-5929-BB81-2C94118E7049
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q919-CF854C10-C4CD-5105-B9A1-A5FBBB34B418
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b ;
+    ohsps:P113 "historic=yes" .
+
+ohss:Q919-DB27BA70-CEB5-5246-85FB-7D84A66ABFB7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2024-04-19T21:53:29Z" ;
+    ohspq:P104 "150242206" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/way/488894972/history/3> .
+
+ohss:Q919-F715811F-A5BF-5ED5-99FF-DA7A2D202953
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POLYGON((-6.1551191 53.4511608, -6.1551267 53.45116, -6.1551335 53.4511577, -6.1551386 53.4511543, -6.1551416 53.4511501, -6.1551421 53.4511455, -6.1551401 53.451141, -6.1551357 53.4511372, -6.1551296 53.4511344, -6.1551222 53.451133, -6.1551145 53.4511331, -6.1551072 53.4511346, -6.1551012 53.4511375, -6.155097 53.4511414, -6.1550953 53.4511459, -6.155096 53.4511505, -6.1550993 53.4511547, -6.1551046 53.451158, -6.1551114 53.4511602, -6.1551191 53.4511608))"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:72545b05d34dea64f91c921b14806c1465293cdc ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2020-08-10T16:25:30Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POLYGON((-6.1551191 53.4511608, -6.1551267 53.45116, -6.1551335 53.4511577, -6.1551386 53.4511543, -6.1551416 53.4511501, -6.1551421 53.4511455, -6.1551401 53.451141, -6.1551357 53.4511372, -6.1551296 53.4511344, -6.1551222 53.451133, -6.1551145 53.4511331, -6.1551072 53.4511346, -6.1551012 53.4511375, -6.155097 53.4511414, -6.1550953 53.4511459, -6.155096 53.4511505, -6.1550993 53.4511547, -6.1551046 53.451158, -6.1551114 53.4511602, -6.1551191 53.4511608))" .
+
+ohsref:6fbee0606139b130d2be00bd380d6f51892d0b8b
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/way/488894972/history/3> .
+
+ohsref:72545b05d34dea64f91c921b14806c1465293cdc
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/way/488894972/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:7b328c1fd9faddc8437a83f674d08f9a
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.4511469"^^xsd:double ;
+    wikibase:geoLongitude "-6.1551187"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

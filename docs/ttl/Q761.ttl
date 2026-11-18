@@ -1,0 +1,225 @@
+# Q761: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q761.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8640201821)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8640201821)"@de ;
+    dcterms:identifier "Q761" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q761 ;
+    dcterms:title "Saint Reaghan's Well"@de,
+        "Saint Reaghan's Well"@en ;
+    schema:about ohs:Q761 ;
+    dcat:distribution ohsdist:Q761-html,
+        ohsdist:Q761-json,
+        ohsdist:Q761-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q761.html> .
+
+ohsdist:Q761-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q761, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q761.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q761-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q761, as archived from the Wikibase API"@en ;
+    dcat:byteSize "12463"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q761.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q761-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q761, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q761.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q761
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8640201821)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8640201821)"@de ;
+    schema:name "Saint Reaghan's Well"@de,
+        "Saint Reaghan's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q761-84F1B14D-827F-5A60-A13C-CFE0748B7A74 ;
+    geo:hasGeometry ohss:Q761-84F1B14D-827F-5A60-A13C-CFE0748B7A74 ;
+    rdfs:label "Saint Reaghan's Well"@de,
+        "Saint Reaghan's Well"@en ;
+    skos:prefLabel "Saint Reaghan's Well"@de,
+        "Saint Reaghan's Well"@en ;
+    ohsp:P2 ohss:Q761-07B3B652-0752-5DB0-9778-B125A94A300E ;
+    ohsp:P100 ohss:Q761-9DB37421-B3BE-5D88-8D70-30C302C6C3E2 ;
+    ohsp:P101 ohss:Q761-A3802DE8-399A-5517-84A7-51F17C98F428 ;
+    ohsp:P107 ohss:Q761-24000554-026D-587C-9FD9-1077028FAE5F ;
+    ohsp:P110 ohss:Q761-74F70037-7E05-5119-AADC-9A088C1039A6 ;
+    ohsp:P111 ohss:Q761-84F1B14D-827F-5A60-A13C-CFE0748B7A74 ;
+    ohsp:P113 ohss:Q761-90F72C70-F38D-5D09-8C45-260AB5CC5505,
+        ohss:Q761-8585BC74-65E9-5228-9B49-2B1F175B05CE,
+        ohss:Q761-C97BC57F-686E-58CF-A6EF-B6BE79F631DF,
+        ohss:Q761-C0537FBB-275B-5306-B6BE-7E3C329F37CA,
+        ohss:Q761-DC526ACB-E852-5094-A550-B6E3D5FCA826,
+        ohss:Q761-E8FBC7FB-C784-5EAC-A99E-AF2663E0B117 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8640201821> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8640201821/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8640201821/history/1> ;
+    ohst:P110 "Point(-7.8144363 53.270566)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.8144363 53.270566)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "name=Saint Reaghan's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q761-07B3B652-0752-5DB0-9778-B125A94A300E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q761-9DB37421-B3BE-5D88-8D70-30C302C6C3E2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8640201821> .
+
+ohss:Q761-74F70037-7E05-5119-AADC-9A088C1039A6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e ;
+    ohsps:P110 "Point(-7.8144363 53.270566)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:079ffd0f2a62194c5c77bb4cfefcb057 .
+
+ohss:Q761-84F1B14D-827F-5A60-A13C-CFE0748B7A74
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.8144363 53.270566)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-04-18T15:23:47Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.8144363 53.270566)" .
+
+ohss:Q761-90F72C70-F38D-5D09-8C45-260AB5CC5505
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q761-8585BC74-65E9-5228-9B49-2B1F175B05CE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q761-24000554-026D-587C-9FD9-1077028FAE5F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8640201821/history/1> .
+
+ohss:Q761-A3802DE8-399A-5517-84A7-51F17C98F428
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-04-18T15:23:47Z" ;
+    ohspq:P104 "103142637" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8640201821/history/1> .
+
+ohss:Q761-C97BC57F-686E-58CF-A6EF-B6BE79F631DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e ;
+    ohsps:P113 "name=Saint Reaghan's Well" .
+
+ohss:Q761-C0537FBB-275B-5306-B6BE-7E3C329F37CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q761-DC526ACB-E852-5094-A550-B6E3D5FCA826
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q761-E8FBC7FB-C784-5EAC-A99E-AF2663E0B117
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohsref:e5a03fb0ef86abf974235757e8d8657c8b0ba56e
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8640201821/history/1> .
+
+ohsv:079ffd0f2a62194c5c77bb4cfefcb057
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.270566"^^xsd:double ;
+    wikibase:geoLongitude "-7.8144363"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

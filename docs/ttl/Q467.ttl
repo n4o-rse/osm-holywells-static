@@ -1,0 +1,216 @@
+# Q467: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q467.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13720809790)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13720809790)"@de ;
+    dcterms:identifier "Q467" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q467 ;
+    dcterms:title "St. Bridget's Well"@de,
+        "St. Bridget's Well"@en ;
+    schema:about ohs:Q467 ;
+    dcat:distribution ohsdist:Q467-html,
+        ohsdist:Q467-json,
+        ohsdist:Q467-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q467.html> .
+
+ohsdist:Q467-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q467, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q467.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q467-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q467, as archived from the Wikibase API"@en ;
+    dcat:byteSize "11579"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q467.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q467-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q467, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q467.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q467
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13720809790)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13720809790)"@de ;
+    schema:name "St. Bridget's Well"@de,
+        "St. Bridget's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "11"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q467-4BE0675E-5247-5FC2-B17C-22415E4A259B ;
+    geo:hasGeometry ohss:Q467-4BE0675E-5247-5FC2-B17C-22415E4A259B ;
+    rdfs:label "St. Bridget's Well"@de,
+        "St. Bridget's Well"@en ;
+    skos:prefLabel "St. Bridget's Well"@de,
+        "St. Bridget's Well"@en ;
+    ohsp:P2 ohss:Q467-9D5B253F-E860-577E-AA37-1A5C5B94E2E5 ;
+    ohsp:P100 ohss:Q467-839CE2A5-FAC5-5380-BE49-72BE79AAE30E ;
+    ohsp:P101 ohss:Q467-12A8949E-2625-59CB-9563-0F859313678D ;
+    ohsp:P107 ohss:Q467-ABA261DD-1421-5799-B0D5-452A4209A4AA ;
+    ohsp:P110 ohss:Q467-A8052CFB-7638-592F-91DA-00DE5EDBDF9A ;
+    ohsp:P111 ohss:Q467-4BE0675E-5247-5FC2-B17C-22415E4A259B ;
+    ohsp:P113 ohss:Q467-4B6DBB37-3793-5F10-9464-6BCC113BA1BC,
+        ohss:Q467-11C0EB02-D7A8-56BC-9D68-BB643757B2CA,
+        ohss:Q467-7522DCC9-C18F-5DBC-9CF6-FEA89C437705,
+        ohss:Q467-467086AB-E3D6-5A37-AA77-0CB26EBD6D6B,
+        ohss:Q467-DA037637-B60C-58DD-BD46-3DE2B8098B88 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13720809790> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13720809790/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13720809790/history/1> ;
+    ohst:P110 "Point(-6.978127 52.7682925)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.978127 52.7682925)" ;
+    ohst:P113 "name=St. Bridget's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=CW012-067----",
+        "source=OS 2nd edition map" .
+
+ohss:Q467-4B6DBB37-3793-5F10-9464-6BCC113BA1BC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:b719a1da9848e4c27c8c843ddffeaef70c4eee59 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q467-4BE0675E-5247-5FC2-B17C-22415E4A259B
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.978127 52.7682925)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:b719a1da9848e4c27c8c843ddffeaef70c4eee59 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-10T13:57:29Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.978127 52.7682925)" .
+
+ohss:Q467-9D5B253F-E860-577E-AA37-1A5C5B94E2E5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q467-11C0EB02-D7A8-56BC-9D68-BB643757B2CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:b719a1da9848e4c27c8c843ddffeaef70c4eee59 ;
+    ohsps:P113 "source=OS 2nd edition map" .
+
+ohss:Q467-12A8949E-2625-59CB-9563-0F859313678D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-10T13:57:29Z" ;
+    ohspq:P104 "181149248" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13720809790/history/1> .
+
+ohss:Q467-839CE2A5-FAC5-5380-BE49-72BE79AAE30E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13720809790> .
+
+ohss:Q467-7522DCC9-C18F-5DBC-9CF6-FEA89C437705
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:b719a1da9848e4c27c8c843ddffeaef70c4eee59 ;
+    ohsps:P113 "ref:IE:smr=CW012-067----" .
+
+ohss:Q467-467086AB-E3D6-5A37-AA77-0CB26EBD6D6B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:b719a1da9848e4c27c8c843ddffeaef70c4eee59 ;
+    ohsps:P113 "name=St. Bridget's Well" .
+
+ohss:Q467-A8052CFB-7638-592F-91DA-00DE5EDBDF9A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:b719a1da9848e4c27c8c843ddffeaef70c4eee59 ;
+    ohsps:P110 "Point(-6.978127 52.7682925)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:e6e3fb8756a7689036e78fe850b16b6a .
+
+ohss:Q467-ABA261DD-1421-5799-B0D5-452A4209A4AA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13720809790/history/1> .
+
+ohss:Q467-DA037637-B60C-58DD-BD46-3DE2B8098B88
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:b719a1da9848e4c27c8c843ddffeaef70c4eee59 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohsref:b719a1da9848e4c27c8c843ddffeaef70c4eee59
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13720809790/history/1> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:e6e3fb8756a7689036e78fe850b16b6a
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.7682925"^^xsd:double ;
+    wikibase:geoLongitude "-6.978127"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

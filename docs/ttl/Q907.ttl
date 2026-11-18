@@ -1,0 +1,282 @@
+# Q907: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q907.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap way 1270141790)"@en,
+        "Höhenmarke (OpenStreetMap-Weg 1270141790)"@de ;
+    dcterms:identifier "Q907" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q907 ;
+    dcterms:title "St. Adamhan's Holy Well"@de,
+        "St. Adamhan's Holy Well"@en ;
+    schema:about ohs:Q907 ;
+    dcat:distribution ohsdist:Q907-html,
+        ohsdist:Q907-json,
+        ohsdist:Q907-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q907.html> .
+
+ohsdist:Q907-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q907, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q907.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q907-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q907, as archived from the Wikibase API"@en ;
+    dcat:byteSize "18301"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q907.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q907-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q907, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q907.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q907
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap way 1270141790)"@en,
+        "Höhenmarke (OpenStreetMap-Weg 1270141790)"@de ;
+    schema:name "St. Adamhan's Holy Well"@de,
+        "St. Adamhan's Holy Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "17"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q907-49B8A83E-FA16-5356-B7BE-A29A0275E623 ;
+    geo:hasGeometry ohss:Q907-49B8A83E-FA16-5356-B7BE-A29A0275E623 ;
+    rdfs:label "St. Adamhan's Holy Well"@de,
+        "St. Adamhan's Holy Well"@en ;
+    skos:prefLabel "St. Adamhan's Holy Well"@de,
+        "St. Adamhan's Holy Well"@en ;
+    ohsp:P2 ohss:Q907-AC61D460-AD3B-5818-8F08-1B5D41D726FF ;
+    ohsp:P100 ohss:Q907-17976D06-77F9-514D-BF58-13B0B2C57A53 ;
+    ohsp:P101 ohss:Q907-05B584BB-05FA-5776-8A6C-8CB4781D7915,
+        ohss:Q907-5CDC28B6-41D5-562A-80D7-9CACECEA6042 ;
+    ohsp:P107 ohss:Q907-B01F7C50-6ED7-5F60-AAC3-0516CAC6ECCE ;
+    ohsp:P110 ohss:Q907-1D64BA62-9DDE-5F3A-864E-1DB4B47EE84B ;
+    ohsp:P111 ohss:Q907-49B8A83E-FA16-5356-B7BE-A29A0275E623 ;
+    ohsp:P113 ohss:Q907-0C24D79E-A3C4-5FCD-8D6E-4367CE28D083,
+        ohss:Q907-0FCDEC2A-92B0-5DCF-96C3-A7226E913306,
+        ohss:Q907-2AECDE38-BE72-5C5A-9E4D-F5055BADDC07,
+        ohss:Q907-4C919483-A958-538A-8BE6-D4E8450A004D,
+        ohss:Q907-5BAC6A46-FD2E-5263-8B0C-96C6EF4222F1,
+        ohss:Q907-8FBB4B77-8A37-5C31-8B22-7381352BEA23,
+        ohss:Q907-9EA47CE1-8F3C-5797-A968-404520B9249C,
+        ohss:Q907-60E026FC-734B-5714-94DD-34E9EF1E74E1,
+        ohss:Q907-50665B70-CC1F-5AF8-A7D3-FFD1FA9AFCF0,
+        ohss:Q907-669372A5-C142-5FC7-B784-52E33871238D ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/way/1270141790> ;
+    ohst:P101 <https://www.openstreetmap.org/way/1270141790/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/way/1270141790/history/1> ;
+    ohst:P110 "Point(-8.7287064 54.2413067)"^^geo:wktLiteral ;
+    ohst:P111 "POLYGON((-8.728751 54.2413049, -8.7286832 54.2413245, -8.7286618 54.2412936, -8.7286839 54.2412889, -8.7287469 54.2412995, -8.728751 54.2413049))" ;
+    ohst:P113 "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "heritage:operator=ie:niah",
+        "heritage:website=https://www.buildingsofireland.ie/buildings-search/building/32401906/saint-adamnans-well-skreen-more-skreen-sligo",
+        "heritage=2",
+        "name=St. Adamhan's Holy Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:niah=32401906",
+        "religion=christian" .
+
+ohss:Q907-0C24D79E-A3C4-5FCD-8D6E-4367CE28D083
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q907-0FCDEC2A-92B0-5DCF-96C3-A7226E913306
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q907-1D64BA62-9DDE-5F3A-864E-1DB4B47EE84B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:fcc143c9e166b4b44c9ad06637de77fd0bb330f4 ;
+    ohsps:P110 "Point(-8.7287064 54.2413067)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:769b59c3cdff08df9ff4013fc8695970 .
+
+ohss:Q907-2AECDE38-BE72-5C5A-9E4D-F5055BADDC07
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q907-4C919483-A958-538A-8BE6-D4E8450A004D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "heritage:operator=ie:niah" .
+
+ohss:Q907-05B584BB-05FA-5776-8A6C-8CB4781D7915
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2025-02-10T18:16:32Z" ;
+    ohspq:P104 "162362253" ;
+    ohspq:P105 "aabbbiee" ;
+    ohspq:P106 "9639884" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/way/1270141790/history/2> .
+
+ohss:Q907-5BAC6A46-FD2E-5263-8B0C-96C6EF4222F1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q907-5CDC28B6-41D5-562A-80D7-9CACECEA6042
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-04-05T15:13:57Z" ;
+    ohspq:P104 "149620054" ;
+    ohspq:P105 "aabbbiee" ;
+    ohspq:P106 "9639884" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/way/1270141790/history/1> .
+
+ohss:Q907-8FBB4B77-8A37-5C31-8B22-7381352BEA23
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q907-9EA47CE1-8F3C-5797-A968-404520B9249C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "heritage:website=https://www.buildingsofireland.ie/buildings-search/building/32401906/saint-adamnans-well-skreen-more-skreen-sligo" .
+
+ohss:Q907-49B8A83E-FA16-5356-B7BE-A29A0275E623
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POLYGON((-8.728751 54.2413049, -8.7286832 54.2413245, -8.7286618 54.2412936, -8.7286839 54.2412889, -8.7287469 54.2412995, -8.728751 54.2413049))"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:fcc143c9e166b4b44c9ad06637de77fd0bb330f4 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-04-05T15:13:57Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POLYGON((-8.728751 54.2413049, -8.7286832 54.2413245, -8.7286618 54.2412936, -8.7286839 54.2412889, -8.7287469 54.2412995, -8.728751 54.2413049))" .
+
+ohss:Q907-60E026FC-734B-5714-94DD-34E9EF1E74E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "ref:IE:niah=32401906" .
+
+ohss:Q907-17976D06-77F9-514D-BF58-13B0B2C57A53
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/way/1270141790> .
+
+ohss:Q907-50665B70-CC1F-5AF8-A7D3-FFD1FA9AFCF0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "name=St. Adamhan's Holy Well" .
+
+ohss:Q907-669372A5-C142-5FC7-B784-52E33871238D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q907-AC61D460-AD3B-5818-8F08-1B5D41D726FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q907-B01F7C50-6ED7-5F60-AAC3-0516CAC6ECCE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/way/1270141790/history/1> .
+
+ohsref:7bae61f04cc4fc4415fdde8d1855c3c279636026
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/way/1270141790/history/2> .
+
+ohsref:fcc143c9e166b4b44c9ad06637de77fd0bb330f4
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/way/1270141790/history/1> .
+
+ohsv:769b59c3cdff08df9ff4013fc8695970
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.2413067"^^xsd:double ;
+    wikibase:geoLongitude "-8.7287064"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

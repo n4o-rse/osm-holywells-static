@@ -1,0 +1,243 @@
+# Q537: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q537.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13972223280)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13972223280)"@de ;
+    dcterms:identifier "Q537" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q537 ;
+    dcterms:title "Saint Derivla's Well"@de,
+        "Saint Derivla's Well"@en ;
+    schema:about ohs:Q537 ;
+    dcat:distribution ohsdist:Q537-html,
+        ohsdist:Q537-json,
+        ohsdist:Q537-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q537.html> .
+
+ohsdist:Q537-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q537, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q537.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q537-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q537, as archived from the Wikibase API"@en ;
+    dcat:byteSize "14363"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q537.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q537-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q537, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q537.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q537
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13972223280)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13972223280)"@de ;
+    schema:name "Saint Derivla's Well"@de,
+        "Saint Derivla's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q537-5D941FD8-C772-58BA-A672-7C1BDD24D8EC ;
+    geo:hasGeometry ohss:Q537-5D941FD8-C772-58BA-A672-7C1BDD24D8EC ;
+    rdfs:label "Saint Derivla's Well"@de,
+        "Saint Derivla's Well"@en ;
+    skos:prefLabel "Saint Derivla's Well"@de,
+        "Saint Derivla's Well"@en ;
+    ohsp:P2 ohss:Q537-C2EA51FB-85CF-58FE-AFB4-8A07032776A3 ;
+    ohsp:P100 ohss:Q537-C606DABE-3366-5F3E-9B22-382967ED781C ;
+    ohsp:P101 ohss:Q537-9571AB3D-6F20-5BDE-BFA9-DD5E7E8DF2B6 ;
+    ohsp:P107 ohss:Q537-8236A01A-0552-504D-B3F0-6CE1BDC5F13A ;
+    ohsp:P110 ohss:Q537-67118B4D-1629-5EAF-9AFF-DE97D32C3CB7 ;
+    ohsp:P111 ohss:Q537-5D941FD8-C772-58BA-A672-7C1BDD24D8EC ;
+    ohsp:P113 ohss:Q537-3A4E5BB2-CA07-5FED-8F57-E4CBBE2A6F16,
+        ohss:Q537-9C0431AE-121F-54D3-94F7-525BA856DAFB,
+        ohss:Q537-621EC76E-B2EF-5FEC-B1CD-7030E2990322,
+        ohss:Q537-187035E2-6147-5BCC-9C67-992E0FECBD6B,
+        ohss:Q537-B2D65198-0487-5063-AFF2-9F913EFEF563,
+        ohss:Q537-E7FE5377-F3D4-50A4-8A29-5B2E642A6EF9,
+        ohss:Q537-E67E1F83-FE17-56A5-9FFD-DD9B2A6FD590,
+        ohss:Q537-EE647416-75E9-52A1-BDA8-E0A956B42370 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13972223280> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13972223280/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13972223280/history/1> ;
+    ohst:P110 "Point(-8.7920988 52.4079955)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.7920988 52.4079955)" ;
+    ohst:P113 "alt_name:en=St. Deriola's Well;St. Derivla's Well",
+        "name:etymology:wikidata=Q5575577",
+        "name=Saint Derivla's Well",
+        "natural=spring",
+        "note=name corrupted on 2nd edition OS map; Derivla is the Anglicised version of Gobnait",
+        "place_of_worship=holy_well",
+        "source=OS 2nd edition map",
+        "wikidata=Q140373161" .
+
+ohss:Q537-3A4E5BB2-CA07-5FED-8F57-E4CBBE2A6F16
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P113 "alt_name:en=St. Deriola's Well;St. Derivla's Well" .
+
+ohss:Q537-5D941FD8-C772-58BA-A672-7C1BDD24D8EC
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.7920988 52.4079955)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-06-28T13:12:45Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.7920988 52.4079955)" .
+
+ohss:Q537-9C0431AE-121F-54D3-94F7-525BA856DAFB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P113 "name:etymology:wikidata=Q5575577" .
+
+ohss:Q537-621EC76E-B2EF-5FEC-B1CD-7030E2990322
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q537-8236A01A-0552-504D-B3F0-6CE1BDC5F13A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13972223280/history/1> .
+
+ohss:Q537-9571AB3D-6F20-5BDE-BFA9-DD5E7E8DF2B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-06-28T13:12:45Z" ;
+    ohspq:P104 "184741899" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13972223280/history/1> .
+
+ohss:Q537-67118B4D-1629-5EAF-9AFF-DE97D32C3CB7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P110 "Point(-8.7920988 52.4079955)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:e54b57d891c48985dbbc94825c4fb8fd .
+
+ohss:Q537-187035E2-6147-5BCC-9C67-992E0FECBD6B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P113 "wikidata=Q140373161" .
+
+ohss:Q537-B2D65198-0487-5063-AFF2-9F913EFEF563
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P113 "name=Saint Derivla's Well" .
+
+ohss:Q537-C2EA51FB-85CF-58FE-AFB4-8A07032776A3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q537-C606DABE-3366-5F3E-9B22-382967ED781C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13972223280> .
+
+ohss:Q537-E7FE5377-F3D4-50A4-8A29-5B2E642A6EF9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P113 "source=OS 2nd edition map" .
+
+ohss:Q537-E67E1F83-FE17-56A5-9FFD-DD9B2A6FD590
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q537-EE647416-75E9-52A1-BDA8-E0A956B42370
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d ;
+    ohsps:P113 "note=name corrupted on 2nd edition OS map; Derivla is the Anglicised version of Gobnait" .
+
+ohsref:c7ecbabfb651f69f04513ec11fba77fe0750f86d
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13972223280/history/1> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:e54b57d891c48985dbbc94825c4fb8fd
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.4079955"^^xsd:double ;
+    wikibase:geoLongitude "-8.7920988"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

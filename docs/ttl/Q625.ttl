@@ -1,0 +1,307 @@
+# Q625: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q625.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 4630115448)"@en,
+        "Höhenmarke (OpenStreetMap-Node 4630115448)"@de ;
+    dcterms:identifier "Q625" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q625 ;
+    dcterms:title "Saint Moling's Well"@de,
+        "Saint Moling's Well"@en ;
+    schema:about ohs:Q625 ;
+    dcat:distribution ohsdist:Q625-html,
+        ohsdist:Q625-json,
+        ohsdist:Q625-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q625.html> .
+
+ohsdist:Q625-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q625, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q625.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q625-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q625, as archived from the Wikibase API"@en ;
+    dcat:byteSize "21352"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q625.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q625-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q625, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q625.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q625
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 4630115448)"@en,
+        "Höhenmarke (OpenStreetMap-Node 4630115448)"@de ;
+    schema:name "Saint Moling's Well"@de,
+        "Saint Moling's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "18"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q625-7DE2EA07-492C-55C7-B001-CBA15E7CE56F ;
+    geo:hasGeometry ohss:Q625-7DE2EA07-492C-55C7-B001-CBA15E7CE56F ;
+    rdfs:label "Saint Moling's Well"@de,
+        "Saint Moling's Well"@en ;
+    skos:prefLabel "Saint Moling's Well"@de,
+        "Saint Moling's Well"@en ;
+    ohsp:P2 ohss:Q625-3E85B0FF-44FD-5963-83C5-1B519F721238 ;
+    ohsp:P100 ohss:Q625-A3EF1B72-C6A3-52DC-B667-ABC8E6343610 ;
+    ohsp:P101 ohss:Q625-68E439A1-993F-5E38-8A9F-DFFFAE81D13D,
+        ohss:Q625-C3D2EE70-4E01-547D-B58C-AE5DB29A7A51,
+        ohss:Q625-C400FFA2-EBD3-56F5-8ED5-9A61B34F3005,
+        ohss:Q625-CDD8046B-DCE2-5877-B8D9-BBC2CC4B937A ;
+    ohsp:P107 ohss:Q625-1AE2F7FA-F8E0-5689-BC29-E72F8F6C650B ;
+    ohsp:P110 ohss:Q625-06A97B33-5DCB-53A9-98A6-DC75864A8A0E ;
+    ohsp:P111 ohss:Q625-7DE2EA07-492C-55C7-B001-CBA15E7CE56F ;
+    ohsp:P113 ohss:Q625-9A5F35F1-07E8-50D3-9F7C-C93A00AFC9CA,
+        ohss:Q625-47E61D15-542D-554E-BBDC-22FED864F354,
+        ohss:Q625-978D8C0E-CDB6-51EF-98D9-4D3465C7C877,
+        ohss:Q625-B36C0332-0F68-531A-9EAC-D5FA8EDDC2B6,
+        ohss:Q625-C65AD60F-EF08-5FA6-A1E2-FD3B4ECC5742,
+        ohss:Q625-D2125420-A751-5968-90BE-BF90035AFE3F,
+        ohss:Q625-DE235AF9-A813-56BA-AFCB-466433659A3B,
+        ohss:Q625-EABBC213-EF66-527B-9776-7EDC8C065E56,
+        ohss:Q625-F0A75DDB-26DB-5598-8EC7-FC4D6194CF8D ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/4630115448> ;
+    ohst:P101 <https://www.openstreetmap.org/node/4630115448/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/node/4630115448/history/2> ;
+    ohst:P110 "Point(-9.2661977 52.3102686)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-9.2661977 52.3102686)" ;
+    ohst:P113 "alt_name=Tobermoling",
+        "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "name:etymology:wikidata=Q4300418",
+        "name=Saint Moling's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "religion=christian",
+        "wikidata=Q131396044" .
+
+ohss:Q625-1AE2F7FA-F8E0-5689-BC29-E72F8F6C650B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/4630115448/history/2> .
+
+ohss:Q625-3E85B0FF-44FD-5963-83C5-1B519F721238
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q625-06A97B33-5DCB-53A9-98A6-DC75864A8A0E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P110 "Point(-9.2661977 52.3102686)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:7eb182ebfce73d75973038e1e4d18b3e .
+
+ohss:Q625-7DE2EA07-492C-55C7-B001-CBA15E7CE56F
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.2661977 52.3102686)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:134d453f0ba3972bee043a8fcacacddcd3077404 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2017-01-24T19:12:01Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-9.2661977 52.3102686)" .
+
+ohss:Q625-9A5F35F1-07E8-50D3-9F7C-C93A00AFC9CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "name=Saint Moling's Well" .
+
+ohss:Q625-47E61D15-542D-554E-BBDC-22FED864F354
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q625-68E439A1-993F-5E38-8A9F-DFFFAE81D13D
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-07-28T21:17:38Z" ;
+    ohspq:P104 "139152838" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4630115448/history/3> .
+
+ohss:Q625-978D8C0E-CDB6-51EF-98D9-4D3465C7C877
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q625-A3EF1B72-C6A3-52DC-B667-ABC8E6343610
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/4630115448> .
+
+ohss:Q625-B36C0332-0F68-531A-9EAC-D5FA8EDDC2B6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "name:etymology:wikidata=Q4300418" .
+
+ohss:Q625-C3D2EE70-4E01-547D-B58C-AE5DB29A7A51
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2024-12-06T14:59:38Z" ;
+    ohspq:P104 "159998149" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4630115448/history/4> .
+
+ohss:Q625-C65AD60F-EF08-5FA6-A1E2-FD3B4ECC5742
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q625-C400FFA2-EBD3-56F5-8ED5-9A61B34F3005
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2017-01-24T19:12:01Z" ;
+    ohspq:P104 "45446016" ;
+    ohspq:P105 "emmaj2016" ;
+    ohspq:P106 "4806248" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4630115448/history/1> .
+
+ohss:Q625-CDD8046B-DCE2-5877-B8D9-BBC2CC4B937A
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2021-04-01T22:10:16Z" ;
+    ohspq:P104 "102150319" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4630115448/history/2> .
+
+ohss:Q625-D2125420-A751-5968-90BE-BF90035AFE3F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "alt_name=Tobermoling" .
+
+ohss:Q625-DE235AF9-A813-56BA-AFCB-466433659A3B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "wikidata=Q131396044" .
+
+ohss:Q625-EABBC213-EF66-527B-9776-7EDC8C065E56
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q625-F0A75DDB-26DB-5598-8EC7-FC4D6194CF8D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9d7508a0cbdb922c7f8527908975129348364007 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohsref:9d7508a0cbdb922c7f8527908975129348364007
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4630115448/history/4> .
+
+ohsref:134d453f0ba3972bee043a8fcacacddcd3077404
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4630115448/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:7eb182ebfce73d75973038e1e4d18b3e
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.3102686"^^xsd:double ;
+    wikibase:geoLongitude "-9.2661977"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

@@ -1,0 +1,290 @@
+# Q222: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q222.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 11124070372)"@en,
+        "Höhenmarke (OpenStreetMap-Node 11124070372)"@de ;
+    dcterms:identifier "Q222" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q222 ;
+    dcterms:title "Toberpatrick"@de,
+        "Toberpatrick"@en ;
+    schema:about ohs:Q222 ;
+    dcat:distribution ohsdist:Q222-html,
+        ohsdist:Q222-json,
+        ohsdist:Q222-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q222.html> .
+
+ohsdist:Q222-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q222, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q222.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q222-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q222, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19290"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q222.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q222-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q222, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q222.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q222
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 11124070372)"@en,
+        "Höhenmarke (OpenStreetMap-Node 11124070372)"@de ;
+    schema:name "Toberpatrick"@de,
+        "Toberpatrick"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "17"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q222-E653BAF7-4A6B-55CE-B0D4-926909D003FC ;
+    geo:hasGeometry ohss:Q222-E653BAF7-4A6B-55CE-B0D4-926909D003FC ;
+    rdfs:label "Toberpatrick"@de,
+        "Toberpatrick"@en ;
+    skos:prefLabel "Toberpatrick"@de,
+        "Toberpatrick"@en ;
+    ohsp:P2 ohss:Q222-D6AF43E3-66D7-57D4-BC43-AB7C613C9407 ;
+    ohsp:P100 ohss:Q222-93BA86CD-2D31-5350-907C-C7C64A4B0E62 ;
+    ohsp:P101 ohss:Q222-5AFFAF94-6E54-5CF4-95A6-D3AD1810B98B,
+        ohss:Q222-8CBAD648-4BD7-556C-82E6-D56B787ABDAA,
+        ohss:Q222-C8A2AC3A-7F5D-5982-9506-17B70599593B ;
+    ohsp:P107 ohss:Q222-A1BB5E2D-F0DC-5C5D-992E-AE8A9701DA20 ;
+    ohsp:P110 ohss:Q222-B800B428-71C1-503A-82DA-479C226E1FF1 ;
+    ohsp:P111 ohss:Q222-E653BAF7-4A6B-55CE-B0D4-926909D003FC ;
+    ohsp:P113 ohss:Q222-1D36F0BC-605B-54F5-93F6-53325B7BBF21,
+        ohss:Q222-8E2FDF6E-9B35-5FA1-9158-35BE3B314E46,
+        ohss:Q222-392E36FB-639E-5EE3-8A2F-A73B88362884,
+        ohss:Q222-38873536-437C-579E-898F-F59E27A3CAEC,
+        ohss:Q222-AC589F62-7CB0-584A-8E38-590CE8E45385,
+        ohss:Q222-C3B4EAF0-5F63-5437-B30E-E932CB393FBB,
+        ohss:Q222-CE5136A2-90C3-5626-8C52-D2E71540D646,
+        ohss:Q222-D3B402B6-1FAA-5664-9E47-B6576E26DC45,
+        ohss:Q222-FFC258FB-7463-5450-B9F3-23A2B536E0EC ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/11124070372> ;
+    ohst:P101 <https://www.openstreetmap.org/node/11124070372/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/node/11124070372/history/1> ;
+    ohst:P110 "Point(-7.5555955 52.7225113)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.5555955 52.7225113)" ;
+    ohst:P113 "heritage:operator=IE:smr",
+        "heritage=2",
+        "name:ga=Tobar Patraig",
+        "name=Toberpatrick",
+        "natural=spring",
+        "note=it might be in/ under the modern enclosure to the east",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=KK012-007",
+        "wikidata=Q126443543" .
+
+ohss:Q222-1D36F0BC-605B-54F5-93F6-53325B7BBF21
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "name=Toberpatrick" .
+
+ohss:Q222-5AFFAF94-6E54-5CF4-95A6-D3AD1810B98B
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2023-08-17T23:38:14Z" ;
+    ohspq:P104 "140034091" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11124070372/history/1> .
+
+ohss:Q222-8CBAD648-4BD7-556C-82E6-D56B787ABDAA
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2024-06-10T21:32:48Z" ;
+    ohspq:P104 "152517065" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11124070372/history/2> .
+
+ohss:Q222-8E2FDF6E-9B35-5FA1-9158-35BE3B314E46
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q222-93BA86CD-2D31-5350-907C-C7C64A4B0E62
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/11124070372> .
+
+ohss:Q222-392E36FB-639E-5EE3-8A2F-A73B88362884
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q222-38873536-437C-579E-898F-F59E27A3CAEC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "name:ga=Tobar Patraig" .
+
+ohss:Q222-A1BB5E2D-F0DC-5C5D-992E-AE8A9701DA20
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/11124070372/history/1> .
+
+ohss:Q222-AC589F62-7CB0-584A-8E38-590CE8E45385
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q222-B800B428-71C1-503A-82DA-479C226E1FF1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P110 "Point(-7.5555955 52.7225113)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:292f7f00b80e933fc84d42ca18c77181 .
+
+ohss:Q222-C3B4EAF0-5F63-5437-B30E-E932CB393FBB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "note=it might be in/ under the modern enclosure to the east" .
+
+ohss:Q222-C8A2AC3A-7F5D-5982-9506-17B70599593B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2024-12-11T06:53:09Z" ;
+    ohspq:P104 "160155386" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11124070372/history/3> .
+
+ohss:Q222-CE5136A2-90C3-5626-8C52-D2E71540D646
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "wikidata=Q126443543" .
+
+ohss:Q222-D3B402B6-1FAA-5664-9E47-B6576E26DC45
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "ref:IE:smr=KK012-007" .
+
+ohss:Q222-D6AF43E3-66D7-57D4-BC43-AB7C613C9407
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q222-E653BAF7-4A6B-55CE-B0D4-926909D003FC
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.5555955 52.7225113)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:a31386fe079c80baf6633986320b5548e4b847c3 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2023-08-17T23:38:14Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.5555955 52.7225113)" .
+
+ohss:Q222-FFC258FB-7463-5450-B9F3-23A2B536E0EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohsref:4bf600f404fe587488eb5f6ca53908c016af70a3
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/11124070372/history/3> .
+
+ohsref:a31386fe079c80baf6633986320b5548e4b847c3
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/11124070372/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:292f7f00b80e933fc84d42ca18c77181
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.7225113"^^xsd:double ;
+    wikibase:geoLongitude "-7.5555955"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

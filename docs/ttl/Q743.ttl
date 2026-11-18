@@ -1,0 +1,289 @@
+# Q743: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q743.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8569064675)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8569064675)"@de ;
+    dcterms:identifier "Q743" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q743 ;
+    dcterms:title "Tobbereogue"@de,
+        "Tobbereogue"@en ;
+    schema:about ohs:Q743 ;
+    dcat:distribution ohsdist:Q743-html,
+        ohsdist:Q743-json,
+        ohsdist:Q743-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q743.html> .
+
+ohsdist:Q743-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q743, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q743.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q743-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q743, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19542"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q743.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q743-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q743, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q743.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q743
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8569064675)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8569064675)"@de ;
+    schema:name "Tobbereogue"@de,
+        "Tobbereogue"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q743-EEB8E3D5-8423-53A6-83A5-096D384A7312 ;
+    geo:hasGeometry ohss:Q743-EEB8E3D5-8423-53A6-83A5-096D384A7312 ;
+    rdfs:label "Tobbereogue"@de,
+        "Tobbereogue"@en ;
+    skos:prefLabel "Tobbereogue"@de,
+        "Tobbereogue"@en ;
+    ohsp:P2 ohss:Q743-FB7E3071-5690-56BE-893C-07088DFF5E28 ;
+    ohsp:P100 ohss:Q743-F714628F-DC62-526D-B7EF-CF817BBE45C6 ;
+    ohsp:P101 ohss:Q743-4F1B6C27-B3A0-554D-BEE5-A87F3A073885,
+        ohss:Q743-6F43772B-3B23-5E30-9B32-827CB2BAAEE0,
+        ohss:Q743-AA21384A-2C84-5F01-9CE3-B95531D9C8B0,
+        ohss:Q743-B42989D3-4B73-5722-9244-2181C100A5FE ;
+    ohsp:P107 ohss:Q743-69E5340B-9D20-5A60-B142-33393D759FEF ;
+    ohsp:P110 ohss:Q743-4C71D944-4B5C-55A6-953D-AA2F44DB1D2B ;
+    ohsp:P111 ohss:Q743-EEB8E3D5-8423-53A6-83A5-096D384A7312 ;
+    ohsp:P113 ohss:Q743-413BD7B2-BE06-55FB-AE06-7BB75628F652,
+        ohss:Q743-663F0F90-53A7-5574-BE09-99863F0D0082,
+        ohss:Q743-727D0957-056F-5469-BCB3-1712F8C05918,
+        ohss:Q743-84979FDE-D502-5C59-A30C-39C2C50871CA,
+        ohss:Q743-B0E952BA-197E-5E2B-8BD9-D9EB7D4A43AA,
+        ohss:Q743-CCB8288D-637F-5A18-9E3A-C966EFDDD3A7,
+        ohss:Q743-E1858619-FFE7-5DEA-ADAA-982F6CDC430D ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8569064675> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8569064675/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8569064675/history/1> ;
+    ohst:P110 "Point(-8.1008616 53.5880224)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.1008616 53.5880224)" ;
+    ohst:P113 "alt_name=Tober Reeoge",
+        "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "name=Tobbereogue",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "religion=christian" .
+
+ohss:Q743-4C71D944-4B5C-55A6-953D-AA2F44DB1D2B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711 ;
+    ohsps:P110 "Point(-8.1008616 53.5880224)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:292fc2fd121a1077a1ca26ee10f31677 .
+
+ohss:Q743-4F1B6C27-B3A0-554D-BEE5-A87F3A073885
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2021-03-28T16:50:48Z" ;
+    ohspq:P104 "101881861" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8569064675/history/4> .
+
+ohss:Q743-6F43772B-3B23-5E30-9B32-827CB2BAAEE0
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-03-28T13:36:27Z" ;
+    ohspq:P104 "101873916" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8569064675/history/1> .
+
+ohss:Q743-69E5340B-9D20-5A60-B142-33393D759FEF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8569064675/history/1> .
+
+ohss:Q743-413BD7B2-BE06-55FB-AE06-7BB75628F652
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q743-663F0F90-53A7-5574-BE09-99863F0D0082
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q743-727D0957-056F-5469-BCB3-1712F8C05918
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q743-84979FDE-D502-5C59-A30C-39C2C50871CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711 ;
+    ohsps:P113 "name=Tobbereogue" .
+
+ohss:Q743-AA21384A-2C84-5F01-9CE3-B95531D9C8B0
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2021-03-28T16:50:33Z" ;
+    ohspq:P104 "101881852" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8569064675/history/3> .
+
+ohss:Q743-B0E952BA-197E-5E2B-8BD9-D9EB7D4A43AA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q743-B42989D3-4B73-5722-9244-2181C100A5FE
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2021-03-28T16:48:40Z" ;
+    ohspq:P104 "101881780" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8569064675/history/2> .
+
+ohss:Q743-CCB8288D-637F-5A18-9E3A-C966EFDDD3A7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711 ;
+    ohsps:P113 "alt_name=Tober Reeoge" .
+
+ohss:Q743-E1858619-FFE7-5DEA-ADAA-982F6CDC430D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q743-EEB8E3D5-8423-53A6-83A5-096D384A7312
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.1008616 53.5880224)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:a8b80537de765ffe90423728906541326ed8e9fc ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-03-28T13:36:27Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.1008616 53.5880224)" .
+
+ohss:Q743-F714628F-DC62-526D-B7EF-CF817BBE45C6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8569064675> .
+
+ohss:Q743-FB7E3071-5690-56BE-893C-07088DFF5E28
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohsref:6e64c8bef10486cbe6de4e895e8fddfb791fd711
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8569064675/history/4> .
+
+ohsref:a8b80537de765ffe90423728906541326ed8e9fc
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8569064675/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:292fc2fd121a1077a1ca26ee10f31677
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.5880224"^^xsd:double ;
+    wikibase:geoLongitude "-8.1008616"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

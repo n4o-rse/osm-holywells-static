@@ -1,0 +1,396 @@
+# Q137: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q137.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 10555542021)"@en,
+        "Höhenmarke (OpenStreetMap-Node 10555542021)"@de ;
+    dcterms:identifier "Q137" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q137 ;
+    dcterms:title "St. Macullin's Well"@de,
+        "St. Macullin's Well"@en ;
+    schema:about ohs:Q137 ;
+    dcat:distribution ohsdist:Q137-html,
+        ohsdist:Q137-json,
+        ohsdist:Q137-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q137.html> .
+
+ohsdist:Q137-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q137, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q137.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q137-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q137, as archived from the Wikibase API"@en ;
+    dcat:byteSize "30901"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q137.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q137-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q137, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q137.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q137
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 10555542021)"@en,
+        "Höhenmarke (OpenStreetMap-Node 10555542021)"@de ;
+    schema:name "St. Macullin's Well"@de,
+        "St. Macullin's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "25"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q137-70DBF2F9-2793-5605-9C9C-2209DEC77E54 ;
+    geo:hasGeometry ohss:Q137-0B351C19-4A42-5BB7-A3CB-940CA0CCE013,
+        ohss:Q137-70DBF2F9-2793-5605-9C9C-2209DEC77E54 ;
+    rdfs:label "St. Macullin's Well"@de,
+        "St. Macullin's Well"@en ;
+    skos:prefLabel "St. Macullin's Well"@de,
+        "St. Macullin's Well"@en ;
+    ohsp:P2 ohss:Q137-7FC1B921-3063-5618-81E9-D549FF639315 ;
+    ohsp:P100 ohss:Q137-F1B82511-55E1-52D6-BBD4-480E9449E438 ;
+    ohsp:P101 ohss:Q137-0D4D77BF-AECA-58A5-815E-CFECA088670C,
+        ohss:Q137-23B15CFB-50C3-514C-AEE4-B1707C7FA396,
+        ohss:Q137-4909E8DC-B4AD-5462-AC04-E4E934EC57C8,
+        ohss:Q137-56014EDE-7CBF-5F59-BFEB-47703631ABAE,
+        ohss:Q137-C58C8C1A-8760-58B7-98BC-6CF97DBD7F57,
+        ohss:Q137-F6F56400-4B65-5AD6-A88F-5AC9188D07E2 ;
+    ohsp:P107 ohss:Q137-376A133C-2355-5505-9B59-E19F58892044 ;
+    ohsp:P110 ohss:Q137-FB3A0C8B-E47A-5651-8BBF-64043A422EFA ;
+    ohsp:P111 ohss:Q137-0B351C19-4A42-5BB7-A3CB-940CA0CCE013,
+        ohss:Q137-70DBF2F9-2793-5605-9C9C-2209DEC77E54 ;
+    ohsp:P113 ohss:Q137-1D550918-022F-5C16-AC93-655D9983C592,
+        ohss:Q137-1DF81B3D-49FC-5D4D-A05C-986E3EBE180F,
+        ohss:Q137-2DACCE16-6CA6-51A1-B030-B9C7A0DF8AD7,
+        ohss:Q137-7FFF5921-953D-5C12-9C50-514F81A9EC8A,
+        ohss:Q137-64D795F5-ADDE-5D14-926E-CF9B08B29F1F,
+        ohss:Q137-516ED420-2576-5D59-AA16-1C0B727C6C85,
+        ohss:Q137-530D640C-8145-5785-A3AA-96044D3F4474,
+        ohss:Q137-840191D6-88BB-506E-8222-130F8F2D8AB6,
+        ohss:Q137-7004703F-A8AF-54A5-9EA2-5CBD613283AB,
+        ohss:Q137-AD75B01C-FC2D-504A-AFE8-5055A6061F91,
+        ohss:Q137-B6164EB5-12B1-5B3C-98C6-589A1797670D,
+        ohss:Q137-F20AA42D-E50F-5CB3-8E5D-341DB87818C0,
+        ohss:Q137-F00735E0-9DB6-58C8-A3F2-BAF728CF34DE ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/10555542021> ;
+    ohst:P101 <https://www.openstreetmap.org/node/10555542021/history/6> ;
+    ohst:P107 <https://www.openstreetmap.org/node/10555542021/history/2> ;
+    ohst:P110 "Point(-6.3304916 53.5461015)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.3304468 53.5460783)",
+        "POINT(-6.3304916 53.5461015)" ;
+    ohst:P113 "alt_name=St. Michael's Well",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "name:etymology:wikidata=Q107501699",
+        "name:etymology:wikipedia=en:Macculind",
+        "name=St. Macullin's Well",
+        "natural=spring",
+        "note=Macullin(d) seems to be a Dublin saint, there is only one other graveyard associated with him in Dublin",
+        "old_name:etymology:wikidata=Q45581",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=DU007-001002",
+        "source:alt_name=duchas.ie",
+        "source:name=National monuments service;British War office map" .
+
+ohss:Q137-0B351C19-4A42-5BB7-A3CB-940CA0CCE013
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.3304468 53.5460783)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:d352ee0edd6e62703e08ce5dee1fd0d196f19f2c ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2023-01-14T23:55:53Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.3304468 53.5460783)" .
+
+ohss:Q137-0D4D77BF-AECA-58A5-815E-CFECA088670C
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-01-15T07:03:12Z" ;
+    ohspq:P104 "131287838" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10555542021/history/2> .
+
+ohss:Q137-1D550918-022F-5C16-AC93-655D9983C592
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "heritage=2" .
+
+ohss:Q137-1DF81B3D-49FC-5D4D-A05C-986E3EBE180F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "source:name=National monuments service;British War office map" .
+
+ohss:Q137-2DACCE16-6CA6-51A1-B030-B9C7A0DF8AD7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "source:alt_name=duchas.ie" .
+
+ohss:Q137-7FC1B921-3063-5618-81E9-D549FF639315
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q137-7FFF5921-953D-5C12-9C50-514F81A9EC8A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "name=St. Macullin's Well" .
+
+ohss:Q137-23B15CFB-50C3-514C-AEE4-B1707C7FA396
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+5"^^xsd:decimal ;
+    ohspq:P103 "2023-07-29T19:04:12Z" ;
+    ohspq:P104 "139185323" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:30e603cac620241526fa9f81268ba25c ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10555542021/history/5> .
+
+ohss:Q137-64D795F5-ADDE-5D14-926E-CF9B08B29F1F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q137-70DBF2F9-2793-5605-9C9C-2209DEC77E54
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.3304916 53.5461015)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:a51b825bcbf3ac224d6078dca39c6cd72460f5eb ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-01-15T10:43:23Z" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P111 "POINT(-6.3304916 53.5461015)" .
+
+ohss:Q137-376A133C-2355-5505-9B59-E19F58892044
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/10555542021/history/2> .
+
+ohss:Q137-516ED420-2576-5D59-AA16-1C0B727C6C85
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q137-530D640C-8145-5785-A3AA-96044D3F4474
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "alt_name=St. Michael's Well" .
+
+ohss:Q137-4909E8DC-B4AD-5462-AC04-E4E934EC57C8
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2023-01-14T23:55:53Z" ;
+    ohspq:P104 "131282837" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10555542021/history/1> .
+
+ohss:Q137-56014EDE-7CBF-5F59-BFEB-47703631ABAE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+6"^^xsd:decimal ;
+    ohspq:P103 "2024-12-22T09:47:55Z" ;
+    ohspq:P104 "160494986" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:4a452dffd06b2507ab2eb1eddf5c4e2f ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10555542021/history/6> .
+
+ohss:Q137-840191D6-88BB-506E-8222-130F8F2D8AB6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "ref:IE:smr=DU007-001002" .
+
+ohss:Q137-7004703F-A8AF-54A5-9EA2-5CBD613283AB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q137-AD75B01C-FC2D-504A-AFE8-5055A6061F91
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "name:etymology:wikidata=Q107501699" .
+
+ohss:Q137-B6164EB5-12B1-5B3C-98C6-589A1797670D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "name:etymology:wikipedia=en:Macculind" .
+
+ohss:Q137-C58C8C1A-8760-58B7-98BC-6CF97DBD7F57
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-01-15T10:43:23Z" ;
+    ohspq:P104 "131292829" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10555542021/history/3> .
+
+ohss:Q137-F1B82511-55E1-52D6-BBD4-480E9449E438
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/10555542021> .
+
+ohss:Q137-F6F56400-4B65-5AD6-A88F-5AC9188D07E2
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2023-07-29T19:03:23Z" ;
+    ohspq:P104 "139185282" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10555542021/history/4> .
+
+ohss:Q137-F20AA42D-E50F-5CB3-8E5D-341DB87818C0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "note=Macullin(d) seems to be a Dublin saint, there is only one other graveyard associated with him in Dublin" .
+
+ohss:Q137-F00735E0-9DB6-58C8-A3F2-BAF728CF34DE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P113 "old_name:etymology:wikidata=Q45581" .
+
+ohss:Q137-FB3A0C8B-E47A-5651-8BBF-64043A422EFA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:d644973a6d218e5580c476b0d884b779b48ada06 ;
+    ohsps:P110 "Point(-6.3304916 53.5461015)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:ce7545dfcd1871438f7ea7805adbf3da .
+
+ohsref:a51b825bcbf3ac224d6078dca39c6cd72460f5eb
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10555542021/history/3> .
+
+ohsref:d352ee0edd6e62703e08ce5dee1fd0d196f19f2c
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10555542021/history/1> .
+
+ohsref:d644973a6d218e5580c476b0d884b779b48ada06
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10555542021/history/6> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:4a452dffd06b2507ab2eb1eddf5c4e2f
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+6"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:ce7545dfcd1871438f7ea7805adbf3da
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.5461015"^^xsd:double ;
+    wikibase:geoLongitude "-6.3304916"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

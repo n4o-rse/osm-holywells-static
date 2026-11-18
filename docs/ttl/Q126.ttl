@@ -1,0 +1,299 @@
+# Q126: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q126.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 10253817600)"@en,
+        "Höhenmarke (OpenStreetMap-Node 10253817600)"@de ;
+    dcterms:identifier "Q126" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q126 ;
+    dcterms:title "Tober Altan"@de,
+        "Tober Altan"@en ;
+    schema:about ohs:Q126 ;
+    dcat:distribution ohsdist:Q126-html,
+        ohsdist:Q126-json,
+        ohsdist:Q126-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q126.html> .
+
+ohsdist:Q126-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q126, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q126.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q126-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q126, as archived from the Wikibase API"@en ;
+    dcat:byteSize "20145"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q126.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q126-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q126, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q126.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q126
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 10253817600)"@en,
+        "Höhenmarke (OpenStreetMap-Node 10253817600)"@de ;
+    schema:name "Tober Altan"@de,
+        "Tober Altan"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "18"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q126-5440AB5E-4CFC-5459-B42B-8080FFE58607 ;
+    geo:hasGeometry ohss:Q126-5440AB5E-4CFC-5459-B42B-8080FFE58607 ;
+    rdfs:label "Tober Altan"@de,
+        "Tober Altan"@en ;
+    skos:prefLabel "Tober Altan"@de,
+        "Tober Altan"@en ;
+    ohsp:P2 ohss:Q126-D4A73D24-F5CB-5257-8096-8D63F8197706 ;
+    ohsp:P100 ohss:Q126-878CE7CE-5A5F-51DD-9564-A02AE809DD40 ;
+    ohsp:P101 ohss:Q126-44A7B8B0-A756-5FA9-9DAA-C6735908DB42,
+        ohss:Q126-69ED179D-C0F9-5E45-88AA-A5CC20377BAC,
+        ohss:Q126-DF19BB43-3F63-5AF8-BD3F-4868146D05BB ;
+    ohsp:P107 ohss:Q126-69414026-3D88-545A-8B8F-03579ADE6335 ;
+    ohsp:P110 ohss:Q126-26E0585E-EB0E-5E13-8A28-A3C4F8A5025F ;
+    ohsp:P111 ohss:Q126-5440AB5E-4CFC-5459-B42B-8080FFE58607 ;
+    ohsp:P113 ohss:Q126-6A22434D-876A-5BB6-BABD-7593D541CF46,
+        ohss:Q126-8F03E225-74E4-53D9-9927-60BE2B631679,
+        ohss:Q126-40AC332E-86D6-59EF-B132-9B4BBEE0D285,
+        ohss:Q126-77B4C829-DAE4-5958-B4BF-BCF71D8AA59B,
+        ohss:Q126-641AF81B-8EB7-51A4-9368-F8BFC6F15761,
+        ohss:Q126-2042FB99-2BFC-50A5-840B-2C62CF5A3216,
+        ohss:Q126-5464ABCC-47B6-59FD-90D1-F270B0B22313,
+        ohss:Q126-AD9FC2A1-37ED-5005-868F-633B292CC750,
+        ohss:Q126-E1894F19-B1F2-54D9-9180-9332160C723E,
+        ohss:Q126-FE565C9C-7894-59B5-B209-C379784398F2 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/10253817600> ;
+    ohst:P101 <https://www.openstreetmap.org/node/10253817600/history/3> ;
+    ohst:P107 <https://www.openstreetmap.org/node/10253817600/history/1> ;
+    ohst:P110 "Point(-7.075941 53.8816216)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.075941 53.8816216)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "heritage:operator=IE:smr",
+        "heritage=2",
+        "name=Tober Altan",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=CV033-016",
+        "religion=christian",
+        "wikidata=Q122331714" .
+
+ohss:Q126-6A22434D-876A-5BB6-BABD-7593D541CF46
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "ref:IE:smr=CV033-016" .
+
+ohss:Q126-8F03E225-74E4-53D9-9927-60BE2B631679
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q126-26E0585E-EB0E-5E13-8A28-A3C4F8A5025F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P110 "Point(-7.075941 53.8816216)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:e7878eee2a0f076cfde4ae63ae205445 .
+
+ohss:Q126-40AC332E-86D6-59EF-B132-9B4BBEE0D285
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q126-44A7B8B0-A756-5FA9-9DAA-C6735908DB42
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2022-12-11T20:28:00Z" ;
+    ohspq:P104 "129974731" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10253817600/history/1> .
+
+ohss:Q126-69ED179D-C0F9-5E45-88AA-A5CC20377BAC
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-09-08T10:27:44Z" ;
+    ohspq:P104 "140980660" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10253817600/history/2> .
+
+ohss:Q126-77B4C829-DAE4-5958-B4BF-BCF71D8AA59B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q126-641AF81B-8EB7-51A4-9368-F8BFC6F15761
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q126-878CE7CE-5A5F-51DD-9564-A02AE809DD40
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/10253817600> .
+
+ohss:Q126-2042FB99-2BFC-50A5-840B-2C62CF5A3216
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "wikidata=Q122331714" .
+
+ohss:Q126-5440AB5E-4CFC-5459-B42B-8080FFE58607
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.075941 53.8816216)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:c763e3e70806ed14f8c1c5a5b10e34397b4abff9 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2022-12-11T20:28:00Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.075941 53.8816216)" .
+
+ohss:Q126-5464ABCC-47B6-59FD-90D1-F270B0B22313
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "heritage:operator=IE:smr" .
+
+ohss:Q126-69414026-3D88-545A-8B8F-03579ADE6335
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/10253817600/history/1> .
+
+ohss:Q126-AD9FC2A1-37ED-5005-868F-633B292CC750
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q126-D4A73D24-F5CB-5257-8096-8D63F8197706
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q126-DF19BB43-3F63-5AF8-BD3F-4868146D05BB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2024-12-29T14:37:56Z" ;
+    ohspq:P104 "160753209" ;
+    ohspq:P105 "geozeisig" ;
+    ohspq:P106 "66391" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/10253817600/history/3> .
+
+ohss:Q126-E1894F19-B1F2-54D9-9180-9332160C723E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "name=Tober Altan" .
+
+ohss:Q126-FE565C9C-7894-59B5-B209-C379784398F2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9 ;
+    ohsps:P113 "heritage=2" .
+
+ohsref:943d23c28e21647b59666ab027ef5a21048ee6f9
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10253817600/history/3> .
+
+ohsref:c763e3e70806ed14f8c1c5a5b10e34397b4abff9
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/10253817600/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:e7878eee2a0f076cfde4ae63ae205445
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.8816216"^^xsd:double ;
+    wikibase:geoLongitude "-7.075941"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

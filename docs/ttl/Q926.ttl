@@ -1,0 +1,307 @@
+# Q926: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q926.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap way 998586052)"@en,
+        "Höhenmarke (OpenStreetMap-Weg 998586052)"@de ;
+    dcterms:identifier "Q926" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q926 ;
+    dcterms:title "Tobar Bhríghide"@de,
+        "Tobar Bhríghide"@en ;
+    schema:about ohs:Q926 ;
+    dcat:distribution ohsdist:Q926-html,
+        ohsdist:Q926-json,
+        ohsdist:Q926-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q926.html> .
+
+ohsdist:Q926-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q926, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q926.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q926-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q926, as archived from the Wikibase API"@en ;
+    dcat:byteSize "21563"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q926.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q926-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q926, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q926.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q926
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap way 998586052)"@en,
+        "Höhenmarke (OpenStreetMap-Weg 998586052)"@de ;
+    schema:name "Tobar Bhríghide"@de,
+        "Tobar Bhríghide"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "18"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q926-6B07D1F3-AB40-5936-92F5-B97B54940883 ;
+    geo:hasGeometry ohss:Q926-6B07D1F3-AB40-5936-92F5-B97B54940883 ;
+    rdfs:label "Tobar Bhríghide"@de,
+        "Tobar Bhríghide"@en ;
+    skos:prefLabel "Tobar Bhríghide"@de,
+        "Tobar Bhríghide"@en ;
+    ohsp:P2 ohss:Q926-760CCF25-427E-58E2-B172-417E91BC6001 ;
+    ohsp:P100 ohss:Q926-4CE063A7-DEC6-5C23-B27D-5D34314C6AA5 ;
+    ohsp:P101 ohss:Q926-8E9DFF65-0955-5116-8A80-5FE122A808C7,
+        ohss:Q926-14BEC007-6338-5C8F-8A55-B1F55970A425,
+        ohss:Q926-686B3011-8FEA-5C6D-A8E6-4F45C1BB4A55,
+        ohss:Q926-B2A31744-85DC-52E9-944D-5DDCBDBE7655 ;
+    ohsp:P107 ohss:Q926-9E69A3F7-B990-5E1C-9A8C-F68FAAD1BF67 ;
+    ohsp:P110 ohss:Q926-BBCC15F5-B163-58B0-9B71-03D9FA737884 ;
+    ohsp:P111 ohss:Q926-6B07D1F3-AB40-5936-92F5-B97B54940883 ;
+    ohsp:P113 ohss:Q926-7A362E4E-1EA8-5C24-903C-55F74F77A3B0,
+        ohss:Q926-9FD1B553-6E47-5958-A7A4-B2D216A9808F,
+        ohss:Q926-82F6EBA1-95D3-5A1F-BFA0-1FDF2081AE44,
+        ohss:Q926-873E707F-7AEB-5061-9C95-6EDBEE72D0B1,
+        ohss:Q926-2655B1A1-EEE2-5AB5-8E88-B0D9A34F96E3,
+        ohss:Q926-9035C284-84B5-5335-A139-1C187A383405,
+        ohss:Q926-AE0046E2-AB42-5686-AC51-C6C5CFC8EFFD,
+        ohss:Q926-E0B9A536-AFE5-50F8-B8AE-0F8FF73213CD,
+        ohss:Q926-E185A5DB-0642-5B26-9EFE-EF357DBB87C7 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/way/998586052> ;
+    ohst:P101 <https://www.openstreetmap.org/way/998586052/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/way/998586052/history/1> ;
+    ohst:P110 "Point(-9.1306992 51.5339238)"^^geo:wktLiteral ;
+    ohst:P111 "POLYGON((-9.1307109 51.5339295, -9.1306985 51.5339318, -9.1306928 51.5339311, -9.1306842 51.5339264, -9.1306867 51.53392, -9.1306959 51.5339159, -9.1307066 51.533917, -9.1307109 51.5339198, -9.1307143 51.5339246, -9.1307109 51.5339295))" ;
+    ohst:P113 "description=Believed to have a cure for sore eyes. Visited on February 1st.",
+        "holy_well:cures:wikidata=Q7364",
+        "loc_name=Biddy's Well",
+        "name=Tobar Bhríghide",
+        "natural=water",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=CO142-088----",
+        "religion=christian",
+        "wikidata=Q139492737" .
+
+ohss:Q926-4CE063A7-DEC6-5C23-B27D-5D34314C6AA5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/way/998586052> .
+
+ohss:Q926-6B07D1F3-AB40-5936-92F5-B97B54940883
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POLYGON((-9.1307109 51.5339295, -9.1306985 51.5339318, -9.1306928 51.5339311, -9.1306842 51.5339264, -9.1306867 51.53392, -9.1306959 51.5339159, -9.1307066 51.533917, -9.1307109 51.5339198, -9.1307143 51.5339246, -9.1307109 51.5339295))"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:c246569c9964f434867820ade6238e2834bd1e7f ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-11-02T22:50:59Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POLYGON((-9.1307109 51.5339295, -9.1306985 51.5339318, -9.1306928 51.5339311, -9.1306842 51.5339264, -9.1306867 51.53392, -9.1306959 51.5339159, -9.1307066 51.533917, -9.1307109 51.5339198, -9.1307143 51.5339246, -9.1307109 51.5339295))" .
+
+ohss:Q926-7A362E4E-1EA8-5C24-903C-55F74F77A3B0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "description=Believed to have a cure for sore eyes. Visited on February 1st." .
+
+ohss:Q926-8E9DFF65-0955-5116-8A80-5FE122A808C7
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2023-09-16T17:00:56Z" ;
+    ohspq:P104 "141351767" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/way/998586052/history/3> .
+
+ohss:Q926-9E69A3F7-B990-5E1C-9A8C-F68FAAD1BF67
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/way/998586052/history/1> .
+
+ohss:Q926-9FD1B553-6E47-5958-A7A4-B2D216A9808F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "wikidata=Q139492737" .
+
+ohss:Q926-14BEC007-6338-5C8F-8A55-B1F55970A425
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2026-04-20T15:12:26Z" ;
+    ohspq:P104 "181588253" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/way/998586052/history/4> .
+
+ohss:Q926-82F6EBA1-95D3-5A1F-BFA0-1FDF2081AE44
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q926-686B3011-8FEA-5C6D-A8E6-4F45C1BB4A55
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-11-02T22:50:59Z" ;
+    ohspq:P104 "113305586" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/way/998586052/history/1> .
+
+ohss:Q926-760CCF25-427E-58E2-B172-417E91BC6001
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q926-873E707F-7AEB-5061-9C95-6EDBEE72D0B1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "holy_well:cures:wikidata=Q7364" .
+
+ohss:Q926-2655B1A1-EEE2-5AB5-8E88-B0D9A34F96E3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "natural=water" .
+
+ohss:Q926-9035C284-84B5-5335-A139-1C187A383405
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "ref:IE:smr=CO142-088----" .
+
+ohss:Q926-AE0046E2-AB42-5686-AC51-C6C5CFC8EFFD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "name=Tobar Bhríghide" .
+
+ohss:Q926-B2A31744-85DC-52E9-944D-5DDCBDBE7655
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-07-29T18:11:11Z" ;
+    ohspq:P104 "139183821" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/way/998586052/history/2> .
+
+ohss:Q926-BBCC15F5-B163-58B0-9B71-03D9FA737884
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:c246569c9964f434867820ade6238e2834bd1e7f ;
+    ohsps:P110 "Point(-9.1306992 51.5339238)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:a1848a3355a603ffbbb8a00d7abcc6ad .
+
+ohss:Q926-E0B9A536-AFE5-50F8-B8AE-0F8FF73213CD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "loc_name=Biddy's Well" .
+
+ohss:Q926-E185A5DB-0642-5B26-9EFE-EF357DBB87C7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152 ;
+    ohsps:P113 "religion=christian" .
+
+ohsref:9ca7bfbf749d16040bb7e24114dcda5b084b2152
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/way/998586052/history/4> .
+
+ohsref:c246569c9964f434867820ade6238e2834bd1e7f
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/way/998586052/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:a1848a3355a603ffbbb8a00d7abcc6ad
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "51.5339238"^^xsd:double ;
+    wikibase:geoLongitude "-9.1306992"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

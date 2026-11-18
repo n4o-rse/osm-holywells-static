@@ -1,0 +1,307 @@
+# Q622: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q622.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 4500847619)"@en,
+        "Höhenmarke (OpenStreetMap-Node 4500847619)"@de ;
+    dcterms:identifier "Q622" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q622 ;
+    dcterms:title "Glenorn Well"@de,
+        "Glenorn Well"@en ;
+    schema:about ohs:Q622 ;
+    dcat:distribution ohsdist:Q622-html,
+        ohsdist:Q622-json,
+        ohsdist:Q622-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q622.html> .
+
+ohsdist:Q622-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q622, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q622.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q622-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q622, as archived from the Wikibase API"@en ;
+    dcat:byteSize "21506"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q622.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q622-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q622, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q622.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q622
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 4500847619)"@en,
+        "Höhenmarke (OpenStreetMap-Node 4500847619)"@de ;
+    schema:name "Glenorn Well"@de,
+        "Glenorn Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q622-AEDB4C4D-1AE8-5B4B-A5B2-418BDA77DED5 ;
+    geo:hasGeometry ohss:Q622-AEDB4C4D-1AE8-5B4B-A5B2-418BDA77DED5,
+        ohss:Q622-D3242F71-A9A2-5A15-8BB6-6C80598561F3 ;
+    rdfs:label "Glenorn Well"@de,
+        "Glenorn Well"@en ;
+    skos:prefLabel "Glenorn Well"@de,
+        "Glenorn Well"@en ;
+    ohsp:P2 ohss:Q622-6E4060B0-1705-5AF7-BAC0-DDCD343D4164 ;
+    ohsp:P100 ohss:Q622-30C802A5-44D5-5494-86EC-CB578FBED8E9 ;
+    ohsp:P101 ohss:Q622-05EE38AB-E0C3-55A6-A73A-7668EBDF986D,
+        ohss:Q622-9C0070C9-A36E-5EA0-98E8-F7D960E0D36F,
+        ohss:Q622-BCAB9F3E-1F64-5C2B-BA55-FA6A6C059640,
+        ohss:Q622-CF3112DA-FADE-55A2-B9FC-5F8231D2BA4C,
+        ohss:Q622-FA7ED045-A75B-5192-90B3-8F9F4158D20E ;
+    ohsp:P107 ohss:Q622-580DE1FD-CB6B-5B92-AAF6-305FB72AF2D2 ;
+    ohsp:P110 ohss:Q622-41E24EB6-E7FF-59EF-9AF7-946C65AD2920 ;
+    ohsp:P111 ohss:Q622-AEDB4C4D-1AE8-5B4B-A5B2-418BDA77DED5,
+        ohss:Q622-D3242F71-A9A2-5A15-8BB6-6C80598561F3 ;
+    ohsp:P113 ohss:Q622-1A6D359D-6B85-5B0B-98E9-FAA67CB5E7A6,
+        ohss:Q622-693C9BFB-4C8E-5561-8AA5-919B09B86DA1,
+        ohss:Q622-9223EBA7-7EE8-5ADB-AFCC-B53522D7264A,
+        ohss:Q622-B40552B9-E45D-533A-921B-9A1DA7A25884,
+        ohss:Q622-D7F836CE-AF85-543B-9DFA-5DA97C57A565 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/4500847619> ;
+    ohst:P101 <https://www.openstreetmap.org/node/4500847619/history/5> ;
+    ohst:P107 <https://www.openstreetmap.org/node/4500847619/history/5> ;
+    ohst:P110 "Point(-6.4731018 54.3512416)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.4731018 54.3512416)",
+        "POINT(-6.4731072 54.3512416)" ;
+    ohst:P113 "historic=archaeological_site",
+        "name=Glenorn Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=OS 1st edition map; OS 2nd edition map" .
+
+ohss:Q622-1A6D359D-6B85-5B0B-98E9-FAA67CB5E7A6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:25b539107ee2620d2987623d40d4a182c36a3d38 ;
+    ohsps:P113 "source=OS 1st edition map; OS 2nd edition map" .
+
+ohss:Q622-05EE38AB-E0C3-55A6-A73A-7668EBDF986D
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2017-01-29T02:09:18Z" ;
+    ohspq:P104 "45608962" ;
+    ohspq:P105 "Directive 4" ;
+    ohspq:P106 "247253" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4500847619/history/4> .
+
+ohss:Q622-6E4060B0-1705-5AF7-BAC0-DDCD343D4164
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q622-9C0070C9-A36E-5EA0-98E8-F7D960E0D36F
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2016-11-14T17:51:38Z" ;
+    ohspq:P104 "43648873" ;
+    ohspq:P105 "Directive 4" ;
+    ohspq:P106 "247253" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4500847619/history/1> .
+
+ohss:Q622-30C802A5-44D5-5494-86EC-CB578FBED8E9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/4500847619> .
+
+ohss:Q622-41E24EB6-E7FF-59EF-9AF7-946C65AD2920
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:25b539107ee2620d2987623d40d4a182c36a3d38 ;
+    ohsps:P110 "Point(-6.4731018 54.3512416)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:f4a50f9d205d1ce4e022b968b3766a67 .
+
+ohss:Q622-580DE1FD-CB6B-5B92-AAF6-305FB72AF2D2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/4500847619/history/5> .
+
+ohss:Q622-693C9BFB-4C8E-5561-8AA5-919B09B86DA1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:25b539107ee2620d2987623d40d4a182c36a3d38 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q622-9223EBA7-7EE8-5ADB-AFCC-B53522D7264A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:25b539107ee2620d2987623d40d4a182c36a3d38 ;
+    ohsps:P113 "name=Glenorn Well" .
+
+ohss:Q622-AEDB4C4D-1AE8-5B4B-A5B2-418BDA77DED5
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.4731018 54.3512416)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:132d766096b1b4c65d1978b8abc0dc569c7f55a4 ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2016-11-14T18:12:18Z" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P111 "POINT(-6.4731018 54.3512416)" .
+
+ohss:Q622-B40552B9-E45D-533A-921B-9A1DA7A25884
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:25b539107ee2620d2987623d40d4a182c36a3d38 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q622-BCAB9F3E-1F64-5C2B-BA55-FA6A6C059640
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+5"^^xsd:decimal ;
+    ohspq:P103 "2026-09-05T20:05:31Z" ;
+    ohspq:P104 "188588760" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:30e603cac620241526fa9f81268ba25c ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4500847619/history/5> .
+
+ohss:Q622-CF3112DA-FADE-55A2-B9FC-5F8231D2BA4C
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2016-11-14T18:12:18Z" ;
+    ohspq:P104 "43649640" ;
+    ohspq:P105 "Directive 4" ;
+    ohspq:P106 "247253" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4500847619/history/2> .
+
+ohss:Q622-D7F836CE-AF85-543B-9DFA-5DA97C57A565
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:25b539107ee2620d2987623d40d4a182c36a3d38 ;
+    ohsps:P113 "historic=archaeological_site" .
+
+ohss:Q622-D3242F71-A9A2-5A15-8BB6-6C80598561F3
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.4731072 54.3512416)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:d6b9d59a84a5a60818d5e048e54e32f274073105 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2016-11-14T17:51:38Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.4731072 54.3512416)" .
+
+ohss:Q622-FA7ED045-A75B-5192-90B3-8F9F4158D20E
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2016-11-16T02:26:31Z" ;
+    ohspq:P104 "43686926" ;
+    ohspq:P105 "Directive 4" ;
+    ohspq:P106 "247253" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/4500847619/history/3> .
+
+ohsref:25b539107ee2620d2987623d40d4a182c36a3d38
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4500847619/history/5> .
+
+ohsref:132d766096b1b4c65d1978b8abc0dc569c7f55a4
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4500847619/history/2> .
+
+ohsref:d6b9d59a84a5a60818d5e048e54e32f274073105
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/4500847619/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:f4a50f9d205d1ce4e022b968b3766a67
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.3512416"^^xsd:double ;
+    wikibase:geoLongitude "-6.4731018"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

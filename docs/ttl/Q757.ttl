@@ -1,0 +1,361 @@
+# Q757: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q757.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 8616247497)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8616247497)"@de ;
+    dcterms:identifier "Q757" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q757 ;
+    dcterms:title "Saint Managhan's Well"@de,
+        "Saint Managhan's Well"@en ;
+    schema:about ohs:Q757 ;
+    dcat:distribution ohsdist:Q757-html,
+        ohsdist:Q757-json,
+        ohsdist:Q757-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q757.html> .
+
+ohsdist:Q757-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q757, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q757.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q757-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q757, as archived from the Wikibase API"@en ;
+    dcat:byteSize "26916"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q757.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q757-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q757, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q757.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q757
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 8616247497)"@en,
+        "Höhenmarke (OpenStreetMap-Node 8616247497)"@de ;
+    schema:name "Saint Managhan's Well"@de,
+        "Saint Managhan's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "22"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q757-F54B0AB8-9E4E-55C4-949C-4167C02AB065 ;
+    geo:hasGeometry ohss:Q757-51A9E977-D1B5-5369-B316-8FD2B237D738,
+        ohss:Q757-F54B0AB8-9E4E-55C4-949C-4167C02AB065 ;
+    rdfs:label "Saint Managhan's Well"@de,
+        "Saint Managhan's Well"@en ;
+    skos:prefLabel "Saint Managhan's Well"@de,
+        "Saint Managhan's Well"@en ;
+    ohsp:P2 ohss:Q757-29EC60A5-6CE0-5B73-82FA-7B7DB0326896 ;
+    ohsp:P100 ohss:Q757-43961518-1D60-55FF-9137-AE74123CB8A9 ;
+    ohsp:P101 ohss:Q757-2DC32D8E-3070-51EB-9E2B-FF9F7BD66691,
+        ohss:Q757-1161A82B-EE98-5AC2-A4DB-52A1687ECECE,
+        ohss:Q757-AD5F8BC5-02DA-57B6-BEF5-274785843A82,
+        ohss:Q757-E71AFEEC-CD15-5374-B74F-6D7356CA8EC1,
+        ohss:Q757-F7809B03-0671-50BD-9148-C66E6DA9F457 ;
+    ohsp:P107 ohss:Q757-AA159719-7761-517C-ACB5-C8BCBA32082F ;
+    ohsp:P110 ohss:Q757-9D341AC5-1F74-5C6A-B3CD-ED5954CF01C0 ;
+    ohsp:P111 ohss:Q757-51A9E977-D1B5-5369-B316-8FD2B237D738,
+        ohss:Q757-F54B0AB8-9E4E-55C4-949C-4167C02AB065 ;
+    ohsp:P113 ohss:Q757-2C0613AA-E328-583A-8AEA-C3C0861B0446,
+        ohss:Q757-2FCD2911-D2CC-5082-940C-B8785CDA8B48,
+        ohss:Q757-7C0BFCC4-4706-596C-80AF-26C97BAADA8C,
+        ohss:Q757-34CBE8C4-3562-58C1-AC61-59DE5785DA0C,
+        ohss:Q757-9288CA97-9C85-51C7-B961-31A36F55E268,
+        ohss:Q757-7014742D-3731-5F79-A5AF-D18C165F453D,
+        ohss:Q757-AB396D69-14C0-5F74-9BA8-0ECECCE092DA,
+        ohss:Q757-ADDDF52B-4947-56B5-BBC6-0DA26F7F2291,
+        ohss:Q757-B7826814-519B-5105-B32F-2139701E031C,
+        ohss:Q757-C95014D3-2AD9-50D1-A0DE-C7059C51FDD3,
+        ohss:Q757-D86CDCF2-12FE-5848-AF22-F9ACC134B80F ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/8616247497> ;
+    ohst:P101 <https://www.openstreetmap.org/node/8616247497/history/5> ;
+    ohst:P107 <https://www.openstreetmap.org/node/8616247497/history/1> ;
+    ohst:P110 "Point(-7.7427951 53.2927997)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-7.7427951 53.2927997)",
+        "POINT(-7.7428508 53.2928518)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "denomination=roman_catholic",
+        "name:etymology:wikidata=Q27570877",
+        "name:etymology:wikipedia=en:Manchán of Mohill",
+        "name=Saint Managhan's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=OF015-004007-",
+        "religion=christian",
+        "url:sketchfab=https://skfb.ly/pKBrV",
+        "wikidata=Q33097335" .
+
+ohss:Q757-2C0613AA-E328-583A-8AEA-C3C0861B0446
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "name:etymology:wikidata=Q27570877" .
+
+ohss:Q757-2DC32D8E-3070-51EB-9E2B-FF9F7BD66691
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+5"^^xsd:decimal ;
+    ohspq:P103 "2026-05-29T00:25:37Z" ;
+    ohspq:P104 "183328597" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:30e603cac620241526fa9f81268ba25c ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8616247497/history/5> .
+
+ohss:Q757-2FCD2911-D2CC-5082-940C-B8785CDA8B48
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q757-7C0BFCC4-4706-596C-80AF-26C97BAADA8C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "denomination=roman_catholic" .
+
+ohss:Q757-9D341AC5-1F74-5C6A-B3CD-ED5954CF01C0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P110 "Point(-7.7427951 53.2927997)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:8681e72414a00940a66cd917affdcd4b .
+
+ohss:Q757-29EC60A5-6CE0-5B73-82FA-7B7DB0326896
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q757-34CBE8C4-3562-58C1-AC61-59DE5785DA0C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "name:etymology:wikipedia=en:Manchán of Mohill" .
+
+ohss:Q757-51A9E977-D1B5-5369-B316-8FD2B237D738
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.7428508 53.2928518)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:6cf6669a63108dc06f2d36e6bf7ceb3745877c5d ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-04-10T23:25:12Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-7.7428508 53.2928518)" .
+
+ohss:Q757-1161A82B-EE98-5AC2-A4DB-52A1687ECECE
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2021-04-10T23:25:12Z" ;
+    ohspq:P104 "102718682" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8616247497/history/1> .
+
+ohss:Q757-9288CA97-9C85-51C7-B961-31A36F55E268
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q757-7014742D-3731-5F79-A5AF-D18C165F453D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "wikidata=Q33097335" .
+
+ohss:Q757-43961518-1D60-55FF-9137-AE74123CB8A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/8616247497> .
+
+ohss:Q757-AA159719-7761-517C-ACB5-C8BCBA32082F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/8616247497/history/1> .
+
+ohss:Q757-AB396D69-14C0-5F74-9BA8-0ECECCE092DA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q757-AD5F8BC5-02DA-57B6-BEF5-274785843A82
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2025-07-27T20:31:01Z" ;
+    ohspq:P104 "169579197" ;
+    ohspq:P105 "AndrewMcCarthy" ;
+    ohspq:P106 "1379" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8616247497/history/3> .
+
+ohss:Q757-ADDDF52B-4947-56B5-BBC6-0DA26F7F2291
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "name=Saint Managhan's Well" .
+
+ohss:Q757-B7826814-519B-5105-B32F-2139701E031C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "url:sketchfab=https://skfb.ly/pKBrV" .
+
+ohss:Q757-C95014D3-2AD9-50D1-A0DE-C7059C51FDD3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "religion=christian" .
+
+ohss:Q757-D86CDCF2-12FE-5848-AF22-F9ACC134B80F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9 ;
+    ohsps:P113 "ref:IE:smr=OF015-004007-" .
+
+ohss:Q757-E71AFEEC-CD15-5374-B74F-6D7356CA8EC1
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2023-07-29T18:41:32Z" ;
+    ohspq:P104 "139184685" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8616247497/history/2> .
+
+ohss:Q757-F54B0AB8-9E4E-55C4-949C-4167C02AB065
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.7427951 53.2927997)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:c7874f818baff9da0b9009ca76af0943dd37ddd7 ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2026-05-29T00:10:24Z" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P111 "POINT(-7.7427951 53.2927997)" .
+
+ohss:Q757-F7809B03-0671-50BD-9148-C66E6DA9F457
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2026-05-29T00:10:24Z" ;
+    ohspq:P104 "183328374" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/8616247497/history/4> .
+
+ohsref:1e506a94c252a4765c5a9b11aa93f2bb15a286a9
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8616247497/history/5> .
+
+ohsref:6cf6669a63108dc06f2d36e6bf7ceb3745877c5d
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8616247497/history/1> .
+
+ohsref:c7874f818baff9da0b9009ca76af0943dd37ddd7
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/8616247497/history/4> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:8681e72414a00940a66cd917affdcd4b
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.2927997"^^xsd:double ;
+    wikibase:geoLongitude "-7.7427951"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

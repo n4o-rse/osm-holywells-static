@@ -1,0 +1,219 @@
+# Q435: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q435.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13093168855)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13093168855)"@de ;
+    dcterms:identifier "Q435" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q435 ;
+    dcterms:title "Wart Well"@de,
+        "Wart Well"@en ;
+    schema:about ohs:Q435 ;
+    dcat:distribution ohsdist:Q435-html,
+        ohsdist:Q435-json,
+        ohsdist:Q435-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q435.html> .
+
+ohsdist:Q435-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q435, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q435.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q435-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q435, as archived from the Wikibase API"@en ;
+    dcat:byteSize "11862"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q435.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q435-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q435, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q435.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q435
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13093168855)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13093168855)"@de ;
+    schema:name "Wart Well"@de,
+        "Wart Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "10"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q435-FAE8B040-A42D-5698-A574-5EB116B30CD4 ;
+    geo:hasGeometry ohss:Q435-FAE8B040-A42D-5698-A574-5EB116B30CD4 ;
+    rdfs:label "Wart Well"@de,
+        "Wart Well"@en ;
+    skos:prefLabel "Wart Well"@de,
+        "Wart Well"@en ;
+    ohsp:P2 ohss:Q435-580992C4-2E59-5F75-B2CD-9ADBDD4C5B9C ;
+    ohsp:P100 ohss:Q435-3E3D2858-0AD3-5173-9644-BEFDE35D5E16 ;
+    ohsp:P101 ohss:Q435-5F25B492-990C-5FA1-8199-C368BDAF296B,
+        ohss:Q435-53B8FEF6-EC21-5F8A-BC92-32F94E8282CA ;
+    ohsp:P107 ohss:Q435-27F98BBF-B799-5E37-9796-B9A0E5149C99 ;
+    ohsp:P110 ohss:Q435-533912C3-5FD5-5BBF-ACC6-F893FCE11AC2 ;
+    ohsp:P111 ohss:Q435-FAE8B040-A42D-5698-A574-5EB116B30CD4 ;
+    ohsp:P113 ohss:Q435-6E9F0394-7048-55A1-8E88-4428EAF6C340,
+        ohss:Q435-A062319B-4D49-5B94-A93F-6C76220039B8,
+        ohss:Q435-BF639E2A-8670-51A6-901A-CDCCC592253B ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13093168855> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13093168855/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13093168855/history/2> ;
+    ohst:P110 "Point(-6.9209515 54.9174916)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.9209515 54.9174916)" ;
+    ohst:P113 "name=Wart Well",
+        "note=labelled as \"Font\" on OS 2nd edition map",
+        "place_of_worship=holy_well" .
+
+ohss:Q435-3E3D2858-0AD3-5173-9644-BEFDE35D5E16
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13093168855> .
+
+ohss:Q435-5F25B492-990C-5FA1-8199-C368BDAF296B
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2025-08-23T22:16:28Z" ;
+    ohspq:P104 "170901776" ;
+    ohspq:P105 "ns130291" ;
+    ohspq:P106 "92469" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13093168855/history/1> .
+
+ohss:Q435-6E9F0394-7048-55A1-8E88-4428EAF6C340
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6cb33c845324b8292bc4a486aac37820be49ede8 ;
+    ohsps:P113 "note=labelled as \"Font\" on OS 2nd edition map" .
+
+ohss:Q435-27F98BBF-B799-5E37-9796-B9A0E5149C99
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13093168855/history/2> .
+
+ohss:Q435-53B8FEF6-EC21-5F8A-BC92-32F94E8282CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-11-09T22:35:40Z" ;
+    ohspq:P104 "191718925" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13093168855/history/2> .
+
+ohss:Q435-533912C3-5FD5-5BBF-ACC6-F893FCE11AC2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6cb33c845324b8292bc4a486aac37820be49ede8 ;
+    ohsps:P110 "Point(-6.9209515 54.9174916)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:c85b30683422032c6beb66a8f0043d95 .
+
+ohss:Q435-580992C4-2E59-5F75-B2CD-9ADBDD4C5B9C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q435-A062319B-4D49-5B94-A93F-6C76220039B8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6cb33c845324b8292bc4a486aac37820be49ede8 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q435-BF639E2A-8670-51A6-901A-CDCCC592253B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:6cb33c845324b8292bc4a486aac37820be49ede8 ;
+    ohsps:P113 "name=Wart Well" .
+
+ohss:Q435-FAE8B040-A42D-5698-A574-5EB116B30CD4
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.9209515 54.9174916)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:4d03778e0e0520a8c0d81851c9d2c9e5bf0f91c4 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2025-08-23T22:16:28Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.9209515 54.9174916)" .
+
+ohsref:4d03778e0e0520a8c0d81851c9d2c9e5bf0f91c4
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13093168855/history/1> .
+
+ohsref:6cb33c845324b8292bc4a486aac37820be49ede8
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13093168855/history/2> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c85b30683422032c6beb66a8f0043d95
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.9174916"^^xsd:double ;
+    wikibase:geoLongitude "-6.9209515"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

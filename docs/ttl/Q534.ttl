@@ -1,0 +1,216 @@
+# Q534: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q534.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13928510258)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13928510258)"@de ;
+    dcterms:identifier "Q534" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q534 ;
+    dcterms:title "Barrigone Well"@de,
+        "Barrigone Well"@en ;
+    schema:about ohs:Q534 ;
+    dcat:distribution ohsdist:Q534-html,
+        ohsdist:Q534-json,
+        ohsdist:Q534-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q534.html> .
+
+ohsdist:Q534-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q534, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q534.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q534-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q534, as archived from the Wikibase API"@en ;
+    dcat:byteSize "11562"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q534.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q534-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q534, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q534.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q534
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13928510258)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13928510258)"@de ;
+    schema:name "Barrigone Well"@de,
+        "Barrigone Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "11"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q534-6225757C-A783-50FB-96D0-9D98EE8BEF80 ;
+    geo:hasGeometry ohss:Q534-6225757C-A783-50FB-96D0-9D98EE8BEF80 ;
+    rdfs:label "Barrigone Well"@de,
+        "Barrigone Well"@en ;
+    skos:prefLabel "Barrigone Well"@de,
+        "Barrigone Well"@en ;
+    ohsp:P2 ohss:Q534-B9CF7733-C761-5476-9E2D-972A624990AB ;
+    ohsp:P100 ohss:Q534-484AB938-BD5D-5283-B782-7FE6C1A5EE1C ;
+    ohsp:P101 ohss:Q534-CE7A6032-D8A1-5D90-B5ED-366B0FC31E76 ;
+    ohsp:P107 ohss:Q534-0AEE483A-4D43-54D1-898B-BBB47B3A6D39 ;
+    ohsp:P110 ohss:Q534-A3113484-474B-58B2-8D3E-2632003F6435 ;
+    ohsp:P111 ohss:Q534-6225757C-A783-50FB-96D0-9D98EE8BEF80 ;
+    ohsp:P113 ohss:Q534-0EF35F5F-EAAB-5345-8D5A-79649503C247,
+        ohss:Q534-1B381885-675B-5C2B-853A-B7EF671DFB40,
+        ohss:Q534-52775469-D004-5772-8E29-2006DDBD71E7,
+        ohss:Q534-E81FFA06-B697-5113-8A5B-86B83C406AE1,
+        ohss:Q534-EE3E2E0C-B9C5-5A32-95A7-169C18453571 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13928510258> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13928510258/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13928510258/history/1> ;
+    ohst:P110 "Point(-9.0547138 52.596615)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-9.0547138 52.596615)" ;
+    ohst:P113 "name=Barrigone Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=OS 2nd edition map",
+        "wikidata=Q140170152" .
+
+ohss:Q534-0AEE483A-4D43-54D1-898B-BBB47B3A6D39
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13928510258/history/1> .
+
+ohss:Q534-0EF35F5F-EAAB-5345-8D5A-79649503C247
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a65613dd00480d57d2a0e57eff79dce3cbe8e0bd ;
+    ohsps:P113 "source=OS 2nd edition map" .
+
+ohss:Q534-1B381885-675B-5C2B-853A-B7EF671DFB40
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a65613dd00480d57d2a0e57eff79dce3cbe8e0bd ;
+    ohsps:P113 "wikidata=Q140170152" .
+
+ohss:Q534-484AB938-BD5D-5283-B782-7FE6C1A5EE1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13928510258> .
+
+ohss:Q534-6225757C-A783-50FB-96D0-9D98EE8BEF80
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.0547138 52.596615)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:a65613dd00480d57d2a0e57eff79dce3cbe8e0bd ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-06-11T10:07:16Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-9.0547138 52.596615)" .
+
+ohss:Q534-52775469-D004-5772-8E29-2006DDBD71E7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a65613dd00480d57d2a0e57eff79dce3cbe8e0bd ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q534-A3113484-474B-58B2-8D3E-2632003F6435
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a65613dd00480d57d2a0e57eff79dce3cbe8e0bd ;
+    ohsps:P110 "Point(-9.0547138 52.596615)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:1e6f1ea002ed1c772f5d67a24cb531c6 .
+
+ohss:Q534-B9CF7733-C761-5476-9E2D-972A624990AB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q534-CE7A6032-D8A1-5D90-B5ED-366B0FC31E76
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-06-11T10:07:16Z" ;
+    ohspq:P104 "183963376" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13928510258/history/1> .
+
+ohss:Q534-E81FFA06-B697-5113-8A5B-86B83C406AE1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a65613dd00480d57d2a0e57eff79dce3cbe8e0bd ;
+    ohsps:P113 "name=Barrigone Well" .
+
+ohss:Q534-EE3E2E0C-B9C5-5A32-95A7-169C18453571
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:a65613dd00480d57d2a0e57eff79dce3cbe8e0bd ;
+    ohsps:P113 "natural=spring" .
+
+ohsref:a65613dd00480d57d2a0e57eff79dce3cbe8e0bd
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13928510258/history/1> .
+
+ohsv:1e6f1ea002ed1c772f5d67a24cb531c6
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.596615"^^xsd:double ;
+    wikibase:geoLongitude "-9.0547138"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

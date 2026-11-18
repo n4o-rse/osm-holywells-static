@@ -1,0 +1,225 @@
+# Q478: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q478.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 13730985359)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13730985359)"@de ;
+    dcterms:identifier "Q478" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q478 ;
+    dcterms:title "Toberaraght"@de,
+        "Toberaraght"@en ;
+    schema:about ohs:Q478 ;
+    dcat:distribution ohsdist:Q478-html,
+        ohsdist:Q478-json,
+        ohsdist:Q478-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q478.html> .
+
+ohsdist:Q478-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q478, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q478.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q478-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q478, as archived from the Wikibase API"@en ;
+    dcat:byteSize "12474"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q478.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q478-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q478, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q478.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q478
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 13730985359)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13730985359)"@de ;
+    schema:name "Toberaraght"@de,
+        "Toberaraght"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q478-F3EC4AFD-B77B-52B2-A35C-BF0426CBB559 ;
+    geo:hasGeometry ohss:Q478-F3EC4AFD-B77B-52B2-A35C-BF0426CBB559 ;
+    rdfs:label "Toberaraght"@de,
+        "Toberaraght"@en ;
+    skos:prefLabel "Toberaraght"@de,
+        "Toberaraght"@en ;
+    ohsp:P2 ohss:Q478-AC537CFD-A5C7-5465-8663-5039C0DEEB57 ;
+    ohsp:P100 ohss:Q478-A1C5D8AA-18DB-573C-AEC6-6A78B576FDB9 ;
+    ohsp:P101 ohss:Q478-6CED44A6-4DEF-58CE-944E-50AE360F8779 ;
+    ohsp:P107 ohss:Q478-88AC0AB7-D3EC-597D-B1A9-4EEF62B0FD15 ;
+    ohsp:P110 ohss:Q478-13938AD0-791C-5F24-8310-9CCA0537B9DE ;
+    ohsp:P111 ohss:Q478-F3EC4AFD-B77B-52B2-A35C-BF0426CBB559 ;
+    ohsp:P113 ohss:Q478-2C20DBBD-833E-5153-B77D-66BC326FC507,
+        ohss:Q478-8A1FD2F8-DA25-5A41-A9CB-A5EBD7C07B74,
+        ohss:Q478-33CB4FD8-02D1-5596-BCC2-680AA6425619,
+        ohss:Q478-4856C4E6-39CF-556F-9078-8BD884987286,
+        ohss:Q478-F8683AB9-F284-5CF8-BBD7-95E060DBF027,
+        ohss:Q478-FBBD9990-05EA-5B3B-9205-ABE6ABDC68DD ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/13730985359> ;
+    ohst:P101 <https://www.openstreetmap.org/node/13730985359/history/1> ;
+    ohst:P107 <https://www.openstreetmap.org/node/13730985359/history/1> ;
+    ohst:P110 "Point(-8.7087865 54.0556989)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-8.7087865 54.0556989)" ;
+    ohst:P113 "name=Toberaraght",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "ref:IE:smr=SL038-040----",
+        "source=OS 1st edition map;OS 2nd edition map;Bing",
+        "wikidata=Q139327900" .
+
+ohss:Q478-2C20DBBD-833E-5153-B77D-66BC326FC507
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q478-6CED44A6-4DEF-58CE-944E-50AE360F8779
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-14T20:31:26Z" ;
+    ohspq:P104 "181340727" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/13730985359/history/1> .
+
+ohss:Q478-8A1FD2F8-DA25-5A41-A9CB-A5EBD7C07B74
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q478-33CB4FD8-02D1-5596-BCC2-680AA6425619
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73 ;
+    ohsps:P113 "source=OS 1st edition map;OS 2nd edition map;Bing" .
+
+ohss:Q478-88AC0AB7-D3EC-597D-B1A9-4EEF62B0FD15
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/13730985359/history/1> .
+
+ohss:Q478-4856C4E6-39CF-556F-9078-8BD884987286
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73 ;
+    ohsps:P113 "wikidata=Q139327900" .
+
+ohss:Q478-13938AD0-791C-5F24-8310-9CCA0537B9DE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73 ;
+    ohsps:P110 "Point(-8.7087865 54.0556989)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:7abc4357ec8e34c569babe809d43c04c .
+
+ohss:Q478-A1C5D8AA-18DB-573C-AEC6-6A78B576FDB9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/13730985359> .
+
+ohss:Q478-AC537CFD-A5C7-5465-8663-5039C0DEEB57
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q478-F3EC4AFD-B77B-52B2-A35C-BF0426CBB559
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.7087865 54.0556989)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-04-14T20:31:26Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-8.7087865 54.0556989)" .
+
+ohss:Q478-F8683AB9-F284-5CF8-BBD7-95E060DBF027
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73 ;
+    ohsps:P113 "name=Toberaraght" .
+
+ohss:Q478-FBBD9990-05EA-5B3B-9205-ABE6ABDC68DD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73 ;
+    ohsps:P113 "ref:IE:smr=SL038-040----" .
+
+ohsref:ce4073dfcf6f445f733332db052dd944fdad0c73
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/13730985359/history/1> .
+
+ohsv:7abc4357ec8e34c569babe809d43c04c
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.0556989"^^xsd:double ;
+    wikibase:geoLongitude "-8.7087865"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

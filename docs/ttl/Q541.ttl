@@ -1,0 +1,252 @@
+# Q541: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q541.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 14131350415)"@en,
+        "Höhenmarke (OpenStreetMap-Node 14131350415)"@de ;
+    dcterms:identifier "Q541" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q541 ;
+    dcterms:title "Saint Malachy's Well"@de,
+        "Saint Malachy's Well"@en ;
+    schema:about ohs:Q541 ;
+    dcat:distribution ohsdist:Q541-html,
+        ohsdist:Q541-json,
+        ohsdist:Q541-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q541.html> .
+
+ohsdist:Q541-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q541, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q541.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q541-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q541, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15321"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q541.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q541-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q541, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q541.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q541
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 14131350415)"@en,
+        "Höhenmarke (OpenStreetMap-Node 14131350415)"@de ;
+    schema:name "Saint Malachy's Well"@de,
+        "Saint Malachy's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q541-78D1E644-F25B-59BE-B695-6F3E50DFC074 ;
+    geo:hasGeometry ohss:Q541-2D3F28B2-2448-50D0-ABB3-C821AC8940F5,
+        ohss:Q541-78D1E644-F25B-59BE-B695-6F3E50DFC074 ;
+    rdfs:label "Saint Malachy's Well"@de,
+        "Saint Malachy's Well"@en ;
+    skos:prefLabel "Saint Malachy's Well"@de,
+        "Saint Malachy's Well"@en ;
+    ohsp:P2 ohss:Q541-9252D6E5-254A-5FF9-8586-3809D7ECB630 ;
+    ohsp:P100 ohss:Q541-A32D48B6-BEA8-5CB7-A8E5-086AE3AF0485 ;
+    ohsp:P101 ohss:Q541-4BE38F6B-8ECA-5037-A59A-BF4CC3B53ABF,
+        ohss:Q541-AF7B2B9C-C533-57E3-AF0F-A8FB3BFAFB41 ;
+    ohsp:P107 ohss:Q541-00C425F4-AFB6-5570-A0A1-5528A19EE4A0 ;
+    ohsp:P110 ohss:Q541-38D7596D-D0EF-5BB8-B48C-30DA7492195D ;
+    ohsp:P111 ohss:Q541-2D3F28B2-2448-50D0-ABB3-C821AC8940F5,
+        ohss:Q541-78D1E644-F25B-59BE-B695-6F3E50DFC074 ;
+    ohsp:P113 ohss:Q541-1B910480-B82A-5C23-A0F3-107E175E7EA4,
+        ohss:Q541-6B98FB57-51E7-50E7-A860-6BF64984A0A1,
+        ohss:Q541-71F0D8FC-0F34-54F8-8683-0EECB9F0F0BC,
+        ohss:Q541-742C5362-079B-5B89-85BA-A4FFB12A3256,
+        ohss:Q541-BC62CFDE-50C3-5546-93D2-E2293A1862B9 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/14131350415> ;
+    ohst:P101 <https://www.openstreetmap.org/node/14131350415/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/14131350415/history/1> ;
+    ohst:P110 "Point(-6.7838525 54.2333797)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.7838525 54.2333797)",
+        "POINT(-6.7838699 54.2333648)" ;
+    ohst:P113 "alt_name=St Malachy's Well",
+        "name=Saint Malachy's Well",
+        "natural=spring",
+        "place_of_worship=holy_well",
+        "source=OS 2nd edition map" .
+
+ohss:Q541-00C425F4-AFB6-5570-A0A1-5528A19EE4A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/14131350415/history/1> .
+
+ohss:Q541-1B910480-B82A-5C23-A0F3-107E175E7EA4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:500b1eebd4ed19d4bad0fdcc66d3ceea7afe06cf ;
+    ohsps:P113 "name=Saint Malachy's Well" .
+
+ohss:Q541-2D3F28B2-2448-50D0-ABB3-C821AC8940F5
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.7838699 54.2333648)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:1941a0e18c9fd631a73a489158a0f19381ac19e7 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-08-28T14:57:57Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.7838699 54.2333648)" .
+
+ohss:Q541-4BE38F6B-8ECA-5037-A59A-BF4CC3B53ABF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-10-16T22:35:46Z" ;
+    ohspq:P104 "190628405" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/14131350415/history/2> .
+
+ohss:Q541-6B98FB57-51E7-50E7-A860-6BF64984A0A1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:500b1eebd4ed19d4bad0fdcc66d3ceea7afe06cf ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q541-38D7596D-D0EF-5BB8-B48C-30DA7492195D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:500b1eebd4ed19d4bad0fdcc66d3ceea7afe06cf ;
+    ohsps:P110 "Point(-6.7838525 54.2333797)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:9d5c056e73a659df5ba7826a23ddd9a2 .
+
+ohss:Q541-71F0D8FC-0F34-54F8-8683-0EECB9F0F0BC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:500b1eebd4ed19d4bad0fdcc66d3ceea7afe06cf ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q541-78D1E644-F25B-59BE-B695-6F3E50DFC074
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.7838525 54.2333797)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:500b1eebd4ed19d4bad0fdcc66d3ceea7afe06cf ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-10-16T22:35:46Z" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P111 "POINT(-6.7838525 54.2333797)" .
+
+ohss:Q541-742C5362-079B-5B89-85BA-A4FFB12A3256
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:500b1eebd4ed19d4bad0fdcc66d3ceea7afe06cf ;
+    ohsps:P113 "source=OS 2nd edition map" .
+
+ohss:Q541-9252D6E5-254A-5FF9-8586-3809D7ECB630
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q541-A32D48B6-BEA8-5CB7-A8E5-086AE3AF0485
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/14131350415> .
+
+ohss:Q541-AF7B2B9C-C533-57E3-AF0F-A8FB3BFAFB41
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2026-08-28T14:57:57Z" ;
+    ohspq:P104 "188152363" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/14131350415/history/1> .
+
+ohss:Q541-BC62CFDE-50C3-5546-93D2-E2293A1862B9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:500b1eebd4ed19d4bad0fdcc66d3ceea7afe06cf ;
+    ohsps:P113 "alt_name=St Malachy's Well" .
+
+ohsref:500b1eebd4ed19d4bad0fdcc66d3ceea7afe06cf
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/14131350415/history/2> .
+
+ohsref:1941a0e18c9fd631a73a489158a0f19381ac19e7
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/14131350415/history/1> .
+
+ohsv:9d5c056e73a659df5ba7826a23ddd9a2
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.2333797"^^xsd:double ;
+    wikibase:geoLongitude "-6.7838525"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

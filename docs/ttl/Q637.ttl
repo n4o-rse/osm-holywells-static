@@ -1,0 +1,237 @@
+# Q637: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q637.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 5617732724)"@en,
+        "Höhenmarke (OpenStreetMap-Node 5617732724)"@de ;
+    dcterms:identifier "Q637" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q637 ;
+    dcterms:title "Holy well derrada west"@de,
+        "Holy well derrada west"@en ;
+    schema:about ohs:Q637 ;
+    dcat:distribution ohsdist:Q637-html,
+        ohsdist:Q637-json,
+        ohsdist:Q637-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q637.html> .
+
+ohsdist:Q637-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q637, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q637.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q637-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q637, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13666"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q637.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q637-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q637, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q637.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q637
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 5617732724)"@en,
+        "Höhenmarke (OpenStreetMap-Node 5617732724)"@de ;
+    schema:name "Holy well derrada west"@de,
+        "Holy well derrada west"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q637-86B84038-61F1-5FC1-82DE-DA6C83EE3847 ;
+    geo:hasGeometry ohss:Q637-86B84038-61F1-5FC1-82DE-DA6C83EE3847 ;
+    rdfs:label "Holy well derrada west"@de,
+        "Holy well derrada west"@en ;
+    skos:prefLabel "Holy well derrada west"@de,
+        "Holy well derrada west"@en ;
+    ohsp:P2 ohss:Q637-4100F80B-9656-5E4F-BC90-B00EC5DD16C2 ;
+    ohsp:P100 ohss:Q637-F3387B58-490D-5420-A417-57DBDD688BFD ;
+    ohsp:P101 ohss:Q637-05A3A820-C9A8-5203-A534-CCDE42A0EEFD,
+        ohss:Q637-AF511E33-B945-5BEF-B456-3D13C698B8F0 ;
+    ohsp:P107 ohss:Q637-244269E8-F907-5231-80F9-5373D87BF134 ;
+    ohsp:P110 ohss:Q637-0E716EFB-3A20-5F68-9B7D-E5075770B9DB ;
+    ohsp:P111 ohss:Q637-86B84038-61F1-5FC1-82DE-DA6C83EE3847 ;
+    ohsp:P113 ohss:Q637-9DE02CB9-68A5-5147-8231-6F15D0BB8385,
+        ohss:Q637-6525DE7B-3E70-579E-9A3B-726519E6C438,
+        ohss:Q637-533708FB-52EA-5C22-A027-962B1D592F02,
+        ohss:Q637-ABC110CD-97AC-5C46-8F8B-0E2191DB0E86,
+        ohss:Q637-E1E4ACED-F6CB-5B33-B258-08F4D0A0A211 ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/5617732724> ;
+    ohst:P101 <https://www.openstreetmap.org/node/5617732724/history/2> ;
+    ohst:P107 <https://www.openstreetmap.org/node/5617732724/history/2> ;
+    ohst:P110 "Point(-9.8399575 53.4432958)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-9.8399575 53.4432958)" ;
+    ohst:P113 "amenity=place_of_worship",
+        "fixme=looks more like it is further north",
+        "name=Holy well derrada west",
+        "natural=spring",
+        "place_of_worship=holy_well" .
+
+ohss:Q637-0E716EFB-3A20-5F68-9B7D-E5075770B9DB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1883a92355c0b506adbca4943d71fec0bd2a31b4 ;
+    ohsps:P110 "Point(-9.8399575 53.4432958)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:1412a2b33e651bf3d7bdd8ab1486f0c9 .
+
+ohss:Q637-05A3A820-C9A8-5203-A534-CCDE42A0EEFD
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2018-05-14T14:56:24Z" ;
+    ohspq:P104 "58955749" ;
+    ohspq:P105 "jamie thomas" ;
+    ohspq:P106 "851263" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/5617732724/history/1> .
+
+ohss:Q637-9DE02CB9-68A5-5147-8231-6F15D0BB8385
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1883a92355c0b506adbca4943d71fec0bd2a31b4 ;
+    ohsps:P113 "amenity=place_of_worship" .
+
+ohss:Q637-86B84038-61F1-5FC1-82DE-DA6C83EE3847
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.8399575 53.4432958)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:4619fcce37620d55479683f2981494eab6a09085 ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2018-05-14T14:56:24Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-9.8399575 53.4432958)" .
+
+ohss:Q637-4100F80B-9656-5E4F-BC90-B00EC5DD16C2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q637-6525DE7B-3E70-579E-9A3B-726519E6C438
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1883a92355c0b506adbca4943d71fec0bd2a31b4 ;
+    ohsps:P113 "name=Holy well derrada west" .
+
+ohss:Q637-244269E8-F907-5231-80F9-5373D87BF134
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/5617732724/history/2> .
+
+ohss:Q637-533708FB-52EA-5C22-A027-962B1D592F02
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1883a92355c0b506adbca4943d71fec0bd2a31b4 ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q637-ABC110CD-97AC-5C46-8F8B-0E2191DB0E86
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1883a92355c0b506adbca4943d71fec0bd2a31b4 ;
+    ohsps:P113 "natural=spring" .
+
+ohss:Q637-AF511E33-B945-5BEF-B456-3D13C698B8F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2021-03-29T16:18:02Z" ;
+    ohspq:P104 "101928689" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/5617732724/history/2> .
+
+ohss:Q637-E1E4ACED-F6CB-5B33-B258-08F4D0A0A211
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:1883a92355c0b506adbca4943d71fec0bd2a31b4 ;
+    ohsps:P113 "fixme=looks more like it is further north" .
+
+ohss:Q637-F3387B58-490D-5420-A417-57DBDD688BFD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/5617732724> .
+
+ohsref:1883a92355c0b506adbca4943d71fec0bd2a31b4
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/5617732724/history/2> .
+
+ohsref:4619fcce37620d55479683f2981494eab6a09085
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/5617732724/history/1> .
+
+ohsv:1412a2b33e651bf3d7bdd8ab1486f0c9
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.4432958"^^xsd:double ;
+    wikibase:geoLongitude "-9.8399575"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

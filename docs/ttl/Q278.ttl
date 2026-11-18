@@ -1,0 +1,289 @@
+# Q278: the part of the RDF export of OSM holy wells (static Wikibase) that describes this entity
+# Generated with wikibase-static; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes ohs:, ohst:, ohsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only ohs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ohs: <https://n4o-rse.github.io/osm-holywells-static/entity/> .
+@prefix ohscat: <https://n4o-rse.github.io/osm-holywells-static/catalog/> .
+@prefix ohsdata: <https://n4o-rse.github.io/osm-holywells-static/ttl/> .
+@prefix ohsdist: <https://n4o-rse.github.io/osm-holywells-static/distribution/> .
+@prefix ohsno: <https://n4o-rse.github.io/osm-holywells-static/prop/novalue/> .
+@prefix ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/> .
+@prefix ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/> .
+@prefix ohspqv: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/value/> .
+@prefix ohspr: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/> .
+@prefix ohsprv: <https://n4o-rse.github.io/osm-holywells-static/prop/reference/value/> .
+@prefix ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/> .
+@prefix ohspsv: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/value/> .
+@prefix ohsref: <https://n4o-rse.github.io/osm-holywells-static/reference/> .
+@prefix ohss: <https://n4o-rse.github.io/osm-holywells-static/entity/statement/> .
+@prefix ohst: <https://n4o-rse.github.io/osm-holywells-static/prop/direct/> .
+@prefix ohsv: <https://n4o-rse.github.io/osm-holywells-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-holywells-static/ttl/Q278.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Benchmark (OpenStreetMap node 11749353703)"@en,
+        "Höhenmarke (OpenStreetMap-Node 11749353703)"@de ;
+    dcterms:identifier "Q278" ;
+    dcterms:isPartOf ohscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject ohs:Q278 ;
+    dcterms:title "Saint Bronagh's Well"@de,
+        "Saint Bronagh's Well"@en ;
+    schema:about ohs:Q278 ;
+    dcat:distribution ohsdist:Q278-html,
+        ohsdist:Q278-json,
+        ohsdist:Q278-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-holywells-static/Q278.html> .
+
+ohsdist:Q278-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q278, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-holywells-static/Q278.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+ohsdist:Q278-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q278, as archived from the Wikibase API"@en ;
+    dcat:byteSize "19623"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-holywells-static/json/Q278.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+ohsdist:Q278-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q278, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL ohsdata:Q278.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+ohs:Q278
+    a wikibase:Item,
+        geo:Feature ;
+    schema:description "Benchmark (OpenStreetMap node 11749353703)"@en,
+        "Höhenmarke (OpenStreetMap-Node 11749353703)"@de ;
+    schema:name "Saint Bronagh's Well"@de,
+        "Saint Bronagh's Well"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "16"^^xsd:integer ;
+    geo:hasDefaultGeometry ohss:Q278-82FCC343-9F5B-57F8-8F7C-BAE4F1AD8A08 ;
+    geo:hasGeometry ohss:Q278-82FCC343-9F5B-57F8-8F7C-BAE4F1AD8A08 ;
+    rdfs:label "Saint Bronagh's Well"@de,
+        "Saint Bronagh's Well"@en ;
+    skos:prefLabel "Saint Bronagh's Well"@de,
+        "Saint Bronagh's Well"@en ;
+    ohsp:P2 ohss:Q278-59D21F5B-EB2E-594E-81C3-153235E8A96A ;
+    ohsp:P100 ohss:Q278-9CECF07C-78F9-5268-8567-12DCCF1C247E ;
+    ohsp:P101 ohss:Q278-37B4BE9F-C8ED-54B8-B038-CD14C87B9272,
+        ohss:Q278-355C0E9C-17EC-5ADE-A30F-2B51B36E5480,
+        ohss:Q278-DC182125-D9AF-50A1-B5EA-E4931C9D5402,
+        ohss:Q278-EC7D8D3A-B03D-54CE-ABAF-34A280C7E82B ;
+    ohsp:P107 ohss:Q278-FDB2E2D1-1AC5-5916-90E2-69B19ACA4E1E ;
+    ohsp:P110 ohss:Q278-7ADCA307-039E-5551-B334-23E0A1F21E1C ;
+    ohsp:P111 ohss:Q278-82FCC343-9F5B-57F8-8F7C-BAE4F1AD8A08 ;
+    ohsp:P113 ohss:Q278-4DC88CE7-24B1-535F-80FD-D97D28F3209F,
+        ohss:Q278-62D50C95-36C0-5A72-BD66-1D4AFB4E380D,
+        ohss:Q278-70CBAB4C-7528-5CFB-B831-278219392D5B,
+        ohss:Q278-153CDD26-E1FF-5FE2-8653-77EB47B4585C,
+        ohss:Q278-013152A7-2500-5BF6-B223-FFCC0B8AE66A,
+        ohss:Q278-92117BE8-C4EE-5705-8E38-576C73C479FF,
+        ohss:Q278-A0F9B9AD-20D4-5C37-A25F-3AC9C6A4621F ;
+    ohst:P2 ohs:Q100 ;
+    ohst:P100 <https://www.openstreetmap.org/node/11749353703> ;
+    ohst:P101 <https://www.openstreetmap.org/node/11749353703/history/4> ;
+    ohst:P107 <https://www.openstreetmap.org/node/11749353703/history/2> ;
+    ohst:P110 "Point(-6.1846394 54.111072)"^^geo:wktLiteral ;
+    ohst:P111 "POINT(-6.1846394 54.111072)" ;
+    ohst:P113 "alt_name=St Bridget's Well",
+        "man_made=water_well",
+        "name:ga=Tobar Niamh Bronach",
+        "name=Saint Bronagh's Well",
+        "place_of_worship=holy_well",
+        "source:alt_name=survey",
+        "source=OS 1st edition map;OS 2nd edition map" .
+
+ohss:Q278-4DC88CE7-24B1-535F-80FD-D97D28F3209F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:468b883fb047c47d93a46841667dd3986f5aa17a ;
+    ohsps:P113 "source=OS 1st edition map;OS 2nd edition map" .
+
+ohss:Q278-7ADCA307-039E-5551-B334-23E0A1F21E1C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:468b883fb047c47d93a46841667dd3986f5aa17a ;
+    ohsps:P110 "Point(-6.1846394 54.111072)"^^geo:wktLiteral ;
+    ohspsv:P110 ohsv:deedfd86798dbc2f21b31d38ba7b329a .
+
+ohss:Q278-9CECF07C-78F9-5268-8567-12DCCF1C247E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P100 <https://www.openstreetmap.org/node/11749353703> .
+
+ohss:Q278-37B4BE9F-C8ED-54B8-B038-CD14C87B9272
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-03-21T01:33:57Z" ;
+    ohspq:P104 "148939611" ;
+    ohspq:P105 "NickMillerUK" ;
+    ohspq:P106 "214230" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11749353703/history/1> .
+
+ohss:Q278-59D21F5B-EB2E-594E-81C3-153235E8A96A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohsps:P2 ohs:Q100 .
+
+ohss:Q278-62D50C95-36C0-5A72-BD66-1D4AFB4E380D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:468b883fb047c47d93a46841667dd3986f5aa17a ;
+    ohsps:P113 "place_of_worship=holy_well" .
+
+ohss:Q278-70CBAB4C-7528-5CFB-B831-278219392D5B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:468b883fb047c47d93a46841667dd3986f5aa17a ;
+    ohsps:P113 "man_made=water_well" .
+
+ohss:Q278-82FCC343-9F5B-57F8-8F7C-BAE4F1AD8A08
+    a wikibase:BestRank,
+        wikibase:Statement,
+        geo:Geometry ;
+    wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.1846394 54.111072)"^^geo:wktLiteral ;
+    prov:wasDerivedFrom ohsref:aafd321fa024430a937e7501b2e9a1728aa4cb0b ;
+    ohspq:P102 "+1"^^xsd:decimal ;
+    ohspq:P103 "2024-03-21T01:33:57Z" ;
+    ohspqv:P102 ohsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    ohsps:P111 "POINT(-6.1846394 54.111072)" .
+
+ohss:Q278-153CDD26-E1FF-5FE2-8653-77EB47B4585C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:468b883fb047c47d93a46841667dd3986f5aa17a ;
+    ohsps:P113 "alt_name=St Bridget's Well" .
+
+ohss:Q278-355C0E9C-17EC-5ADE-A30F-2B51B36E5480
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    ohspq:P102 "+4"^^xsd:decimal ;
+    ohspq:P103 "2026-06-24T15:00:49Z" ;
+    ohspq:P104 "184528669" ;
+    ohspq:P105 "jonnymccullagh" ;
+    ohspq:P106 "10431956" ;
+    ohspqv:P102 ohsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11749353703/history/4> .
+
+ohss:Q278-013152A7-2500-5BF6-B223-FFCC0B8AE66A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:468b883fb047c47d93a46841667dd3986f5aa17a ;
+    ohsps:P113 "name:ga=Tobar Niamh Bronach" .
+
+ohss:Q278-92117BE8-C4EE-5705-8E38-576C73C479FF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:468b883fb047c47d93a46841667dd3986f5aa17a ;
+    ohsps:P113 "name=Saint Bronagh's Well" .
+
+ohss:Q278-A0F9B9AD-20D4-5C37-A25F-3AC9C6A4621F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ohsref:468b883fb047c47d93a46841667dd3986f5aa17a ;
+    ohsps:P113 "source:alt_name=survey" .
+
+ohss:Q278-DC182125-D9AF-50A1-B5EA-E4931C9D5402
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+2"^^xsd:decimal ;
+    ohspq:P103 "2026-05-03T20:24:53Z" ;
+    ohspq:P104 "182177741" ;
+    ohspq:P105 "b-unicycling" ;
+    ohspq:P106 "1713634" ;
+    ohspqv:P102 ohsv:c295f8f927aa4b01b5401a2788a068ea ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11749353703/history/2> .
+
+ohss:Q278-EC7D8D3A-B03D-54CE-ABAF-34A280C7E82B
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P102 "+3"^^xsd:decimal ;
+    ohspq:P103 "2026-05-13T16:47:42Z" ;
+    ohspq:P104 "182611240" ;
+    ohspq:P105 "jonnymccullagh" ;
+    ohspq:P106 "10431956" ;
+    ohspqv:P102 ohsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    ohsps:P101 <https://www.openstreetmap.org/node/11749353703/history/3> .
+
+ohss:Q278-FDB2E2D1-1AC5-5916-90E2-69B19ACA4E1E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ohspq:P109 "holywells" ;
+    ohsps:P107 <https://www.openstreetmap.org/node/11749353703/history/2> .
+
+ohsref:468b883fb047c47d93a46841667dd3986f5aa17a
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/11749353703/history/4> .
+
+ohsref:aafd321fa024430a937e7501b2e9a1728aa4cb0b
+    a wikibase:Reference ;
+    ohspr:P6 <https://www.openstreetmap.org/node/11749353703/history/1> .
+
+ohsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+ohsv:deedfd86798dbc2f21b31d38ba7b329a
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.111072"^^xsd:double ;
+    wikibase:geoLongitude "-6.1846394"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
