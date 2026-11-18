@@ -8,7 +8,7 @@ Each OSM element becomes one item with one QID, as OSM itself knows only one ID 
 element's version history is tracked as statements on that item, and every item is anchored on
 a CIDOC CRM class: `crm:E26 Physical Feature` (proposal, see PRIMER.md). The geometry of each version is kept as WKT, so the model also carries ways and relations.
 
-**State (S1, S2):** the skeleton and the model (the class “Holy well”, the fourteen properties of the benchmarks site) are in place; there are no data yet. The first harvest is step S4 (736 elements in the osm2lod run of 2026-03-28), after a small change in the package (`wikibase-static` 0.25.0, PRIMER.md step S3). The work plan, the decisions made so far and the steps ahead are in [`PRIMER.md`](PRIMER.md) (German).
+**State:** the skeleton and the model are in place, and the raw data of the first harvest (OpenStreetMap, 2026-11-18: 826 elements, 2616 versions) are archived under `data/raw/`. The tables are imported from them offline (`python main.py import-osm --offline`). The site is not published yet: the descriptions of the items need a change in the package first (`wikibase-static`, PRIMER.md step S3). The work plan, the decisions made so far and the steps ahead are in [`PRIMER.md`](PRIMER.md) (German).
 
 ## Build
 

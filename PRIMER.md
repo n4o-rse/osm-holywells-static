@@ -1,6 +1,6 @@
 # PRIMER — osm-holywells-static
 
-Arbeitsplan für `n4o-rse/osm-holywells-static` (Repo-Name: Vorschlag 2026-11-01). Wird zu Beginn jedes Chats hochgeladen (Bundle, siehe A5) und am Ende zurückgeschrieben. Stand: 2026-11-01 (S0: Festlegungen, Befunde; S1: Skeleton; S2: Modell aus `osm-benchmarks-static`).
+Arbeitsplan für `n4o-rse/osm-holywells-static` (Repo-Name: Vorschlag 2026-11-01). Wird zu Beginn jedes Chats hochgeladen (Bundle, siehe A5) und am Ende zurückgeschrieben. Stand: 2026-11-18 (S0 bis S2 eingespielt, S4 Rohdaten geerntet, S5 geprüft, S6 gebaut; S3 offen im Paket, S7 danach).
 
 Sprache: dieses Dokument ist deutsch, alles andere im Repo (Code, Kommentare, README) ist britisches Englisch.
 
@@ -38,6 +38,7 @@ Nicht neu zu bauen: das Modell (P100 bis P113), `import-osm`, Seiten, RDF, SPARQ
 5. **Umfang des Harvests.** 736 Elemente, dazu 27 Ways, deren Stützpunkte ebenfalls geholt werden (`data/raw/osm/members/`). Mit 100 History-Anfragen je Lauf und einer Sekunde Pause sind es mindestens 8 Läufe, plus die Stützpunkte der Ways (`--member-limit`). Overpass und die OSM-API sind aus der Sandbox dieses Chats nicht erreichbar (geprüft 2026-11-01, keine Verbindung); der Harvest läuft bei Flo, wie bei den Benchmarks.
 6. **Ways.** Die Benchmarks haben nur Nodes; der Echttest der Way-Geometrie (S6 dort, zurückgestellt) ist hier mit 27 Ways möglich.
 7. **Skeleton ohne Daten** (geprüft 2026-11-01 mit `wikibase-static` v0.24.1): `python main.py --strict` läuft mit den Modelldateien (4 Klassen: Q1 bis Q3 und Q100; 24 Properties, 60 Statements) zweimal mit Exit-Code 0 durch; nach dem Einchecken von `data/derived/`, `dist/` und `docs/` ist `git status` leer, auch nach einem dritten Lauf. `check-crm` meldet 0 Verstöße, `check_attribution.py` findet „OpenStreetMap contributors“ in 63 Dateien. Anders als bei den Benchmarks in S1 (ohne Modell: „nothing to do“) erzeugt der Lauf also schon Seiten für die Modell-Entitäten. Ohne `queries.yaml` scheitert `--strict` an der Standardabfrage `coordinates` (keine Zeilen, WARN): `requires: [globe-coordinate]` prüft den Datentyp der Property P110, nicht ob es Statements gibt. Deshalb liegt eine vorläufige `queries.yaml` (Standardsatz ohne `coordinates`) im Repo, die mit dem ersten Harvest gelöscht wird.
+8. **Erstharvest und Rohdaten (S4, geerntet 2026-11-18, bei Flo).** Overpass-Stand 2026-11-18: 826 Elemente (801 Nodes, 25 Ways), 2616 Version-Statements, 734 mit `name`, 327 mit `wikidata`. Alle 25 Ways sind geschlossen und haben eine Geometrie (39 Geometriestände, geprüft mit `--strict`). Der Node 3163775632 hat in der History eine Löschversion (Version 2, 2023-03-12, ohne Position); der Importer überspringt sie und meldet es, der Node hat daher 5 statt 6 Version-Statements. Bei 22 Elementen ist `wikimedia_commons` eine Kategorie statt einer Datei; der Importer meldet „not imported“, und der Tag geht dabei verloren (er wird weder als Bild noch als `tag` gespeichert). Die Rohdaten liegen committet unter `data/raw/osm/` (Commit 8cc3e3a und 9aa53a7); der Import in die Tabellen läuft offline (`python main.py import-osm --offline`, ersetzt alle Zeilen mit `origin=osm`) und wartet auf S3. Das zweite Mal `import-osm` stellt nur noch die Overpass-Anfrage.
 
 ---
 
@@ -64,7 +65,7 @@ Eine QID je OSM-Element, die Versionen als Statements daran; das Beispiel mit de
 Die Ergebnisse müssen diese Eigenschaften haben, jede ist prüfbar:
 
 1. Jedes Element hat genau eine QID; es gibt keine Versions-Items.
-2. Zahl der OSM-Version-Statements je Element = Zahl der Versionen in der API-History.
+2. Zahl der OSM-Version-Statements je Element = Zahl der Versionen in der API-History (Versionen ohne Position, also Löschungen, ausgenommen).
 3. Jede QID ist über `data/crm.csv` auf eine CRM-Klasse verankert; `check-crm` meldet keinen Verstoß.
 4. Das RDF enthält kein `owl:sameAs` auf OpenStreetMap; die Statement- und Wert-IRIs sind reine Bezeichner im eigenen Namensraum.
 5. Zweimal laufen lassen ändert nichts (`git status` leer); ein zweiter Harvest ohne Änderung bei OSM stellt nur die Overpass-Anfrage.
@@ -132,12 +133,12 @@ Alles `geplant`, bis die erste Veröffentlichung die Basis festlegt. Vorschlag: 
 | ID | Schritt | Repo | hängt ab von | Status |
 |---|---|---|---|---|
 | S0 | Festlegungen, Abfrage aus osm2lod, Befunde | osm-holywells-static | – | erledigt 2026-11-01 |
-| S1 | Skeleton: Layout, `main.py`, `site.yaml`, `requirements.txt`, Lizenz, Citation, Workflow-Aufrufer, `update.cmd`, Logo | osm-holywells-static | S0 | gebaut 2026-11-01 (Patch-ZIP; Einspielen offen) |
-| S2 | Modell: Klasse, Properties P100 bis P113, `data/crm.csv`, Mapping-Datei, Seeds | osm-holywells-static | S1 | gebaut 2026-11-01 (Patch-ZIP; Einspielen offen) |
+| S1 | Skeleton: Layout, `main.py`, `site.yaml`, `requirements.txt`, Lizenz, Citation, Workflow-Aufrufer, `update.cmd`, Logo | osm-holywells-static | S0 | erledigt 2026-11-18 (Commit 4273aec) |
+| S2 | Modell: Klasse, Properties P100 bis P113, `data/crm.csv`, Mapping-Datei, Seeds | osm-holywells-static | S1 | erledigt 2026-11-18 (Commit 4273aec) |
 | S3 | Paket 0.25.0: Beschreibungswörter je Klasse statt der festen Tabelle, `crm:E26` in der Klassentabelle (gemeinsam für alle drei neuen Site-Repos) | wikibase-static | S2 | offen |
-| S4 | Erstharvest: 736 Elemente, Overpass, Historien (mehrere Läufe), Import, Seiten, RDF, `check-crm` | osm-holywells-static | S3 | offen |
-| S5 | Echttest der Way-Geometrie an den 27 Ways (der zurückgestellte S6-Test der Benchmarks) | osm-holywells-static | S4 | offen |
-| S6 | Standardabfragen (`queries.yaml`): Versionen je Element, Eintrittsversion, Wikidata-Verknüpfungen, Bilder | osm-holywells-static | S4 | offen |
+| S4 | Erstharvest: 736 Elemente, Overpass, Historien (mehrere Läufe), Import, Seiten, RDF, `check-crm` | osm-holywells-static | S3 | Rohdaten erledigt 2026-11-18 (Commit 8cc3e3a und 9aa53a7); Import wartet auf S3 |
+| S5 | Echttest der Way-Geometrie an den 27 Ways (der zurückgestellte S6-Test der Benchmarks) | osm-holywells-static | S4 | erledigt 2026-11-18 (Geometrie getestet, Befund 8) |
+| S6 | Standardabfragen (`queries.yaml`): Versionen je Element, Eintrittsversion, Wikidata-Verknüpfungen, Bilder | osm-holywells-static | S4 | gebaut 2026-11-18 (Patch) |
 | S7 | Pages-Workflow scharf (`deploy` an, `check_attribution.py`), ODbL-Hinweis, CI mit `--strict` zweimal | osm-holywells-static | S4 | offen |
 
 S1 und S2 sind in einem Patch. S3 ist ein Chat im Paket-Repo für alle drei neuen Sites; der Harvest (S4) läuft technisch auch mit 0.24.1, bekäme aber falsche Beschreibungen („Benchmark …“), also nicht committen. S5 hängt nur an den ersten Ways.
@@ -168,14 +169,22 @@ Gebaut: Dateien wie `osm-benchmarks-static` (`main.py`, `requirements.txt` auf v
 
 Vorschlag zum Zuschnitt, vor dem Bauen als Formular zu bestätigen: die Beschreibungswörter je Klasse (englisch und deutsch, z. B. „Holy well“/„Heilige Quelle“) kommen aus `entities.csv` oder den Seeds statt aus der festen Tabelle `THINGS`; der Rückfall der Benchmarks bleibt, damit `osm-benchmarks-static` unverändert baut. `crm:E26_Physical_Feature` (Oberklasse `crm:E18_Physical_Thing`) kommt in die Klassentabelle. Der Auftrag gilt gleichzeitig für `osm-holywells-static`, `osm-ogham-static` und `osm-sisal-static`.
 
+Aus dem Harvest 2026-11-18 kommen zwei Wünsche dazu: (c) `wikimedia_commons` mit einer Kategorie nicht verlieren (22 Elemente hier), (d) Löschversionen (Versionen ohne Position) benennen statt nur zu melden. Beides darf auch später kommen; die Rohdaten liegen committet, der Import läuft offline neu.
+
 **Abnahme:** Tests im Paket; in einer Kopie dieses Repos mit einem Probe-Element trägt das Item die richtige Beschreibung, `check-crm` meldet keinen Verstoß; `osm-benchmarks-static` baut mit der neuen Version byteweise gleich.
 
 ### S4 bis S7
 
 Wie die Schritte S5 bis S8 von `osm-benchmarks-static` (dort ausführlich und mit Befunden): Harvest mit Netz (`python main.py import-osm --probe --contact <Adresse>` zuerst, dann ohne `--probe`, bei Flo), Import, Seiten, `check-crm`, danach die Abfragen und die Veröffentlichung. Besonderheiten hier:
-- **S4** Abnahme: 736 Elemente (oder die Zahl der heutigen Overpass-Antwort), Zahl der Version-Statements je Element = Zahl der Versionen der API-History (Summe 2282 am 2026-03-28, heute gleich oder höher), jede Historie vollständig, zweiter Lauf stellt nur die Overpass-Anfrage; `queries.yaml` gelöscht.
+- **S4** Abnahme: 736 Elemente (oder die Zahl der heutigen Overpass-Antwort), Zahl der Version-Statements je Element = Zahl der Versionen der API-History (Versionen ohne Position, also Löschungen, ausgenommen; der Importer meldet sie) (Summe 2282 am 2026-03-28, heute gleich oder höher), jede Historie vollständig, zweiter Lauf stellt nur die Overpass-Anfrage; `queries.yaml` gelöscht.
 - **S5** an den Ways: Geometrie-Verlauf als WKT, Karte, GeoSPARQL; Abnahme: ein Way mit mehreren Geometriestand zeigt sie in der Reihenfolge der Versionen; die Zahl der Requests (Stützpunkte) ist notiert.
 - **S7** `deploy: false` entfernen und `&& python check_attribution.py` im Aufrufer ergänzen.
+
+### Erledigt 2026-11-18 (S4 Rohdaten, S5 Geometrie, S6 Abfragen)
+
+- **S4:** Rohdaten geerntet und committet (Commit 8cc3e3a und 9aa53a7), Befund 8. Der Import wartet auf S3.
+- **S5:** Die Geometrie von Ways und Relationen ist mit den Rohdaten getestet (Befund 8).
+- **S6:** `queries.yaml` ersetzt die vorläufige Datei: die Abfragen der Benchmarks mit dem Präfix `ohs` und diese Abfragen für die Site: Versionen je Element, Eintrittsversion, Änderungen seit einem Datum, Benutzer mit den meisten Versionen, Positionswechsel, Position zu einem Zeitpunkt, Elemente mit Wikidata-Item, Elemente mit einem bestimmten Tag, Form-Änderungen von Ways und Relationen, dazu die allgemeinen Abfragen des Pakets. Jede Abfrage liefert mindestens eine Zeile (sonst bricht `--strict` ab); getestet mit `wikibase-static` v0.28.0.
 
 ---
 
@@ -188,3 +197,10 @@ Wie die Schritte S5 bis S8 von `osm-benchmarks-static` (dort ausführlich und mi
 - **Gebiet:** Irland und Nordirland sind die Areas aus osm2lod; Schottland, Wales und die Insel Man hätten weitere Elemente, sind aber nicht Teil der Abfrage. Entscheiden, ob die Abfrage gleich bleibt (1:1 mit osm2lod) oder erweitert wird.
 - **Weitere Typen aus osm2lod** (`ci`, `drillcores`, `romansites`): je ein eigenes Repo nach demselben Muster, nach S3.
 - **Netz:** `import-osm` ist hier noch nicht gelaufen; beim ersten Lauf `--contact` setzen und die Pause prüfen.
+
+**Dazugekommen 2026-11-18 (Harvest):**
+
+- **Commons-Kategorien:** 22 Elemente haben unter `wikimedia_commons` eine Kategorie; sie gehen heute verloren. Im Paket (S3 oder danach) als `tag` oder eigene Property erhalten?
+- **Löschversionen:** Versionen ohne Position (Löschungen) übergeht der Importer; die Zahl der Version-Statements ist dann kleiner als die der API-Versionen. Die Abnahmeregel von S4 nimmt sie aus; offen, ob sie ein eigenes Statement bekommen sollen (S3 oder danach).
+- **Tag `place_of_worship=holy_well`:** steht bei allen 826 als `tag`-Statement; ebenso `natural=spring` (773). Die CRM-Frage (E26 gegen E25) lässt sich jetzt an den Daten klären (`man_made=water_well` bei 34 Elementen).
+- **Veröffentlichung (S7):** erst nach S3 und dem Rollout, weil die Beschreibungen sonst „Benchmark …“ lauten: in `.github/workflows/site.yml` `deploy: false` durch `deploy: true` ersetzen und `&& python check_attribution.py` an den Befehl hängen (siehe PATCH-README).

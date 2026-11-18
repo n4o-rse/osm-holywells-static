@@ -1,0 +1,21 @@
+PREFIX ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/>
+PREFIX ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/>
+PREFIX ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+#defaultView:Map
+SELECT ?item ?label ?geometry ?since WHERE {
+  ?item ohsp:P111 ?entry ;
+        rdfs:label ?label .
+  ?entry ohsps:P111 ?geometry ;
+         ohspq:P103 ?since .
+  FILTER(LANG(?label) = "en")
+  FILTER(?since <= "2023-01-01T00:00:00Z")
+  FILTER NOT EXISTS {
+    ?item ohsp:P111 ?later .
+    ?later ohspq:P103 ?laterSince .
+    FILTER(?laterSince > ?since && ?laterSince <= "2023-01-01T00:00:00Z")
+  }
+}
+ORDER BY ?label ?item
+LIMIT 200

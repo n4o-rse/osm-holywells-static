@@ -1,0 +1,17 @@
+PREFIX ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/>
+PREFIX ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?item ?label ?number ?timestamp ?user WHERE {
+  ?item ohsp:P101 ?version ;
+        rdfs:label ?label .
+  ?version wikibase:rank wikibase:PreferredRank ;
+           ohspq:P102 ?number ;
+           ohspq:P103 ?timestamp ;
+           ohspq:P105 ?user .
+  FILTER(LANG(?label) = "en")
+  FILTER(?timestamp >= "2025-01-01T00:00:00Z")
+}
+ORDER BY DESC(?timestamp) ?label ?item
+LIMIT 200

@@ -38,7 +38,7 @@ html[data-lang="de"] .l:not([lang="de"]) { display: none; }
     <main>
 <article class="sparql">
   <h1><span class="l" lang="en">Query the data</span><span class="l" lang="de">Daten abfragen</span></h1>
-  <p class="description"><span class="l" lang="en">The data of this site is a Turtle file in the RDF model of Wikibase, so queries written for the Query Service of a Wikibase work here too. Edit a query and press Run.</span><span class="l" lang="de">Die Daten dieser Seite liegen als Turtle-Datei im RDF-Modell von Wikibase vor. Abfragen, die für den Query Service einer Wikibase geschrieben sind, laufen deshalb auch hier. Abfrage ändern, dann auf Ausführen klicken.</span></p>
+  <p class="description"><span class="l" lang="en">The data of this site is a Turtle file in the RDF model of Wikibase. The first queries use the OpenStreetMap version history (one statement per version, with number, time, changeset and user); the others fit every Wikibase. Edit a query and press Run.</span><span class="l" lang="de">Die Daten dieser Seite liegen als Turtle-Datei im RDF-Modell von Wikibase vor. Die ersten Abfragen nutzen den Versionsverlauf aus OpenStreetMap (ein Statement je Version, mit Nummer, Zeit, Changeset und Benutzer); die übrigen passen zu jeder Wikibase. Abfrage ändern, dann auf Ausführen klicken.</span></p>
   <p class="data-line">
     <strong><span class="l" lang="en">The data</span><span class="l" lang="de">Die Daten</span></strong>
     <span class="l" lang="en">A Turtle file in the RDF model of Wikibase with 157294 triples:</span><span class="l" lang="de">Eine Turtle-Datei im RDF-Modell von Wikibase mit 157294 Tripeln:</span>
@@ -79,6 +79,218 @@ PREFIX wikibase: &lt;http://wikiba.se/ontology#&gt;
 PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 </pre>
   </details>
+  <section class="query" id="osm-versions">
+    <h2><span class="l" lang="en">Versions per element</span><span class="l" lang="de">Versionen je Element</span></h2>
+<p><span class="l" lang="en">How often each OpenStreetMap element was edited, with the first and the last edit.</span><span class="l" lang="de">Wie oft jedes OpenStreetMap-Element bearbeitet wurde, mit der ersten und der letzten Bearbeitung.</span></p>    <textarea spellcheck="false" aria-label="Versions per element" rows="10">SELECT ?item ?label (COUNT(?statement) AS ?versions) (MIN(?timestamp) AS ?first) (MAX(?timestamp) AS ?last) WHERE {
+  ?item ohsp:P101 ?statement ;
+        rdfs:label ?label .
+  ?statement ohspq:P103 ?timestamp .
+  FILTER(LANG(?label) = &#34;en&#34;)
+}
+GROUP BY ?item ?label
+ORDER BY DESC(?versions) ?label ?item
+LIMIT 100</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-versions.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="osm-entry-version">
+    <h2><span class="l" lang="en">Elements by the version that put them in the selection</span><span class="l" lang="de">Elemente nach der Version, mit der sie in die Auswahl kamen</span></h2>
+<p><span class="l" lang="en">The first version of each element that met the tag condition of the selection (here the tag condition of holy wells (place_of_worship=holy_well)), and when it was made.</span><span class="l" lang="de">Die erste Version jedes Elements, die die Tag-Bedingung der Auswahl erfüllte (hier die Tag-Bedingung von Holy Wells (place_of_worship=holy_well)), und wann sie entstand.</span></p>    <textarea spellcheck="false" aria-label="Elements by the version that put them in the selection" rows="14">SELECT ?item ?label ?entryVersion ?since ?selection WHERE {
+  ?item ohsp:P107 ?entry ;
+        ohsp:P101 ?version ;
+        rdfs:label ?label .
+  ?entry ohsps:P107 ?url ;
+         ohspq:P109 ?selection .
+  ?version ohsps:P101 ?url ;
+           ohspq:P102 ?entryVersion ;
+           ohspq:P103 ?since .
+  FILTER(LANG(?label) = &#34;en&#34;)
+}
+ORDER BY DESC(?entryVersion) ?since ?label
+LIMIT 200</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-entry-version.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="osm-changed-since">
+    <h2><span class="l" lang="en">Elements changed since a date</span><span class="l" lang="de">Elemente, die seit einem Datum geändert wurden</span></h2>
+<p><span class="l" lang="en">Elements whose latest version is not older than the date in the FILTER (change it; times are text in ISO 8601, UTC).</span><span class="l" lang="de">Elemente, deren letzte Version nicht älter ist als das Datum im FILTER (ändern; Zeiten sind Text in ISO 8601, UTC).</span></p>    <textarea spellcheck="false" aria-label="Elements changed since a date" rows="13">SELECT ?item ?label ?number ?timestamp ?user WHERE {
+  ?item ohsp:P101 ?version ;
+        rdfs:label ?label .
+  ?version wikibase:rank wikibase:PreferredRank ;
+           ohspq:P102 ?number ;
+           ohspq:P103 ?timestamp ;
+           ohspq:P105 ?user .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  FILTER(?timestamp &gt;= &#34;2025-01-01T00:00:00Z&#34;)
+}
+ORDER BY DESC(?timestamp) ?label ?item
+LIMIT 200</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-changed-since.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="osm-top-users">
+    <h2><span class="l" lang="en">Users with the most versions</span><span class="l" lang="de">Benutzer mit den meisten Versionen</span></h2>
+<p><span class="l" lang="en">Who made the versions in this data. The user name is public at OpenStreetMap.</span><span class="l" lang="de">Wer die Versionen in diesen Daten angelegt hat. Der Benutzername ist bei OpenStreetMap öffentlich.</span></p>    <textarea spellcheck="false" aria-label="Users with the most versions" rows="8">SELECT ?user (COUNT(?version) AS ?versions) (COUNT(DISTINCT ?item) AS ?elements) WHERE {
+  ?item ohsp:P101 ?version .
+  ?version ohspq:P105 ?user .
+}
+GROUP BY ?user
+ORDER BY DESC(?versions) ?user
+LIMIT 20</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-top-users.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="osm-moved">
+    <h2><span class="l" lang="en">Elements that changed position by more than a few metres</span><span class="l" lang="de">Elemente mit Positionswechsel über einige Meter</span></h2>
+<p><span class="l" lang="en">Two consecutive entries of the geometry history of a point. The distance is the larger of the north-south and the east-west part, with 111 320 m per degree and 0.6 for the length of a degree of longitude at about 53 N (rough, for Ireland). Change the number in the FILTER.</span><span class="l" lang="de">Zwei aufeinanderfolgende Einträge des Geometrie-Verlaufs eines Punkts. Die Entfernung ist der größere Anteil aus Nord-Süd und Ost-West, mit 111 320 m je Grad und 0,6 für die Länge eines Längengrads bei etwa 53 N (grob, für Irland). Die Zahl im FILTER ändern.</span></p>    <textarea spellcheck="false" aria-label="Elements that changed position by more than a few metres" rows="27">SELECT ?item ?label ?from ?to (ROUND(?metres) AS ?metresRounded) WHERE {
+  ?item ohsp:P111 ?g1, ?g2 ;
+        rdfs:label ?label .
+  ?g1 ohsps:P111 ?w1 ;
+      ohspq:P103 ?from .
+  ?g2 ohsps:P111 ?w2 ;
+      ohspq:P103 ?to .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  FILTER(STRSTARTS(UCASE(STR(?w1)), &#34;POINT(&#34;) &amp;&amp; STRSTARTS(UCASE(STR(?w2)), &#34;POINT(&#34;))
+  FILTER(?to &gt; ?from)
+  FILTER NOT EXISTS {
+    ?item ohsp:P111 ?g3 .
+    ?g3 ohspq:P103 ?between .
+    FILTER(?between &gt; ?from &amp;&amp; ?between &lt; ?to)
+  }
+  BIND(xsd:decimal(STRBEFORE(STRAFTER(STR(?w1), &#34;(&#34;), &#34; &#34;)) AS ?lon1)
+  BIND(xsd:decimal(STRBEFORE(STRAFTER(STR(?w2), &#34;(&#34;), &#34; &#34;)) AS ?lon2)
+  BIND(xsd:decimal(STRBEFORE(STRAFTER(STRAFTER(STR(?w1), &#34;(&#34;), &#34; &#34;), &#34;)&#34;)) AS ?lat1)
+  BIND(xsd:decimal(STRBEFORE(STRAFTER(STRAFTER(STR(?w2), &#34;(&#34;), &#34; &#34;), &#34;)&#34;)) AS ?lat2)
+  BIND(ABS(?lat2 - ?lat1) * 111320 AS ?north)
+  BIND(ABS(?lon2 - ?lon1) * 111320 * 0.6 AS ?east)
+  BIND(IF(?north &gt; ?east, ?north, ?east) AS ?metres)
+  FILTER(?metres &gt; 1)
+}
+ORDER BY DESC(?metres) ?label ?item
+LIMIT 100</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-moved.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="osm-geometry-at">
+    <h2><span class="l" lang="en">Position at a point in time</span><span class="l" lang="de">Position zu einem Zeitpunkt</span></h2>
+<p><span class="l" lang="en">The geometry each element had at the time in the FILTER (the last entry not after it); elements that did not exist yet are left out. Change the time.</span><span class="l" lang="de">Die Geometrie, die jedes Element zu dem Zeitpunkt im FILTER hatte (der letzte Eintrag, der nicht danach liegt); noch nicht vorhandene Elemente fehlen. Zeit ändern.</span></p>    <textarea spellcheck="false" aria-label="Position at a point in time" rows="17">#defaultView:Map
+SELECT ?item ?label ?geometry ?since WHERE {
+  ?item ohsp:P111 ?entry ;
+        rdfs:label ?label .
+  ?entry ohsps:P111 ?geometry ;
+         ohspq:P103 ?since .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  FILTER(?since &lt;= &#34;2023-01-01T00:00:00Z&#34;)
+  FILTER NOT EXISTS {
+    ?item ohsp:P111 ?later .
+    ?later ohspq:P103 ?laterSince .
+    FILTER(?laterSince &gt; ?since &amp;&amp; ?laterSince &lt;= &#34;2023-01-01T00:00:00Z&#34;)
+  }
+}
+ORDER BY ?label ?item
+LIMIT 200</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-geometry-at.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="osm-wikidata">
+    <h2><span class="l" lang="en">Elements with a Wikidata item</span><span class="l" lang="de">Elemente mit Wikidata-Item</span></h2>
+<p><span class="l" lang="en">The OSM tag `wikidata` of the last version, shown as the Wikidata item it names. This is the bridge to Wikidata; the RDF export itself does not point to it (no owl:sameAs, PRIMER.md A4).</span><span class="l" lang="de">Der OSM-Tag `wikidata` der letzten Version, als das Wikidata-Item gezeigt, das er nennt. Das ist die Brücke zu Wikidata; der RDF-Export selbst verweist nicht darauf (kein owl:sameAs, PRIMER.md A4).</span></p>    <textarea spellcheck="false" aria-label="Elements with a Wikidata item" rows="11">SELECT ?item ?label ?wikidata WHERE {
+  ?item ohsp:P113 ?statement ;
+        rdfs:label ?label .
+  ?statement ohsps:P113 ?tag .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  FILTER(STRSTARTS(?tag, &#34;wikidata=&#34;))
+  BIND(IRI(CONCAT(&#34;http://www.wikidata.org/entity/&#34;, STRAFTER(?tag, &#34;wikidata=&#34;))) AS ?wikidata)
+}
+ORDER BY ?label ?item
+LIMIT 500</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-wikidata.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="osm-tag">
+    <h2><span class="l" lang="en">Elements with a given tag</span><span class="l" lang="de">Elemente mit einem bestimmten Tag</span></h2>
+<p><span class="l" lang="en">The elements whose last version carries the tag in the FILTER (Roman Catholic holy wells here). Change the text to `key=value`.</span><span class="l" lang="de">Die Elemente, deren letzte Version den Tag im FILTER trägt (hier römisch-katholische Holy Wells). Den Text in `key=value` ändern.</span></p>    <textarea spellcheck="false" aria-label="Elements with a given tag" rows="10">SELECT ?item ?label ?tag WHERE {
+  ?item ohsp:P113 ?statement ;
+        rdfs:label ?label .
+  ?statement ohsps:P113 ?tag .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  FILTER(?tag = &#34;denomination=roman_catholic&#34;)
+}
+ORDER BY ?label ?item
+LIMIT 200</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-tag.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="osm-shapes">
+    <h2><span class="l" lang="en">Ways and relations: how often the shape changed</span><span class="l" lang="de">Ways und Relationen: wie oft sich die Form geändert hat</span></h2>
+<p><span class="l" lang="en">The elements that are not a single point, with the number of entries in their geometry history (one each time the way, the relation or one of its member nodes changed) and the time of the first and the last.</span><span class="l" lang="de">Die Elemente, die kein einzelner Punkt sind, mit der Zahl der Einträge in ihrem Geometrie-Verlauf (einer je Änderung des Ways, der Relation oder eines Stützpunkts) und der Zeit des ersten und des letzten.</span></p>    <textarea spellcheck="false" aria-label="Ways and relations: how often the shape changed" rows="12">SELECT ?item ?label (COUNT(?entry) AS ?shapes) (MIN(?since) AS ?first) (MAX(?since) AS ?last) WHERE {
+  ?item ohsp:P111 ?entry ;
+        rdfs:label ?label .
+  ?entry ohsps:P111 ?wkt ;
+         ohspq:P103 ?since .
+  FILTER(LANG(?label) = &#34;en&#34;)
+  FILTER(!STRSTARTS(UCASE(STR(?wkt)), &#34;POINT(&#34;))
+}
+GROUP BY ?item ?label
+ORDER BY DESC(?shapes) ?label ?item
+LIMIT 100</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/osm-shapes.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
   <section class="query" id="items">
     <h2><span class="l" lang="en">Items with label and description</span><span class="l" lang="de">Items mit Bezeichnung und Beschreibung</span></h2>
 <p><span class="l" lang="en">Every item with its label and, where there is one, its description in the same language.</span><span class="l" lang="de">Jedes Item mit Bezeichnung und, wo vorhanden, Beschreibung in derselben Sprache.</span></p>    <textarea spellcheck="false" aria-label="Items with label and description" rows="11">SELECT ?item ?label ?description WHERE {
@@ -181,6 +393,27 @@ LIMIT 20</textarea>
       <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
       <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
       <a href="downloads/queries/most-used-items.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
+      <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
+      <span class="query-stats" aria-live="polite"></span>
+    </div>
+    <div class="query-result"></div>
+  </section>
+  <section class="query" id="coordinates">
+    <h2><span class="l" lang="en">Items with coordinates</span><span class="l" lang="de">Items mit Koordinaten</span></h2>
+<p><span class="l" lang="en">Globe coordinates as WKT, the form GeoSPARQL tools expect (longitude first).</span><span class="l" lang="de">Geokoordinaten als WKT, der Form, die GeoSPARQL-Werkzeuge erwarten (Länge zuerst).</span></p>    <textarea spellcheck="false" aria-label="Items with coordinates" rows="11">#defaultView:Map
+SELECT ?item ?label ?coordinates WHERE {
+  ?property wikibase:propertyType wikibase:GlobeCoordinate ;
+            wikibase:directClaim ?direct .
+  ?item ?direct ?coordinates ;
+        rdfs:label ?label .
+  FILTER(LANG(?label) = &#34;en&#34;)
+}
+ORDER BY ?label ?item
+LIMIT 200</textarea>
+    <div class="query-actions">
+      <button type="button" class="run"><span class="l" lang="en">Run</span><span class="l" lang="de">Ausführen</span></button>
+      <button type="button" class="reset"><span class="l" lang="en">Reset</span><span class="l" lang="de">Zurücksetzen</span></button>
+      <a href="downloads/queries/coordinates.rq" download><span class="l" lang="en">Download as .rq</span><span class="l" lang="de">Als .rq laden</span></a>
       <a href="query.html" class="to-editor"><span class="l" lang="en">Open in the query editor</span><span class="l" lang="de">Im Abfrage-Editor öffnen</span></a>
       <span class="query-stats" aria-live="polite"></span>
     </div>

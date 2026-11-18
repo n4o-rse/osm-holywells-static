@@ -1,0 +1,13 @@
+PREFIX ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/>
+PREFIX ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?label (COUNT(?statement) AS ?versions) (MIN(?timestamp) AS ?first) (MAX(?timestamp) AS ?last) WHERE {
+  ?item ohsp:P101 ?statement ;
+        rdfs:label ?label .
+  ?statement ohspq:P103 ?timestamp .
+  FILTER(LANG(?label) = "en")
+}
+GROUP BY ?item ?label
+ORDER BY DESC(?versions) ?label ?item
+LIMIT 100

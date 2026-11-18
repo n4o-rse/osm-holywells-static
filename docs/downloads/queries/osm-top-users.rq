@@ -1,0 +1,10 @@
+PREFIX ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/>
+PREFIX ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/>
+
+SELECT ?user (COUNT(?version) AS ?versions) (COUNT(DISTINCT ?item) AS ?elements) WHERE {
+  ?item ohsp:P101 ?version .
+  ?version ohspq:P105 ?user .
+}
+GROUP BY ?user
+ORDER BY DESC(?versions) ?user
+LIMIT 20

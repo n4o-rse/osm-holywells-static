@@ -1,21 +1,211 @@
-# TEMPORARY (PRIMER.md, S1): the default query set of wikibase-static 0.24.1 without the query `coordinates`.
-# Without items the query returns no rows, and an empty example is a WARN (it fails --strict). Delete this file with the
-# first harvest (S4 or S5), when the items have coordinates; the queries of this site (S6 or S7) replace it later.
-# Example queries that fit every Wikibase export (PRIMER.md, S6). A site replaces them with its own queries.yaml.
-# @@lang@@ is replaced by the default language of the site. A query with `requires` is left out when the site
-# has no such data; every query that stays must return at least one row, or the build fails.
+# Example queries of osm-holywells-static (PRIMER.md, S6): first the questions the version history answers, then the generic ones
+# of wikibase-static (copied unchanged from its queries.default.yaml; this file replaces the default set, it does not extend it).
+# @@lang@@ is replaced by the default language of the site. Every query that stays must return at least one row, or the build fails.
+# Prefixes: ohs: the items, ohsp:/ohsps:/ohspq: statement, value and qualifier of a property, ohst: the direct claim. P101 version,
+# P102 version number, P103 timestamp (text, ISO 8601 UTC, so it sorts and compares as text), P105 user, P107 in the selection since,
+# P109 selection, P110 coordinate, P111 geometry history (WKT), P113 OSM tag (`key=value`).
 page:
   title: {en: Query the data, de: Daten abfragen}
   intro:
     en: >-
-      The data of this site is a Turtle file in the RDF model of Wikibase, so queries written for the Query
-      Service of a Wikibase work here too. Edit a query and press Run.
+      The data of this site is a Turtle file in the RDF model of Wikibase. The first queries use the OpenStreetMap version history
+      (one statement per version, with number, time, changeset and user); the others fit every Wikibase. Edit a query and press Run.
     de: >-
-      Die Daten dieser Seite liegen als Turtle-Datei im RDF-Modell von Wikibase vor. Abfragen, die für den
-      Query Service einer Wikibase geschrieben sind, laufen deshalb auch hier. Abfrage ändern, dann auf
-      Ausführen klicken.
+      Die Daten dieser Seite liegen als Turtle-Datei im RDF-Modell von Wikibase vor. Die ersten Abfragen nutzen den Versionsverlauf aus
+      OpenStreetMap (ein Statement je Version, mit Nummer, Zeit, Changeset und Benutzer); die übrigen passen zu jeder Wikibase.
+      Abfrage ändern, dann auf Ausführen klicken.
 
 queries:
+  - id: osm-versions
+    title: {en: "Versions per element", de: "Versionen je Element"}
+    intro:
+      en: How often each OpenStreetMap element was edited, with the first and the last edit.
+      de: Wie oft jedes OpenStreetMap-Element bearbeitet wurde, mit der ersten und der letzten Bearbeitung.
+    sparql: |
+      SELECT ?item ?label (COUNT(?statement) AS ?versions) (MIN(?timestamp) AS ?first) (MAX(?timestamp) AS ?last) WHERE {
+        ?item ohsp:P101 ?statement ;
+              rdfs:label ?label .
+        ?statement ohspq:P103 ?timestamp .
+        FILTER(LANG(?label) = "@@lang@@")
+      }
+      GROUP BY ?item ?label
+      ORDER BY DESC(?versions) ?label ?item
+      LIMIT 100
+
+  - id: osm-entry-version
+    title: {en: "Elements by the version that put them in the selection", de: "Elemente nach der Version, mit der sie in die Auswahl kamen"}
+    intro:
+      en: The first version of each element that met the tag condition of the selection (here the tag condition of holy wells (place_of_worship=holy_well)), and when it was made.
+      de: Die erste Version jedes Elements, die die Tag-Bedingung der Auswahl erfüllte (hier die Tag-Bedingung von Holy Wells (place_of_worship=holy_well)), und wann sie entstand.
+    sparql: |
+      SELECT ?item ?label ?entryVersion ?since ?selection WHERE {
+        ?item ohsp:P107 ?entry ;
+              ohsp:P101 ?version ;
+              rdfs:label ?label .
+        ?entry ohsps:P107 ?url ;
+               ohspq:P109 ?selection .
+        ?version ohsps:P101 ?url ;
+                 ohspq:P102 ?entryVersion ;
+                 ohspq:P103 ?since .
+        FILTER(LANG(?label) = "@@lang@@")
+      }
+      ORDER BY DESC(?entryVersion) ?since ?label
+      LIMIT 200
+
+  - id: osm-changed-since
+    title: {en: "Elements changed since a date", de: "Elemente, die seit einem Datum geändert wurden"}
+    intro:
+      en: Elements whose latest version is not older than the date in the FILTER (change it; times are text in ISO 8601, UTC).
+      de: Elemente, deren letzte Version nicht älter ist als das Datum im FILTER (ändern; Zeiten sind Text in ISO 8601, UTC).
+    sparql: |
+      SELECT ?item ?label ?number ?timestamp ?user WHERE {
+        ?item ohsp:P101 ?version ;
+              rdfs:label ?label .
+        ?version wikibase:rank wikibase:PreferredRank ;
+                 ohspq:P102 ?number ;
+                 ohspq:P103 ?timestamp ;
+                 ohspq:P105 ?user .
+        FILTER(LANG(?label) = "@@lang@@")
+        FILTER(?timestamp >= "2025-01-01T00:00:00Z")
+      }
+      ORDER BY DESC(?timestamp) ?label ?item
+      LIMIT 200
+
+  - id: osm-top-users
+    title: {en: "Users with the most versions", de: "Benutzer mit den meisten Versionen"}
+    intro:
+      en: Who made the versions in this data. The user name is public at OpenStreetMap.
+      de: Wer die Versionen in diesen Daten angelegt hat. Der Benutzername ist bei OpenStreetMap öffentlich.
+    sparql: |
+      SELECT ?user (COUNT(?version) AS ?versions) (COUNT(DISTINCT ?item) AS ?elements) WHERE {
+        ?item ohsp:P101 ?version .
+        ?version ohspq:P105 ?user .
+      }
+      GROUP BY ?user
+      ORDER BY DESC(?versions) ?user
+      LIMIT 20
+
+  - id: osm-moved
+    title: {en: "Elements that changed position by more than a few metres", de: "Elemente mit Positionswechsel über einige Meter"}
+    intro:
+      en: >-
+        Two consecutive entries of the geometry history of a point. The distance is the larger of the north-south and the east-west part,
+        with 111 320 m per degree and 0.6 for the length of a degree of longitude at about 53 N (rough, for Ireland).
+        Change the number in the FILTER.
+      de: >-
+        Zwei aufeinanderfolgende Einträge des Geometrie-Verlaufs eines Punkts. Die Entfernung ist der größere Anteil aus Nord-Süd und
+        Ost-West, mit 111 320 m je Grad und 0,6 für die Länge eines Längengrads bei etwa 53 N (grob, für Irland).
+        Die Zahl im FILTER ändern.
+    sparql: |
+      SELECT ?item ?label ?from ?to (ROUND(?metres) AS ?metresRounded) WHERE {
+        ?item ohsp:P111 ?g1, ?g2 ;
+              rdfs:label ?label .
+        ?g1 ohsps:P111 ?w1 ;
+            ohspq:P103 ?from .
+        ?g2 ohsps:P111 ?w2 ;
+            ohspq:P103 ?to .
+        FILTER(LANG(?label) = "@@lang@@")
+        FILTER(STRSTARTS(UCASE(STR(?w1)), "POINT(") && STRSTARTS(UCASE(STR(?w2)), "POINT("))
+        FILTER(?to > ?from)
+        FILTER NOT EXISTS {
+          ?item ohsp:P111 ?g3 .
+          ?g3 ohspq:P103 ?between .
+          FILTER(?between > ?from && ?between < ?to)
+        }
+        BIND(xsd:decimal(STRBEFORE(STRAFTER(STR(?w1), "("), " ")) AS ?lon1)
+        BIND(xsd:decimal(STRBEFORE(STRAFTER(STR(?w2), "("), " ")) AS ?lon2)
+        BIND(xsd:decimal(STRBEFORE(STRAFTER(STRAFTER(STR(?w1), "("), " "), ")")) AS ?lat1)
+        BIND(xsd:decimal(STRBEFORE(STRAFTER(STRAFTER(STR(?w2), "("), " "), ")")) AS ?lat2)
+        BIND(ABS(?lat2 - ?lat1) * 111320 AS ?north)
+        BIND(ABS(?lon2 - ?lon1) * 111320 * 0.6 AS ?east)
+        BIND(IF(?north > ?east, ?north, ?east) AS ?metres)
+        FILTER(?metres > 1)
+      }
+      ORDER BY DESC(?metres) ?label ?item
+      LIMIT 100
+
+  - id: osm-geometry-at
+    title: {en: "Position at a point in time", de: "Position zu einem Zeitpunkt"}
+    intro:
+      en: The geometry each element had at the time in the FILTER (the last entry not after it); elements that did not exist yet are left out. Change the time.
+      de: Die Geometrie, die jedes Element zu dem Zeitpunkt im FILTER hatte (der letzte Eintrag, der nicht danach liegt); noch nicht vorhandene Elemente fehlen. Zeit ändern.
+    sparql: |
+      #defaultView:Map
+      SELECT ?item ?label ?geometry ?since WHERE {
+        ?item ohsp:P111 ?entry ;
+              rdfs:label ?label .
+        ?entry ohsps:P111 ?geometry ;
+               ohspq:P103 ?since .
+        FILTER(LANG(?label) = "@@lang@@")
+        FILTER(?since <= "2023-01-01T00:00:00Z")
+        FILTER NOT EXISTS {
+          ?item ohsp:P111 ?later .
+          ?later ohspq:P103 ?laterSince .
+          FILTER(?laterSince > ?since && ?laterSince <= "2023-01-01T00:00:00Z")
+        }
+      }
+      ORDER BY ?label ?item
+      LIMIT 200
+
+  - id: osm-wikidata
+    title: {en: "Elements with a Wikidata item", de: "Elemente mit Wikidata-Item"}
+    intro:
+      en: >-
+        The OSM tag `wikidata` of the last version, shown as the Wikidata item it names. This is the bridge to Wikidata; the RDF export
+        itself does not point to it (no owl:sameAs, PRIMER.md A4).
+      de: >-
+        Der OSM-Tag `wikidata` der letzten Version, als das Wikidata-Item gezeigt, das er nennt. Das ist die Brücke zu Wikidata; der
+        RDF-Export selbst verweist nicht darauf (kein owl:sameAs, PRIMER.md A4).
+    sparql: |
+      SELECT ?item ?label ?wikidata WHERE {
+        ?item ohsp:P113 ?statement ;
+              rdfs:label ?label .
+        ?statement ohsps:P113 ?tag .
+        FILTER(LANG(?label) = "@@lang@@")
+        FILTER(STRSTARTS(?tag, "wikidata="))
+        BIND(IRI(CONCAT("http://www.wikidata.org/entity/", STRAFTER(?tag, "wikidata="))) AS ?wikidata)
+      }
+      ORDER BY ?label ?item
+      LIMIT 500
+
+  - id: osm-tag
+    title: {en: "Elements with a given tag", de: "Elemente mit einem bestimmten Tag"}
+    intro:
+      en: The elements whose last version carries the tag in the FILTER (Roman Catholic holy wells here). Change the text to `key=value`.
+      de: Die Elemente, deren letzte Version den Tag im FILTER trägt (hier römisch-katholische Holy Wells). Den Text in `key=value` ändern.
+    sparql: |
+      SELECT ?item ?label ?tag WHERE {
+        ?item ohsp:P113 ?statement ;
+              rdfs:label ?label .
+        ?statement ohsps:P113 ?tag .
+        FILTER(LANG(?label) = "@@lang@@")
+        FILTER(?tag = "denomination=roman_catholic")
+      }
+      ORDER BY ?label ?item
+      LIMIT 200
+
+  - id: osm-shapes
+    title: {en: "Ways and relations: how often the shape changed", de: "Ways und Relationen: wie oft sich die Form geändert hat"}
+    intro:
+      en: >-
+        The elements that are not a single point, with the number of entries in their geometry history (one each time the way, the relation
+        or one of its member nodes changed) and the time of the first and the last.
+      de: >-
+        Die Elemente, die kein einzelner Punkt sind, mit der Zahl der Einträge in ihrem Geometrie-Verlauf (einer je Änderung des Ways,
+        der Relation oder eines Stützpunkts) und der Zeit des ersten und des letzten.
+    sparql: |
+      SELECT ?item ?label (COUNT(?entry) AS ?shapes) (MIN(?since) AS ?first) (MAX(?since) AS ?last) WHERE {
+        ?item ohsp:P111 ?entry ;
+              rdfs:label ?label .
+        ?entry ohsps:P111 ?wkt ;
+               ohspq:P103 ?since .
+        FILTER(LANG(?label) = "@@lang@@")
+        FILTER(!STRSTARTS(UCASE(STR(?wkt)), "POINT("))
+      }
+      GROUP BY ?item ?label
+      ORDER BY DESC(?shapes) ?label ?item
+      LIMIT 100
+
   - id: items
     title: {en: "Items with label and description", de: "Items mit Bezeichnung und Beschreibung"}
     intro:
@@ -118,6 +308,24 @@ queries:
       GROUP BY ?item ?label
       ORDER BY DESC(?uses) ?label ?item
       LIMIT 20
+
+  - id: coordinates
+    requires: [globe-coordinate]
+    title: {en: "Items with coordinates", de: "Items mit Koordinaten"}
+    intro:
+      en: Globe coordinates as WKT, the form GeoSPARQL tools expect (longitude first).
+      de: Geokoordinaten als WKT, der Form, die GeoSPARQL-Werkzeuge erwarten (Länge zuerst).
+    sparql: |
+      #defaultView:Map
+      SELECT ?item ?label ?coordinates WHERE {
+        ?property wikibase:propertyType wikibase:GlobeCoordinate ;
+                  wikibase:directClaim ?direct .
+        ?item ?direct ?coordinates ;
+              rdfs:label ?label .
+        FILTER(LANG(?label) = "@@lang@@")
+      }
+      ORDER BY ?label ?item
+      LIMIT 200
 
   - id: images
     requires: [image]

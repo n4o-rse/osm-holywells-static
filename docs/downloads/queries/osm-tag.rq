@@ -1,0 +1,13 @@
+PREFIX ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/>
+PREFIX ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?label ?tag WHERE {
+  ?item ohsp:P113 ?statement ;
+        rdfs:label ?label .
+  ?statement ohsps:P113 ?tag .
+  FILTER(LANG(?label) = "en")
+  FILTER(?tag = "denomination=roman_catholic")
+}
+ORDER BY ?label ?item
+LIMIT 200

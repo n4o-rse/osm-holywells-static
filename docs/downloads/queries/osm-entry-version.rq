@@ -1,0 +1,18 @@
+PREFIX ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/>
+PREFIX ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/>
+PREFIX ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?label ?entryVersion ?since ?selection WHERE {
+  ?item ohsp:P107 ?entry ;
+        ohsp:P101 ?version ;
+        rdfs:label ?label .
+  ?entry ohsps:P107 ?url ;
+         ohspq:P109 ?selection .
+  ?version ohsps:P101 ?url ;
+           ohspq:P102 ?entryVersion ;
+           ohspq:P103 ?since .
+  FILTER(LANG(?label) = "en")
+}
+ORDER BY DESC(?entryVersion) ?since ?label
+LIMIT 200

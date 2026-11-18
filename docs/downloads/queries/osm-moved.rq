@@ -1,0 +1,32 @@
+PREFIX ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/>
+PREFIX ohspq: <https://n4o-rse.github.io/osm-holywells-static/prop/qualifier/>
+PREFIX ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?item ?label ?from ?to (ROUND(?metres) AS ?metresRounded) WHERE {
+  ?item ohsp:P111 ?g1, ?g2 ;
+        rdfs:label ?label .
+  ?g1 ohsps:P111 ?w1 ;
+      ohspq:P103 ?from .
+  ?g2 ohsps:P111 ?w2 ;
+      ohspq:P103 ?to .
+  FILTER(LANG(?label) = "en")
+  FILTER(STRSTARTS(UCASE(STR(?w1)), "POINT(") && STRSTARTS(UCASE(STR(?w2)), "POINT("))
+  FILTER(?to > ?from)
+  FILTER NOT EXISTS {
+    ?item ohsp:P111 ?g3 .
+    ?g3 ohspq:P103 ?between .
+    FILTER(?between > ?from && ?between < ?to)
+  }
+  BIND(xsd:decimal(STRBEFORE(STRAFTER(STR(?w1), "("), " ")) AS ?lon1)
+  BIND(xsd:decimal(STRBEFORE(STRAFTER(STR(?w2), "("), " ")) AS ?lon2)
+  BIND(xsd:decimal(STRBEFORE(STRAFTER(STRAFTER(STR(?w1), "("), " "), ")")) AS ?lat1)
+  BIND(xsd:decimal(STRBEFORE(STRAFTER(STRAFTER(STR(?w2), "("), " "), ")")) AS ?lat2)
+  BIND(ABS(?lat2 - ?lat1) * 111320 AS ?north)
+  BIND(ABS(?lon2 - ?lon1) * 111320 * 0.6 AS ?east)
+  BIND(IF(?north > ?east, ?north, ?east) AS ?metres)
+  FILTER(?metres > 1)
+}
+ORDER BY DESC(?metres) ?label ?item
+LIMIT 100

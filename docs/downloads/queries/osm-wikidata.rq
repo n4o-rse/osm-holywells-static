@@ -1,0 +1,14 @@
+PREFIX ohsp: <https://n4o-rse.github.io/osm-holywells-static/prop/>
+PREFIX ohsps: <https://n4o-rse.github.io/osm-holywells-static/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?label ?wikidata WHERE {
+  ?item ohsp:P113 ?statement ;
+        rdfs:label ?label .
+  ?statement ohsps:P113 ?tag .
+  FILTER(LANG(?label) = "en")
+  FILTER(STRSTARTS(?tag, "wikidata="))
+  BIND(IRI(CONCAT("http://www.wikidata.org/entity/", STRAFTER(?tag, "wikidata="))) AS ?wikidata)
+}
+ORDER BY ?label ?item
+LIMIT 500
